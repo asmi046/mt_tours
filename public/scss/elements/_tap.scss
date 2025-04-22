@@ -1,0 +1,121 @@
+.tap_element {
+    display: flex;
+    flex-direction: column;
+}
+
+.tap_headers {
+    display: flex;
+    margin-bottom: 10px;
+
+    .tap_wrapper {
+        display: flex;
+        background-color: white;
+        padding: 5px;
+        border-radius: 5px;
+
+        .tap_header {
+            padding: 10px 30px;
+            font-size: 14px;
+            cursor: pointer;
+            &.active {
+                border-radius: $border_rad;
+                background-color: $main_color;
+            }
+        }
+    }
+
+}
+
+.tap_bodys {
+    display: flex;
+
+    .tap_body {
+        display: none;
+        max-height: 100%;
+        padding: 20px 0;
+        flex: 1;
+        border-radius: 0 0 $border_rad $border_rad;
+        position: relative;
+        background-color: rgba($color: #FFFFFFFF, $alpha: .8);
+        padding:  20px;
+        border-radius: $border_rad  ;
+
+        &.active{
+            display: flex;
+            flex-direction: column;
+        }
+
+
+    }
+}
+
+.main_selector_section {
+    .tap_headers {
+        gap: 20px;
+        .tap_header {
+            color: $main_color;
+            background-color: white;
+            border: 1px solid $main_color;
+            padding: 10px 30px;
+            border-radius: $border_rad;
+            font-weight: normal;
+            font-size: unset;
+            height: unset;
+            &.active {
+                background-color: $main_color;
+                color:white;
+            }
+
+        }
+    }
+
+    .tap_bodys {
+        max-height: unset;
+        .tap_body {
+            background-color: unset;
+            padding: 20px 0;
+            max-height: unset;
+            &.active {
+                flex-direction: column;
+
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .tap_headers {
+
+        .tap_wrapper {
+            width:100%;
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .tap_element {
+        font-size: 14px;
+    }
+
+    .tap_headers {
+        .tap_wrapper {
+            .tap_header {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+        }
+
+    }
+
+}
+
+@media (max-width:350px) {
+    .tap_headers {
+        .tap_wrapper {
+            .tap_header {
+                padding: 10px 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+.palaroid {
+    width:230px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.08), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.16), 0 8px 8px rgba(0,0,0,0.20);
+
+    .photo_wrap {
+        width: 86%;
+        height: 160px;
+        margin: 15px auto 0 auto;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+
+    .text {
+        width:86%;
+        margin: 0 auto 0 auto;
+        padding: 5px 0;
+        height: 45px;
+        color: #737373;
+        font-family: "Caveat", cursive;
+        font-size: 24px;
+    }
+}
+
+.page_top_galery {
+    width: 620px;
+    height: 500px;
+    position: relative;
+
+    .palaroid {
+        position: absolute;
+    }
+
+    .palaroid:nth-child(1) {
+        transform: rotate(4deg);
+        top:0;
+        left:13%;
+    }
+
+    .palaroid:nth-child(2) {
+        transform: rotate(-16deg);
+        top:0;
+        right:13%;
+    }
+
+    .palaroid:nth-child(3) {
+        transform: rotate(-17deg);
+        bottom:0;
+        left:13%;
+    }
+
+    .palaroid:nth-child(4) {
+        transform: rotate(12deg);
+        bottom:0;
+        right:13%;
+    }
+}
+
+@media (max-width:768px) {
+    .banner_video .left_text .page_top_galery {
+        height: 500px;
+        flex:unset;
+    }
+}
+
+
+@media (max-width:560px) {
+    .banner_video .left_text .page_top_galery {
+        width:100%;
+        height: 350px;
+        margin: 30px 0;
+    }
+    .palaroid {
+        width:150px;
+        .photo_wrap {
+            height: 100px;
+        }
+        .text {
+            font-size: 18px;
+        }
+    }
+}

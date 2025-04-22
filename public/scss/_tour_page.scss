@@ -1,0 +1,241 @@
+.tour_info {
+    margin-top: 30px;
+    h2.big {
+        font-size: 52px;
+    }
+
+    .top_info {
+        display: flex;
+        justify-content: space-between;
+
+        .text {
+            margin-right: 20px;
+            h2{
+                margin-top: 0;
+            }
+        }
+
+        .pay_wrapper {
+            max-width:500px;
+            width:100%;
+
+        }
+
+        .tour_price {
+            background-color: white;
+            min-height: 179px;
+            color:$black_color;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.08), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.16), 0 8px 8px rgba(0,0,0,0.20);
+            background-image: url(../img/turists_blue.svg);
+            background-repeat: no-repeat;
+            background-size: 50% 80%;
+            background-position:  calc(100% + 50px) bottom;
+            display: flex;
+            flex-direction: column;
+
+            .selectors {
+                width:80%;
+
+                .selector{
+                    margin-bottom: 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .radio {
+                        width:20px;
+                        height: 20px;
+                        position: relative;
+                        margin-right: 10px;
+                        margin-top: 6px;
+                        border-radius: 20px;
+                        border: 1px solid $blue_light_color;
+                        cursor: pointer;
+
+                    }
+
+
+
+                    .info {
+                        flex: 1;
+                        .price {
+                            font-family: "Play";
+                            font-size: 28px;
+                            color:$gold_color;
+                            strong {
+                                color:$black_color
+                            }
+                        }
+
+
+                        p {
+                            font-size: 14px;
+                            margin: 0;
+                        }
+                    }
+
+
+                }
+
+                .selector.active .radio::before {
+                    content: "";
+                    position: absolute;
+                    top:2px;
+                    left:2px;
+                    width:14px;
+                    height: 14px;
+                    border-radius: 20px;
+                    background-color: $gold_color;
+                }
+            }
+
+            .button{
+                margin: auto auto 0 0;
+            }
+        }
+    }
+
+    .tour_price_select {
+
+        .select_label {
+            font-size: 14px;
+            margin: 10px 0;
+            font-family: 'Play';
+            font-weight: bold;
+        }
+
+        .tur_data_wrapper {
+            display: flex;
+            gap:10px;
+            width:70%;
+            flex-wrap: wrap;
+
+            .tur_data{
+                padding: 7px 12px;
+                border-radius: $border_rad;
+                border: 1px solid $gray_border_color;
+                color:#333;
+                font-size: 14px;
+                line-height: 1;
+                position: relative;
+
+                .no_place {
+                    color: white;
+                    background-color: red;
+                    font-size: 8px;
+                    position: absolute;
+                    padding: 3px 5px;
+                    border-radius: 5px;
+                    width: 45px;
+                    transform: rotate(40deg);
+                    right: -11px;
+                    top: 6px;
+                    text-align: center;
+                }
+
+                &:hover,
+                &.active {
+                    background-color: $gold_color;
+                    border: 1px solid $gold_color;
+                    color: $black_color;
+                    cursor:pointer;
+                }
+
+                &.disabled  {
+                    background-color: $gray_bg_color;
+                    border: 1px solid $gray_border_color;
+                    color: $gray_dark_color;
+                    cursor:not-allowed;
+                }
+            }
+
+            &.tur_type_wrapper {
+                flex-wrap: wrap;
+                width:70%;
+            }
+        }
+
+        .price {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-size: 28px;
+            font-family: "Play";
+
+            .v{
+                color:$gold_color;
+            }
+        }
+    }
+
+    .galery {
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+
+            .palaroid {
+                margin: 0 12px 10px 0;
+            }
+        }
+
+    }
+
+    .girland {
+        width:100%;
+        height: 65px;
+        background-image: url(../img/icon/big_city.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 10px 0;
+    }
+}
+
+.soldout {
+    width:230px;
+    margin: 20px  0;
+    transform: rotate(-9deg);
+}
+
+
+@media (max-width:768px) {
+    .tour_info {
+        .girland {
+            background-size: cover;
+        }
+        .top_info  {
+            flex-direction: column;
+            .text {
+                width:100%;
+            }
+            .tour_price {
+                margin-top: 20px;
+                width: unset;
+                max-width: unset;
+                min-height: 140px;
+            }
+
+        }
+    }
+
+}
+
+@media (max-width:480px) {
+    .tour_info {
+        h2.big {
+            font-size: 32px;
+        }
+
+        .galery {
+            .cards {
+                justify-content: space-between;
+                .palaroid {
+                    width:48%;
+                    margin: 0 0 20px 0;
+                }
+            }
+
+        }
+    }
+
+
+}

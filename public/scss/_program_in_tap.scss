@@ -1,0 +1,53 @@
+
+
+.program_in_tap {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .step {
+        margin: 7px 0;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 100;
+
+        & > * {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .point {
+            width:19px;
+            height:19px;
+            border-radius: 20px;
+            border: 2px solid $blue_light_color;
+            background-color: white;
+            margin-right: 10px;
+
+        }
+
+        span {
+            flex:1;
+            font-weight: bold;
+            font-family: 'Play';
+        }
+
+        &:first-child .point {
+            background-color: $gold_color;
+        }
+    }
+
+
+    .text  {
+        padding-left: 40px ;
+    }
+
+    .line {
+        height: calc(100% - 40px);
+        left: 9px;
+        top: 20px;
+        position: absolute;
+        border-left: 1px dashed $blue_light_color;
+    }
+
+}

@@ -1,0 +1,194 @@
+.banner_video {
+    padding: 0;
+    position: relative;
+    width: 100wh;
+    height: 100vh;
+
+    ._video {
+        position: absolute;
+        // right: 0;
+        // bottom: 0;
+        // min-width: 100%;
+        // min-height: 100%;
+        z-index: 1;
+
+        object-fit: cover;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .shadow {
+        width:100%;
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+        background-color: black;
+        opacity: .55;
+    }
+
+    .left_text {
+        position: relative;
+        z-index: 3;
+        color: white;
+        height: calc(100vh - 89px);
+        display: flex;
+        .bnr_text {
+            width:46%;
+            flex: 1;
+            margin: auto 3% auto 0;
+        }
+
+        .dop_param {
+            flex:1;
+            margin: auto 0;
+            position: relative;
+            flex-direction: column;
+            display:  flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+
+            .param_blk {
+                width:280px;
+                // height: 124px;
+                background-color: #4D4D4D80;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                font-size: 14px;
+                box-shadow: 0 1px 1px rgba(0,0,0,0.08), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.16), 0 8px 8px rgba(0,0,0,0.20);
+                margin-left: auto;
+
+                & .ya_logo {
+                    width: 56px;
+                    height: 56px;
+                    background-image: url(../img/icon/yandex.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                & .stars_wrapper {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 7px 0;
+
+                    .star {
+                        width: 19px;
+                        height: 19px;
+                        margin-right: 5px;
+                        background-image: url(../img/icon/star.svg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                }
+
+                & .cerecter {
+                    width: 67px;
+                    height: 67px;
+                    line-height: 62px;
+                    text-align: center;
+                    font-size: 24px;
+                    font-weight: bold;
+                    font-family: "Play";
+                    background-image: url(../img/icon/vinok.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+.tour_page_title {
+    .bnr_text {
+        display: flex;
+        flex-direction: column;
+
+        .label,
+        .button{
+            margin-right: auto;
+        }
+
+        .label {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .banner_video {
+        .left_text {
+            flex-direction: column;
+
+            .bnr_text {
+                width: 100%;
+                margin: 20px 0;
+                flex:unset
+            }
+        }
+    }
+
+    .banner_video .left_text .dop_param {
+        flex-direction: row;
+        justify-content: space-between;
+        .param_blk {
+            margin-left: unset;
+            width:24%;
+            height: 200px;
+        }
+    }
+}
+
+@media (max-width:480px) {
+
+        .img_5,
+        .img_6 {
+            display: none;
+        }
+
+        .banner_video {
+            min-height: 100vh;
+            height: auto;
+            .left_text  {
+                height: auto;
+                padding-bottom: 20px;
+                .dop_param {
+                gap:20px;
+                height: auto;
+                .param_blk {
+                    flex-direction: row;
+                    width: 100%;
+                    font-size: 12px;
+                    padding: 10px;
+                    height: unset;
+                    & .stars_wrapper {
+                        margin-top: 0;
+                    }
+                    & .cerecter {
+                        height: 48px;
+                        width: 48px;
+                        font-size: 18px;
+                        line-height: 45px;
+                        margin-bottom: 0;
+                    }
+
+                    .text_blk {
+                        margin-left: 20px;
+                    }
+
+                    & > p {
+                        flex:1;
+                        margin-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+.contacts_blk {
+    background-color: $tifany_color;
+    border-radius: 20px;
+    display: flex;
+    width:70%;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: $box_shadow;
+
+    .map {
+        height: 400px;
+        flex: 1;
+        overflow: hidden;
+    }
+
+    .text {
+        flex: 1;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+
+        .phone{
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .email {
+            margin-bottom: 10px;
+        }
+
+    }
+
+
+}
+
+.social_net {
+    display: flex;
+    gap:10px;
+    margin-top: 20px;
+    .social_lnk {
+        background-color: $blue_light_color;
+        display: block;
+        width:50px;
+        height: 50px;
+        border-radius: 50px;
+        border:1px solid $gray_border_color;
+        background-position: center;
+        background-repeat:  no-repeat;
+
+        &:hover {
+            background-color: $sub_color;
+        }
+
+        &.sl_vk {
+            background-image: url(../img/icon/social/vk.svg);
+        }
+
+        &.sl_ok {
+            background-image: url(../img/icon/social/ok.svg);
+        }
+
+        &.sl_tg {
+            background-image: url(../img/icon/social/tg.svg);
+        }
+
+        &.sl_ws {
+            background-image: url(../img/icon/social/ws.svg);
+        }
+    }
+
+}
+
+
+
+@media (max-width:768px) {
+    .contacts_blk {
+        width:100%;
+    }
+}
+
+
+
+@media (max-width:480px) {
+    .contacts_blk {
+        flex-direction: column-reverse;
+        .map {
+            width:100%;
+            margin-top: 20px;
+            min-height: 200px;
+        }
+
+    }
+}

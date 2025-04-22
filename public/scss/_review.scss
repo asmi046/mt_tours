@@ -1,0 +1,195 @@
+.review_selector_wrapper {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .review_selector {
+        background-color: $gray_bg_color;
+        min-height: 30px;
+        min-width: 100px;
+        display: flex;
+        border-radius: 10px;
+        padding: 5px 10px;
+
+        .selector {
+            margin: auto 10px auto 0;
+            padding: 5px 10px;
+            border-radius: 10px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 70%;
+
+            &.active {
+                background-color: white;
+            }
+
+            &.ya_reviews {
+                width: 30px;
+                height: 30px;
+                background-size: 60%;
+                background-image: url('../img/icon/yandex_map.svg');
+            }
+
+            &.gis_reviews {
+                width: 30px;
+                height: 30px;
+                background-image: url('../img/icon/2gis.svg');
+            }
+        }
+    }
+}
+
+.reviews_btn_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+
+.reviews_card {
+    display: flex;
+    flex-direction: column;
+    // border: 0.5px solid $gray_border_color;
+    border-radius: 20px;
+    padding: 20px;
+    height: calc(100% - 55px);
+    margin: 10px;
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.25);;
+
+    .text {
+        color:$black_color;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .platform {
+        color: $gray_border_color;
+        margin-top: auto;
+    }
+
+    .top_blk {
+        display: flex;
+        margin-bottom: 20px;
+        .photo {
+            width:70px;
+            height:70px;
+            border-radius: 40px;
+            overflow: hidden;
+            margin-right: 20px;
+        }
+
+        .person {
+            display: flex;
+            flex-direction: column;
+
+            & > * {
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+
+            .vue3-star-ratings {
+                margin-bottom: 0;
+            }
+            p{
+                margin-top: 5px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.review_dop {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    .side {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+    }
+
+    .like_place {
+        height: 104px;
+        .label {
+            width:81px;
+            height: 104px;
+            background: url('../img/review/god_place.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-size: 14px;
+            img {
+                width:35px;
+                height: auto;
+                margin: 15px auto 10px auto;
+            }
+        }
+
+        .text {
+            flex:1;
+            margin: auto 0 auto 20px;
+        }
+    }
+
+    .qr {
+        .bar{
+            width: 100px;
+            border: 0.5px solid $main_color;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .text {
+            margin: auto 0 auto 20px;
+            flex:1;
+        }
+    }
+
+}
+
+
+@media (max-width: 1024px) {
+    .review_dop {
+        flex-direction: column-reverse;
+
+        .qr {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .reviews_card .top_blk {
+        .photo {
+            margin-bottom: 20px;
+        }
+    }
+
+    .review_dop {
+        .side {
+            flex-direction: column;
+            height: auto;
+            .text {
+                margin: 10px auto 10px auto;
+                text-align: center;
+            }
+
+            .bar,
+            .label {
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .reviews_card .text {
+        font-size: 12px;
+    }
+}

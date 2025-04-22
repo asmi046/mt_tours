@@ -1,0 +1,57 @@
+.toyr_program {
+    background-color: white;
+    box-shadow: $box_shadow;
+    border-radius: 20px;
+    padding: 20px;
+    color: $blue_color;
+    position: relative;
+    font-family: "Play";
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    padding-right: 150px;
+    background-image: url(../img/ng_shars.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) top;
+
+    .line {
+        height: calc(100% - 40px);
+        left:31px;
+        top:20px;
+        position: absolute;
+        border-left: 3px dashed $blue_color;
+    }
+
+    .step:first-child {
+        .point {
+            background-color: $gold_color;
+        }
+    }
+
+    .step {
+        margin: 15px 0;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 100;
+
+        & > * {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .point {
+            width:19px;
+            height:19px;
+            border-radius: 20px;
+            border: 3px solid $blue_color;
+            background-color: white;
+            margin-right: 10px;
+        }
+
+        span {
+            flex:1
+        }
+    }
+
+}

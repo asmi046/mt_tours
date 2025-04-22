@@ -1,0 +1,125 @@
+.nav_menu {
+    font-size: 16px;
+    display: flex;
+    ul {
+        display: flex;
+        li {
+            margin: auto 0 auto 20px;
+            a:hover {
+                border-bottom: 2px solid $main_color;
+            }
+        }
+    }
+}
+
+.side_menue_wrapper{
+    position: fixed;
+    width: 0;
+    height: 0;
+    z-index: 20;
+
+    a {
+        color:$blue_light_color;
+    }
+
+    &.active {
+        width: 100%;
+        height: 100%;
+    }
+
+    .shadow {
+        background-color: #00000090;
+        width: 100%;
+        height: 100%;
+        left:0;
+        top:0;
+        z-index: 20;
+        position: absolute;
+        opacity: 0;
+        transition: $main_transition;
+    }
+
+    &.active .shadow{
+        opacity: 1;
+    }
+
+    .side_menue {
+        background-color: white;
+        width: 60%;
+        padding: 20px;
+        text-align: right;
+        max-width: 420px;
+        height: 100%;
+        position: fixed;
+        right:-500px;
+        top:0;
+        z-index: 21;
+        transition: $main_transition;
+        box-shadow: 0 8px 10px -5px rgba(0,0,0,.2), 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12);
+
+        li{
+            margin-bottom: 10px;
+            a {
+                font-size: 18px;
+            }
+        }
+
+        & * {
+            opacity: 0;
+         }
+    }
+
+    &.active .side_menue{
+        right:0;
+        & * {
+            opacity: 1;
+         }
+    }
+
+}
+
+.contacts_side_menue {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+
+    .phone{
+        font-size: 24px;
+    }
+    .email {
+        font-size: 14px;
+    }
+}
+
+.side_menue {
+    .social_net{
+        justify-content: right;
+        .social_lnk {
+            width: 30px;
+            height: 30px;
+            background-size: 50%;
+        }
+    }
+}
+
+.show_menue_button {
+    position: fixed;
+    right:10px;
+    bottom:10px;
+    width:50px;
+    height:50px;
+    background-color: $main_color;
+    border-radius: 50px;
+    border: 1px solid white;
+    background-image: url(../img/icon/menu_burger.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none;
+    z-index: 1000;
+}
+
+@media (max-width:768px) {
+    .show_menue_button {
+        display: block;
+    }
+}

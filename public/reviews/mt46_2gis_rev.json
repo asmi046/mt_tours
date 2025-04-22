@@ -1,0 +1,1721 @@
+[
+    {
+        "id": "54209805",
+        "region_id": 73,
+        "text": "Это лучшее в городе Тур Агенство, обратился туда 12-го а 14-го уже был в Турции, большая блогадарность менеджеру Кристине все сделала быстро чётко как профи ;)) Респект и Уважуха!!! \nОчень советую обращаться именно сюда!!!",
+        "rating": 5,
+        "provider": "2gis",
+        "source": null,
+        "is_hidden": false,
+        "hiding_type": null,
+        "hiding_reason": null,
+        "url": "",
+        "likes_count": 0,
+        "comments_count": 1,
+        "date_created": "2023-06-28T23:42:36.568305+07:00",
+        "date_edited": null,
+        "object": {
+            "id": "70000001022765199",
+            "type": "branch",
+            "address": "Курск, Ленина, 12",
+            "logo_urls": null,
+            "name": "Мир туризма, туристический центр",
+            "is_deleted": false
+        },
+        "user": {
+            "id": "23374755",
+            "reviews_count": 11,
+            "first_name": "Сергей Сергей",
+            "last_name": null,
+            "name": "Сергей Сергей",
+            "provider": "2gis",
+            "photo_preview_urls": {
+                "1920x": "https://i1.photo.2gis.com/images/profile/30258560047873048_11b0_1920x.jpg",
+                "320x": "https://i1.photo.2gis.com/images/profile/30258560047873048_11b0_320x.jpg",
+                "640x": "https://i1.photo.2gis.com/images/profile/30258560047873048_11b0_640x.jpg",
+                "64x64": "https://i1.photo.2gis.com/images/profile/30258560047873048_11b0_64x64.jpg",
+                "url": "https://i1.photo.2gis.com/images/profile/30258560047873048_11b0.jpg"
+            },
+            "url": "",
+            "additional_data": {
+                "email": null
+            },
+            "public_id": "bafd5763cfcb4c408d27c1fb2fcf2f13"
+        },
+        "official_answer": {
+            "id": "18957218",
+            "org_name": "Мир туризма, туристический центр",
+            "text": "Сергей, здравствуйте, спасибо Вам за отзыв 👌 \nДо новых путешествий!",
+            "date_created": "2023-06-28T23:57:04.53983+07:00",
+            "logo_preview_urls": {}
+        },
+        "photos": [],
+        "additional_data": {
+            "status_history": [],
+            "has_unresolved_complaints": false,
+            "pin_status": "none",
+            "ip": "",
+            "user_agent": "",
+            "external_id": null,
+            "filtered_facts": null,
+            "is_unrated_permanently": null,
+            "is_liked": null
+        },
+        "on_moderation": false,
+        "is_rated": true,
+        "is_verified": false
+    },
+    {
+        "id": "52469584",
+        "region_id": 73,
+        "text": "Спасибо за организацию школьной поездки в Воронеж! Программа отличная!\nРебята посетили корабль-музей Петра I (копию линкора петровских времен), узнали об особенностях его строения, познакомились с бытом моряков XVIII века и сделали красивые фотографии на судне.\n\nЗатем гости города отправились в океанариум. Юным гостям и их родителям провели экскурсию по всему музею водных животных, которых там более 3000 видов с разных стран и регионов. Посетители видели и маленьких рыбок, и больших хищников.\n\nВсе вернулись домой с багажом магнитов и положительных эмоций!",
+        "rating": 5,
+        "provider": "2gis",
+        "source": null,
+        "is_hidden": false,
+        "hiding_type": null,
+        "hiding_reason": null,
+        "url": "",
+        "likes_count": 0,
+        "comments_count": 0,
+        "date_created": "2023-06-02T15:41:27.328855+07:00",
+        "date_edited": null,
+        "object": {
+            "id": "70000001022765199",
+            "type": "branch",
+            "address": "Курск, Ленина, 12",
+            "logo_urls": null,
+            "name": "Мир туризма, туристический центр",
+            "is_deleted": false
+        },
+        "user": {
+            "id": "42777713",
+            "reviews_count": 1,
+            "first_name": "Юлия Шаталова",
+            "last_name": null,
+            "name": "Юлия Шаталова",
+            "provider": "2gis",
+            "photo_preview_urls": {
+                "1920x": "https://i8.photo.2gis.com/images/profile/30258560107131529_4778_1920x.jpg",
+                "320x": "https://i8.photo.2gis.com/images/profile/30258560107131529_4778_320x.jpg",
+                "640x": "https://i8.photo.2gis.com/images/profile/30258560107131529_4778_640x.jpg",
+                "64x64": "https://i8.photo.2gis.com/images/profile/30258560107131529_4778_64x64.jpg",
+                "url": "https://i8.photo.2gis.com/images/profile/30258560107131529_4778.jpg"
+            },
+            "url": "",
+            "additional_data": {
+                "email": null
+            },
+            "public_id": "933f0750f209433b9bb7c40b8a480eb6"
+        },
+        "official_answer": null,
+        "photos": [
+            {
+                "id": "5817214",
+                "date_created": "2023-06-02T15:41:27.416142+07:00",
+                "preview_urls": {
+                    "1920x": "https://cachizer2.2gis.com/reviews-photos/b0ea28a9-4e81-4643-909f-bdac7c711f6d.jpg?w=1920",
+                    "320x": "https://cachizer2.2gis.com/reviews-photos/b0ea28a9-4e81-4643-909f-bdac7c711f6d.jpg?w=320",
+                    "640x": "https://cachizer2.2gis.com/reviews-photos/b0ea28a9-4e81-4643-909f-bdac7c711f6d.jpg?w=640",
+                    "64x64": "https://cachizer2.2gis.com/reviews-photos/b0ea28a9-4e81-4643-909f-bdac7c711f6d.jpg?h=64&w=64",
+                    "url": "https://cachizer2.2gis.com/reviews-photos/b0ea28a9-4e81-4643-909f-bdac7c711f6d.jpg"
+                },
+                "visibility_status": "visible"
+            },
+            {
+                "id": "5817215",
+                "date_created": "2023-06-02T15:41:27.417212+07:00",
+                "preview_urls": {
+                    "1920x": "https://cachizer1.2gis.com/reviews-photos/2c198a87-1c16-4f4a-8fe6-9fdd92680b56.jpg?w=1920",
+                    "320x": "https://cachizer1.2gis.com/reviews-photos/2c198a87-1c16-4f4a-8fe6-9fdd92680b56.jpg?w=320",
+                    "640x": "https://cachizer1.2gis.com/reviews-photos/2c198a87-1c16-4f4a-8fe6-9fdd92680b56.jpg?w=640",
+                    "64x64": "https://cachizer1.2gis.com/reviews-photos/2c198a87-1c16-4f4a-8fe6-9fdd92680b56.jpg?h=64&w=64",
+                    "url": "https://cachizer1.2gis.com/reviews-photos/2c198a87-1c16-4f4a-8fe6-9fdd92680b56.jpg"
+                },
+                "visibility_status": "visible"
+            },
+            {
+                "id": "5817216",
+                "date_created": "2023-06-02T15:41:27.418135+07:00",
+                "preview_urls": {
+                    "1920x": "https://cachizer1.2gis.com/reviews-photos/40d35f8e-eec2-45d8-898a-d4c63cdb3233.jpg?w=1920",
+                    "320x": "https://cachizer1.2gis.com/reviews-photos/40d35f8e-eec2-45d8-898a-d4c63cdb3233.jpg?w=320",
+                    "640x": "https://cachizer1.2gis.com/reviews-photos/40d35f8e-eec2-45d8-898a-d4c63cdb3233.jpg?w=640",
+                    "64x64": "https://cachizer1.2gis.com/reviews-photos/40d35f8e-eec2-45d8-898a-d4c63cdb3233.jpg?h=64&w=64",
+                    "url": "https://cachizer1.2gis.com/reviews-photos/40d35f8e-eec2-45d8-898a-d4c63cdb3233.jpg"
+                },
+                "visibility_status": "visible"
+            },
+            {
+                "id": "5817217",
+                "date_created": "2023-06-02T15:41:27.41983+07:00",
+                "preview_urls": {
+                    "1920x": "https://cachizer2.2gis.com/reviews-photos/13e78659-fa5a-4704-b075-5302bb013d6c.jpg?w=1920",
+                    "320x": "https://cachizer2.2gis.com/reviews-photos/13e78659-fa5a-4704-b075-5302bb013d6c.jpg?w=320",
+                    "640x": "https://cachizer2.2gis.com/reviews-photos/13e78659-fa5a-4704-b075-5302bb013d6c.jpg?w=640",
+                    "64x64": "https://cachizer2.2gis.com/reviews-photos/13e78659-fa5a-4704-b075-5302bb013d6c.jpg?h=64&w=64",
+                    "url": "https://cachizer2.2gis.com/reviews-photos/13e78659-fa5a-4704-b075-5302bb013d6c.jpg"
+                },
+                "visibility_status": "visible"
+            },
+            {
+                "id": "5817218",
+                "date_created": "2023-06-02T15:41:27.421568+07:00",
+                "preview_urls": {
+                    "1920x": "https://cachizer2.2gis.com/reviews-photos/fdc7e104-f6ad-4259-bb86-3144d4d62c82.jpg?w=1920",
+                    "320x": "https://cachizer2.2gis.com/reviews-photos/fdc7e104-f6ad-4259-bb86-3144d4d62c82.jpg?w=320",
+                    "640x": "https://cachizer2.2gis.com/reviews-photos/fdc7e104-f6ad-4259-bb86-3144d4d62c82.jpg?w=640",
+                    "64x64": "https://cachizer2.2gis.com/reviews-photos/fdc7e104-f6ad-4259-bb86-3144d4d62c82.jpg?h=64&w=64",
+                    "url": "https://cachizer2.2gis.com/reviews-photos/fdc7e104-f6ad-4259-bb86-3144d4d62c82.jpg"
+                },
+                "visibility_status": "visible"
+            },
+            {
+                "id": "5817219",
+                "date_created": "2023-06-02T15:41:27.422007+07:00",
+                "preview_urls": {
+                    "1920x": "https://cachizer3.2gis.com/reviews-photos/9075d316-dcf4-4201-b8ab-fb938c6559ef.jpg?w=1920",
+                    "320x": "https://cachizer3.2gis.com/reviews-photos/9075d316-dcf4-4201-b8ab-fb938c6559ef.jpg?w=320",
+                    "640x": "https://cachizer3.2gis.com/reviews-photos/9075d316-dcf4-4201-b8ab-fb938c6559ef.jpg?w=640",
+                    "64x64": "https://cachizer3.2gis.com/reviews-photos/9075d316-dcf4-4201-b8ab-fb938c6559ef.jpg?h=64&w=64",
+                    "url": "https://cachizer3.2gis.com/reviews-photos/9075d316-dcf4-4201-b8ab-fb938c6559ef.jpg"
+                },
+                "visibility_status": "visible"
+            },
+            {
+                "id": "5817220",
+                "date_created": "2023-06-02T15:41:27.422502+07:00",
+                "preview_urls": {
+                    "1920x": "https://cachizer2.2gis.com/reviews-photos/417718b5-d587-489c-aa6f-7d0ad6735cf2.jpg?w=1920",
+                    "320x": "https://cachizer2.2gis.com/reviews-photos/417718b5-d587-489c-aa6f-7d0ad6735cf2.jpg?w=320",
+                    "640x": "https://cachizer2.2gis.com/reviews-photos/417718b5-d587-489c-aa6f-7d0ad6735cf2.jpg?w=640",
+                    "64x64": "https://cachizer2.2gis.com/reviews-photos/417718b5-d587-489c-aa6f-7d0ad6735cf2.jpg?h=64&w=64",
+                    "url": "https://cachizer2.2gis.com/reviews-photos/417718b5-d587-489c-aa6f-7d0ad6735cf2.jpg"
+                },
+                "visibility_status": "visible"
+            }
+        ],
+        "additional_data": {
+            "status_history": [],
+            "has_unresolved_complaints": false,
+            "pin_status": "none",
+            "ip": "",
+            "user_agent": "",
+            "external_id": null,
+            "filtered_facts": null,
+            "is_unrated_permanently": null,
+            "is_liked": null
+        },
+        "on_moderation": false,
+        "is_rated": true,
+        "is_verified": false
+    },
+    {
+        "id": "51681888",
+        "region_id": 73,
+        "text": "От студентов группы ПХ - 111 Курского железнодорожного техникума и их родителей выражаем благодарность туристической компании \"Мир туризма\" за великолепную организацию экскурсионной поездки в Поныри -\"Северный фас Курской дуги\". Мы посетили мемориальный комплекс «Поклонная высота – 269» (Стела «Ангел мира»), памятник «Героям-артиллеристам», монумент «Тепловские Высоты». Поездка понравилась всем участникам. Спасибо большое. Успехов и процветания в работе.",
+        "rating": 5,
+        "provider": "2gis",
+        "source": null,
+        "is_hidden": false,
+        "hiding_type": null,
+        "hiding_reason": null,
+        "url": "",
+        "likes_count": 0,
+        "comments_count": 0,
+        "date_created": "2023-05-22T14:31:45.564526+07:00",
+        "date_edited": null,
+        "object": {
+            "id": "70000001022765199",
+            "type": "branch",
+            "address": "Курск, Ленина, 12",
+            "logo_urls": null,
+            "name": "Мир туризма, туристический центр",
+            "is_deleted": false
+        },
+        "user": {
+            "id": "22600814",
+            "reviews_count": 1,
+            "first_name": "Ольга Лашина",
+            "last_name": null,
+            "name": "Ольга Лашина",
+            "provider": "2gis",
+            "photo_preview_urls": {
+                "1920x": "https://i8.photo.2gis.com/images/profile/844424978395295_da25_1920x.jpg",
+                "320x": "https://i8.photo.2gis.com/images/profile/844424978395295_da25_320x.jpg",
+                "640x": "https://i8.photo.2gis.com/images/profile/844424978395295_da25_640x.jpg",
+                "64x64": "https://i8.photo.2gis.com/images/profile/844424978395295_da25_64x64.jpg",
+                "url": "https://i8.photo.2gis.com/images/profile/844424978395295_da25.jpg"
+            },
+            "url": "",
+            "additional_data": {
+                "email": null
+            },
+            "public_id": "f59c2b232cb94e9587dee2fccb8b5e39"
+        },
+        "official_answer": null,
+        "photos": [
+            {
+                "id": "5716519",
+                "date_created": "2023-05-22T14:31:45.658635+07:00",
+                "preview_urls": {
+                    "1920x": "https://cachizer1.2gis.com/reviews-photos/c3727624-378a-4b85-84a6-50f642320577.jpg?w=1920",
+                    "320x": "https://cachizer1.2gis.com/reviews-photos/c3727624-378a-4b85-84a6-50f642320577.jpg?w=320",
+                    "640x": "https://cachizer1.2gis.com/reviews-photos/c3727624-378a-4b85-84a6-50f642320577.jpg?w=640",
+                    "64x64": "https://cachizer1.2gis.com/reviews-photos/c3727624-378a-4b85-84a6-50f642320577.jpg?h=64&w=64",
+                    "url": "https://cachizer1.2gis.com/reviews-photos/c3727624-378a-4b85-84a6-50f642320577.jpg"
+                },
+                "visibility_status": "visible"
+            },
+            {
+                "id": "5716520",
+                "date_created": "2023-05-22T14:31:45.659566+07:00",
+                "preview_urls": {
+                    "1920x": "https://cachizer2.2gis.com/reviews-photos/af364f32-12c0-49d8-83d0-0843cdb0a9e5.jpg?w=1920",
+                    "320x": "https://cachizer2.2gis.com/reviews-photos/af364f32-12c0-49d8-83d0-0843cdb0a9e5.jpg?w=320",
+                    "640x": "https://cachizer2.2gis.com/reviews-photos/af364f32-12c0-49d8-83d0-0843cdb0a9e5.jpg?w=640",
+                    "64x64": "https://cachizer2.2gis.com/reviews-photos/af364f32-12c0-49d8-83d0-0843cdb0a9e5.jpg?h=64&w=64",
+                    "url": "https://cachizer2.2gis.com/reviews-photos/af364f32-12c0-49d8-83d0-0843cdb0a9e5.jpg"
+                },
+                "visibility_status": "visible"
+            },
+            {
+                "id": "5716521",
+                "date_created": "2023-05-22T14:31:45.660823+07:00",
+                "preview_urls": {
+                    "1920x": "https://cachizer3.2gis.com/reviews-photos/146938bb-86cb-4d13-9d3c-f5eeae647c30.jpg?w=1920",
+                    "320x": "https://cachizer3.2gis.com/reviews-photos/146938bb-86cb-4d13-9d3c-f5eeae647c30.jpg?w=320",
+                    "640x": "https://cachizer3.2gis.com/reviews-photos/146938bb-86cb-4d13-9d3c-f5eeae647c30.jpg?w=640",
+                    "64x64": "https://cachizer3.2gis.com/reviews-photos/146938bb-86cb-4d13-9d3c-f5eeae647c30.jpg?h=64&w=64",
+                    "url": "https://cachizer3.2gis.com/reviews-photos/146938bb-86cb-4d13-9d3c-f5eeae647c30.jpg"
+                },
+                "visibility_status": "visible"
+            },
+            {
+                "id": "5716522",
+                "date_created": "2023-05-22T14:31:45.66128+07:00",
+                "preview_urls": {
+                    "1920x": "https://cachizer1.2gis.com/reviews-photos/2a8cbef9-0158-4b21-879a-57d2e8e8419d.jpg?w=1920",
+                    "320x": "https://cachizer1.2gis.com/reviews-photos/2a8cbef9-0158-4b21-879a-57d2e8e8419d.jpg?w=320",
+                    "640x": "https://cachizer1.2gis.com/reviews-photos/2a8cbef9-0158-4b21-879a-57d2e8e8419d.jpg?w=640",
+                    "64x64": "https://cachizer1.2gis.com/reviews-photos/2a8cbef9-0158-4b21-879a-57d2e8e8419d.jpg?h=64&w=64",
+                    "url": "https://cachizer1.2gis.com/reviews-photos/2a8cbef9-0158-4b21-879a-57d2e8e8419d.jpg"
+                },
+                "visibility_status": "visible"
+            }
+        ],
+        "additional_data": {
+            "status_history": [],
+            "has_unresolved_complaints": false,
+            "pin_status": "none",
+            "ip": "",
+            "user_agent": "",
+            "external_id": null,
+            "filtered_facts": null,
+            "is_unrated_permanently": null,
+            "is_liked": null
+        },
+        "on_moderation": false,
+        "is_rated": true,
+        "is_verified": false
+    },
+    {
+        "id": "50474420",
+        "region_id": 73,
+        "text": "Выражаем огромную благодарность за организацию поездки для школы 55 6 А класса 30 апреля на Кудыкину гору. За шикарный двухэтажный комфортабельный автобус. Все были в восторге и получили большое удовольствие от путешествия. Это уже наша с Вами вторая поездка. Спасибо Вам большое!!! И отдельно спасибо нашему замечательному водителю Александру",
+        "rating": 5,
+        "provider": "2gis",
+        "source": null,
+        "is_hidden": false,
+        "hiding_type": null,
+        "hiding_reason": null,
+        "url": "",
+        "likes_count": 0,
+        "comments_count": 0,
+        "date_created": "2023-05-01T21:58:24.148442+07:00",
+        "date_edited": null,
+        "object": {
+            "id": "70000001022765199",
+            "type": "branch",
+            "address": "Курск, Ленина, 12",
+            "logo_urls": null,
+            "name": "Мир туризма, туристический центр",
+            "is_deleted": false
+        },
+        "user": {
+            "id": "41993880",
+            "reviews_count": 1,
+            "first_name": "Юлия Красильникова",
+            "last_name": null,
+            "name": "Юлия Красильникова",
+            "provider": "2gis",
+            "photo_preview_urls": {
+                "1920x": "",
+                "320x": "",
+                "640x": "",
+                "64x64": "",
+                "url": ""
+            },
+            "url": "",
+            "additional_data": {
+                "email": null
+            },
+            "public_id": "0542e47498414456bc1da87b1d83dc45"
+        },
+        "official_answer": null,
+        "photos": [
+            {
+                "id": "5535750",
+                "date_created": "2023-05-01T21:58:24.241541+07:00",
+                "preview_urls": {
+                    "1920x": "https://cachizer3.2gis.com/reviews-photos/e63bab61-4a4c-42d8-9bc4-697a08aeb90c.jpg?w=1920",
+                    "320x": "https://cachizer3.2gis.com/reviews-photos/e63bab61-4a4c-42d8-9bc4-697a08aeb90c.jpg?w=320",
+                    "640x": "https://cachizer3.2gis.com/reviews-photos/e63bab61-4a4c-42d8-9bc4-697a08aeb90c.jpg?w=640",
+                    "64x64": "https://cachizer3.2gis.com/reviews-photos/e63bab61-4a4c-42d8-9bc4-697a08aeb90c.jpg?h=64&w=64",
+                    "url": "https://cachizer3.2gis.com/reviews-photos/e63bab61-4a4c-42d8-9bc4-697a08aeb90c.jpg"
+                },
+                "visibility_status": "visible"
+            },
+            {
+                "id": "5535751",
+                "date_created": "2023-05-01T21:58:24.241959+07:00",
+                "preview_urls": {
+                    "1920x": "https://cachizer1.2gis.com/reviews-photos/33dac205-0dc4-4052-bd90-c2b39b2481e6.jpg?w=1920",
+                    "320x": "https://cachizer1.2gis.com/reviews-photos/33dac205-0dc4-4052-bd90-c2b39b2481e6.jpg?w=320",
+                    "640x": "https://cachizer1.2gis.com/reviews-photos/33dac205-0dc4-4052-bd90-c2b39b2481e6.jpg?w=640",
+                    "64x64": "https://cachizer1.2gis.com/reviews-photos/33dac205-0dc4-4052-bd90-c2b39b2481e6.jpg?h=64&w=64",
+                    "url": "https://cachizer1.2gis.com/reviews-photos/33dac205-0dc4-4052-bd90-c2b39b2481e6.jpg"
+                },
+                "visibility_status": "visible"
+            },
+            {
+                "id": "5535752",
+                "date_created": "2023-05-01T21:58:24.242524+07:00",
+                "preview_urls": {
+                    "1920x": "https://cachizer3.2gis.com/reviews-photos/ef39ee45-7b04-40c6-ad0c-35cb53c181d6.jpg?w=1920",
+                    "320x": "https://cachizer3.2gis.com/reviews-photos/ef39ee45-7b04-40c6-ad0c-35cb53c181d6.jpg?w=320",
+                    "640x": "https://cachizer3.2gis.com/reviews-photos/ef39ee45-7b04-40c6-ad0c-35cb53c181d6.jpg?w=640",
+                    "64x64": "https://cachizer3.2gis.com/reviews-photos/ef39ee45-7b04-40c6-ad0c-35cb53c181d6.jpg?h=64&w=64",
+                    "url": "https://cachizer3.2gis.com/reviews-photos/ef39ee45-7b04-40c6-ad0c-35cb53c181d6.jpg"
+                },
+                "visibility_status": "visible"
+            }
+        ],
+        "additional_data": {
+            "status_history": [],
+            "has_unresolved_complaints": false,
+            "pin_status": "none",
+            "ip": "",
+            "user_agent": "",
+            "external_id": null,
+            "filtered_facts": null,
+            "is_unrated_permanently": null,
+            "is_liked": null
+        },
+        "on_moderation": false,
+        "is_rated": true,
+        "is_verified": false
+    },
+    {
+        "id": "48140117",
+        "region_id": 73,
+        "text": "Довезли и вернули обратно из Коктебеля с ветерком) спасибо за море эмоций от поездки, все сделали от себя зависящее по части организации поездки, понравилось что информировали заранее о поездке, все рассказали что в автобусе предусмотрено, на деле все соответствовало. Так как у меня со спиной проблемы она конечно немного подзатекла за поездку, но все равно не зря поехали, еще обратимся в эту компанию!",
+        "rating": 5,
+        "provider": "2gis",
+        "source": null,
+        "is_hidden": false,
+        "hiding_type": null,
+        "hiding_reason": null,
+        "url": "",
+        "likes_count": 0,
+        "comments_count": 0,
+        "date_created": "2023-03-31T13:23:28.005209+07:00",
+        "date_edited": null,
+        "object": {
+            "id": "70000001022765199",
+            "type": "branch",
+            "address": "Курск, Ленина, 12",
+            "logo_urls": null,
+            "name": "Мир туризма, туристический центр",
+            "is_deleted": false
+        },
+        "user": {
+            "id": "41238668",
+            "reviews_count": 10,
+            "first_name": "Евгений Курилов",
+            "last_name": null,
+            "name": "Евгений Курилов",
+            "provider": "2gis",
+            "photo_preview_urls": {
+                "1920x": "",
+                "320x": "",
+                "640x": "",
+                "64x64": "",
+                "url": ""
+            },
+            "url": "",
+            "additional_data": {
+                "email": null
+            },
+            "public_id": "3db1973885c64acb89b49b53794ff0cf"
+        },
+        "official_answer": null,
+        "photos": [],
+        "additional_data": {
+            "status_history": [],
+            "has_unresolved_complaints": false,
+            "pin_status": "none",
+            "ip": "",
+            "user_agent": "",
+            "external_id": null,
+            "filtered_facts": null,
+            "is_unrated_permanently": null,
+            "is_liked": null
+        },
+        "on_moderation": false,
+        "is_rated": true,
+        "is_verified": false
+    },
+    {
+        "id": "48040649",
+        "region_id": 73,
+        "text": "Свозила ребятишек в Крым (Судак), все остались в восторге) Для нас это и по деньгам и с учетом времени терпимо, никого в автобусе не укачало, переживала за это больше всего. Хорошие сотрудники работают в компании, начиная от офиса и заканчивая самим водителем, не было моментов в которых я бы разочаровалась что решилась на эту поездку.",
+        "rating": 5,
+        "provider": "2gis",
+        "source": null,
+        "is_hidden": false,
+        "hiding_type": null,
+        "hiding_reason": null,
+        "url": "",
+        "likes_count": 0,
+        "comments_count": 0,
+        "date_created": "2023-03-29T16:59:17.225971+07:00",
+        "date_edited": null,
+        "object": {
+            "id": "70000001022765199",
+            "type": "branch",
+            "address": "Курск, Ленина, 12",
+            "logo_urls": null,
+            "name": "Мир туризма, туристический центр",
+            "is_deleted": false
+        },
+        "user": {
+            "id": "41196229",
+            "reviews_count": 4,
+            "first_name": "Екатерина Сладкова",
+            "last_name": null,
+            "name": "Екатерина Сладкова",
+            "provider": "2gis",
+            "photo_preview_urls": {
+                "1920x": "",
+                "320x": "",
+                "640x": "",
+                "64x64": "",
+                "url": ""
+            },
+            "url": "",
+            "additional_data": {
+                "email": null
+            },
+            "public_id": "3dc60ef58907470f920c702258d9b309"
+        },
+        "official_answer": null,
+        "photos": [],
+        "additional_data": {
+            "status_history": [],
+            "has_unresolved_complaints": false,
+            "pin_status": "none",
+            "ip": "",
+            "user_agent": "",
+            "external_id": null,
+            "filtered_facts": null,
+            "is_unrated_permanently": null,
+            "is_liked": null
+        },
+        "on_moderation": false,
+        "is_rated": true,
+        "is_verified": false
+    },
+    {
+        "id": "48037784",
+        "region_id": 73,
+        "text": "Ничего плохого о компании не могу сказать, потому что организовали поездку достойно, самое главное что доехали и вернулись без происшествий, водитель аккуратно вел автобус, хотя по трассе мчались с приличной скоростью, но тут понятно что скоростной режим свой и он не был превышен. Не откажемся снова съездить таким способом куда-то, в этот раз побывали в Феодосии",
+        "rating": 5,
+        "provider": "2gis",
+        "source": null,
+        "is_hidden": false,
+        "hiding_type": null,
+        "hiding_reason": null,
+        "url": "",
+        "likes_count": 0,
+        "comments_count": 0,
+        "date_created": "2023-03-29T16:08:37.919539+07:00",
+        "date_edited": null,
+        "object": {
+            "id": "70000001022765199",
+            "type": "branch",
+            "address": "Курск, Ленина, 12",
+            "logo_urls": null,
+            "name": "Мир туризма, туристический центр",
+            "is_deleted": false
+        },
+        "user": {
+            "id": "41194835",
+            "reviews_count": 4,
+            "first_name": "София Барменникова",
+            "last_name": null,
+            "name": "София Барменникова",
+            "provider": "2gis",
+            "photo_preview_urls": {
+                "1920x": "",
+                "320x": "",
+                "640x": "",
+                "64x64": "",
+                "url": ""
+            },
+            "url": "",
+            "additional_data": {
+                "email": null
+            },
+            "public_id": "63c8cc0f583e49329ff906966ee05753"
+        },
+        "official_answer": null,
+        "photos": [],
+        "additional_data": {
+            "status_history": [],
+            "has_unresolved_complaints": false,
+            "pin_status": "none",
+            "ip": "",
+            "user_agent": "",
+            "external_id": null,
+            "filtered_facts": null,
+            "is_unrated_permanently": null,
+            "is_liked": null
+        },
+        "on_moderation": false,
+        "is_rated": true,
+        "is_verified": false
+    },
+    {
+        "id": "47892895",
+        "region_id": 73,
+        "text": "В Геленджик отправились автобусом, получилось дешево и сердито. Компанию мне посоветовала знакомая, поэтому я решила к проверенным обратиться, так как путешествие автобусом для нас было впервые, а с нами дети еще ехали. В автобусе удобные кресла, можно зарядить смартфон, даже кондиционер предусмотрен.",
+        "rating": 5,
+        "provider": "2gis",
+        "source": null,
+        "is_hidden": false,
+        "hiding_type": null,
+        "hiding_reason": null,
+        "url": "",
+        "likes_count": 0,
+        "comments_count": 0,
+        "date_created": "2023-03-27T13:00:06.447223+07:00",
+        "date_edited": null,
+        "object": {
+            "id": "70000001022765199",
+            "type": "branch",
+            "address": "Курск, Ленина, 12",
+            "logo_urls": null,
+            "name": "Мир туризма, туристический центр",
+            "is_deleted": false
+        },
+        "user": {
+            "id": "41143282",
+            "reviews_count": 7,
+            "first_name": "Ирина Желудкова",
+            "last_name": null,
+            "name": "Ирина Желудкова",
+            "provider": "2gis",
+            "photo_preview_urls": {
+                "1920x": "",
+                "320x": "",
+                "640x": "",
+                "64x64": "",
+                "url": ""
+            },
+            "url": "",
+            "additional_data": {
+                "email": null
+            },
+            "public_id": "9bd53a00608d4ccbb2c6d1bdaeff6489"
+        },
+        "official_answer": null,
+        "photos": [],
+        "additional_data": {
+            "status_history": [],
+            "has_unresolved_complaints": false,
+            "pin_status": "none",
+            "ip": "",
+            "user_agent": "",
+            "external_id": null,
+            "filtered_facts": null,
+            "is_unrated_permanently": null,
+            "is_liked": null
+        },
+        "on_moderation": false,
+        "is_rated": true,
+        "is_verified": false
+    },
+    {
+        "id": "47745940",
+        "region_id": 73,
+        "text": "Впечатления из Коктебеля привезли исключительно положительные, вполне довольны организованным автобусным туром от Мира Туризма. Нам все рассказали перед бронированием поездки, на все вопросы ответили и могу сказать что ожидания совпали с реальностью. Современный автобус благополучно нас по маршруту провез, никаких опозданий не было, все четко в плане расписания получилось",
+        "rating": 5,
+        "provider": "2gis",
+        "source": null,
+        "is_hidden": false,
+        "hiding_type": null,
+        "hiding_reason": null,
+        "url": "",
+        "likes_count": 0,
+        "comments_count": 0,
+        "date_created": "2023-03-24T15:55:36.993792+07:00",
+        "date_edited": null,
+        "object": {
+            "id": "70000001022765199",
+            "type": "branch",
+            "address": "Курск, Ленина, 12",
+            "logo_urls": null,
+            "name": "Мир туризма, туристический центр",
+            "is_deleted": false
+        },
+        "user": {
+            "id": "40987363",
+            "reviews_count": 8,
+            "first_name": "Дима Кустов",
+            "last_name": null,
+            "name": "Дима Кустов",
+            "provider": "2gis",
+            "photo_preview_urls": {
+                "1920x": "",
+                "320x": "",
+                "640x": "",
+                "64x64": "",
+                "url": ""
+            },
+            "url": "",
+            "additional_data": {
+                "email": null
+            },
+            "public_id": "0ec5c61276eb483fb1e7bc5b76217c7e"
+        },
+        "official_answer": null,
+        "photos": [],
+        "additional_data": {
+            "status_history": [],
+            "has_unresolved_complaints": false,
+            "pin_status": "none",
+            "ip": "",
+            "user_agent": "",
+            "external_id": null,
+            "filtered_facts": null,
+            "is_unrated_permanently": null,
+            "is_liked": null
+        },
+        "on_moderation": false,
+        "is_rated": true,
+        "is_verified": false
+    },
+    {
+        "id": "47639454",
+        "region_id": 73,
+        "text": "Оптимальный вариант для поездки на отдых-автобусный тур. Для нас это не первая поездка с компанией, в этот раз были в Судаке. Организация на 5+, накануне перед поездкой присылают сообщение напоминалку, так что точно не пропустишь свой рейс. Автобусы в компании хорошие, даже есть где телефон зарядить, в общем все предусмотрено для удобства клиентов.",
+        "rating": 5,
+        "provider": "2gis",
+        "source": null,
+        "is_hidden": false,
+        "hiding_type": null,
+        "hiding_reason": null,
+        "url": "",
+        "likes_count": 0,
+        "comments_count": 0,
+        "date_created": "2023-03-22T14:48:38.178353+07:00",
+        "date_edited": null,
+        "object": {
+            "id": "70000001022765199",
+            "type": "branch",
+            "address": "Курск, Ленина, 12",
+            "logo_urls": null,
+            "name": "Мир туризма, туристический центр",
+            "is_deleted": false
+        },
+        "user": {
+            "id": "40894891",
+            "reviews_count": 7,
+            "first_name": "Костя Кандауров",
+            "last_name": null,
+            "name": "Костя Кандауров",
+            "provider": "2gis",
+            "photo_preview_urls": {
+                "1920x": "",
+                "320x": "",
+                "640x": "",
+                "64x64": "",
+                "url": ""
+            },
+            "url": "",
+            "additional_data": {
+                "email": null
+            },
+            "public_id": "7bbc3a30a10e44818ba917c30addef1d"
+        },
+        "official_answer": null,
+        "photos": [],
+        "additional_data": {
+            "status_history": [],
+            "has_unresolved_complaints": false,
+            "pin_status": "none",
+            "ip": "",
+            "user_agent": "",
+            "external_id": null,
+            "filtered_facts": null,
+            "is_unrated_permanently": null,
+            "is_liked": null
+        },
+        "on_moderation": false,
+        "is_rated": true,
+        "is_verified": false
+    },
+    {
+        "id": "47512161",
+        "region_id": 73,
+        "text": "Ну вот и побывали мы в Анапе, как там красиво! Поездка стоила того, а главное что получилось экономнее нежели ехать на поезде или тем более самолете. Хочется отметить приятный сервис в компании без лишней навязчивости, менеджер помогла определиться с направлениям, по стоимости сравнила. Я довольна что поездка была безопасной, водитель что туда что обратно аккуратно управлял автобусом",
+        "rating": 5,
+        "provider": "2gis",
+        "source": null,
+        "is_hidden": false,
+        "hiding_type": null,
+        "hiding_reason": null,
+        "url": "",
+        "likes_count": 0,
+        "comments_count": 0,
+        "date_created": "2023-03-20T12:47:31.807559+07:00",
+        "date_edited": null,
+        "object": {
+            "id": "70000001022765199",
+            "type": "branch",
+            "address": "Курск, Ленина, 12",
+            "logo_urls": null,
+            "name": "Мир туризма, туристический центр",
+            "is_deleted": false
+        },
+        "user": {
+            "id": "40985337",
+            "reviews_count": 4,
+            "first_name": "Алина Вольфовна",
+            "last_name": null,
+            "name": "Алина Вольфовна",
+            "provider": "2gis",
+            "photo_preview_urls": {
+                "1920x": "",
+                "320x": "",
+                "640x": "",
+                "64x64": "",
+                "url": ""
+            },
+            "url": "",
+            "additional_data": {
+                "email": null
+            },
+            "public_id": "4be7b384cd7847708e048781adccf452"
+        },
+        "official_answer": null,
+        "photos": [],
+        "additional_data": {
+            "status_history": [],
+            "has_unresolved_complaints": false,
+            "pin_status": "none",
+            "ip": "",
+            "user_agent": "",
+            "external_id": null,
+            "filtered_facts": null,
+            "is_unrated_permanently": null,
+            "is_liked": null
+        },
+        "on_moderation": false,
+        "is_rated": true,
+        "is_verified": false
+    },
+    {
+        "id": "47353574",
+        "region_id": 73,
+        "text": "Впервые были в автобусном туре, решили съездить в Феодосию, впечатления остались положительные) По организации все было отлично, понравилось что автобус комфортный был, с учетом того что провести времени в нем немало доехали и туда и обратно благополучно. Понравилось отношение к клиентам в компании, обязательно еще обратимся в Мир Туризма",
+        "rating": 5,
+        "provider": "2gis",
+        "source": null,
+        "is_hidden": false,
+        "hiding_type": null,
+        "hiding_reason": null,
+        "url": "",
+        "likes_count": 0,
+        "comments_count": 0,
+        "date_created": "2023-03-17T14:16:57.094038+07:00",
+        "date_edited": null,
+        "object": {
+            "id": "70000001022765199",
+            "type": "branch",
+            "address": "Курск, Ленина, 12",
+            "logo_urls": null,
+            "name": "Мир туризма, туристический центр",
+            "is_deleted": false
+        },
+        "user": {
+            "id": "40920749",
+            "reviews_count": 4,
+            "first_name": "Алена Милютина",
+            "last_name": null,
+            "name": "Алена Милютина",
+            "provider": "2gis",
+            "photo_preview_urls": {
+                "1920x": "",
+                "320x": "",
+                "640x": "",
+                "64x64": "",
+                "url": ""
+            },
+            "url": "",
+            "additional_data": {
+                "email": null
+            },
+            "public_id": "5b066a9d18354621ab4ee6441fe23579"
+        },
+        "official_answer": null,
+        "photos": [],
+        "additional_data": {
+            "status_history": [],
+            "has_unresolved_complaints": false,
+            "pin_status": "none",
+            "ip": "",
+            "user_agent": "",
+            "external_id": null,
+            "filtered_facts": null,
+            "is_unrated_permanently": null,
+            "is_liked": null
+        },
+        "on_moderation": false,
+        "is_rated": true,
+        "is_verified": false
+    },
+    {
+        "id": "46921581",
+        "region_id": 73,
+        "text": "Ответственно компания подходит к организации тура, на самом деле довольны что все благополучно у нас прошло и в выбранном отеле встретили как подобает. Понравилась грамотная развернутая консультация в офисе, так как впервые в такое путешествие отправились была куча вопросов, в том числе и по выбору направления. Решили поехать в Коктебель, не пожалели ни разу, все что рассказывала так красочно менеджер совпало с реальностью. Сама поездка довольно быстро прошла, получали информацию по отправлениям что из Курска, что из Коктебеля уже обратно, немного с выездом опоздали так как ждали туриста, который опаздывал.",
+        "rating": 5,
+        "provider": "2gis",
+        "source": null,
+        "is_hidden": false,
+        "hiding_type": null,
+        "hiding_reason": null,
+        "url": "",
+        "likes_count": 0,
+        "comments_count": 0,
+        "date_created": "2023-03-09T15:34:53.863552+07:00",
+        "date_edited": null,
+        "object": {
+            "id": "70000001022765199",
+            "type": "branch",
+            "address": "Курск, Ленина, 12",
+            "logo_urls": null,
+            "name": "Мир туризма, туристический центр",
+            "is_deleted": false
+        },
+        "user": {
+            "id": "40738648",
+            "reviews_count": 4,
+            "first_name": "Ангелина Желудкова",
+            "last_name": null,
+            "name": "Ангелина Желудкова",
+            "provider": "2gis",
+            "photo_preview_urls": {
+                "1920x": "",
+                "320x": "",
+                "640x": "",
+                "64x64": "",
+                "url": ""
+            },
+            "url": "",
+            "additional_data": {
+                "email": null
+            },
+            "public_id": "19dcdc67ce8e45c6b353e63d305f4911"
+        },
+        "official_answer": null,
+        "photos": [],
+        "additional_data": {
+            "status_history": [],
+            "has_unresolved_complaints": false,
+            "pin_status": "none",
+            "ip": "",
+            "user_agent": "",
+            "external_id": null,
+            "filtered_facts": null,
+            "is_unrated_permanently": null,
+            "is_liked": null
+        },
+        "on_moderation": false,
+        "is_rated": true,
+        "is_verified": false
+    },
+    {
+        "id": "46747360",
+        "region_id": 73,
+        "text": "Не пожалели что решились на автобусный тур до Геленджика, все прошло более чем благополучно, заняли свои места в соответствии с бронью, что туда что обратно ехали в прохладном автобусе с хорошей вентиляцией, так что от жары не задыхались. По времени без опозданий вся наша поездка обошлась в обе стороны, по орг.моментам у меня нет претензий. В отеле столкнулись не с самым хорошим обслуживанием, но это уже не к компании претензии, да и все мирно урегулировали. В целом отличный способ отдыхать по приемлемой стоимости, если сравнивать аналогичные предложения, то очевидным будет что эта компания самые нормальные условия предлагает",
+        "rating": 5,
+        "provider": "2gis",
+        "source": null,
+        "is_hidden": false,
+        "hiding_type": null,
+        "hiding_reason": null,
+        "url": "",
+        "likes_count": 0,
+        "comments_count": 0,
+        "date_created": "2023-03-06T13:49:44.510516+07:00",
+        "date_edited": null,
+        "object": {
+            "id": "70000001022765199",
+            "type": "branch",
+            "address": "Курск, Ленина, 12",
+            "logo_urls": null,
+            "name": "Мир туризма, туристический центр",
+            "is_deleted": false
+        },
+        "user": {
+            "id": "40578307",
+            "reviews_count": 8,
+            "first_name": "Софа Бабенко",
+            "last_name": null,
+            "name": "Софа Бабенко",
+            "provider": "2gis",
+            "photo_preview_urls": {
+                "1920x": "",
+                "320x": "",
+                "640x": "",
+                "64x64": "",
+                "url": ""
+            },
+            "url": "",
+            "additional_data": {
+                "email": null
+            },
+            "public_id": "1f2ee49bcf224197883d54341f7b8983"
+        },
+        "official_answer": null,
+        "photos": [],
+        "additional_data": {
+            "status_history": [],
+            "has_unresolved_complaints": false,
+            "pin_status": "none",
+            "ip": "",
+            "user_agent": "",
+            "external_id": null,
+            "filtered_facts": null,
+            "is_unrated_permanently": null,
+            "is_liked": null
+        },
+        "on_moderation": false,
+        "is_rated": true,
+        "is_verified": false
+    },
+    {
+        "id": "46543163",
+        "region_id": 73,
+        "text": "Комфортабельные условия для поездки в автобусный тур, мы очень хотели посетить Феодосию и благодаря компании нам это удалось) Продумано все по безопасности, автобусы современные и опытный водитель, в этом плане переживать мне не пришлось. Были ремни безопасности, даже зарядки для телефонов, так что мы с комфортом съездили в тур. Все запланированные мероприятия в пути были, так что отдых у нас удался ровно настолько, насколько и был запланирован. Компания разные направления предлагает для такого отдыха, так что Бог даст еще съездим обязательно, не утомились, а впечатлений новых привезли массу!",
+        "rating": 5,
+        "provider": "2gis",
+        "source": null,
+        "is_hidden": false,
+        "hiding_type": null,
+        "hiding_reason": null,
+        "url": "",
+        "likes_count": 0,
+        "comments_count": 0,
+        "date_created": "2023-03-02T12:47:47.845144+07:00",
+        "date_edited": null,
+        "object": {
+            "id": "70000001022765199",
+            "type": "branch",
+            "address": "Курск, Ленина, 12",
+            "logo_urls": null,
+            "name": "Мир туризма, туристический центр",
+            "is_deleted": false
+        },
+        "user": {
+            "id": "40577600",
+            "reviews_count": 4,
+            "first_name": "Костя Брюханов",
+            "last_name": null,
+            "name": "Костя Брюханов",
+            "provider": "2gis",
+            "photo_preview_urls": {
+                "1920x": "",
+                "320x": "",
+                "640x": "",
+                "64x64": "",
+                "url": ""
+            },
+            "url": "",
+            "additional_data": {
+                "email": null
+            },
+            "public_id": "fb1061f36b0e4947a55c8df7234f8d45"
+        },
+        "official_answer": null,
+        "photos": [],
+        "additional_data": {
+            "status_history": [],
+            "has_unresolved_complaints": false,
+            "pin_status": "none",
+            "ip": "",
+            "user_agent": "",
+            "external_id": null,
+            "filtered_facts": null,
+            "is_unrated_permanently": null,
+            "is_liked": null
+        },
+        "on_moderation": false,
+        "is_rated": true,
+        "is_verified": false
+    },
+    {
+        "id": "46429142",
+        "region_id": 73,
+        "text": "Автобусный тур в Крым был просто суперским в этом году, программа полностью соответствовала тому, что нам рассказывали при оформлении билетов в офисе компании. Поездка с комфортом была организована, проводились для нас экскурсии, заезжали в винные погреба и дегустировали вина) Очень на меня впечатление произвели военные корабли черноморского флота, прям мощь! Хорошая организация тура, пожаловаться мне не на что и хочется отметить что программа насыщенная, эмоций привезли обратно в достаточном количестве, в следующем году однозначно поедем снова уже по новому направлению) Спасибо Миру Туризма!",
+        "rating": 5,
+        "provider": "2gis",
+        "source": null,
+        "is_hidden": false,
+        "hiding_type": null,
+        "hiding_reason": null,
+        "url": "",
+        "likes_count": 0,
+        "comments_count": 0,
+        "date_created": "2023-02-28T12:42:06.021362+07:00",
+        "date_edited": null,
+        "object": {
+            "id": "70000001022765199",
+            "type": "branch",
+            "address": "Курск, Ленина, 12",
+            "logo_urls": null,
+            "name": "Мир туризма, туристический центр",
+            "is_deleted": false
+        },
+        "user": {
+            "id": "40529138",
+            "reviews_count": 3,
+            "first_name": "Дмитрий Курев",
+            "last_name": null,
+            "name": "Дмитрий Курев",
+            "provider": "2gis",
+            "photo_preview_urls": {
+                "1920x": "",
+                "320x": "",
+                "640x": "",
+                "64x64": "",
+                "url": ""
+            },
+            "url": "",
+            "additional_data": {
+                "email": null
+            },
+            "public_id": "d0c40377be13449eaf8ac076fd128da8"
+        },
+        "official_answer": null,
+        "photos": [],
+        "additional_data": {
+            "status_history": [],
+            "has_unresolved_complaints": false,
+            "pin_status": "none",
+            "ip": "",
+            "user_agent": "",
+            "external_id": null,
+            "filtered_facts": null,
+            "is_unrated_permanently": null,
+            "is_liked": null
+        },
+        "on_moderation": false,
+        "is_rated": true,
+        "is_verified": false
+    },
+    {
+        "id": "26375689",
+        "region_id": 73,
+        "text": "В 2019 году заранее заплатили этой фирме деньги для организации поездки детей на выпускной. В связи с ковидными ограничениями поездка не состоялась - вся страна была на локдауне. Попросили фирму вернуть деньги. Сейчас уже 2022 год - фирма деньги возвращать напрямую не отказывается, но и не возвращает и постоянно кормит завтраками. НЕ РЕКОМЕНДУЮ обращаться в \"Мир туризма\" - в случае чего вам будет очень сложно вернуть свои деньги, скорее всего через суд. Сейчас компания опять предлагает перенести сроки возврата денег. Сколько можно-то!\r\n\r\nОбновление от 24.08.2022: только после подачи иска в Ленинский районный суд г. Курск, дело № 2-2461/2022 ~ М-1601/2022 денежные средства были возвращены.",
+        "rating": 1,
+        "provider": "2gis",
+        "source": null,
+        "is_hidden": false,
+        "hiding_type": null,
+        "hiding_reason": null,
+        "url": "",
+        "likes_count": 4,
+        "comments_count": 2,
+        "date_created": "2022-01-12T16:35:57.237294+07:00",
+        "date_edited": "2022-08-24T23:37:17.188955+07:00",
+        "object": {
+            "id": "70000001022765199",
+            "type": "branch",
+            "address": "Курск, Ленина, 12",
+            "logo_urls": null,
+            "name": "Мир туризма, туристический центр",
+            "is_deleted": false
+        },
+        "user": {
+            "id": "16939234",
+            "reviews_count": 1,
+            "first_name": "Константин Вохмянин",
+            "last_name": null,
+            "name": "Константин Вохмянин",
+            "provider": "2gis",
+            "photo_preview_urls": {
+                "1920x": "https://i1.photo.2gis.com/images/profile/844424967225831_2fe1_1920x.jpg",
+                "320x": "https://i1.photo.2gis.com/images/profile/844424967225831_2fe1_320x.jpg",
+                "640x": "https://i1.photo.2gis.com/images/profile/844424967225831_2fe1_640x.jpg",
+                "64x64": "https://i1.photo.2gis.com/images/profile/844424967225831_2fe1_64x64.jpg",
+                "url": "https://i1.photo.2gis.com/images/profile/844424967225831_2fe1.jpg"
+            },
+            "url": "",
+            "additional_data": {
+                "email": null
+            },
+            "public_id": "b0059a5528b94ee4ab4d0ff981998093"
+        },
+        "official_answer": {
+            "id": "11734576",
+            "org_name": "Мир туризма, туристический центр",
+            "text": "Здравствуйте. Служба контроля качества проверит Вашу информацию, пожалуйста сообщите дату и время визита в офис, номер договора и состав заказа.",
+            "date_created": "2022-08-17T21:46:43.60885+07:00",
+            "logo_preview_urls": {}
+        },
+        "photos": [],
+        "additional_data": {
+            "status_history": [],
+            "has_unresolved_complaints": false,
+            "pin_status": "none",
+            "ip": "",
+            "user_agent": "",
+            "external_id": null,
+            "filtered_facts": null,
+            "is_unrated_permanently": null,
+            "is_liked": null
+        },
+        "on_moderation": false,
+        "is_rated": true,
+        "is_verified": false
+    },
+    {
+        "id": "35295246",
+        "region_id": 73,
+        "text": "На родительском собрании решили после выпускного организовать тур на автобусе в Санкт-Петербург. Искали надёжную компанию занимающуюся подобными услугами и нам посоветовали Мир туризма. Связались с ними, уточнили все детали. В конечном итоге, посетили Питер - тур бесподобен, экскурсовод очень эрудированная и общительная, все остались довольны! Кстати сам тур обошёлся совсем недорого по текущим меркам.",
+        "rating": 5,
+        "provider": "flamp",
+        "source": null,
+        "is_hidden": false,
+        "hiding_type": null,
+        "hiding_reason": null,
+        "url": "https://flamp.ru/r/70000001022765199/7819823",
+        "likes_count": 1,
+        "comments_count": 0,
+        "date_created": "2022-08-12T20:01:40.0+07:00",
+        "date_edited": null,
+        "object": {
+            "id": "70000001022765199",
+            "type": "branch",
+            "address": "Курск, Ленина, 12",
+            "logo_urls": null,
+            "name": "Мир туризма, туристический центр",
+            "is_deleted": false
+        },
+        "user": {
+            "id": "4646066",
+            "reviews_count": 12,
+            "first_name": "Арина Двинина",
+            "last_name": null,
+            "name": "Арина Двинина",
+            "provider": "flamp",
+            "photo_preview_urls": {
+                "1920x": "https://cdn1.flamp.ru/default-avatar-m_1920.png",
+                "320x": "https://cdn1.flamp.ru/default-avatar-m_320.png",
+                "640x": "https://cdn1.flamp.ru/default-avatar-m_640.png",
+                "64x64": "https://cdn1.flamp.ru/default-avatar-m_64_64.png",
+                "url": "https://cdn1.flamp.ru/default-avatar-m.png"
+            },
+            "url": "http://flamp.ru/user4646066",
+            "additional_data": {
+                "email": null
+            },
+            "public_id": null
+        },
+        "official_answer": null,
+        "photos": [],
+        "additional_data": {
+            "status_history": [],
+            "has_unresolved_complaints": false,
+            "pin_status": "none",
+            "ip": "",
+            "user_agent": "",
+            "external_id": "7819823",
+            "filtered_facts": null,
+            "is_unrated_permanently": null,
+            "is_liked": null
+        },
+        "on_moderation": false,
+        "is_rated": true,
+        "is_verified": false,
+        "provider_data": {
+            "icon_url": "https://cachizer1.2gis.com/reviews-logos/984693dc-de95-4acc-8d1b-35d906b17374.png?h={height}&w={width}",
+            "caption": "Flamp"
+        }
+    },
+    {
+        "id": "34995674",
+        "region_id": 73,
+        "text": "Что может быть удобней выбора тура без лишних финансовых затрат и временных на поиск хорошей гостиницы, транспорта и развлечений? И все это на одном сайте!\nХотите на море? Пожалуйста. Хотите в санаторий? Без проблем. Хотите по РФ? Чудесно! В Турцию? Дайте 2!\nНа сайте мир туризма вы без проблем выберете то, что вам нужно по приемлемой цене. Сотрудники всегда помогут вам в выборе.\nЯ собиралась с ребенком на море и думала какой тур выбрать. Написала менеджеру, и мне подробно рассказали о ценах, экскурсиях, об отеле и все по доступной цене!!!\nОстановились на Турции вдвоем с ребенком! Скоро ехать, и я абсолютно спокойна потому что знаю, что все непредвиденные ситуации решат сотрудники и отдых будет незабываемым",
+        "rating": 5,
+        "provider": "2gis",
+        "source": null,
+        "is_hidden": false,
+        "hiding_type": null,
+        "hiding_reason": null,
+        "url": "",
+        "likes_count": 3,
+        "comments_count": 1,
+        "date_created": "2022-08-08T01:11:51.139836+07:00",
+        "date_edited": null,
+        "object": {
+            "id": "70000001022765199",
+            "type": "branch",
+            "address": "Курск, Ленина, 12",
+            "logo_urls": null,
+            "name": "Мир туризма, туристический центр",
+            "is_deleted": false
+        },
+        "user": {
+            "id": "33566136",
+            "reviews_count": 5,
+            "first_name": "Дарья Цурапа",
+            "last_name": null,
+            "name": "Дарья Цурапа",
+            "provider": "2gis",
+            "photo_preview_urls": {
+                "1920x": "https://i5.photo.2gis.com/images/profile/30258560073109072_c96a_1920x.jpg",
+                "320x": "https://i5.photo.2gis.com/images/profile/30258560073109072_c96a_320x.jpg",
+                "640x": "https://i5.photo.2gis.com/images/profile/30258560073109072_c96a_640x.jpg",
+                "64x64": "https://i5.photo.2gis.com/images/profile/30258560073109072_c96a_64x64.jpg",
+                "url": "https://i5.photo.2gis.com/images/profile/30258560073109072_c96a.jpg"
+            },
+            "url": "",
+            "additional_data": {
+                "email": null
+            },
+            "public_id": "ed69d8f7b6ce499d87bf95f74b26bf2b"
+        },
+        "official_answer": {
+            "id": "11734588",
+            "org_name": "Мир туризма, туристический центр",
+            "text": "Благодарим за выбор нашей компании",
+            "date_created": "2022-08-17T21:47:13.76978+07:00",
+            "logo_preview_urls": {}
+        },
+        "photos": [],
+        "additional_data": {
+            "status_history": [],
+            "has_unresolved_complaints": false,
+            "pin_status": "none",
+            "ip": "",
+            "user_agent": "",
+            "external_id": null,
+            "filtered_facts": null,
+            "is_unrated_permanently": null,
+            "is_liked": null
+        },
+        "on_moderation": false,
+        "is_rated": true,
+        "is_verified": false
+    },
+    {
+        "id": "34943482",
+        "region_id": 73,
+        "text": "Давно не была в Крыму. Поэтому когда задумалась об отдыхе, то решила туда махнуть. Тем более, что компания Мир Туризма предложила интересный тур с экскурсией. Выбрала даты, выбрала отель и рванула на недельку. Понравился не только отдых, но и погодка. Было тепло и я отлично провела время. Какая красота всё таки! Спасибо за тур!",
+        "rating": 5,
+        "provider": "2gis",
+        "source": null,
+        "is_hidden": false,
+        "hiding_type": null,
+        "hiding_reason": null,
+        "url": "",
+        "likes_count": 1,
+        "comments_count": 1,
+        "date_created": "2022-08-06T15:47:53.783985+07:00",
+        "date_edited": null,
+        "object": {
+            "id": "70000001022765199",
+            "type": "branch",
+            "address": "Курск, Ленина, 12",
+            "logo_urls": null,
+            "name": "Мир туризма, туристический центр",
+            "is_deleted": false
+        },
+        "user": {
+            "id": "35516710",
+            "reviews_count": 2,
+            "first_name": "Диана Королева",
+            "last_name": null,
+            "name": "Диана Королева",
+            "provider": "2gis",
+            "photo_preview_urls": {
+                "1920x": "https://i0.photo.2gis.com/images/profile/30258560079166884_3d4a_1920x.jpg",
+                "320x": "https://i0.photo.2gis.com/images/profile/30258560079166884_3d4a_320x.jpg",
+                "640x": "https://i0.photo.2gis.com/images/profile/30258560079166884_3d4a_640x.jpg",
+                "64x64": "https://i0.photo.2gis.com/images/profile/30258560079166884_3d4a_64x64.jpg",
+                "url": "https://i0.photo.2gis.com/images/profile/30258560079166884_3d4a.jpg"
+            },
+            "url": "",
+            "additional_data": {
+                "email": null
+            },
+            "public_id": "b85f7f71788546929517f31a36804ce1"
+        },
+        "official_answer": {
+            "id": "11734599",
+            "org_name": "Мир туризма, туристический центр",
+            "text": "Мы рады что Вы доверяете свой отдых нашей компании!",
+            "date_created": "2022-08-17T21:47:38.474495+07:00",
+            "logo_preview_urls": {}
+        },
+        "photos": [
+            {
+                "id": "3745493",
+                "date_created": "2022-08-06T15:47:53.939309+07:00",
+                "preview_urls": {
+                    "1920x": "https://cachizer2.2gis.com/reviews-photos/950f2642-550f-4d01-9055-f11a289b6d7a.jpg?w=1920",
+                    "320x": "https://cachizer2.2gis.com/reviews-photos/950f2642-550f-4d01-9055-f11a289b6d7a.jpg?w=320",
+                    "640x": "https://cachizer2.2gis.com/reviews-photos/950f2642-550f-4d01-9055-f11a289b6d7a.jpg?w=640",
+                    "64x64": "https://cachizer2.2gis.com/reviews-photos/950f2642-550f-4d01-9055-f11a289b6d7a.jpg?h=64&w=64",
+                    "url": "https://cachizer2.2gis.com/reviews-photos/950f2642-550f-4d01-9055-f11a289b6d7a.jpg"
+                },
+                "visibility_status": "visible"
+            }
+        ],
+        "additional_data": {
+            "status_history": [],
+            "has_unresolved_complaints": false,
+            "pin_status": "none",
+            "ip": "",
+            "user_agent": "",
+            "external_id": null,
+            "filtered_facts": null,
+            "is_unrated_permanently": null,
+            "is_liked": null
+        },
+        "on_moderation": false,
+        "is_rated": true,
+        "is_verified": false
+    },
+    {
+        "id": "34833173",
+        "region_id": 73,
+        "text": "Своё знакомство с турфирмой начали с экскурсионного тура, после стали летать заграницу, но в этом году решили выбрать отечественный курорт. Всегда радуют цены и хороший выбор доступных туров. Сервис замечательный, еще ни разу не было недоразумений. Спасибо за уважение к клиентам и любовь к своему делу.",
+        "rating": 5,
+        "provider": "2gis",
+        "source": null,
+        "is_hidden": false,
+        "hiding_type": null,
+        "hiding_reason": null,
+        "url": "",
+        "likes_count": 4,
+        "comments_count": 1,
+        "date_created": "2022-08-03T17:25:18.171627+07:00",
+        "date_edited": null,
+        "object": {
+            "id": "70000001022765199",
+            "type": "branch",
+            "address": "Курск, Ленина, 12",
+            "logo_urls": null,
+            "name": "Мир туризма, туристический центр",
+            "is_deleted": false
+        },
+        "user": {
+            "id": "35564494",
+            "reviews_count": 2,
+            "first_name": "Светлана Вольданская",
+            "last_name": null,
+            "name": "Светлана Вольданская",
+            "provider": "2gis",
+            "photo_preview_urls": {
+                "1920x": "https://i7.photo.2gis.com/images/profile/30258560078736184_fd5a_1920x.jpg",
+                "320x": "https://i7.photo.2gis.com/images/profile/30258560078736184_fd5a_320x.jpg",
+                "640x": "https://i7.photo.2gis.com/images/profile/30258560078736184_fd5a_640x.jpg",
+                "64x64": "https://i7.photo.2gis.com/images/profile/30258560078736184_fd5a_64x64.jpg",
+                "url": "https://i7.photo.2gis.com/images/profile/30258560078736184_fd5a.jpg"
+            },
+            "url": "",
+            "additional_data": {
+                "email": null
+            },
+            "public_id": "6b9ce5334cc34b08a1e9d356373839d0"
+        },
+        "official_answer": {
+            "id": "11734617",
+            "org_name": "Мир туризма, туристический центр",
+            "text": "Благодарим за чудесный отзыв и доверие к нашей компании!",
+            "date_created": "2022-08-17T21:48:21.450451+07:00",
+            "logo_preview_urls": {}
+        },
+        "photos": [
+            {
+                "id": "3726743",
+                "date_created": "2022-08-03T17:25:18.383266+07:00",
+                "preview_urls": {
+                    "1920x": "https://cachizer2.2gis.com/reviews-photos/d8d16e4f-f578-46e4-8222-b4d8669ccc98.jpg?w=1920",
+                    "320x": "https://cachizer2.2gis.com/reviews-photos/d8d16e4f-f578-46e4-8222-b4d8669ccc98.jpg?w=320",
+                    "640x": "https://cachizer2.2gis.com/reviews-photos/d8d16e4f-f578-46e4-8222-b4d8669ccc98.jpg?w=640",
+                    "64x64": "https://cachizer2.2gis.com/reviews-photos/d8d16e4f-f578-46e4-8222-b4d8669ccc98.jpg?h=64&w=64",
+                    "url": "https://cachizer2.2gis.com/reviews-photos/d8d16e4f-f578-46e4-8222-b4d8669ccc98.jpg"
+                },
+                "visibility_status": "visible"
+            }
+        ],
+        "additional_data": {
+            "status_history": [],
+            "has_unresolved_complaints": false,
+            "pin_status": "none",
+            "ip": "",
+            "user_agent": "",
+            "external_id": null,
+            "filtered_facts": null,
+            "is_unrated_permanently": null,
+            "is_liked": null
+        },
+        "on_moderation": false,
+        "is_rated": true,
+        "is_verified": false
+    },
+    {
+        "id": "34793378",
+        "region_id": 73,
+        "text": "Всем привет! Заказывал в \"Мир туризма\" тур на двоих в Кабардинку с отдыхом в санатории \"Жемчужина у моря\". В этом году решительно отказался от зарубежных курортов и решил более детально изучить наш родной Краснодарский край. Сразу же отмечу, что очень понравилась организация тура: менеджеры детально рассказали все особенности поездки и любезно ответили на мои вопросы. Во время самой поездки о нас заботились как о детях и нам с девушкой оставалось лишь расслабиться и просто отдыхать. Цены не сказать что низкие, но за такой сервис - действительно не дорого. Кто еще не был в Кабардинке, настоятельно рекомендую ну и ребят \"Мир туризма\" также.",
+        "rating": 5,
+        "provider": "flamp",
+        "source": null,
+        "is_hidden": false,
+        "hiding_type": null,
+        "hiding_reason": null,
+        "url": "https://flamp.ru/r/70000001022765199/7800303",
+        "likes_count": 2,
+        "comments_count": 0,
+        "date_created": "2022-08-02T16:54:41.0+07:00",
+        "date_edited": null,
+        "object": {
+            "id": "70000001022765199",
+            "type": "branch",
+            "address": "Курск, Ленина, 12",
+            "logo_urls": null,
+            "name": "Мир туризма, туристический центр",
+            "is_deleted": false
+        },
+        "user": {
+            "id": "4110286",
+            "reviews_count": 13,
+            "first_name": "David Zeynalov",
+            "last_name": null,
+            "name": "David Zeynalov",
+            "provider": "flamp",
+            "photo_preview_urls": {
+                "1920x": "https://cdn1.flamp.ru/default-avatar-m_1920.png",
+                "320x": "https://cdn1.flamp.ru/default-avatar-m_320.png",
+                "640x": "https://cdn1.flamp.ru/default-avatar-m_640.png",
+                "64x64": "https://cdn1.flamp.ru/default-avatar-m_64_64.png",
+                "url": "https://cdn1.flamp.ru/default-avatar-m.png"
+            },
+            "url": "http://flamp.ru/user4110286",
+            "additional_data": {
+                "email": null
+            },
+            "public_id": null
+        },
+        "official_answer": null,
+        "photos": [],
+        "additional_data": {
+            "status_history": [],
+            "has_unresolved_complaints": false,
+            "pin_status": "none",
+            "ip": "",
+            "user_agent": "",
+            "external_id": "7800303",
+            "filtered_facts": null,
+            "is_unrated_permanently": null,
+            "is_liked": null
+        },
+        "on_moderation": false,
+        "is_rated": true,
+        "is_verified": false,
+        "provider_data": {
+            "icon_url": "https://cachizer1.2gis.com/reviews-logos/984693dc-de95-4acc-8d1b-35d906b17374.png?h={height}&w={width}",
+            "caption": "Flamp"
+        }
+    },
+    {
+        "id": "34792687",
+        "region_id": 73,
+        "text": "Автобусный тур в Ялту от агентства Мир туризма прошел чудесно. Организаторы предусмотрели всё до мелочей. Автобус был комфортный, до Ялты сделали трансфер. Отель на месте полностью соответствовал заявленному, я и супруга отлично отдохнули. Будем рекомендовать вашу турфирму друзьям.",
+        "rating": 5,
+        "provider": "2gis",
+        "source": null,
+        "is_hidden": false,
+        "hiding_type": null,
+        "hiding_reason": null,
+        "url": "",
+        "likes_count": 2,
+        "comments_count": 1,
+        "date_created": "2022-08-02T16:37:54.329091+07:00",
+        "date_edited": null,
+        "object": {
+            "id": "70000001022765199",
+            "type": "branch",
+            "address": "Курск, Ленина, 12",
+            "logo_urls": null,
+            "name": "Мир туризма, туристический центр",
+            "is_deleted": false
+        },
+        "user": {
+            "id": "35266440",
+            "reviews_count": 3,
+            "first_name": "Роман Мягков",
+            "last_name": null,
+            "name": "Роман Мягков",
+            "provider": "2gis",
+            "photo_preview_urls": {
+                "1920x": "https://i9.photo.2gis.com/images/profile/30258560077955779_df33_1920x.jpg",
+                "320x": "https://i9.photo.2gis.com/images/profile/30258560077955779_df33_320x.jpg",
+                "640x": "https://i9.photo.2gis.com/images/profile/30258560077955779_df33_640x.jpg",
+                "64x64": "https://i9.photo.2gis.com/images/profile/30258560077955779_df33_64x64.jpg",
+                "url": "https://i9.photo.2gis.com/images/profile/30258560077955779_df33.jpg"
+            },
+            "url": "",
+            "additional_data": {
+                "email": null
+            },
+            "public_id": "205944bb32094b70a1e66f8382a248e7"
+        },
+        "official_answer": {
+            "id": "11734625",
+            "org_name": "Мир туризма, туристический центр",
+            "text": "До новых путешествий!",
+            "date_created": "2022-08-17T21:48:42.959743+07:00",
+            "logo_preview_urls": {}
+        },
+        "photos": [
+            {
+                "id": "3719650",
+                "date_created": "2022-08-02T16:37:54.431685+07:00",
+                "preview_urls": {
+                    "1920x": "https://cachizer2.2gis.com/reviews-photos/cb088be3-a9f8-472c-a121-16732a199ea6.jpg?w=1920",
+                    "320x": "https://cachizer2.2gis.com/reviews-photos/cb088be3-a9f8-472c-a121-16732a199ea6.jpg?w=320",
+                    "640x": "https://cachizer2.2gis.com/reviews-photos/cb088be3-a9f8-472c-a121-16732a199ea6.jpg?w=640",
+                    "64x64": "https://cachizer2.2gis.com/reviews-photos/cb088be3-a9f8-472c-a121-16732a199ea6.jpg?h=64&w=64",
+                    "url": "https://cachizer2.2gis.com/reviews-photos/cb088be3-a9f8-472c-a121-16732a199ea6.jpg"
+                },
+                "visibility_status": "visible"
+            }
+        ],
+        "additional_data": {
+            "status_history": [],
+            "has_unresolved_complaints": false,
+            "pin_status": "none",
+            "ip": "",
+            "user_agent": "",
+            "external_id": null,
+            "filtered_facts": null,
+            "is_unrated_permanently": null,
+            "is_liked": null
+        },
+        "on_moderation": false,
+        "is_rated": true,
+        "is_verified": false
+    },
+    {
+        "id": "28365873",
+        "region_id": 73,
+        "text": "Уже не первый раз путешествуем с Мир Туризма,и всегда это 10 из 10,хороший транспорт,вежливые водители. Отдельное спасибо за организацию Павлу и Елене Владимировне. Всё супер!",
+        "rating": 5,
+        "provider": "2gis",
+        "source": null,
+        "is_hidden": false,
+        "hiding_type": null,
+        "hiding_reason": null,
+        "url": "",
+        "likes_count": 2,
+        "comments_count": 0,
+        "date_created": "2022-04-03T12:55:22.003133+07:00",
+        "date_edited": null,
+        "object": {
+            "id": "70000001022765199",
+            "type": "branch",
+            "address": "Курск, Ленина, 12",
+            "logo_urls": null,
+            "name": "Мир туризма, туристический центр",
+            "is_deleted": false
+        },
+        "user": {
+            "id": "33195932",
+            "reviews_count": 1,
+            "first_name": "Татьяна Россинская",
+            "last_name": null,
+            "name": "Татьяна Россинская",
+            "provider": "2gis",
+            "photo_preview_urls": {
+                "1920x": "https://i7.photo.2gis.com/images/profile/30258560072017179_6167_1920x.jpg",
+                "320x": "https://i7.photo.2gis.com/images/profile/30258560072017179_6167_320x.jpg",
+                "640x": "https://i7.photo.2gis.com/images/profile/30258560072017179_6167_640x.jpg",
+                "64x64": "https://i7.photo.2gis.com/images/profile/30258560072017179_6167_64x64.jpg",
+                "url": "https://i7.photo.2gis.com/images/profile/30258560072017179_6167.jpg"
+            },
+            "url": "",
+            "additional_data": {
+                "email": null
+            },
+            "public_id": "7bf9c1277bea41ef856d7a0067462ccf"
+        },
+        "official_answer": null,
+        "photos": [
+            {
+                "id": "3065590",
+                "date_created": "2022-04-03T12:55:22.108556+07:00",
+                "preview_urls": {
+                    "1920x": "https://cachizer1.2gis.com/reviews-photos/9839e314-b7f7-4775-83c0-005a746d0456.jpg?w=1920",
+                    "320x": "https://cachizer1.2gis.com/reviews-photos/9839e314-b7f7-4775-83c0-005a746d0456.jpg?w=320",
+                    "640x": "https://cachizer1.2gis.com/reviews-photos/9839e314-b7f7-4775-83c0-005a746d0456.jpg?w=640",
+                    "64x64": "https://cachizer1.2gis.com/reviews-photos/9839e314-b7f7-4775-83c0-005a746d0456.jpg?h=64&w=64",
+                    "url": "https://cachizer1.2gis.com/reviews-photos/9839e314-b7f7-4775-83c0-005a746d0456.jpg"
+                },
+                "visibility_status": "visible"
+            },
+            {
+                "id": "3065591",
+                "date_created": "2022-04-03T12:55:22.10921+07:00",
+                "preview_urls": {
+                    "1920x": "https://cachizer3.2gis.com/reviews-photos/8e839cb6-49bd-4c3a-95c4-76f9168cf995.jpg?w=1920",
+                    "320x": "https://cachizer3.2gis.com/reviews-photos/8e839cb6-49bd-4c3a-95c4-76f9168cf995.jpg?w=320",
+                    "640x": "https://cachizer3.2gis.com/reviews-photos/8e839cb6-49bd-4c3a-95c4-76f9168cf995.jpg?w=640",
+                    "64x64": "https://cachizer3.2gis.com/reviews-photos/8e839cb6-49bd-4c3a-95c4-76f9168cf995.jpg?h=64&w=64",
+                    "url": "https://cachizer3.2gis.com/reviews-photos/8e839cb6-49bd-4c3a-95c4-76f9168cf995.jpg"
+                },
+                "visibility_status": "visible"
+            }
+        ],
+        "additional_data": {
+            "status_history": [],
+            "has_unresolved_complaints": false,
+            "pin_status": "none",
+            "ip": "",
+            "user_agent": "",
+            "external_id": null,
+            "filtered_facts": null,
+            "is_unrated_permanently": null,
+            "is_liked": null
+        },
+        "on_moderation": false,
+        "is_rated": true,
+        "is_verified": false
+    }
+]
