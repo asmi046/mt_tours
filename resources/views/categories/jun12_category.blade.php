@@ -18,11 +18,9 @@
                     <br>
                     <a class="button yakor" href="#tours_cat">Выбрать тур</a>
                 </div>
-
                 <div class="dop_param">
-                    <x-main.button-in-banner></x-main.button-in-banner>
+                    <x-adv></x-adv>
                 </div>
-
             </div>
     </section>
 
@@ -34,8 +32,8 @@
         <div class="container">
             <div class="about_tours">
                 <div class="text">
-                    <h2>Самые актуальные туры <br>из Курска <strong class="gold">2025</strong></h2>
-                    <p class="subtitle">Выберите тур самостоятельно или оставьте заявку и наши специалисты помогут Вам и ответят на все Ваши вопросы!</p>
+                    <h2>{!! $cat_info->top_title !!}</h2>
+                    <div class="subtitle">{!! $cat_info->top_description !!}</div>
                     <a class="button" href="#showModal">Получить консультацию</a>
                 </div>
                 <div class="el">
@@ -44,7 +42,12 @@
                 </div>
             </div>
 
-            <x-tours-in-main></x-tours-in-main>
+            <div class="all_tour_wrapper">
+                @foreach ($cat_info->tours as $item)
+                    <x-tour-card :item="$item"></x-tour-card>
+                @endforeach
+            </div>
+
         </div>
     </section>
 

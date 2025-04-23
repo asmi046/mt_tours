@@ -16,8 +16,12 @@ class TourCategory extends Model
         "description"
     ];
 
+    public $with = [
+        'tours'
+    ];
+
     public function tours(): BelongsToMany
     {
-        return $this->belongsToMany(Tour::class);
+        return $this->belongsToMany(Tour::class)->orderBy('order', 'ASC');
     }
 }

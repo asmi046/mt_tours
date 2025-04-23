@@ -17,8 +17,13 @@ return new class extends Migration
             $table->boolean('show')->default(true)->comment('Выводить категорию');
             $table->integer("parentid")->default(0)->comment("ID родительской категории");
             $table->integer("order")->default(0)->comment("Порядок сортировки");
+            $table->string("icon")->nullable()->comment("Иконка");
             $table->string("name")->comment("Имя категории");
             $table->string("html_name")->nullable()->comment("Выводимое имя категории");
+
+            $table->string("top_title")->nullable()->comment("Заголовок под баннером");
+            $table->text("top_description")->nullable()->comment("Описание под баннером");
+
             $table->string("slug", 200)->comment("Slug категории");
             $table->string("template_name")->nullable()->comment("Имя шаблона");
             $table->text('subtitle')->nullable()->comment('Подзаголовок баннера');
