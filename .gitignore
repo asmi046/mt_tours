@@ -5,8 +5,8 @@
 /public/storage
 /storage/*.key
 /vendor
-.env
-.htaccess
+/.env
+/.htaccess
 composer.phar
 .env.backup
 .env.production
