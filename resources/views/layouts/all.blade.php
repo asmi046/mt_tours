@@ -45,6 +45,7 @@
     <script>
         window.asset = "{{ asset('') }}";
         window.storage = "{{ asset('storage') }}";
+        window.isMobile = window.innerWidth < 768;
     </script>
 </head>
 <body>

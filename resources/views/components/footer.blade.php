@@ -1,6 +1,6 @@
 <footer>
     <a class="logo" href="https://www.mirturizma46.ru/">
-        <img src="{{ asset('img/logo_white.svg')}}" alt="Майские туры из Курска - МирТуризма">
+        <img src="{{ asset('img/logo_white.svg')}}" alt="Экскурсионные туры из Курска - МирТуризма">
     </a>
 
     <nav>

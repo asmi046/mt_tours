@@ -28,6 +28,8 @@ use MoonShine\Resources\ModelResource;
 use Illuminate\Database\Eloquent\Model;
 use MoonShine\ActionButtons\ActionButton;
 use MoonShine\Components\MoonShineComponent;
+use App\MoonShine\Resources\TourCategoryResource;
+use MoonShine\Fields\Relationships\BelongsToMany;
 
 /**
  * @extends ModelResource<Tour>
@@ -36,7 +38,7 @@ class TourResource extends ModelResource
 {
     protected string $model = Tour::class;
 
-    protected string $title = 'Майские туры';
+    protected string $title = 'Туры';
 
     public function import(): ?ImportHandler
     {
@@ -102,12 +104,19 @@ class TourResource extends ModelResource
                                 Text::make('Дата', 'data'),
                                 Text::make('Комментарий', 'comment')
                     ]),
+
+
+                ]),
+
+                Tab::make('Категории', [
+                    BelongsToMany::make("Категории", 'categories', resource: new TourCategoryResource())
                 ]),
 
                 Tab::make('Описательная часть', [
                     TinyMce::make('Верхнее описание', 'top_description')->required(),
                     TinyMce::make('Входит в стоимость', 'in_price'),
                     TinyMce::make('За отдельную плату', 'out_price'),
+
                 ]),
 
                 Tab::make('Программа тура', [

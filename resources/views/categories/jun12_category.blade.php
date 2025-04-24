@@ -16,7 +16,7 @@
                     <p class="subtext">{!! seo_data()->seo_data->page_sub_title !!}</p>
                     <br>
                     <br>
-                    <a class="button yakor" href="#tours_cat">Выбрать тур</a>
+                    <x-cat-banner-btn></x-cat-banner-btn>
                 </div>
                 <div class="dop_param">
                     <x-adv></x-adv>
@@ -37,8 +37,8 @@
                     <a class="button" href="#showModal">Получить консультацию</a>
                 </div>
                 <div class="el">
-                    <img class="turists" src="{{ asset('img/turists.svg') }}" alt="Каталог Майских туров из Курска 2025">
-                    <img class="buss" src="{{ asset('img/buss.svg') }}" alt="Каталог Майских туров из Курска 2025">
+                    <img class="turists" src="{{ asset('img/turists.svg') }}" alt="Каталог экскурсионных туров из Курска 2025">
+                    <img class="buss" src="{{ asset('img/buss.svg') }}" alt="Каталог туров из Курска 2025">
                 </div>
             </div>
 

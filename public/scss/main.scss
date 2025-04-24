@@ -163,6 +163,21 @@ h1 {
     background-size: cover;
 }
 
+.search_icon {
+    display: block;
+    width:20px;
+    height:20px;
+    background-image: url('../img/icon/search.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn_wrapper {
+    display: flex;
+    gap: 10px;
+}
+
 @media (max-width:1280px) {
     .container{
         width:96%;

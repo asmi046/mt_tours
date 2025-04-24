@@ -72,6 +72,7 @@
     .top_blk {
         display: flex;
         margin-bottom: 20px;
+        display: flex;
         .photo {
             width:70px;
             height:70px;
@@ -83,7 +84,7 @@
         .person {
             display: flex;
             flex-direction: column;
-
+            flex:1;
             & > * {
                 margin-top: auto;
                 margin-bottom: auto;

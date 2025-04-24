@@ -52,6 +52,111 @@
             .cat_banner_buttons {
                 margin-left: auto;
             }
+
+            .arrow_widget {
+                position: absolute;
+                top: calc(50% - 45px);
+                left: 10%;
+                position: absolute;
+                .arrow {
+                    position: absolute;
+                    top: -15px;
+                    left: 40px;
+                    z-index: 3;
+                    width: 100px;
+                    height: 90px;
+                    display: flex;
+                    justify-content: space-between;
+                    background: url('../img/icon/header_arrow_white.svg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+
+                    animation-duration: 2.5s;
+                    animation-name: animation_rotate;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                    animation-fill-mode:none;
+
+                }
+
+
+
+                span {
+                    position: absolute;
+                    top: 61px;
+                    left: -20px;
+                    font-family: 'Play';
+                    color:$main_color;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 22px;
+                    transform: rotate(30deg);
+                    display: flex;
+
+                    animation-duration: 2.5s;
+                    animation-name: animation_rotate_2;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                    animation-fill-mode:none;
+
+                }
+
+                @keyframes animation_rotate {
+                    0% {
+                        transform: rotate(0deg);
+                    }
+
+                    50% {
+                        transform: rotate(10deg);
+                    }
+
+                    100% {
+                        transform: rotate(0deg);
+                    }
+                }
+
+                @keyframes animation_rotate_2 {
+                    0% {
+                        transform: rotate(30deg);
+                    }
+
+                    50% {
+                        transform: rotate(25deg);
+                    }
+
+                    100% {
+                        transform: rotate(30deg);
+                    }
+                }
+            }
+
+        }
+    }
+
+    .marque_wrap {
+        position: absolute;
+        background-color: $black_color;
+        bottom: 0;
+        width:100%;
+        height: 30px;
+        padding: 5px 0;
+        overflow: hidden;
+        z-index: 3;
+        border-top: 1px dashed $main_color;
+        border-bottom: 1px dashed $main_color;
+
+        .marque {
+
+            display: flex;
+
+
+            .str {
+                font-size: 22px;
+                font-family: 'Play';
+                margin: auto 10px;
+                white-space: nowrap;
+                color:$main_color;
+            }
         }
     }
 }
@@ -73,11 +178,22 @@
     }
 }
 
+@media (max-width:1024px) {
+    .banner_video .left_text .dop_param .arrow_widget {
+        left: -13%;
+
+        span {
+            font-size: 18px;
+            left: 15px;
+        }
+    }
+}
+
 @media (max-width:768px) {
     .banner_video {
         .left_text {
             flex-direction: column;
-
+            height: auto;
             .bnr_text {
                 width: 100%;
                 margin: 20px 0;
@@ -85,8 +201,58 @@
             }
 
             .dop_param {
+                padding-top: 100px;
                 .cat_banner_buttons {
                     width: 100%;
+                }
+
+                .arrow_widget {
+                    left:calc(50% - 40px);
+                    top:0;
+
+                    span {
+                        left: -55px;
+                        top: 40px;
+                        transform: rotate(10deg);
+                        animation-name: animation_rotate_2_mobile;
+                    }
+
+                    .arrow {
+                        top:10px;
+                        left:70px;
+                        transform: rotate(30deg);
+                        animation-name: animation_rotate_mobile;
+                    }
+
+
+                @keyframes animation_rotate_mobile {
+                    0% {
+                        transform: rotate(30deg);
+                    }
+
+                    50% {
+                        transform: rotate(40deg);
+                    }
+
+                    100% {
+                        transform: rotate(30deg);
+                    }
+                }
+
+                @keyframes animation_rotate_2_mobile {
+                    0% {
+                        transform: rotate(10deg);
+                    }
+
+                    50% {
+                        transform: rotate(5deg);
+                    }
+
+                    100% {
+                        transform: rotate(10deg);
+                    }
+                }
+
                 }
             }
         }
@@ -112,9 +278,9 @@
                 height: auto;
                 padding-bottom: 20px;
                 .dop_param {
-                gap:20px;
-                height: auto;
-            }
+                    gap:20px;
+                    height: auto;
+                }
         }
     }
 }

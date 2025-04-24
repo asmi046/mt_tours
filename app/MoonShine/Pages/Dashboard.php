@@ -22,7 +22,7 @@ class Dashboard extends Page
 
     public function title(): string
     {
-        return $this->title ?: 'Майские туры Мир Туризма46';
+        return $this->title ?: 'Экскурсионные туры Мир Туризма46';
     }
 
     /**

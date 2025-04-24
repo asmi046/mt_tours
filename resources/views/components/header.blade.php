@@ -1,7 +1,7 @@
 <header class="header">
     <div class="container">
         <a class="logo" href="{{ route('home') }}">
-            <img src="{{ asset('img/logo_main.png')}}" alt="Майские туры из Курска - МирТуризма">
+            <img src="{{ asset('img/logo_main.png')}}" alt="Экскурсионные туры из Курска - МирТуризма">
         </a>
 
         <nav class="nav_menu">

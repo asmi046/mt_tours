@@ -80,4 +80,13 @@ button,
     @media (max-width:768px) {
         font-size: 14px;
     }
+
+
+}
+
+@media (max-width:375px) {
+    .button_icon {
+        padding: 10px 10px;
+        font-size: 14px;
+    }
 }
