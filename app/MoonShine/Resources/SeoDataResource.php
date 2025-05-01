@@ -14,7 +14,7 @@ use MoonShine\Fields\Number;
 use MoonShine\Fields\Select;
 use MoonShine\Handlers\ExportHandler;
 use MoonShine\Handlers\ImportHandler;
-use MoonShine\Resources\ModelResource;
+use MoonShine\Laravel\Resources\ModelResource;
 use Illuminate\Database\Eloquent\Model;
 use MoonShine\Components\MoonShineComponent;
 
@@ -97,7 +97,7 @@ class SeoDataResource extends ModelResource
      * @return array<string, string[]|string>
      * @see https://laravel.com/docs/validation#available-validation-rules
      */
-    public function rules(Model $item): array
+    protected function rules($item): array
     {
         return [];
     }

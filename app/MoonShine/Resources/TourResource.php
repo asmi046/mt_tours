@@ -24,7 +24,7 @@ use MoonShine\Decorations\Flex;
 use MoonShine\Decorations\Tabs;
 use MoonShine\Handlers\ExportHandler;
 use MoonShine\Handlers\ImportHandler;
-use MoonShine\Resources\ModelResource;
+use MoonShine\Laravel\Resources\ModelResource;
 use Illuminate\Database\Eloquent\Model;
 use MoonShine\ActionButtons\ActionButton;
 use MoonShine\Components\MoonShineComponent;
@@ -229,7 +229,7 @@ class TourResource extends ModelResource
      * @return array<string, string[]|string>
      * @see https://laravel.com/docs/validation#available-validation-rules
      */
-    public function rules(Model $item): array
+    protected function rules($item): array
     {
         return [];
     }

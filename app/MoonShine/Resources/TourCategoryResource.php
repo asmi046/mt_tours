@@ -13,7 +13,7 @@ use MoonShine\Fields\Number;
 use MoonShine\Fields\TinyMce;
 use MoonShine\Components\Layout\Box;
 use MoonShine\Contracts\FieldContract;
-use MoonShine\Resources\ModelResource;
+use MoonShine\Laravel\Resources\ModelResource;
 use Illuminate\Database\Eloquent\Model;
 use MoonShine\Contracts\ComponentContract;
 
@@ -79,7 +79,7 @@ class TourCategoryResource extends ModelResource
      * @return array<string, string[]|string>
      * @see https://laravel.com/docs/validation#available-validation-rules
      */
-    public function rules(mixed $item): array
+    protected function rules($item): array
     {
         return [];
     }
