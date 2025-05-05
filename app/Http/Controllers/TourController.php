@@ -10,6 +10,7 @@ class TourController extends Controller
     public function index($slug) {
 
         $tour_info = Tour::where('slug', $slug)->firstOrFail();
+        $tour_any = Tour::inRandomOrder()->take(7)->get();
 
         $tur_programm = [];
 
@@ -18,6 +19,6 @@ class TourController extends Controller
             $tur_programm[$item['type']][$item['number']] = $item;
         }
 
-        return view('tour_page', ['tour_info' => $tour_info, 'struct_programm' => $tur_programm]);
+        return view('tour_page', ['tour_info' => $tour_info, 'struct_programm' => $tur_programm, 'tour_any' => $tour_any]);
     }
 }

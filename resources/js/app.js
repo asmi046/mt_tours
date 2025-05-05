@@ -1,4 +1,5 @@
 import './bootstrap';
+import './sliders';
 
 
 import {createApp} from 'vue/dist/vue.esm-bundler';
@@ -11,9 +12,6 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import { VMaskDirective } from 'v-slim-mask'
 
-import('swiper/element/bundle').then(mod => {
-    mod.register()
-})
 
 import fslightbox from 'fslightbox'
 

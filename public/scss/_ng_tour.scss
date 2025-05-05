@@ -48,51 +48,6 @@
 
 
 
-    .tour_card {
-        overflow: hidden;
-        width: 30%;
-        border-radius: 20px;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        box-shadow: $box_shadow;
-        .img {
-            position: relative;
-            height: 240px;
-            .price_label {
-                position: absolute;
-                right: 10px;
-                top:10px;
-            }
-        }
-
-        .text {
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            flex:1;
-            h3 {
-                margin-top: 0;
-            }
-            button {
-                margin-top: auto;
-            }
-        }
-
-        .m_data {
-            display: flex;
-            gap:10px;
-            flex-wrap: wrap;
-            .label {
-                margin-right: UNSET;
-            }
-        }
-
-        .label {
-            margin-right: auto;
-            margin-bottom: 10px;
-        }
-    }
 
     &.greed {
         display: grid;
@@ -112,16 +67,72 @@
 }
 
 
+.tour_card {
+    overflow: hidden;
+    width: 30%;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: $box_shadow;
+    .img {
+        position: relative;
+        height: 240px;
+        .price_label {
+            position: absolute;
+            right: 10px;
+            top:10px;
+        }
+    }
+
+    .text {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        flex:1;
+        h3 {
+            margin-top: 0;
+        }
+        button {
+            margin-top: auto;
+        }
+    }
+
+    .m_data {
+        display: flex;
+        gap:10px;
+        flex-wrap: wrap;
+        .label {
+            margin-right: UNSET;
+        }
+    }
+
+    .label {
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+}
+
+swiper-container {
+    .tour_card {
+        width:100%;
+        box-shadow: none;
+        border: 1px solid $gray_border_color;
+    }
+}
+
+
 @media (max-width:1024px) {
     .all_tour_wrapper {
-
-        .tour_card {
-            width:46%
-        }
 
         &.greed {
             grid-template-columns: repeat(2, 1fr);
         }
+    }
+
+
+    .tour_card {
+        width:46%
     }
 }
 
@@ -149,42 +160,46 @@
 
     .all_tour_wrapper {
         padding: 2px;
-        .tour_card  {
-            box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.25);
-            .text {
-                padding: 10px;
-                h3{ font-size: 16px;}
-            }
-            .img {
-                height: 180px;
-            }
 
-            .m_data {
-                flex-direction: column;
-                margin-bottom: 10px;
-                .label {
-                    margin: 0 auto 0 0;
-                }
-            }
-
-
-        }
 
         &.greed {
             gap:20px;
         }
+    }
+
+    .tour_card  {
+        box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.25);
+        .text {
+            padding: 10px;
+            h3{ font-size: 16px;}
+        }
+        .img {
+            height: 180px;
+        }
+
+        .m_data {
+            flex-direction: column;
+            margin-bottom: 10px;
+            .label {
+                margin: 0 auto 0 0;
+            }
+        }
+
+
     }
 }
 
 @media (max-width:375px) {
 
     .all_tour_wrapper {
-        .tour_card  {
-            width: 45%;
-        }
+
 
         &.greed {
             gap:10px;
         }
+    }
+
+    .tour_card  {
+        width: 45%;
     }
 }
