@@ -93,6 +93,22 @@
             margin-bottom: 10px;
         }
     }
+
+    &.greed {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: stretch;
+        align-items: stretch;
+
+        gap:30px;
+
+       .tour_card {
+            width:100%;
+            height: 100%;
+            justify-self: stretch;
+            align-self: center;
+        }
+    }
 }
 
 
@@ -103,6 +119,9 @@
             width:46%
         }
 
+        &.greed {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 }
 
@@ -147,6 +166,12 @@
                     margin: 0 auto 0 0;
                 }
             }
+
+
+        }
+
+        &.greed {
+            gap:20px;
         }
     }
 }
@@ -156,6 +181,10 @@
     .all_tour_wrapper {
         .tour_card  {
             width: 45%;
+        }
+
+        &.greed {
+            gap:10px;
         }
     }
 }
