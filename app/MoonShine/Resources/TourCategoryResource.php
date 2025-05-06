@@ -4,18 +4,17 @@ declare(strict_types=1);
 
 namespace App\MoonShine\Resources;
 
-use MoonShine\Fields\ID;
-use MoonShine\Fields\Slug;
-use MoonShine\Fields\Text;
-
+use MoonShine\UI\Fields\ID;
 use App\Models\TourCategory;
-use MoonShine\Fields\Number;
-use MoonShine\Fields\TinyMce;
-use MoonShine\Components\Layout\Box;
+use MoonShine\UI\Fields\Text;
+use MoonShine\UI\Fields\Number;
+use MoonShine\Laravel\Fields\Slug;
+use MoonShine\TinyMce\Fields\TinyMce;
 use MoonShine\Contracts\FieldContract;
-use MoonShine\Laravel\Resources\ModelResource;
 use Illuminate\Database\Eloquent\Model;
+use MoonShine\UI\Components\Layout\Box;
 use MoonShine\Contracts\ComponentContract;
+use MoonShine\Laravel\Resources\ModelResource;
 
 /**
  * @extends ModelResource<TourCategory>

@@ -35,6 +35,7 @@ use MoonShine\UI\Components\{Breadcrumbs,
     Layout\TopBar,
     Layout\Wrapper,
     When};
+use App\MoonShine\Resources\ReviewResource;
 
 final class MoonShineLayout extends AppLayout
 {
@@ -69,6 +70,7 @@ final class MoonShineLayout extends AppLayout
             )->icon('arrow-path-rounded-square'),
 
             ...parent::menu(),
+            MenuItem::make('Reviews', ReviewResource::class),
         ];
     }
 

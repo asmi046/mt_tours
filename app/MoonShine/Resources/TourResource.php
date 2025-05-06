@@ -5,31 +5,31 @@ declare(strict_types=1);
 namespace App\MoonShine\Resources;
 
 use App\Models\Tour;
-use MoonShine\Fields\ID;
+use MoonShine\UI\Fields\ID;
 
-use MoonShine\Fields\Url;
-use MoonShine\Fields\Date;
-use MoonShine\Fields\File;
-use MoonShine\Fields\Json;
-use MoonShine\Fields\Text;
-use MoonShine\Fields\Field;
-use MoonShine\Fields\Image;
-use MoonShine\Fields\Number;
-use MoonShine\Fields\Select;
-use MoonShine\Fields\TinyMce;
-use MoonShine\Decorations\Tab;
-use MoonShine\Fields\Position;
-use MoonShine\Fields\Switcher;
-use MoonShine\Decorations\Flex;
-use MoonShine\Decorations\Tabs;
+use MoonShine\UI\Fields\Url;
+use MoonShine\UI\Fields\Date;
+use MoonShine\UI\Fields\File;
+use MoonShine\UI\Fields\Json;
+use MoonShine\UI\Fields\Text;
+use MoonShine\UI\Fields\Field;
+use MoonShine\UI\Fields\Image;
+use MoonShine\UI\Fields\Number;
+use MoonShine\UI\Fields\Select;
+use MoonShine\UI\Components\Tabs;
+use MoonShine\UI\Fields\Position;
+use MoonShine\UI\Fields\Switcher;
 use MoonShine\Handlers\ExportHandler;
 use MoonShine\Handlers\ImportHandler;
-use MoonShine\Laravel\Resources\ModelResource;
+use MoonShine\TinyMce\Fields\TinyMce;
+use MoonShine\UI\Components\Tabs\Tab;
 use Illuminate\Database\Eloquent\Model;
-use MoonShine\ActionButtons\ActionButton;
+use MoonShine\UI\Components\Layout\Flex;
+use MoonShine\UI\Components\ActionButton;
 use MoonShine\Components\MoonShineComponent;
+use MoonShine\Laravel\Resources\ModelResource;
 use App\MoonShine\Resources\TourCategoryResource;
-use MoonShine\Fields\Relationships\BelongsToMany;
+use MoonShine\Laravel\Fields\Relationships\BelongsToMany;
 
 /**
  * @extends ModelResource<Tour>
@@ -39,16 +39,6 @@ class TourResource extends ModelResource
     protected string $model = Tour::class;
 
     protected string $title = 'Туры';
-
-    public function import(): ?ImportHandler
-    {
-        return null;
-    }
-
-    public function export(): ?ExportHandler
-    {
-        return null;
-    }
 
 
     /**
@@ -109,7 +99,7 @@ class TourResource extends ModelResource
                 ]),
 
                 Tab::make('Категории', [
-                    BelongsToMany::make("Категории", 'categories', resource: new TourCategoryResource())
+                    BelongsToMany::make("Категории", 'categories', resource: TourCategoryResource::class)
                 ]),
 
                 Tab::make('Описательная часть', [

@@ -5,18 +5,14 @@ declare(strict_types=1);
 namespace App\MoonShine\Resources;
 
 use App\Models\SeoData;
-use MoonShine\Fields\ID;
 
-use MoonShine\Fields\Text;
-use MoonShine\Fields\Field;
-use MoonShine\Fields\Image;
-use MoonShine\Fields\Number;
-use MoonShine\Fields\Select;
-use MoonShine\Handlers\ExportHandler;
-use MoonShine\Handlers\ImportHandler;
-use MoonShine\Laravel\Resources\ModelResource;
+
+use MoonShine\UI\Fields\ID;
+use MoonShine\UI\Fields\Text;
+use MoonShine\UI\Fields\Image;
 use Illuminate\Database\Eloquent\Model;
 use MoonShine\Components\MoonShineComponent;
+use MoonShine\Laravel\Resources\ModelResource;
 
 /**
  * @extends ModelResource<SeoData>
@@ -27,15 +23,6 @@ class SeoDataResource extends ModelResource
 
     protected string $title = 'SEO';
 
-    public function import(): ?ImportHandler
-    {
-        return null;
-    }
-
-    public function export(): ?ExportHandler
-    {
-        return null;
-    }
 
     public function filters(): array
     {
