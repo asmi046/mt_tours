@@ -15,7 +15,7 @@ class ToursInMain extends Component
      */
     public function __construct()
     {
-        $this->all_tours = Tour::orderBy("order")->get();
+        $this->all_tours = Tour::where('title', 'NOT LIKE', '%РУСБОРГ%')->orderBy("order")->get();
     }
 
     /**

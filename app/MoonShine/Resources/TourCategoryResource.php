@@ -8,6 +8,7 @@ use MoonShine\UI\Fields\ID;
 use App\Models\TourCategory;
 use MoonShine\UI\Fields\Text;
 use MoonShine\UI\Fields\Number;
+use MoonShine\UI\Fields\Switcher;
 use MoonShine\Laravel\Fields\Slug;
 use MoonShine\TinyMce\Fields\TinyMce;
 use MoonShine\Contracts\FieldContract;
@@ -48,6 +49,7 @@ class TourCategoryResource extends ModelResource
         return [
             Box::make([
                 ID::make(),
+                Switcher::make('Отображать на панели', 'show'),
                 Text::make('Название', 'name')->required(),
                 Slug::make('Ссылка', 'slug')->required(),
                 Number::make('Порядок', 'order')->required(),
