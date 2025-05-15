@@ -47,6 +47,7 @@
         window.storage = "{{ asset('storage') }}";
         window.isMobile = window.innerWidth < 768;
     </script>
+
 </head>
 <body>
     <div class="modal_win" id="global_app">

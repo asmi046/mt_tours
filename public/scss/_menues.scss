@@ -114,12 +114,12 @@
     background-image: url(../img/icon/menu_burger.svg);
     background-repeat: no-repeat;
     background-position: center;
-    display: none;
+    display: block;
     z-index: 1000;
 }
 
-@media (max-width:768px) {
-    .show_menue_button {
-        display: block;
-    }
-}
+// @media (max-width:768px) {
+//     .show_menue_button {
+//         display: block;
+//     }
+// }

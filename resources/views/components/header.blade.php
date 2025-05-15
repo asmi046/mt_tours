@@ -1,6 +1,6 @@
 <header class="header">
     <div class="container">
-        <a class="logo" href="{{ route('home') }}">
+        <a class="logo" href="https://www.mirturizma46.ru/">
             <img src="{{ asset('img/logo_main.png')}}" alt="Экскурсионные туры из Курска - МирТуризма">
         </a>
 

@@ -39,6 +39,21 @@ button,
     }
 }
 
+.button-circle {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #FEFA17;
+    border-radius: 50px;
+    border: 1px solid white;
+    display: flex;
+    .sprite_icon {
+        width:25px;
+        height:25px;
+        margin: auto;
+    }
+}
+
 
 .cat_banner_buttons {
     display: flex;
