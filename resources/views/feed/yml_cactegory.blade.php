@@ -44,9 +44,9 @@
                 @endforeach
 
                 --}}
-
+{{--
                 <store>true</store>
-                <pickup>true</pickup>
+                <pickup>true</pickup> --}}
             </offer>
         @endforeach
     </offers>
