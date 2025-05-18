@@ -4,6 +4,13 @@
     width: 100wh;
     height: 100vh;
 
+    &.mini {
+        height: auto;
+        .left_text {
+            height: auto ;
+            padding: 30px 0;
+        }
+    }
     ._video {
         position: absolute;
         // right: 0;
@@ -275,12 +282,21 @@
         .banner_video {
             min-height: 100vh;
             height: auto;
+
+            &.mini {
+                min-height: unset;
+            }
+
             .left_text  {
                 height: auto;
                 padding-bottom: 20px;
                 .dop_param {
                     gap:20px;
                     height: auto;
+
+                    .cat_banner_buttons {
+                        min-width: unset;
+                    }
                 }
         }
     }

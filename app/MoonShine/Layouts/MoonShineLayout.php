@@ -36,6 +36,7 @@ use MoonShine\UI\Components\{Breadcrumbs,
     Layout\Wrapper,
     When};
 use App\MoonShine\Resources\ReviewResource;
+use App\MoonShine\Resources\CalendarResource;
 
 final class MoonShineLayout extends AppLayout
 {
@@ -69,8 +70,11 @@ final class MoonShineLayout extends AppLayout
                 fn() => route('cache_clear'),
             )->icon('arrow-path-rounded-square'),
 
+            MenuItem::make('Календарь', CalendarResource::class)->icon('calendar-days'),
+
             ...parent::menu(),
             MenuItem::make('Reviews', ReviewResource::class),
+
         ];
     }
 

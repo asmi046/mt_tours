@@ -26,3 +26,274 @@
         }
     }
 }
+
+.calendar_selector {
+    background-color: $gray_bg_color;
+    padding: 10px;
+    border-radius: $border_rad;
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar { width: 0; height: 0; }
+
+    .month_selector {
+        padding: 10px 20px;
+        border-radius: $border_rad;
+                flex: 0 0 auto;
+        &.active {
+            background-color: $main_color;
+        }
+
+        &:hover {
+            background-color: $main_color_opc;
+        }
+    }
+
+}
+
+// Разметка календаря
+
+
+.calendar-item {
+    width:100%;
+}
+
+.elem_data {
+    display: flex;
+}
+
+.elem_data .calendar-head {
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.calendar-head:hover{
+    color: #00B4F1;
+}
+
+.calendar-head.active {
+    font-weight: bold;
+    background-color: #00B4F1;
+    color: white;
+
+    border-radius: 10px;
+}
+
+.calendar-head {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: black;
+
+    padding: 5px 15px;
+}
+
+.calendar-item table {
+    width:100%;
+    border-color: lightgray;
+}
+
+.calendar-item table td {
+    background-color: whgite;
+}
+
+.calendar-item table td.vihodnoi,
+.calendar-item table th.vihodnoi {
+    color:#A52A2A;
+    background-color: #ffe4e1;
+}
+
+
+.calendar-item table th {
+    color:#333
+}
+
+.calendar-item table th {
+    background-color: unset;
+}
+
+.calendar-item table th,
+.calendar-item table td
+{
+
+    border-color: lightgray;
+}
+
+
+
+.calendar-item table td
+{
+    width:14.28%;
+}
+
+.calendar-item table td.no_event
+{
+    width:10%;
+}
+
+.calendar-day{
+    vertical-align: top;
+}
+
+.dey_card {
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.today {
+    background-color: #e5f4ff;
+}
+
+.dey_card .data {
+    margin-top: 0;
+    margin-bottom: auto;
+    width:100%;
+}
+
+.mobile_dey {
+    display: none;
+}
+
+.calendar-tur-elem {
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    background-color: white;
+}
+
+.calendar-tur-elem .img_wraper {
+    width:100%;
+    height: 100px;
+}
+
+.calendar-tur-elem .img_wraper img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.calendar-tur-elem h3,
+.calendar-tur-elem p {
+    padding: 0 5px;
+    margin: 5px 0;
+    color: black;
+    font-size: 12px;
+    text-decoration: none!important;
+}
+
+.calendar-tur-elem h3 {
+    height: 30px;
+}
+
+.calendar-tur-elem:hover{
+    text-decoration: none!important;
+}
+
+.calendar-tur-elem .deys {
+    margin: 0;
+}
+
+.calendar-tur-mobile img{
+    width: auto;
+    height: 100%;
+}
+
+.calendar-tur-mobile{
+    display: none;
+    width:40px;
+    height:40px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: 1px solid lightgray;
+}
+
+.calendar-tur-mobile.active{
+    border-color: red;
+}
+
+.dn_s {
+    display: none;
+}
+
+.calendar_tur_info {
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    display: block;
+    color: black;
+}
+
+.calendar_tur_info h2{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.calendar_tur_info .img_wraper{
+    width: 100%;
+}
+
+.calendar_tur_info .img_wraper img{
+    width: 100%;
+}
+
+.empty_card {
+	opacity: 0;
+}
+
+@media screen and (max-width:512px) {
+
+    .dey_card{
+        min-height: 50px;
+    }
+    .calendar-tur-elem {
+        display: none;
+    }
+
+    .dn_p {
+        display: none;
+    }
+
+    .dn_s {
+        display: block;
+    }
+
+    .calendar-tur-mobile {
+        display: block;
+    }
+
+    .calendar-item table th,
+    .calendar-item table td
+    {
+        padding: 3px;
+    }
+
+    .elem_data {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin: 10px 0;
+    }
+
+    .elem_data::-webkit-scrollbar { width: 0; height: 0; }
+
+    .elem_data .calendar-head {
+        width:unset;
+        font-size: 14px;
+        margin-right: 0;
+        padding: 5px 15px;
+        flex: 0 0 auto;
+        margin-bottom: 0;
+    }
+}
