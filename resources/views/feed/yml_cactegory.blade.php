@@ -19,7 +19,7 @@
 
     <offers>
         @foreach ($cat_product as $item)
-            <offer id="{{$item->slug}}">
+            <offer id="{{$item->id}}" available="true">
                 <name>{{$item->title}}</name>
                 <url>{{route('tour_page', $item->slug)}}</url>
 
@@ -33,7 +33,12 @@
 
 
 
-                <description>{{$item->program}}</description>
+                <sales_notes>Необходима предоплата</sales_notes>
+
+                <param name="Количество дней">{{ $item->deycount }}</param>
+                <param name="Дата выезда">{{ $item->start_data }}</param>
+
+                <description>{{$item->title}}</description>
 
 
             {{--
