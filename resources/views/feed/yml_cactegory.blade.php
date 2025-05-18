@@ -19,7 +19,7 @@
 
     <offers>
         @foreach ($cat_product as $item)
-            <offer id="{{$item->sku}}" available="true">
+            <offer id="{{$item->slug}}" available="true">
                 <name>{{$item->title}}</name>
                 <url>{{route('tour_page', $item->slug)}}</url>
 
