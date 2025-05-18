@@ -8,7 +8,7 @@
     <company>ООО "Мир Туризма 46"</company>
     <url>https://tours.mirturizma46.ru/</url>
     <currencies>
-        <currency id="RUR" rate="1"/>
+        <currency id="RUR" rate="1" />
     </currencies>
 
     <categories>
@@ -17,9 +17,14 @@
         @endforeach
     </categories>
 
+    <set id="s1">
+        <name>Экскурсионные туры по России </name>
+        <url>{{ route('home') }}</url>
+    </set>
+
     <offers>
         @foreach ($cat_product as $item)
-            <offer id="{{$item->id}}" available="true">
+            <offer id="{{$item->id}}">
                 <name>{{$item->title}}</name>
                 <url>{{route('tour_page', $item->slug)}}</url>
 
@@ -31,7 +36,7 @@
                 <currencyId>RUR</currencyId>
                 <categoryId>{{ $curent_category }}</categoryId>
 
-
+                <set-ids>s1</set-ids>
 
                 <sales_notes>Необходима предоплата</sales_notes>
 
