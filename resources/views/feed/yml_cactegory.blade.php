@@ -31,9 +31,9 @@
                 <currencyId>RUR</currencyId>
                 <categoryId>{{ $curent_category }}</categoryId>
 
-                {{--
 
-                <description>{{$item->description}}</description>
+
+                <description>{{$item->program}}</description>
 
 
 
@@ -43,8 +43,8 @@
                     <consist name="{{$elem['Имя']}}" unit="шт">{{$elem['Количество']}}</consist>
                 @endforeach
 
-                --}}
-{{--
+
+            {{--
                 <store>true</store>
                 <pickup>true</pickup> --}}
             </offer>
