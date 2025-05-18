@@ -36,14 +36,6 @@
                 <description>{{$item->program}}</description>
 
 
-
-
-                @foreach ($consist as $elem)
-                    @continue(empty($elem['Имя']))
-                    <consist name="{{$elem['Имя']}}" unit="шт">{{$elem['Количество']}}</consist>
-                @endforeach
-
-
             {{--
                 <store>true</store>
                 <pickup>true</pickup> --}}
