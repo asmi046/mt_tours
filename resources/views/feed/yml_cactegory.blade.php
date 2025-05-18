@@ -45,9 +45,6 @@
 
                 --}}
 
-
-
-                <delivery>true</delivery>
                 <store>true</store>
                 <pickup>true</pickup>
             </offer>
