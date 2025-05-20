@@ -3,8 +3,8 @@
 .turs_in_main_section {
     background-color: #ECF8F6;
     // background-image: url(../img/main_bg_1.svg);
-    // background-repeat: no-repeat;
-    // background-position: center bottom;
+    background-repeat: no-repeat;
+    background-position: center bottom;
     position: relative;
     overflow: hidden;
     padding-bottom: 60px;
@@ -54,6 +54,10 @@
     }
     &.spb_bg {
         background-image: url(../img/spb_bg.svg);
+    }
+
+    &.adg_bg {
+        background-image: url(../img/adg_bg.svg);
     }
 
 }

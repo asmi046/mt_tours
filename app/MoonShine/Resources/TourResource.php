@@ -132,6 +132,7 @@ class TourResource extends ModelResource
                         'moskow_bg' => 'Москва',
                         'spb_bg' => 'СПБ',
                         'volgograd_bg' => 'Волгоград',
+                        'adg_bg' => 'Адыгея',
                     ])->nullable(),
                 ]),
 
