@@ -1,6 +1,21 @@
 @extends('layouts.all')
 
 @section('main')
+    <div id="modal-js-example" class="modal">
+    <div class="modal-background"></div>
+
+    <div class="modal-content">
+        <div class="box">
+            <div id="calendar_tur_info">
+
+            </div>
+
+            <a href="#" class="button" id="calendar_tur_info_btn">Подробнее</a>
+        </div>
+    </div>
+
+    <button class="modal-close is-large" aria-label="close"></button>
+    </div>
 
     <section id="banner_video_main_page" class="banner_video mini">
         <video autoplay muted loop playsinline poster="{{ asset('img/main-video-obl.webp') }}" class="_video">

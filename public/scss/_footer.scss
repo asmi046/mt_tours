@@ -1,3 +1,5 @@
+@use 'vars' as *;
+
 footer {
     background-color: $blue_light_color;
     background-image: url(../img/icon/footer_citys_left.svg), url(../img/icon/footer_citys_right.svg);
@@ -11,7 +13,8 @@ footer {
     margin-top: 40px;
     hr {
         width:235px;
-        margin-bottom: 20px;
+        margin: 0 auto 20px auto;
+
     }
 
     nav {

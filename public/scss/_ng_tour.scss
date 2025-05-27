@@ -1,3 +1,5 @@
+@use 'vars' as *;
+
 .about_tours {
     display: flex;
     flex-wrap: wrap;
@@ -6,6 +8,10 @@
     h2 {
         font-size: 52px;
         margin-top: 0;
+        line-height: 1.2;
+        font-family: 'Play';
+        font-weight: bold;
+        margin-bottom: 2rem;
     }
     .text {
         width:50%;
@@ -92,9 +98,14 @@
         flex:1;
         h3 {
             margin-top: 0;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .top_label {
+            margin-top: auto;
         }
         button {
-            margin-top: auto;
+            margin-top: 10px;
         }
     }
 

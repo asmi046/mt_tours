@@ -1,3 +1,5 @@
+@use 'vars' as *;
+
 .contacts_blk {
     background-color: $tifany_color;
     border-radius: 20px;
@@ -22,6 +24,10 @@
         .phone{
             font-size: 28px;
             margin-bottom: 10px;
+        }
+
+        h2{
+            margin: 2rem 0;
         }
 
         .email {

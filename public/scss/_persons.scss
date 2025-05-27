@@ -1,3 +1,5 @@
+@use 'vars' as *;
+
 .persons {
     border-radius: 20px;
     background-color: $gray_bg_color_y;

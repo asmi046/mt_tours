@@ -117,8 +117,11 @@ class CalendarServices {
 
 			$event_show = false;
 			$event_text = array();
+
+
 			if (!empty($events)) {
 				foreach ($events as $date => $text) {
+
 
                     $day_name = self::get_dey($date);
 
@@ -149,7 +152,7 @@ class CalendarServices {
 				$out.= '<td class="calendar-day ' . $class ." ". $vihodnoi . ' event">';
                 $out.= '<div class="dey_card">';
                     $out.= '<div class="data">';
-                        $out.= $day." <span class='mobile_dey'>".$day_name."</span>";
+                        $out.= $day." <span class='mobile_dey'>".($day_name ?? "")."</span>";
                     $out.= '</div>';
 
 
@@ -168,7 +171,7 @@ class CalendarServices {
                             $out.= '<p class="price">'. $event_elem['price'] .' руб.</p>';
                         $out.= '</a>';
 
-						$out.= '<div data-cardid="'.$t_index.'" class="calendar-tur-mobile ' .$empty_class. '">';
+						$out.= '<div data-target="modal-js-example" data-cardid="'.$t_index.'" class="calendar-tur-mobile js-modal-trigger ' .$empty_class. '">';
 							$out.= '<img src="'. (isset($event_elem['post_thumbinal'])?Storage::url($event_elem['post_thumbinal']):"") .'">';
 						$out.= '</div>';
 
@@ -182,7 +185,7 @@ class CalendarServices {
 				$out.= '<td class="calendar-day ' . $class ." ". $vihodnoi . ' no_event">';
                     $out.= '<div class="dey_card">';
                         $out.= '<div class="data">';
-                            $out.= $day." <span class='mobile_dey'>".$day_name."</span>";
+                            $out.= $day." <span class='mobile_dey'>".($day_name ?? "")."</span>";
                         $out.= '</div>';
                     $out.= '</div>';
                 $out.= '</td>';

@@ -1,3 +1,5 @@
+@use 'vars' as *;
+
 ::-webkit-scrollbar {
 	overflow-y: scroll;
 	width: 7px;
