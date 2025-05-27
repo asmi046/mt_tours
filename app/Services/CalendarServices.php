@@ -161,7 +161,7 @@ class CalendarServices {
                     foreach ($event_text[0] as $event_elem) {
 						$empty_class = $event_elem['empty']?"empty_card":"";
 
-                        $out.= '<a id="tcard_'.$t_index.'" target="_blanck" href="'.$event_elem['post_lnk'].'" class="calendar-tur-elem ' . $empty_class . '">';
+                        $out.= '<a id="tcard_'.$t_index.'"  href="'.$event_elem['post_lnk'].'" class="calendar-tur-elem ' . $empty_class . '">';
                             $out.= '<div class="img_wraper">';
                                 $out.= '<img src="'. (isset($event_elem['post_thumbinal'])?Storage::url($event_elem['post_thumbinal']):"") .'">';
                             $out.= '</div>';
