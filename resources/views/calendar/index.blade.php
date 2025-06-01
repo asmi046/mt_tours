@@ -33,7 +33,7 @@
                     <br>
                     <br>
 
-                    <x-cat-banner-btn></x-cat-banner-btn>
+                    <x-cat-banner-btn-page></x-cat-banner-btn-page>
 
 
                 </div>
