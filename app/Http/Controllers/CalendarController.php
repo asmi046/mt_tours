@@ -109,6 +109,7 @@ class CalendarController extends Controller
             'month' => $month,
             'selector' => $selector,
             'curent_month' => $curent_month,
+            'month_year' => CalendarServices::get_month_year($curent_month)
         ]);
     }
 }

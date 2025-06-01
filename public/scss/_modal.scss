@@ -1,3 +1,20 @@
+@use 'vars' as *;
+
 .modal-content {
     width: 95%;
+
+    .img_wraper {
+        overflow: hidden;
+        border-radius: $border_rad;
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .button {
+        margin-top: 10px;
+    }
+}
+
+.modal-close {
+    padding: 0;
 }
