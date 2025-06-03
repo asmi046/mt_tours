@@ -95,8 +95,6 @@ class CalendarResource extends ModelResource
             'title' => ['required', 'string', 'max:255'],
             'post_lnk' => ['required', 'string', 'max:255'],
             'post_thumbinal' => ($item->post_thumbinal === "")?['required', 'string', 'max:700']:[],
-            'price' => ['required', 'string'],
-
         ];
     }
 }

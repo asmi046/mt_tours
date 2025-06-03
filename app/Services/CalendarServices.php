@@ -168,7 +168,7 @@ class CalendarServices {
 
                             $out.= '<h3>'. html_entity_decode($event_elem['title']) .'</h3>';
                             $out.= '<p class="deys">'. $event_elem['dey_count'] .'</p>';
-                            $out.= '<p class="price">'. $event_elem['price'] .' руб.</p>';
+                            $out.= ($event_elem['price'])?'<p class="price">'. $event_elem['price'].' руб.</p>': '<p class="price">&nbsp;</p>';
                         $out.= '</a>';
 
 						$out.= '<div data-target="modal-js-example" data-cardid="'.$t_index.'" class="calendar-tur-mobile js-modal-trigger ' .$empty_class. '">';
