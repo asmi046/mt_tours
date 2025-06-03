@@ -166,7 +166,7 @@ class CalendarServices {
                                 $out.= '<img src="'. (isset($event_elem['post_thumbinal'])?Storage::url($event_elem['post_thumbinal']):"") .'">';
                             $out.= '</div>';
 
-                            $out.= '<h3>'. $event_elem['title'] .'</h3>';
+                            $out.= '<h3>'. html_entity_decode($event_elem['title']) .'</h3>';
                             $out.= '<p class="deys">'. $event_elem['dey_count'] .'</p>';
                             $out.= '<p class="price">'. $event_elem['price'] .' руб.</p>';
                         $out.= '</a>';
