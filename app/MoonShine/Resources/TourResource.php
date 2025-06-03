@@ -66,6 +66,7 @@ class TourResource extends ModelResource
             Tabs::make([
                 Tab::make('Основное', [
                     ID::make()->sortable(),
+                    Switcher::make('Актуальный тур', 'actual'),
                     Number::make('Порядок', 'order'),
                     Url::make('Внешняя ссылка', 'out_lnk'),
                     Flex::make([
