@@ -48,6 +48,7 @@ class TourResource extends ModelResource
     {
         return [
             ID::make()->sortable(),
+            Switcher::make('Актуальность', 'actual'),
             Number::make('Порядок', 'order')->sortable(),
             Text::make('Название', 'title'),
             Image::make('Изображение', 'img')->dir('tours'),
