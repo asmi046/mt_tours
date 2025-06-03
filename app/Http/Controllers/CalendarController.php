@@ -102,7 +102,7 @@ class CalendarController extends Controller
             ],
             [
                 'text' => CalendarServices::get_month_year("01.09.2025"),
-                'param' => "01.08.2025"
+                'param' => "01.09.2025"
             ]
         ];
 
