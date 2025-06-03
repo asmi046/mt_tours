@@ -49,7 +49,7 @@ class CalendarResource extends ModelResource
         return [
             Box::make([
                 ID::make(),
-                Text::make('Название', 'title'),
+                Text::make('Название', 'title')->unescape(),
                 Text::make('Ссылка', 'post_lnk'),
                 Image::make('Изображение', 'post_thumbinal')->dir('calendar'),
                 Text::make('Количество дней', 'dey_count'),
