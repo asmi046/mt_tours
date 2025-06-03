@@ -10,7 +10,7 @@ class TourController extends Controller
     public function index($slug) {
 
         $tour_info = Tour::where('slug', $slug)->firstOrFail();
-        $tour_any = Tour::inRandomOrder()->take(7)->get();
+        $tour_any = Tour::where('actual', true)->inRandomOrder()->get();
 
         $tur_programm = [];
 

@@ -11,6 +11,7 @@ class Tour extends Model
     use HasFactory;
 
     public $fillable = [
+        'actual',
         'order',
         'out_lnk',
         'title',

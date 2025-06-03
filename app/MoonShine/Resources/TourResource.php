@@ -40,6 +40,8 @@ class TourResource extends ModelResource
 
     protected string $title = 'Туры';
 
+    protected string $column = 'title';
+
 
     /**
      * @return list<Field>
