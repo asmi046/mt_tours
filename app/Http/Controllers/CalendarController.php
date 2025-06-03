@@ -28,6 +28,7 @@ class CalendarController extends Controller
                         'dey_count' => "",
                         'price' => "",
                         'region' => "",
+                        'all_info' => null,
                     ];
                 }
             }
@@ -45,6 +46,7 @@ class CalendarController extends Controller
                         'dey_count' => "",
                         'price' => "",
                         'region' => "",
+                        'all_info' => null,
                     ]);
                 }
         }
@@ -74,6 +76,7 @@ class CalendarController extends Controller
                     'dey_count' => $event->dey_count,
                     'price' => $event->price,
                     'region' => $event->region,
+                    'all_info' => $event->all_info,
                 ];
             }
         }

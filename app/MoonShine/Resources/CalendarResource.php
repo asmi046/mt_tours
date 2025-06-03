@@ -12,6 +12,7 @@ use MoonShine\UI\Fields\Json;
 use MoonShine\UI\Fields\Text;
 use MoonShine\UI\Fields\Image;
 use MoonShine\UI\Fields\Number;
+use MoonShine\TinyMce\Fields\TinyMce;
 use Illuminate\Database\Eloquent\Model;
 use MoonShine\UI\Components\Layout\Box;
 use MoonShine\Contracts\UI\FieldContract;
@@ -55,6 +56,7 @@ class CalendarResource extends ModelResource
                 Text::make('Количество дней', 'dey_count'),
                 Text::make('Цена', 'price'),
                 Text::make('Регион', 'region'),
+                TinyMce::make('Поле описания', 'all_info'),
                 Json::make('Даты', 'dates')->fields([
                     Date::make('Дата', 'date'),
                     Number::make('Порядок', 'position'),
@@ -76,6 +78,7 @@ class CalendarResource extends ModelResource
             Text::make('Количество дней', 'dey_count'),
             Text::make('Цена', 'price'),
             Text::make('Регион', 'region'),
+            TinyMce::make('Поле описания', 'all_info'),
             Json::make('Даты', 'dates')->fields([
                     Date::make('Дата', 'date'),
                     Number::make('Порядок', 'position'),

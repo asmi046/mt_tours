@@ -166,9 +166,9 @@ class CalendarServices {
                                 $out.= '<img src="'. (isset($event_elem['post_thumbinal'])?Storage::url($event_elem['post_thumbinal']):"") .'">';
                             $out.= '</div>';
 
-                            $out.= '<h3>'. html_entity_decode($event_elem['title']) .'</h3>';
-                            $out.= '<p class="deys">'. $event_elem['dey_count'] .'</p>';
-                            $out.= ($event_elem['price'])?'<p class="price">'. $event_elem['price'].' руб.</p>': '<p class="price">&nbsp;</p>';
+                            $out.= '<div class="all_info">'. ($event_elem['all_info']?html_entity_decode($event_elem['all_info']):"") .'</div>';
+                            // $out.= '<p class="deys">'. $event_elem['dey_count'] .'</p>';
+                            // $out.= ($event_elem['price'])?'<p class="price">'. $event_elem['price'].' руб.</p>': '<p class="price">&nbsp;</p>';
                         $out.= '</a>';
 
 						$out.= '<div data-target="modal-js-example" data-cardid="'.$t_index.'" class="calendar-tur-mobile js-modal-trigger ' .$empty_class. '">';

@@ -192,10 +192,22 @@
     text-decoration: none!important;
 }
 
-.calendar-tur-elem h3 {
-    height: 30px;
+.calendar-tur-elem .all_info {
+    line-height: 1;
     text-transform: uppercase;
+    height: 60px;
+    strong {
+        font-weight: bold;
+        font-family: "Play";
+    }
+    p {
+        margin: 3px 0;
+    }
 }
+.calendar-tur-elem h3 {
+    height: 50px;
+}
+
 
 .calendar-tur-elem:hover{
     text-decoration: none!important;

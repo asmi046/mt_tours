@@ -13,7 +13,8 @@ class Calendar extends Model
         'dey_count',
         'price',
         'region',
-        'dates'
+        'dates',
+        'all_info'
     ];
 
     protected $casts = [
