@@ -22,9 +22,10 @@ if (!window.isMobile) {
         smooth: 2,
         effects: true,
         smoothTouch: 0.1,
-        normalizeScroll: true
+        // normalizeScroll: true
     });
 }
+
 
 
 let img_object_from =  {

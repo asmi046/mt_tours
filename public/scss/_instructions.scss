@@ -4,6 +4,10 @@
     height: 70vh;
     overflow-y: auto;
 
+    .instruction_steps_wrap {
+        margin-right: 10px;
+    }
+
     img{
         height: unset;
         width: unset;
@@ -11,4 +15,11 @@
         border-radius: $border_rad;
         margin: 10px 0;
     }
+}
+
+
+.scrollable {
+  will-change: scroll-position;
+  touch-action: auto;
+  overscroll-behavior: contain;
 }
