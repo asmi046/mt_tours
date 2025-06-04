@@ -64,6 +64,27 @@ h1 {
     margin: .8em 0;
 }
 
+.instruction_lnk {
+    display: flex;
+    gap:5px;
+    font-size: 12px;
+    color: $blue_light_color;
+    margin-top: 10px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+    & > * {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .sprite_icon {
+        width: 13px;
+        height: 13px;
+        fill: $blue_light_color;
+    }
+}
+
 .download_btn {
     border: 1px solid $gray_border_color;
     padding: 10px 80px 10px 30px;

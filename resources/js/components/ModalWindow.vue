@@ -46,6 +46,7 @@ export default {
         },
 
         openWin() {
+            console.log(this.hesh)
             if (location.hash === '#'+this.hesh) {
                 this.showModal = true
             }

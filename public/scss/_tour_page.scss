@@ -104,6 +104,45 @@
 
     .tour_price_select {
 
+        .pay_header {
+            display: flex;
+            gap:10px;
+
+            span {
+                line-height: 1;
+                text-transform: uppercase;
+                font-size: 24px;
+            }
+            .icons {
+                display: flex;
+                gap: 10px;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+
+            i {
+                width:40px;
+                height: 20px;
+                display: block;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                margin-top: auto;
+                margin-bottom: auto;
+
+                &.sber {
+                    background-image: url(../img/icon/sber.svg);
+                }
+                &.t {
+                    background-image: url(../img/icon/t.svg);
+                    height: 15px;
+                }
+                &.mir {
+                    background-image: url(../img/icon/mir.svg);
+                    height: 12px;
+                }
+            }
+        }
         .select_label {
             font-size: 14px;
             margin: 10px 0;

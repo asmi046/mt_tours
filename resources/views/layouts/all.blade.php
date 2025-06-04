@@ -51,9 +51,7 @@
 
 </head>
 <body>
-    <div class="modal_win" id="global_app">
-        <modal-window rout="/send_consult" redirect="/thencs" hesh="showModal" title="Помощь специалиста" subtitle="Мы свяжемся с Вами в ближайшее время"></modal-window>
-    </div>
+
     <x-preloader></x-preloader>
 
     <x-menues.side-menu></x-menues.side-menu>
@@ -69,6 +67,32 @@
 
     </main>
 
+    <div class="modal_win" id="global_app">
+        <modal-window rout="/send_consult" redirect="/thencs" hesh="showModal" title="Помощь специалиста" subtitle="Мы свяжемся с Вами в ближайшее время"></modal-window>
+        <empty-modal hesh="howpay" title="Как купить тур" subtitle="Инструкция по покупке тура">
+            <div class="instruction_steps">
+                <h2>Шаг №1</h2>
+                <p>Выберите дату:</p>
+                <img src="{{ asset('img/instruction/step1.webp') }}" alt="Выберите дату">
+
+                <h2>Шаг №2</h2>
+                <p>Выберите тип тура:</p>
+                <img src="{{ asset('img/instruction/step2.webp') }}" alt="Выберите тип тура">
+
+                <h2>Шаг №3</h2>
+                <p>Нажмите на кнопку для перехода к оплате:</p>
+                <img src="{{ asset('img/instruction/step3.webp') }}" alt="Нажмите на кнопку для перехода к оплате">
+
+                <h2>Шаг №4</h2>
+                <p>Заполните персональные данные:</p>
+                <img src="{{ asset('img/instruction/step4.webp') }}" alt="Заполните персональные данные">
+
+                <h2>Шаг №5</h2>
+                <p>Оплатите удобным способом:</p>
+                <img src="{{ asset('img/instruction/step5.webp') }}" alt="Оплатите удобным способом">
+            </div>
+        </empty-modal>
+    </div>
 </body>
 
 

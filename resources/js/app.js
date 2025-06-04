@@ -5,6 +5,7 @@ import './modal';
 
 import {createApp} from 'vue/dist/vue.esm-bundler';
 import ModalWindow from "./components/ModalWindow.vue"
+import EmptyModal from "./components/EmptyModal.vue"
 import TourPrice from "./components/TourPrice.vue"
 import TourPriceSelect from "./components/TourPriceSelect.vue"
 import Review from './components/Reviews/Review.vue'
@@ -29,6 +30,7 @@ review_app.mount("#review_app")
 const global_app = createApp({
     components:{
         ModalWindow,
+        EmptyModal,
     },
     setup() {}
 })

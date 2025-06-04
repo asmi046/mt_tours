@@ -1,0 +1,13 @@
+@use 'vars' as *;
+
+.instruction_steps {
+    height: 70vh;
+    overflow-y: auto;
+    img{
+        height: 100px;
+        width: auto;
+        border: 1px solid $blue_light_color;
+        border-radius: $border_rad;
+        margin: 10px 0;
+    }
+}

@@ -1,5 +1,22 @@
 <template>
     <div class="tour_price tour_price_select" >
+        <h2 class="pay_header">
+            <span>Купить тур</span>
+            <div class="icons">
+
+
+                <i class="mir"></i>
+                <i class="sber"></i>
+                <i class="t"></i>
+            </div>
+        </h2>
+
+        <a href="#howpay" class="instruction_lnk">
+            <svg class="sprite_icon">
+                <use xlink:href="#information"></use>
+            </svg>
+            <span>Как купить тур (инструкция)?</span>
+        </a>
         <p class="select_label">Выберите дату:</p>
         <div class="tur_data_wrapper">
             <div
@@ -31,7 +48,7 @@
             Цена: <strong>{{ selected_price }}</strong> <span class="v">₽</span>
         </div>
 
-        <button @click.prevent="goToPay" class="button">Купить путевку</button>
+        <button @click.prevent="goToPay" class="button">Перейти к оплате</button>
     </div>
 </template>
 
