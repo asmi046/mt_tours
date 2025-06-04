@@ -15,7 +15,7 @@
             <svg class="sprite_icon">
                 <use xlink:href="#information"></use>
             </svg>
-            <span>Как купить тур (инструкция)?</span>
+            <span>Как купить тур?</span>
         </a>
         <p class="select_label">Выберите дату:</p>
         <div class="tur_data_wrapper">
