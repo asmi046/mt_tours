@@ -19,7 +19,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 
-const showModal = ref(true);
+const showModal = ref(false);
 
 const props = defineProps({
     hesh: String,
