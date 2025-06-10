@@ -13,7 +13,6 @@ gsap.registerPlugin(
     ScrollToPlugin
 );
 
-// ScrollTrigger.normalizeScroll(true)
 
 let smoother = null
 
@@ -22,7 +21,8 @@ if (!window.isMobile) {
         smooth: 2,
         effects: true,
         smoothTouch: 0.1,
-        // normalizeScroll: true
+        // normalizeScroll: true,
+        allowScrollPropagation: true
     });
 }
 

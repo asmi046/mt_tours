@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Tour;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
 
 class TourController extends Controller
 {
@@ -14,11 +15,13 @@ class TourController extends Controller
 
         $tur_programm = [];
 
+        $template = (View::exists($tour_info->template_name))?$tour_info->template_name:'tour_page';
+
         if ($tour_info->tour_program)
         foreach ($tour_info->tour_program as $item ) {
             $tur_programm[$item['type']][$item['number']] = $item;
         }
 
-        return view('tour_page', ['tour_info' => $tour_info, 'struct_programm' => $tur_programm, 'tour_any' => $tour_any]);
+        return view($template, ['tour_info' => $tour_info, 'struct_programm' => $tur_programm, 'tour_any' => $tour_any]);
     }
 }
