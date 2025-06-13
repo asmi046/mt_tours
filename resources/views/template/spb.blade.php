@@ -136,8 +136,8 @@
                             </div>
 
                             <div class="present">
-                                <x-palaroid :item="$tour_info->galery[2]"></x-palaroid>
                                 <x-palaroid :item="$tour_info->galery[3]"></x-palaroid>
+                                <x-palaroid :item="$tour_info->galery[4]"></x-palaroid>
 
                             </div>
                         </div>
