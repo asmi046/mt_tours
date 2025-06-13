@@ -7,7 +7,7 @@
                         @foreach ($item as $dey => $program)
                             <div class="step">
                                 <div class="point"></div>
-                                <span>{{ $dey }} день ({{ $program['date'] }})</span>
+                                <span>{{ $dey }} день {{ $program['date'] }}</span>
                             </div>
                             <div class="text text_styles">{!! $program['description'] !!}</div>
                         @endforeach
