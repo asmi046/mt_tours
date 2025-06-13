@@ -63,10 +63,10 @@
     </section>
 
     <section id="tours_content" class="tours_content {{ $tour_info->page_bg }}" >
-
+{{--
         <img class="obl obl_1" src="{{ asset('img/obl/obl_1.svg') }}" alt="">
         <img class="obl obl_2" src="{{ asset('img/obl/obl_2.svg') }}" alt="">
-        <img class="obl obl_3" src="{{ asset('img/obl/obl_3.svg') }}" alt="">
+        <img class="obl obl_3" src="{{ asset('img/obl/obl_3.svg') }}" alt=""> --}}
 
         <div class="container">
             <div class="tour_info">
@@ -98,46 +98,91 @@
 
                                     </div>
 
-                <div class="tour_presentation">
+                <div id="spb" class="tour_presentation">
                     <div class="step step_1">
-                        <div class="description">
+                        <div class="header_img_wrapper">
                             <img class="title_img" src="{{ asset('img/templates/spb/spb_h.webp') }}" alt="{{ $tour_info->title }}">
-                            <div class="text_styles">
-                                <p><strong>Тур в Санкт-Петербург – 5 дней в северной столице!</strong></p>
-                                <p>Откройте для себя великолепие Петербурга: обзорная экскурсия по историческому центру, роскошь Петергофа с его фонтанами, тайны Эрмитажа и вечерний круиз по Неве. Вас ждут прогулки по Невскому проспекту, посещение Исаакиевского собора и свободное время для погружения в атмосферу города.</p>
-                                <p>Включено: проживание, завтраки, экскурсии и трансферы. Отправляйтесь в путешествие, где каждый день – новая страница истории!</p>
-                                <p><strong>Забронируйте тур уже сегодня!</strong></p>
+                            <p class="font_caveat">Незабываемый тур в Северную Столицу!</p>
+                        </div>
+
+                        <div class="tp_wrapper">
+                            <div class="description">
+                                <div class="text_styles">
+                                    <p>Откройте для себя великолепие Петербурга: обзорная экскурсия по историческому центру, роскошь Петергофа с его фонтанами, тайны Эрмитажа и вечерний круиз по Неве. Вас ждут прогулки по Невскому проспекту, посещение Исаакиевского собора и свободное время для погружения в атмосферу города.</p>
+                                    <p>Включено: проживание, завтраки, экскурсии и трансферы. Отправляйтесь в путешествие, где каждый день – новая страница истории!</p>
+                                    <p><strong>Забронируйте тур уже сегодня!</strong></p>
+                                </div>
+                            </div>
+
+                            <div class="present">
+                                <x-palaroid :item="$tour_info->galery[0]"></x-palaroid>
+                                <x-palaroid :item="$tour_info->galery[1]"></x-palaroid>
                             </div>
                         </div>
 
-                        <div class="present">
-                            <x-palaroid :item="$tour_info->galery[0]"></x-palaroid>
-                            <x-palaroid :item="$tour_info->galery[1]"></x-palaroid>
-                            <x-palaroid :item="$tour_info->galery[2]"></x-palaroid>
-                        </div>
                     </div>
 
                     <div class="step step_2">
-                        <div class="description">
-                            <img class="title_img" src="{{ asset('img/templates/spb/petergof_h.webp') }}" alt="{{ $tour_info->title }}">
-                            <div class="text_styles">
-                                <p><strong>Петергоф – великолепие фонтанов и парков!</strong></p>
-                                <p>Откройте для себя жемчужину русского зодчества – дворцово-парковый ансамбль Петергофа. Вас ждут:</p>
-                                <ul>
-                                    <li>Торжественный парад фонтанов Нижнего парка</li>
-                                    <li>Уникальный Большой каскад с золотыми статуями</li>
-                                    <li>Изящные дворцы Монплезир и Марли</li>
-                                    <li>Тенистые аллеи Верхнего сада</li>
-                                    <li>Виды на Финский залив с приморской террасы</li>
-                                </ul>
+                        <div class="header_img_wrapper">
+                            <img class="title_img" src="{{ asset('img/templates/spb/is_h.webp') }}" alt="{{ $tour_info->title }}">
+                            <p class="font_caveat">Величественный символ Санкт-Петербурга</p>
+                        </div>
+                        <div class="tp_wrapper">
+                            <div class="description">
+                                <div class="text_styles">
+                                    <p>Грандиозный собор с золотым куполом – визитная карточка города. 40 лет строительства и мастерство Огюста Монферрана подарили миру этот шедевр, где классицизм сочетается с византийскими мотивами.</p>
+                                    <p>Внутри – роскошь цветного мрамора, малахитовые колонны и уникальный витраж «Воскресший Христос». Сегодня это и храм, и музей. Поднимитесь на колоннаду – перед вами откроется лучшая панорама Петербурга с Невой и историческим центром.</p>
+                                </div>
+                            </div>
 
-                                <p>Петергоф – это гармония природы и архитектуры, где каждый уголок дышит историей и вдохновляет.</p>
+                            <div class="present">
+                                <x-palaroid :item="$tour_info->galery[2]"></x-palaroid>
+                                <x-palaroid :item="$tour_info->galery[3]"></x-palaroid>
+
                             </div>
                         </div>
+                    </div>
 
-                        <div class="present">
-                            <x-palaroid :item="$tour_info->galery[3]"></x-palaroid>
-                            <x-palaroid :item="$tour_info->galery[4]"></x-palaroid>
+
+                    <div class="step step_3">
+                        <div class="header_img_wrapper">
+                            <img class="title_img" src="{{ asset('img/templates/spb/ks_h.webp') }}" alt="{{ $tour_info->title }}">
+                            <p class="font_caveat">Морская крепость России</p>
+                        </div>
+                        <div class="tp_wrapper">
+                            <div class="description">
+                                <div class="text_styles">
+                                    <p>Легендарный город-порт на острове Котлин – живая история российского флота. Его мощные форты, неприступные стены и строгие линии гаваней веками защищали морские подступы к Петербургу.</p>
+                                    <p>Главная жемчужина – Морской Никольский собор с сияющим золотом куполом. Внутри – мемориальные доски с именами погибших моряков и уникальные витражи. Обязательно прогуляйтесь по Петровскому доку, где ремонтировали первые корабли Балтийского флота, и набережной с видом на Финский залив.</p>
+                                    <p>Сегодня Кронштадт – это музей под открытым небом, где каждый камень помнит славные морские победы.</p>
+                                </div>
+                            </div>
+
+                            <div class="present">
+                                <x-palaroid :item="$tour_info->galery[4]"></x-palaroid>
+                                <x-palaroid :item="$tour_info->galery[5]"></x-palaroid>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step step_4">
+                        <div class="header_img_wrapper">
+                            <img class="title_img" src="{{ asset('img/templates/spb/petergof_h.webp') }}" alt="{{ $tour_info->title }}">
+                            <p class="font_caveat">Танцующие фонтаны и парковые шедевры</p>
+                        </div>
+                        <div class="tp_wrapper">
+                            <div class="description">
+                                <div class="text_styles">
+                                    <p>Всемирно известная жемчужина паркового искусства, где вода становится произведением искусства. Главная гордость – фонтаны-исполины, создающие волшебную симфонию струй: от триумфального Самсона до игривых шутих.</p>
+                                    <p>Архитектурный ансамбль восхищает: золото куполов дворцов перекликается с бирюзой Финского залива. Особое очарование – Марлинский ансамбль и каскад "Золотая гора", где вода струится по позолоченным ступеням.</p>
+                                    <p><strong>Петергоф – это праздник для глаз и души в любое время года.</strong></p>
+                                </div>
+                            </div>
+
+                            <div class="present">
+                                <x-palaroid :item="$tour_info->galery[3]"></x-palaroid>
+                                <x-palaroid :item="$tour_info->galery[4]"></x-palaroid>
+                            </div>
                         </div>
                     </div>
                 </div>

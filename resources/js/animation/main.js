@@ -235,6 +235,71 @@ deys.forEach((elem) => {
 })
 
 
+if (document.getElementById('spb')) {
+        const headers = Array.from(document.querySelectorAll(".header_img_wrapper"))
+
+        headers.forEach((elem) => {
+            ScrollTrigger.create({
+                trigger: elem,
+                markers:true,
+                start: "top 80%",
+                end: "top 35%",
+                scrub:true,
+                animation: gsap.from( elem,
+                    {
+                        y: -50,
+                        opacity: 0,
+                        duration: 1,
+                        ease: "power4.out",
+                    }
+                ),
+            })
+        });
+
+        const gals = Array.from(document.querySelectorAll(".step .present"))
+
+        gals.forEach((elem) => {
+            ScrollTrigger.create({
+                trigger: elem,
+                // markers:true,
+                start: "top 80%",
+                end: "top 35%",
+                scrub:true,
+                animation: gsap.from( elem,
+                    {
+                        x: 50,
+                        opacity: 0,
+                        duration: 1,
+                        ease: "power4.out",
+                    }
+                ),
+            })
+        });
+
+        const descr = Array.from(document.querySelectorAll(".step .description"))
+
+        descr.forEach((elem) => {
+            ScrollTrigger.create({
+                trigger: elem,
+                // markers:true,
+                start: "top 80%",
+                end: "top 35%",
+                scrub:true,
+                animation: gsap.from( elem,
+                    {
+                        x: -50,
+                        opacity: 0,
+                        duration: 1,
+                        ease: "power4.out",
+                    }
+                ),
+            })
+        });
+
+
+
+}
+
 // .to('.location_wrapper', {
 //         scrollTrigger:
 //          {
