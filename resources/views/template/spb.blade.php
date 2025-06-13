@@ -159,8 +159,8 @@
                             </div>
 
                             <div class="present">
-                                <x-palaroid :item="$tour_info->galery[4]"></x-palaroid>
-                                <x-palaroid :item="$tour_info->galery[5]"></x-palaroid>
+                                <x-palaroid :item="$tour_info->galery[12]"></x-palaroid>
+                                <x-palaroid :item="$tour_info->galery[13]"></x-palaroid>
                             </div>
                         </div>
                     </div>
@@ -180,8 +180,8 @@
                             </div>
 
                             <div class="present">
-                                <x-palaroid :item="$tour_info->galery[3]"></x-palaroid>
-                                <x-palaroid :item="$tour_info->galery[4]"></x-palaroid>
+                                <x-palaroid :item="$tour_info->galery[1]"></x-palaroid>
+                                <x-palaroid :item="$tour_info->galery[8]"></x-palaroid>
                             </div>
                         </div>
                     </div>
