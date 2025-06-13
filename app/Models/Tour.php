@@ -12,6 +12,7 @@ class Tour extends Model
 
     public $fillable = [
         'actual',
+        'template_name',
         'order',
         'out_lnk',
         'title',

@@ -72,6 +72,7 @@ class TourResource extends ModelResource
                     Switcher::make('Актуальный тур', 'actual'),
                     Number::make('Порядок', 'order'),
                     Url::make('Внешняя ссылка', 'out_lnk'),
+                    Text::make('Шаблон', 'template_name')->required(),
                     Flex::make([
                         Text::make('Заголовок (h1)', 'title')->required(),
                         Text::make('Заголовок на карточке', 'title_card'),
