@@ -154,17 +154,18 @@ class TourResource extends ModelResource
                 ])
             ]),
 
-            When::make(
-                    static fn() => isset($this->getItem()['slug']),
-                    static fn() => [
+            // When::make(
+            //         static fn() => isset($this->getItem()['slug']),
+            //         static fn() => [
                         ActionButton::make(
                             label: 'Перейти к странице',
                             url: route('tour_page', $this->getItem()['slug']),
                         )
                         ->success()
                         ->blank()
-                    ],
-            )
+                        ->showWhen(fn ($item) => $isEditing ?? false)
+            //         ],
+            // )
 
 
 
