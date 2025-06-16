@@ -17,6 +17,7 @@ use MoonShine\UI\Fields\Image;
 use MoonShine\UI\Fields\Number;
 use MoonShine\UI\Fields\Select;
 use MoonShine\UI\Components\Tabs;
+use MoonShine\UI\Components\When;
 use MoonShine\UI\Fields\Position;
 use MoonShine\UI\Fields\Switcher;
 use MoonShine\Handlers\ExportHandler;
