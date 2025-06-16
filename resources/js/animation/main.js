@@ -241,7 +241,7 @@ if (document.getElementById('spb')) {
         headers.forEach((elem) => {
             ScrollTrigger.create({
                 trigger: elem,
-                markers:true,
+                // markers:true,
                 start: "top 80%",
                 end: "top 35%",
                 scrub:true,

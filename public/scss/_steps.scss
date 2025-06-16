@@ -171,6 +171,21 @@
 @media (max-width:480px) {
     .tour_presentation {
         margin-top: 30px;
+
+
+        .step {
+        .header_img_wrapper {
+
+
+
+            p {
+                margin-bottom: 10px;
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+        }
+
         .step {
             gap:0;
             .present {
@@ -182,4 +197,5 @@
             }
         }
     }
+
 }

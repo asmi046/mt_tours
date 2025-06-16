@@ -153,16 +153,17 @@ class TourResource extends ModelResource
                 ])
             ]),
 
-            ActionButton::make(
-                label: 'Перейти к странице',
-                url: route('tour_page', $this->getItem()['slug']),
+            When::make(
+                    static fn() => isset($this->getItem()['slug']),
+                    static fn() => [
+                        ActionButton::make(
+                            label: 'Перейти к странице',
+                            url: route('tour_page', $this->getItem()['slug']),
+                        )
+                        ->success()
+                        ->blank()
+                    ],
             )
-            ->success()
-            ->blank()
-
-
-
-
 
 
 
