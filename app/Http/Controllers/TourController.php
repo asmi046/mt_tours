@@ -19,6 +19,7 @@ class TourController extends Controller
 
         if ($tour_info->tour_program)
         foreach ($tour_info->tour_program as $item ) {
+            if (isset($item['no_show']) && $item['no_show']) continue;
             $tur_programm[$item['type']][$item['number']] = $item;
         }
 
