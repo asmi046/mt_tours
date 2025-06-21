@@ -7,6 +7,7 @@ namespace App\MoonShine\Resources;
 use MoonShine\UI\Fields\ID;
 use App\Models\TourCategory;
 use MoonShine\UI\Fields\Text;
+use MoonShine\UI\Fields\Image;
 use MoonShine\UI\Fields\Number;
 use MoonShine\UI\Fields\Switcher;
 use MoonShine\Laravel\Fields\Slug;
@@ -50,10 +51,17 @@ class TourCategoryResource extends ModelResource
             Box::make([
                 ID::make(),
                 Switcher::make('Отображать на панели', 'show'),
-                Text::make('Название', 'name')->required(),
+                Text::make('Название', 'name'),
+                TinyMce::make('Выводимое имя категории', 'html_name'),
+                Text::make('Подзаголовок баннера', 'subtitle'),
+                Image::make('Иконка кнопки', 'icon')->dir('cat'),
                 Slug::make('Ссылка', 'slug')->required(),
                 Number::make('Порядок', 'order')->required(),
                 Text::make('Имя шаблона', 'template_name'),
+
+
+                Text::make('Верхнее описание', 'top_title'),
+                TinyMce::make('Описание под баннером', 'top_description'),
                 TinyMce::make('Верхнее описание', 'description'),
             ])
         ];
