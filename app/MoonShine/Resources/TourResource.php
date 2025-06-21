@@ -122,6 +122,7 @@ class TourResource extends ModelResource
                     ->removable()
                             ->fields([
                                 Position::make(),
+                                Switcher::make('Не отображать', 'no_show'),
                                 Text::make('Тип программы', 'type'),
                                 Number::make('№ дня', 'number'),
                                 Text::make('Дата дня', 'date'),
