@@ -60,7 +60,7 @@ class TourCategoryResource extends ModelResource
                 Text::make('Имя шаблона', 'template_name'),
 
 
-                Text::make('Верхнее описание', 'top_title'),
+                Text::make('Верхнее описание', 'top_title')->unescape(),
                 TinyMce::make('Описание под баннером', 'top_description'),
                 TinyMce::make('Верхнее описание', 'description'),
             ])
