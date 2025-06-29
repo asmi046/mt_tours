@@ -57,7 +57,7 @@ class CalendarController extends Controller
 
     public function index($month = null)
     {
-        $curent_month = $month?$month:date("d.m.Y", strtotime("01.06.2025"));
+        $curent_month = $month?$month:date("d.m.Y", strtotime("01.07.2025"));
 
         $src_event = Calendar::all();
         $events = [];
