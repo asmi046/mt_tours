@@ -25,9 +25,9 @@
                 <div class="dop_param">
                     <div class="arrow_widget">
                         <div class="arrow"></div>
-                        <span>Выбирай!</span>
+                        <span>Последние<br>Места!</span>
                     </div>
-                    <x-main.button-in-banner></x-main.button-in-banner>
+                    <x-banner-tours-prev></x-banner-tours-prev>
                 </div>
 
             </div>

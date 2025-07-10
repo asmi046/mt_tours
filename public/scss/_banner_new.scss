@@ -68,7 +68,7 @@
             .arrow_widget {
                 position: absolute;
                 top: calc(50% - 45px);
-                left: 10%;
+                left: 5%;
                 position: absolute;
                 .arrow {
                     position: absolute;
@@ -104,7 +104,7 @@
                     font-size: 22px;
                     transform: rotate(30deg);
                     display: flex;
-
+                    text-align: center;
                     animation-duration: 2.5s;
                     animation-name: animation_rotate_2;
                     animation-iteration-count: infinite;
@@ -225,6 +225,7 @@
                     span {
                         left: -55px;
                         top: 40px;
+
                         transform: rotate(10deg);
                         animation-name: animation_rotate_2_mobile;
                     }

@@ -1,0 +1,125 @@
+@use 'vars' as *;
+
+.banner_video {
+    .dop_param {
+        &__preview {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: end;
+            .item {
+                width:230px;
+                height:150px;
+                border-radius: $border_rad;
+                overflow: hidden;
+                box-shadow: $box_shadow;
+                position: relative;
+                img {
+                    z-index: 1;
+                }
+
+                .overlay {
+                    width: 100%;
+                    height: 100%;
+                    z-index: 2;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background: linear-gradient(
+                        to top,
+                        rgba(0, 0, 0, .7) 0%,
+                        rgba(0, 0, 0, 0) 70%
+                    );
+
+                    &:hover {
+                        background: linear-gradient(
+                            to top,
+                            rgba(0, 0, 0, .5) 0%,
+                            rgba(0, 0, 0, 0) 70%
+                        );
+                    }
+                }
+
+                .text{
+                    z-index: 3;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    padding: 5px 5%;
+                    color:white;
+                    font-size: 14px;
+                }
+
+                .price_label {
+                    z-index: 3;
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                    font-size: 12px;
+                }
+
+                &:hover {
+                    .overlay {
+                        background: linear-gradient(
+                            to top,
+                            rgba(0, 0, 0, .5) 0%,
+                            rgba(0, 0, 0, 0) 70%
+                        );
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1380px) {
+    .banner_video .left_text .dop_param .arrow_widget {
+        left: -5%;
+    }
+
+    .banner_video .dop_param__preview .item {
+        width: 210px;
+        height: 140px;
+    }
+}
+
+
+@media (max-width:1380px) {
+    .banner_video .left_text .dop_param .arrow_widget {
+        left: -23%;
+        top: 0%;
+    }
+}
+
+@media (max-width:1024px) {
+    .banner_video .left_text .dop_param .arrow_widget {
+        left: -23%;
+        top: 0%;
+    }
+}
+
+@media (max-width:768px) {
+    .banner_video .left_text .dop_param .arrow_widget {
+        left: 20%;
+        top: -5%;
+    }
+
+    .banner_video .dop_param__preview {
+        justify-content: center;
+        .item {
+            width: 40%;
+            height: 170px;
+        }
+    }
+}
+
+@media (max-width:480px) {
+
+    .banner_video .dop_param__preview {
+        .item {
+            width: 45%;
+            height: 130px;
+        }
+    }
+}
