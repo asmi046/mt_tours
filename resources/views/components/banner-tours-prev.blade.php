@@ -1,3 +1,13 @@
+<a href="#" class="item buss_item">
+    <img src="{{ asset('img/buss.webp') }}" alt="Автобусные туры на море">
+    <div class="overlay"></div>
+    <div class="text">
+        Автобусные туры на море
+    </div>
+    <div class="label price_label">
+        от 15000 ₽
+    </div>
+</a>
 <div class="dop_param__preview">
     @foreach ($tours as $item)
         <a href="{{ route('tour_page', $item->slug) }}" class="item">
