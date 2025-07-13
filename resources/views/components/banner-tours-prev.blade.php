@@ -1,4 +1,4 @@
-<a href="#" class="item buss_item">
+<a href="https://www.mirturizma46.ru/turi-na-more" class="item buss_item">
     <img src="{{ asset('img/buss.webp') }}" alt="Автобусные туры на море">
     <div class="overlay"></div>
     <div class="text">
