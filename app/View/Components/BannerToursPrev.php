@@ -15,7 +15,10 @@ class BannerToursPrev extends Component
      */
     public function __construct()
     {
-        $this->tours = Tour::whereIn('id', [11, 7, 8, 10])->get();
+        $this->tours = Tour::whereIn('id', [11, 10, 8, 9])->get();
+        // $orderedItems = $items->sortBy(function ($item) use ($ids) {
+        //     return array_search($item->id, $ids);
+        // })->values();
     }
 
     /**
