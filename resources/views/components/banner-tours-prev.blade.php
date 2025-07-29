@@ -22,3 +22,16 @@
         </a>
     @endforeach
 </div>
+
+<div class="dop_param__preview__mobile">
+    @foreach ($tours as $item)
+        <a href="{{ route('tour_page', $item->slug) }}" class="bable_item">
+            <div class="text">
+                {{ $item->title_card }}
+            </div>
+            <div class="label price_label">
+                от {{ $item->prices[0]['price'] }} ₽
+            </div>
+        </a>
+    @endforeach
+</div>

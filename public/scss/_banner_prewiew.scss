@@ -79,6 +79,48 @@
                 width: 480px;
             }
     }
+
+    & .dop_param__preview__mobile {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        .bable_item {
+            display: flex;
+            border-radius: 50px;
+            background-color: $main_color;
+            padding: 5px 20px;
+            justify-content: space-between;
+
+            .text {
+                font-size: 12px;
+                font-family: 'Play', sans-serif;
+                font-weight: 600;
+            }
+            .price_label {
+                font-size: 12px;
+                color: white;
+                background-color: $blue_light_color;
+            }
+
+            &:nth-child(1) {
+                transform: rotate(3deg);
+            }
+
+            &:nth-child(2) {
+                transform: rotate(-1deg);
+            }
+
+            &:nth-child(3) {
+                transform: rotate(2deg);
+            }
+
+            &:nth-child(4) {
+                transform: rotate(-2deg);
+            }
+        }
+
+    }
 }
 
 @media (max-width:1380px) {
@@ -140,7 +182,17 @@
         }
     }
 
-    .banner_video .dop_param .buss_item {
-        width: calc(90% + 20px);
+    .banner_video {
+        & .dop_param__preview__mobile {
+            display: flex;
+        }
+
+        & .dop_param__preview {
+            display: none;
+        }
+
+        .dop_param .buss_item {
+            width: calc(90% + 20px);
+        }
     }
 }
