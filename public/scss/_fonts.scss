@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 @font-face {
     font-family: 'Lato';
+    font-display: swap;
     src: url('../fonts/Lato/Lato-Regular.eot');
     src: local('Lato Regular'), local('Lato-Regular'),
         url('../fonts/Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
@@ -12,6 +13,7 @@
 
 @font-face {
     font-family: 'Lato';
+    font-display: swap;
     src: url('../fonts/Lato/Lato-Semibold.eot');
     src: local('Lato Semibold'), local('Lato-Semibold'),
         url('../fonts/Lato/Lato-Semibold.eot?#iefix') format('embedded-opentype'),
@@ -23,6 +25,7 @@
 
 @font-face {
     font-family: 'Lato';
+    font-display: swap;
     src: url('../fonts/Lato/Lato-Bold.eot');
     src: local('Lato Bold'), local('Lato-Bold'),
         url('../fonts/Lato/Lato-Bold.eot?#iefix') format('embedded-opentype'),
@@ -35,6 +38,7 @@
 
 @font-face {
     font-family: 'Play';
+    font-display: swap;
     src: url('../fonts/Play/Play-Bold.ttf');
     font-weight: bold;
     font-style: normal;
@@ -42,6 +46,7 @@
 
 @font-face {
     font-family: 'Play';
+    font-display: swap;
     src: url('../fonts/Play/Play-Regular.ttf');
     font-weight: normal;
     font-style: normal;

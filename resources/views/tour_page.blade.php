@@ -2,11 +2,13 @@
 
 @section('main')
     <section class="banner_video">
-        <video autoplay muted loop playsinline preload="metadata" class="_video">
+        <video autoplay muted loop playsinline preload="metadata"
+        poster="{{ asset('img/poster.webp') }}"
+        class="_video">
             @if ($tour_info->header_bg)
-                <source src="{{ Storage::url($tour_info->header_bg) }}" type="video/mp4">
+                <source src="{{ Storage::url($tour_info->header_bg) }}" type="video/mp4" fetchpriority="high">
             @else
-                <source src="{{ asset('img/exkursionka.mp4') }}" type="video/mp4">
+                <source src="{{ asset('img/exkursionka.mp4') }}" type="video/mp4" fetchpriority="high">
             @endif
 
         </video>
@@ -55,7 +57,7 @@
             <div class="dop_param page_top_galery">
                 @foreach ($tour_info->galery as $photo)
                     @if ($photo['in_top'])
-                        <x-palaroid :item="$photo"></x-palaroid>
+                        <x-palaroid load="eager" :item="$photo"></x-palaroid>
                     @endif
                 @endforeach
             </div>
