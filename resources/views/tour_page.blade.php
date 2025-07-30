@@ -2,7 +2,7 @@
 
 @section('main')
     <section class="banner_video">
-        <video autoplay muted loop playsinline class="_video">
+        <video autoplay muted loop playsinline loading="lazy" preload="metadata" class="_video">
             @if ($tour_info->header_bg)
                 <source src="{{ Storage::url($tour_info->header_bg) }}" type="video/mp4">
             @else
