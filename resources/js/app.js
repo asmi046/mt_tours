@@ -97,4 +97,10 @@ window.addEventListener('load', function () {
     preloader.classList.add('hide');
 });
 
-
+// Резервный таймер на случай долгой загрузки
+setTimeout(function() {
+    var preloader = document.getElementById('preloader');
+    if (preloader && !preloader.classList.contains('hide')) {
+        preloader.classList.add('hide');
+    }
+}, 4000); // 3 секунды максимум
