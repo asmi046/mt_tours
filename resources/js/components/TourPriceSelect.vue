@@ -48,7 +48,7 @@
             Цена: <strong>{{ selected_price }}</strong> <span class="v">₽</span>
         </div>
 
-        <button @click.prevent="goToPay" class="button">Перейти к оплате</button>
+        <button @click.prevent="goToPayNew" class="button">Перейти к оплате</button>
     </div>
 </template>
 
@@ -104,6 +104,26 @@ import { ref } from 'vue';
         +picture+props.img
 
         document.location.href = resultPayURL
+    }
+
+    const goToPayNew = async () => {
+        axios.get('/pay/create_pay_order', {
+            params: {
+            img: props.img,
+            client_count: 1,
+            start_data: selected_data.value,
+            price: selected_price.value,
+            name: props.title+" - "+selected_data.value+" - "+selected_type.value,
+            type: 'ekskursionka' // замените на нужный тип
+            }
+        })
+        .then(response => {
+            document.location.href = response.data.pay_url;
+            console.log(response.data);
+        })
+        .catch(error => {
+            console.error(error);
+        });
     }
 
     const getPrice = () => {

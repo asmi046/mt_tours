@@ -13,56 +13,79 @@ import Tap from "./components/Tap.vue"
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import { VMaskDirective } from 'v-slim-mask'
-
+import Pay from "./components/Pay/Pay.vue"
 
 import fslightbox from 'fslightbox'
 
-const review_app = createApp({
-    components:{
-        Review,
-        ModalWindow,
-    },
-})
+if (document.getElementById("review_app")) {
+    const review_app = createApp({
+        components:{
+            Review,
+            ModalWindow,
+        },
+    })
 
-review_app.use(VueAxios, axios)
-review_app.mount("#review_app")
-
-const global_app = createApp({
-    components:{
-        ModalWindow,
-        EmptyModal,
-    },
-    setup() {}
-})
+    review_app.use(VueAxios, axios)
+    review_app.mount("#review_app")
+}
 
 
-global_app.use(VueAxios, axios)
-global_app.directive('mask', VMaskDirective)
-global_app.mount("#global_app");
+if (document.getElementById("global_app")) {
+    const global_app = createApp({
+        components:{
+            ModalWindow,
+            EmptyModal,
+        },
+        setup() {}
+    })
 
 
-const price_app = createApp({
-    components:{
-        TourPrice,
-        TourPriceSelect,
-    },
-    setup() {}
-})
+    global_app.use(VueAxios, axios)
+    global_app.directive('mask', VMaskDirective)
+    global_app.mount("#global_app");
+}
 
-price_app.use(VueAxios, axios)
-price_app.directive('mask', VMaskDirective)
-price_app.mount("#price_app");
+if (document.getElementById("price_app")) {
+    const price_app = createApp({
+        components:{
+            TourPrice,
+            TourPriceSelect,
+        },
+        setup() {}
+    })
 
-const programm_tab = createApp({
-    components:{
-        Tap,
-    },
-    setup() {}
-})
+    price_app.use(VueAxios, axios)
+    price_app.directive('mask', VMaskDirective)
+    price_app.mount("#price_app");
+}
 
-programm_tab.use(VueAxios, axios)
-programm_tab.directive('mask', VMaskDirective)
-programm_tab.mount("#programm_tab");
+if (document.getElementById("programm_tab")) {
+    const programm_tab = createApp({
+        components:{
+            Tap,
+        },
+        setup() {}
+    })
+
+    programm_tab.use(VueAxios, axios)
+    programm_tab.directive('mask', VMaskDirective)
+    programm_tab.mount("#programm_tab");
+}
+
+
+if (document.getElementById("pay_app")) {
+    const pay_app = createApp({
+        components:{
+            Pay
+        },
+        setup() {}
+    })
+
+    pay_app.use(VueAxios, axios)
+    pay_app.directive('mask', VMaskDirective)
+    pay_app.mount("#pay_app");
+}
+
 
 
 import SideMenu from './menues.js';

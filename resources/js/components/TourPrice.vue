@@ -43,4 +43,24 @@ import { ref } from 'vue';
         document.location.href = resultPayURL
     }
 
+    const goToPayNew = async () => {
+        axios.get('/pay/create_pay_order', {
+            params: {
+            img: props.img,
+            client_count: 1,
+            start_data: props.prices[selected.value].start_data, // если есть
+            price: props.prices[selected.value].price,
+            name: props.title,
+            type: 'ekskursionka' // замените на нужный тип
+            }
+        })
+        .then(response => {
+            // обработка ответа
+            console.log(response.data);
+        })
+        .catch(error => {
+            console.error(error);
+        });
+    }
+
 </script>

@@ -1,0 +1,9 @@
+В метод goToPayNew текущего файла сделай Get запрос при помощи axios синхронным методом на адрес /pay/create_pay_order
+Параметры которые нужно передать:
+
+img
+client_count
+start_data
+price
+name
+type
