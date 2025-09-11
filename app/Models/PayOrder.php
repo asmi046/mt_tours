@@ -21,13 +21,13 @@ class PayOrder extends Model
     ];
 
 
-    protected function startData(): Attribute
-    {
-        return Attribute::make(
-            get: fn ($value) => ($value)?date("d.m.Y", strtotime($value)):null,
-            set: fn ($value) => ($value)?date("Y-m-d", strtotime($value)):null,
-        );
-    }
+    // protected function startData(): Attribute
+    // {
+    //     return Attribute::make(
+    //         get: fn ($value) => ($value)?date("d.m.Y", strtotime($value)):null,
+    //         set: fn ($value) => ($value)?date("Y-m-d", strtotime($value)):null,
+    //     );
+    // }
 
     public function clients(): HasMany
     {

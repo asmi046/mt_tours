@@ -17,7 +17,6 @@ class PayOrderRegisterTgSendNotification implements ShouldQueue
      */
     public function handle(PayOrderRegister $event): void
     {
-        Log::alert("----LIST_____");
         $tg_service = new TelegramSendServices();
         $tg_service->pay_register($event->pay_order);
     }

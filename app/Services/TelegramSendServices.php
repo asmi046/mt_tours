@@ -2,6 +2,7 @@
 namespace App\Services;
 
 use App\Models\PayOrder;
+use Illuminate\Support\Facades\Log;
 
 class TelegramSendServices {
 
@@ -13,6 +14,14 @@ class TelegramSendServices {
         $message .= "<b>Цена:</b> ". $pay->price ."₽\n\r";
         $message .= "<b>Дата тура/выезда:</b> ". $pay->start_data ."\n\r";
         $message .= "<b>Ссылка на оптату в Т-банке:</b> ". $pay->payment_url ."\n\r";
+
+        foreach ($pay->clients as $client) {
+            $message .= "\n\r";
+            $message .= "<b>Клиент:</b> ". $client->fio ."\n\r";
+            $message .= "<b>Дата рождения:</b> ". $client->dr ."\n\r";
+            $message .= "<b>Тип документа:</b> ". $client->document_type ."\n\r";
+            $message .= "<b>Номер документа:</b> ". $client->document_number ."\n\r";
+        }
 
         $this->send($message);
     }
