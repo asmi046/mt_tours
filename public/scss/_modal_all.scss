@@ -119,6 +119,13 @@
     }
 }
 
+.emoji {
+    &.big {
+        font-size: 32px;
+    }
+}
+
+
 @media (max-width: 480px) {
     .popup {
         width: 94%;
