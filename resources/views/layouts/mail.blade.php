@@ -49,6 +49,16 @@
                 margin: 30px;
             }
 
+            .button {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 16px;
+                color: white;
+                background-color: #00B4F1;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+
         </style>
     </head>
     <body style="background-color: #e4efef; padding: 50px 20px;">
@@ -71,7 +81,7 @@
             <tfoot>
                 <tr>
                     <td>
-                        <a style="color:white" href="https://www.mirturizma46.ru/">Сайт «МирТуризма46»</a>
+                        <a style="color:white" href="https://tours.mirturizma46.ru/">Сайт «МирТуризма46»</a>
                     </td>
                 </tr>
             </tfoot>
