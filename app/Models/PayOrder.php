@@ -17,7 +17,8 @@ class PayOrder extends Model
         "email",
         "phone",
         'img',
-        'price'
+        'price',
+        'back_link'
     ];
 
 

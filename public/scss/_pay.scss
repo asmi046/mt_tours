@@ -1,6 +1,15 @@
+@use 'vars' as *;
+
 .pay_box_wrapper {
     width: 70%;
     margin: auto;
+
+        a {
+        color:$blue_light_color;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .pay_loader_icon {
@@ -15,6 +24,8 @@
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
+
+
 
     .img_wrapper {
         width:150px;

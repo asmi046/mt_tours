@@ -28,7 +28,10 @@
 
             <h3>Желаем Вам счастливого путешествия!❤️</h3>
             <br>
-            <a class="button" href="{{ route('home') }}">Выбрать еще тур</a>
+            <a class="button" href="{{ $pay->back_link }}">Купить еще билет на этот тур</a>
+            <br>
+            <br>
+            <a class="button button-blue" href="{{ route('home') }}">Выбрать другой тур</a>
         </div>
     </section>
 @endsection

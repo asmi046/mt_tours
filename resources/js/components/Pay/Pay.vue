@@ -77,6 +77,7 @@
             <span>Я даю свое <a href="https://www.mirturizma46.ru/soglasie-na-obrabotku-personalnyx-dannyx/">согласие на обработку персональных данных</a> а так же соглашаюсь с <a href="https://www.mirturizma46.ru/politika-v-oblasti-obrabotki-personalnyx-dannyx-polzovatelej/">политикой конфиденциальности</a></span>
         </label>
         <br>
+        <br>
         <button @click.prevent="to_pay_lnk">Оплатить</button>
 
     </form>
@@ -179,12 +180,16 @@
             console.log(response.data)
             document.location.href = response.data.payment_url
         })
-        .catch( (error) => {
+        .catch((error) => {
             console.log(error)
-            loader.value = false
-        });
+            loader.value = false;
+            // if (confirm('Данная ссылка на платеж не действительна. Вернуться на страницу тура?')) {
+            //     window.history.back();
+            // }
+        })
 
     }
 
     getPayData()
+
 </script>

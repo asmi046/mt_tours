@@ -18,7 +18,6 @@ class PayOrderController extends Controller
 {
     public function create_pay_order(PayOrderRequest $request) {
         $data = $request->validated();
-
         $data['uuid'] = Str::uuid();
         $pay = PayOrder::create($data);
 
@@ -38,6 +37,18 @@ class PayOrderController extends Controller
         $pay = PayOrder::where('status', 'Создан')->where('uuid', $uuid)->first();
         if (!$pay) abort(419, 'Платеж не найден');
         return $pay;
+    }
+
+    public function get_pay_state($uuid) {
+
+        $pay = PayOrder::where('uuid', $uuid)->first();
+        if (!$pay) abort(419, 'Платеж не найден');
+
+        return [
+            'status' => $pay->status,
+            'payment_url' => $pay->payment_url,
+            'ticket_short_lnk' => $pay->ticket_short_lnk,
+        ];
     }
 
     public function get_pay_lnk(ClientOrderRequest $request, ClientServices $clientServices, TinkoffPayService $tpc, VkServices $vkService) {

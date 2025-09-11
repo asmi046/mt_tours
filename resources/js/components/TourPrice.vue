@@ -51,6 +51,7 @@ import { ref } from 'vue';
             start_data: props.prices[selected.value].start_data, // если есть
             price: props.prices[selected.value].price,
             name: props.title,
+            back_link: document.location.origin + document.location.pathname,
             type: 'ekskursionka' // замените на нужный тип
             }
         })
