@@ -10,7 +10,7 @@ class TelegramSendServices {
         $message .= "<b>id:</b> ". $pay->uuid ."\n\r";
         $message .= "<b>Наименование:</b> ". $pay->name ."\n\r";
         $message .= "<b>Пасажиров:</b> ". $pay->client_count ."\n\r";
-        $message .= "<b>Цена:</b> ". $pay->price ."\n\r";
+        $message .= "<b>Цена:</b> ". $pay->price ."₽\n\r";
         $message .= "<b>Дата тура/выезда:</b> ". $pay->start_data ."\n\r";
         $message .= "<b>Ссылка на оптату в Т-банке:</b> ". $pay->payment_url ."\n\r";
 
