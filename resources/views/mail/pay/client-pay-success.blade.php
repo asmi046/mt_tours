@@ -8,4 +8,6 @@
     <br>
     <br>
     <a href="{{ route('show_ticket', ['uuid' => $pay->uuid]) }}" class="button">Скачать билеты</a>
+    <br>
+    <br>
 @endsection
