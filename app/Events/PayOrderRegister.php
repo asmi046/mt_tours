@@ -3,6 +3,7 @@
 namespace App\Events;
 
 use App\Models\PayOrder;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Broadcasting\PrivateChannel;
@@ -23,6 +24,7 @@ class PayOrderRegister
     public function __construct(PayOrder $pay_order)
     {
         $this->pay_order = $pay_order;
+        Log::alert("----REG_____");
     }
 
 }

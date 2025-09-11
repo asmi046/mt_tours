@@ -3,6 +3,7 @@
 namespace App\Listeners;
 
 use App\Events\PayOrderRegister;
+use Illuminate\Support\Facades\Log;
 use App\Services\TelegramSendServices;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -16,6 +17,7 @@ class PayOrderRegisterTgSendNotification implements ShouldQueue
      */
     public function handle(PayOrderRegister $event): void
     {
+        Log::alert("----LIST_____");
         $tg_service = new TelegramSendServices();
         $tg_service->pay_register($event->pay_order);
     }
