@@ -3,8 +3,9 @@
 namespace App\Listeners;
 
 use App\Events\PayOrderConfirmed;
-use Illuminate\Support\Facades\Mail;
 use App\Mail\ClienPaySuccessMail;
+use App\Mail\ManagerPaySuccessMail;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
