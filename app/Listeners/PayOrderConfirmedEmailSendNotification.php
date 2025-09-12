@@ -18,6 +18,7 @@ class PayOrderConfirmedEmailSendNotification implements ShouldQueue
     {
         if (isset($event->pay_order->email)) {
             Mail::to($event->pay_order->email)->send(new ClienPaySuccessMail($event->pay_order));
+            Mail::to(config('consultation.mailadresat'))->send(new ManagerPaySuccessMail($event->pay_order));
         }
     }
 }
