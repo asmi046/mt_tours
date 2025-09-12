@@ -13,7 +13,9 @@ class TelegramSendServices {
         $message .= "<b>Пасажиров:</b> ". $pay->client_count ."\n\r";
         $message .= "<b>Цена:</b> ". $pay->price ."₽\n\r";
         $message .= "<b>Дата тура/выезда:</b> ". $pay->start_data ."\n\r";
-        $message .= "<b>Ссылка на оптату в Т-банке:</b> ". $pay->payment_url ."\n\r";
+        $message .= "<b>Телефон для связи:</b> ". $pay->phone ."\n\r";
+        $message .= "<b>E-mail для связи:</b> ". $pay->email ."\n\r";
+        $message .= "<b>Ссылка на оплату в Т-банке:</b> ". $pay->payment_url ."\n\r";
 
         foreach ($pay->clients as $client) {
             $message .= "\n\r";
