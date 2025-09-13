@@ -28,6 +28,7 @@ class TelegramSendServices {
         $this->send($message);
     }
 
+
     public function pay_confirmed(PayOrder $pay) {
         $message = "<b>✅Заказ оплачен</b>\n\r";
         $message .= "<b>id:</b> ". $pay->uuid ."\n\r";

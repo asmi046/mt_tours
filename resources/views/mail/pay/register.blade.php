@@ -1,7 +1,7 @@
 @extends('layouts.mail')
 
 @section('main')
-    <h1>🎉 Совершена покупка на сайте 🎉</h1>
+    <h1>🎉 Зарегистрирован заказ на сайте 🎉</h1>
     <p><strong>Тур:</strong> <a href="{{ $pay->back_link }}">{{ $pay->name }}</a></p>
     <p><strong>Дата выезда:</strong> {{ $pay->start_data }}</p>
     <p><strong>Цена:</strong> {{ $pay->price }}</p>

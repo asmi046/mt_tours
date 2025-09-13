@@ -9,6 +9,7 @@ use Illuminate\Auth\Events\Registered;
 use App\Listeners\PayOrderRegisterTgSendNotification;
 use App\Listeners\PayOrderConfirmedTgSendNotification;
 use App\Listeners\PayOrderConfirmedSmsSendNotification;
+use App\Listeners\PayOrderRegisterEmailSendNotification;
 use App\Listeners\PayOrderConfirmedEmailSendNotification;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -33,6 +34,7 @@ class EventServiceProvider extends ServiceProvider
         ],
         PayOrderRegister::class => [
             PayOrderRegisterTgSendNotification::class,
+            PayOrderRegisterEmailSendNotification::class,
         ],
 
     ];
