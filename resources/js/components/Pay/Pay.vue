@@ -52,24 +52,29 @@
                 </div>
 
 
-                <div class="field">
+                <!-- <div class="field">
                     <label for="c_type">Тип документа<sup>*</sup></label>
                     <select  v-model="client_data.document_type" id="c_type">
                         <option value="Паспорт">Паспорт</option>
                         <option value="Свидетельство о рождении">Свидетельство о рождении</option>
                     </select>
-                </div>
+                </div> -->
 
 
-                <div v-if="client_data.document_type == 'Паспорт'" class="field">
+                <!-- <div v-if="client_data.document_type == 'Паспорт'" class="field">
                     <label for="c_number">Серия и № паспорта<sup>*</sup></label>
                     <input  v-model="client_data.document_number" :class="{_error: client_error_field.number}" id="c_number" type="text" v-mask="{mask: 'NNNN NNNNNN', model: 'cpf' }" placeholder="____ ______">
+                </div> -->
+
+                <div class="field">
+                    <label for="c_number">Серия и № паспорта или свидетельства<sup>*</sup></label>
+                    <input  v-model="client_data.document_number" :class="{_error: client_error_field.number}" id="c_number" type="text"  placeholder="">
                 </div>
 
-                <div v-else class="field">
+                <!-- <div v-else class="field">
                     <label for="c_number">№ свидетельства<sup>*</sup></label>
                     <input  v-model="client_data.document_number" :class="{_error: client_error_field.number}" id="c_number" type="text" placeholder="__-__№______">
-                </div>
+                </div> -->
         </div>
 
         <label for="f_policy" class="policy_label">
@@ -103,7 +108,7 @@
         phone: '',
         email: '',
         dr: '',
-        document_type: 'Паспорт',
+        document_type: 'По формату номера',
         document_number: ''
     })
 

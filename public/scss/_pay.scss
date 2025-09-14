@@ -63,15 +63,37 @@
 @media (max-width: 768px) {
     .pay_box_wrapper {
         width:94%;
+
     }
 }
 
 @media (max-width: 480px) {
+    .client_box {
+        margin: 20px 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        h2 {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .field {
+            margin-bottom: 7px;
+            label {
+               font-size: 12px;
+            }
+        }
+    }
+
     .pay_box {
-        flex-direction: column;
+        .text_wrapper h2 {
+            font-size: 14px;
+
+        }
 
         .img_wrapper {
-            width: 100%;
+            width:100px;
+            height:100px;
         }
     }
 }
