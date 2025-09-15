@@ -87,14 +87,14 @@ class CalendarController extends Controller
         }
 
         $selector = [
-            [
-                'text' => CalendarServices::get_month_year("01.06.2025"),
-                'param' => "01.06.2025"
-            ],
-            [
-                'text' => CalendarServices::get_month_year("01.07.2025"),
-                'param' => "01.07.2025"
-            ],
+            // [
+            //     'text' => CalendarServices::get_month_year("01.06.2025"),
+            //     'param' => "01.06.2025"
+            // ],
+            // [
+            //     'text' => CalendarServices::get_month_year("01.07.2025"),
+            //     'param' => "01.07.2025"
+            // ],
             [
                 'text' => CalendarServices::get_month_year("01.08.2025"),
                 'param' => "01.08.2025"
