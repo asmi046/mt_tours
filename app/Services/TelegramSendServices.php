@@ -8,7 +8,7 @@ class TelegramSendServices {
 
     public function pay_register(PayOrder $pay) {
         $message = "<b>💸В системе оплаты зарегистрирован заказ</b>\n\r";
-        $message .= "<b>id:</b> ". $pay->uuid ."\n\r";
+        $message .= "<b>ID сайта:</b> ". $pay->uuid ."\n\r";
         $message .= "<b>Наименование:</b> ". $pay->name ."\n\r";
         $message .= "<b>Пасажиров:</b> ". $pay->client_count ."\n\r";
         $message .= "<b>Цена:</b> ". $pay->price ."₽\n\r";
@@ -21,7 +21,7 @@ class TelegramSendServices {
             $message .= "\n\r";
             $message .= "<b>Клиент:</b> ". $client->fio ."\n\r";
             $message .= "<b>Дата рождения:</b> ". $client->dr ."\n\r";
-            $message .= "<b>Тип документа:</b> ". $client->document_type ."\n\r";
+            // $message .= "<b>Тип документа:</b> ". $client->document_type ."\n\r";
             $message .= "<b>Номер документа:</b> ". $client->document_number ."\n\r";
         }
 
@@ -31,7 +31,7 @@ class TelegramSendServices {
 
     public function pay_confirmed(PayOrder $pay) {
         $message = "<b>✅Заказ оплачен</b>\n\r";
-        $message .= "<b>id:</b> ". $pay->uuid ."\n\r";
+        $message .= "<b>ID сайта:</b> ". $pay->uuid ."\n\r";
         $message .= "<b>Наименование:</b> ". $pay->name ."\n\r";
         $message .= "<b>Пасажиров:</b> ". $pay->client_count ."\n\r";
         $message .= "<b>Цена:</b> ". $pay->price ."₽\n\r";
