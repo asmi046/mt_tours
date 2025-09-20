@@ -1,4 +1,5 @@
-<section id="contacts" class="contacts_section">
+@props(['dop_class' => ''])
+<section id="contacts" class="contacts_section {{ $dop_class }}">
     <div class="container">
         <div class="contacts_blk">
             <x-map.map-in-page></x-map.map-in-page>

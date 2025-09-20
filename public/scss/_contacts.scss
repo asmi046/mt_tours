@@ -39,6 +39,20 @@
 
 }
 
+.contacts_section.new_year {
+    .contacts_blk {
+        background-color:#053168;
+        .text {
+
+            color:white;
+        }
+
+        a {
+            color:white;
+        }
+    }
+}
+
 .social_net {
     display: flex;
     gap:10px;

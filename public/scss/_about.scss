@@ -64,6 +64,36 @@
 
 }
 
+.new_year_section {
+    background-color: #002045;
+    .subtitle,
+    & > * {
+        color:white;
+    }
+
+
+
+    .tour_card {
+        .text {
+            background-color: #053168;
+            color:white;
+            .label_blue {
+                background-color:white;
+                color:black;
+            }
+        }
+    }
+}
+
+.contacts_section.new_year,
+.review_section.new_year,
+    .big_obl_section.new_year {
+        background-color: #002045;
+
+        h2 {
+            color:white;
+        }
+    }
 
 .big_obl_section {
     margin-top: -50px;

@@ -1,5 +1,5 @@
-
-<section class="review_section">
+@props(['dop_class' => ''])
+<section class="review_section {{ $dop_class }}">
     <div class="container">
         <h2 class="h2_in_page">Отзывы <br><span class="gold">довольных</span> клиентов</h2>
         <div id="review_app" class="review_app">

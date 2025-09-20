@@ -50,14 +50,14 @@
     </script>
 
 </head>
-<body>
+<body class="body @yield('dop_class')">
 
     <x-preloader></x-preloader>
 
     <x-menues.side-menu></x-menues.side-menu>
 
     @include("allicon")
-    <main id="main">
+    <main id="main"  class="main @yield('dop_class')">
         <div id="smooth-wrapper">
             <div id="smooth-content">
                 @yield('main')

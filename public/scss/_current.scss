@@ -5,9 +5,17 @@ body{
     font-size: 16px;
     color: $black_color;
 
+    &.new_year {
+        background-color: #002045;
+    }
+
     a{
         color:$black_color;
     }
+}
+
+.main {
+
 }
 
 img {
