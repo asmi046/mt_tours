@@ -15,5 +15,6 @@ class SeoData extends Model
         'seo_title',
         'seo_description',
         'page_title',
+        'page_sub_title',
     ];
 }

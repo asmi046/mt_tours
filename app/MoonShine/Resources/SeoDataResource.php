@@ -60,6 +60,7 @@ class SeoDataResource extends ModelResource
             Text::make('Описание SEO', 'seo_description'),
             Image::make('Изображение', 'img')->dir('seo'),
             Text::make('Заголовок страницы', 'page_title')->sortable(),
+            Text::make('Подзаголовок страницы', 'page_sub_title')->sortable(),
         ];
     }
 
@@ -75,6 +76,7 @@ class SeoDataResource extends ModelResource
             Text::make('Описание SEO', 'seo_description'),
             Image::make('Изображение', 'img')->dir('seo'),
             Text::make('Заголовок страницы', 'page_title')->sortable(),
+            Text::make('Подзаголовок страницы', 'page_sub_title')->sortable(),
         ];
     }
 
