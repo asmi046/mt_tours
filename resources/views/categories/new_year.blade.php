@@ -14,7 +14,7 @@
             <div class="container left_text">
                 <div class="bnr_text">
                     <h1>{!! $cat_info->html_name !!}</h1>
-                    <p class="subtext">{!! seo_data()->seo_data->page_sub_title !!}</p>
+                    <p class="subtext">{!! seo_data()->seo_data->page_sub_title ?? '' !!}</p>
                     <br>
                     <br>
                     <x-cat-banner-btn></x-cat-banner-btn>
