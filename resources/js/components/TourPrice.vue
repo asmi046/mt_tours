@@ -10,7 +10,7 @@
                 </div>
             </div>
         </div>
-        <button @click.prevent="goToPay" class="button">Купить путевку</button>
+        <button @click.prevent="goToPayNew" class="button">Купить путевку</button>
     </div>
 </template>
 
@@ -50,14 +50,13 @@ import { ref } from 'vue';
             client_count: 1,
             start_data: props.prices[selected.value].start_data, // если есть
             price: props.prices[selected.value].price,
-            name: props.title,
+            name: props.title + " " + (props.prices[selected.value].comment ?? ""),
             back_link: document.location.origin + document.location.pathname,
             type: 'ekskursionka' // замените на нужный тип
             }
         })
         .then(response => {
-            // обработка ответа
-            console.log(response.data);
+            document.location.href = response.data.pay_url;
         })
         .catch(error => {
             console.error(error);
