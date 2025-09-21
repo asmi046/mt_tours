@@ -67,6 +67,9 @@
 .new_year_section {
     background-color: #002045;
     .subtitle,
+    strong {
+        color:white;
+    }
     & > * {
         color:white;
     }

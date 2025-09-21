@@ -12,6 +12,24 @@
             }
         }
     }
+
+    a {
+        position: relative;
+        &:hover {
+            color: $main_color;
+            border-bottom: none!important;
+        }
+
+        .emoji {
+            position: relative;
+            top:2px
+        }
+    }
+
+    .emoji {
+        font-size: 22px;
+        line-height: 5px;
+    }
 }
 
 .side_menue_wrapper{

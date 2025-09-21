@@ -78,6 +78,22 @@
                 margin-left: auto;
                 width: 480px;
             }
+
+            .new_year_item {
+                width: 480px;
+                margin-left: auto;
+                .text {
+                    font-size: 28px;
+                    line-height: 1.2;
+                    font-weight: 700;
+                    text-align: center;
+                }
+
+                .smoll {
+                    font-size: 16px;
+                    font-weight: normal;
+                }
+            }
     }
 
     & .dop_param__preview__mobile {

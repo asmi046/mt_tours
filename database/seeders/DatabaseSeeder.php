@@ -16,7 +16,10 @@ class DatabaseSeeder extends Seeder
             [
                 SeoDataSeeder::class,
                 UserSeeder::class,
-                TourSeeder::class
+                TourSeeder::class,
+                TourSeederNewYear::class,
+                TourCategorySeeder::class,
+                TourCategoryNoyabrSeeder::class,
             ]
         );
         // \App\Models\User::factory(10)->create();

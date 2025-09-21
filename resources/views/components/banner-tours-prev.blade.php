@@ -1,4 +1,4 @@
-<a href="https://www.mirturizma46.ru/turi-na-more" class="item buss_item">
+{{-- <a href="https://www.mirturizma46.ru/turi-na-more" class="item buss_item">
     <img src="{{ asset('img/buss.webp') }}" alt="Автобусные туры на море">
     <div class="overlay"></div>
     <div class="text">
@@ -6,6 +6,17 @@
     </div>
     <div class="label price_label">
         от 15000 ₽
+    </div>
+</a> --}}
+
+<a href="https://www.mirturizma46.ru/turi-na-more" class="item new_year_item">
+    <img src="{{ asset('img/new_year/new_head_banner.webp') }}" alt="Новогодние туры от МирТуризма">
+    <div class="overlay"></div>
+    <div class="text">
+        <p>Новый год <br><span class="gold">2025</span><br><span class="smoll">раннее бронирование</span></p>
+    </div>
+    <div class="label price_label">
+        от 2500 ₽
     </div>
 </a>
 <div class="dop_param__preview">
