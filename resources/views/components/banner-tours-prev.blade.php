@@ -9,7 +9,7 @@
     </div>
 </a> --}}
 
-<a href="{{ route("tour_page", 'new-year') }}" class="item new_year_item">
+<a href="{{ route("tour_category", 'new-year') }}" class="item new_year_item">
     <img src="{{ asset('img/new_year/new_head_banner.webp') }}" alt="Новогодние туры от МирТуризма">
     <div class="overlay"></div>
     <div class="text">
