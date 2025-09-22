@@ -39,9 +39,15 @@ class Tour extends Model
         'prices' => 'array',
     ];
 
+
     public function categories(): BelongsToMany
     {
         return $this->belongsToMany(TourCategory::class);
+    }
+
+    public function seoData()
+    {
+        return $this->morphOne(SeoData::class, 'seoable');
     }
 
     public function setSlugAttribute($value)

@@ -30,6 +30,7 @@ use MoonShine\UI\Components\ActionButton;
 use MoonShine\Components\MoonShineComponent;
 use MoonShine\Laravel\Resources\ModelResource;
 use App\MoonShine\Resources\TourCategoryResource;
+use MoonShine\Laravel\Fields\Relationships\MorphOne;
 use MoonShine\Laravel\Fields\Relationships\BelongsToMany;
 
 /**
@@ -74,6 +75,7 @@ class TourResource extends ModelResource
                     Number::make('Порядок', 'order'),
                     Url::make('Внешняя ссылка', 'out_lnk'),
                     Text::make('Шаблон', 'template_name'),
+
                     Flex::make([
                         Text::make('Заголовок (h1)', 'title')->required(),
                         Text::make('Заголовок на карточке', 'title_card'),
@@ -152,7 +154,13 @@ class TourResource extends ModelResource
                                 Text::make('Заголовок', 'title'),
                                 Switcher::make('В шапке', 'in_top')
                             ]),
-                ])
+                ]),
+
+                MorphOne::make(
+                        'SEO',
+                        'seoData',
+                        resource: SeoDataResource::class
+                ),
             ]),
 
             When::make(

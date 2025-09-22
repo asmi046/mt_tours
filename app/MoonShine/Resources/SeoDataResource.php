@@ -4,15 +4,18 @@ declare(strict_types=1);
 
 namespace App\MoonShine\Resources;
 
+use App\Models\Tour;
+
+
 use App\Models\SeoData;
-
-
 use MoonShine\UI\Fields\ID;
+use App\Models\TourCategory;
 use MoonShine\UI\Fields\Text;
 use MoonShine\UI\Fields\Image;
 use Illuminate\Database\Eloquent\Model;
 use MoonShine\Components\MoonShineComponent;
 use MoonShine\Laravel\Resources\ModelResource;
+use MoonShine\Laravel\Fields\Relationships\MorphTo;
 
 /**
  * @extends ModelResource<SeoData>
@@ -61,6 +64,10 @@ class SeoDataResource extends ModelResource
             Image::make('Изображение', 'img')->dir('seo'),
             Text::make('Заголовок страницы', 'page_title')->sortable(),
             Text::make('Подзаголовок страницы', 'page_sub_title')->sortable(),
+            MorphTo::make("Объект", "seoable")->types([
+                Tour::class => 'title',
+                TourCategory::class => 'name',
+            ]),
         ];
     }
 

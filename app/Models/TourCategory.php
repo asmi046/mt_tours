@@ -25,6 +25,11 @@ class TourCategory extends Model
         return $this->belongsToMany(Tour::class)->orderBy('order', 'ASC');
     }
 
+    public function seoData()
+    {
+        return $this->morphOne(SeoData::class, 'seoable');
+    }
+
 
     public function setSlugAttribute($value)
     {
