@@ -107,6 +107,7 @@ import { ref } from 'vue';
     }
 
     const goToPayNew = async () => {
+
         axios.get('/pay/create_pay_order', {
             params: {
             img: props.img,
@@ -119,8 +120,8 @@ import { ref } from 'vue';
             }
         })
         .then(response => {
+            ym(100353854,'reachGoal','to_pay_page')
             document.location.href = response.data.pay_url;
-            console.log(response.data);
         })
         .catch(error => {
             console.error(error);

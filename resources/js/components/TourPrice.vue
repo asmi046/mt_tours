@@ -30,7 +30,7 @@ import { ref } from 'vue';
     }
 
     const goToPay = () => {
-        ym(100353854,'reachGoal','to_pay_page')
+        
         const payPage = "https://www.mirturizma46.ru/otpravka-dannyx-na-oplatu/"
         const tourType = "?type=ekskursionka"
         const pid = "&pid=33333"
@@ -56,6 +56,7 @@ import { ref } from 'vue';
             }
         })
         .then(response => {
+            ym(100353854,'reachGoal','to_pay_page')
             document.location.href = response.data.pay_url;
         })
         .catch(error => {
