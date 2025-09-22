@@ -64,7 +64,7 @@ class SeoDataResource extends ModelResource
             Image::make('Изображение', 'img')->dir('seo'),
             Text::make('Заголовок страницы', 'page_title')->sortable(),
             Text::make('Подзаголовок страницы', 'page_sub_title')->sortable(),
-            MorphTo::make("Объект", "seoable")->types([
+            MorphTo::make("Объект", "seoable", resource: SeoDataResource::class)->types([
                 Tour::class => 'title',
                 TourCategory::class => 'name',
             ])->nullable(),
@@ -84,7 +84,7 @@ class SeoDataResource extends ModelResource
             Image::make('Изображение', 'img')->dir('seo'),
             Text::make('Заголовок страницы', 'page_title')->sortable(),
             Text::make('Подзаголовок страницы', 'page_sub_title')->sortable(),
-            MorphTo::make("Объект", "seoable")->types([
+            MorphTo::make("Объект", "seoable", resource: SeoDataResource::class)->types([
                 Tour::class => 'title',
                 TourCategory::class => 'name',
             ]),

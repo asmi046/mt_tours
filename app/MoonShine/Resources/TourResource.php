@@ -27,6 +27,7 @@ use MoonShine\UI\Components\Tabs\Tab;
 use Illuminate\Database\Eloquent\Model;
 use MoonShine\UI\Components\Layout\Flex;
 use MoonShine\UI\Components\ActionButton;
+use App\MoonShine\Resources\SeoDataResource;
 use MoonShine\Components\MoonShineComponent;
 use MoonShine\Laravel\Resources\ModelResource;
 use App\MoonShine\Resources\TourCategoryResource;
@@ -44,6 +45,13 @@ class TourResource extends ModelResource
 
     protected string $column = 'title';
 
+    public function filters(): array
+    {
+        return [
+            Switcher::make('Актуальность', 'actual'),
+            Text::make('Название', 'title'),
+        ];
+    }
 
     /**
      * @return list<Field>
@@ -52,11 +60,10 @@ class TourResource extends ModelResource
     {
         return [
             ID::make()->sortable(),
+            Image::make('Изображение', 'img')->dir('tours'),
             Switcher::make('Актуальность', 'actual'),
             Number::make('Порядок', 'order')->sortable(),
             Text::make('Название', 'title'),
-            Image::make('Изображение', 'img')->dir('tours'),
-            Text::make('URL', 'slug'),
             // Date::make('Начало тура', 'start_data')->format('d.m.Y'),
         ];
     }
@@ -238,6 +245,8 @@ class TourResource extends ModelResource
      */
     protected function rules($item): array
     {
-        return [];
+        return [
+
+        ];
     }
 }
