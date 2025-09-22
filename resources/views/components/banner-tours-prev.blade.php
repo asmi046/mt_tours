@@ -32,8 +32,10 @@
             </div>
         </a>
     @endforeach
-</div>
 
+    <a class="button button_icon yakor meny_tours" href="#tours_cat"> <i class="search_icon"></i><span>Больше туров</span></a>
+</div>
+{{-- 
 <div class="dop_param__preview__mobile">
     @foreach ($tours as $item)
         <a href="{{ route('tour_page', $item->slug) }}" class="bable_item">
@@ -45,4 +47,4 @@
             </div>
         </a>
     @endforeach
-</div>
+</div> --}}
