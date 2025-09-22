@@ -7,6 +7,7 @@ namespace App\MoonShine\Resources;
 use App\Models\Tour;
 
 
+use App\Models\Review;
 use App\Models\SeoData;
 use MoonShine\UI\Fields\ID;
 use App\Models\TourCategory;
@@ -65,8 +66,8 @@ class SeoDataResource extends ModelResource
             Text::make('Заголовок страницы', 'page_title')->sortable(),
             Text::make('Подзаголовок страницы', 'page_sub_title')->sortable(),
             MorphTo::make("Объект", "seoable", resource: SeoDataResource::class)->types([
-                Tour::class => 'title',
-                TourCategory::class => 'name',
+                Tour::class => ['title', 'Туры'],
+                TourCategory::class => ['name', 'Категории туров'],
             ])->nullable(),
         ];
     }

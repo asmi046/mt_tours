@@ -168,6 +168,10 @@ class TourResource extends ModelResource
                         'seoData',
                         resource: SeoDataResource::class
                 ),
+                // ->fields([
+                //     Phone::make('Phone'),
+                //     Text::make('Address'),
+                // ]),
             ]),
 
             When::make(
