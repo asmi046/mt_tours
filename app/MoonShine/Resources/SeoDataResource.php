@@ -67,7 +67,7 @@ class SeoDataResource extends ModelResource
             MorphTo::make("Объект", "seoable")->types([
                 Tour::class => 'title',
                 TourCategory::class => 'name',
-            ]),
+            ])->nullable(),
         ];
     }
 
