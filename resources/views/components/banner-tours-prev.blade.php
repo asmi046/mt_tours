@@ -9,7 +9,20 @@
     </div>
 </a> --}}
 
-<a href="{{ route("tour_category", 'new-year') }}" class="item new_year_item">
+<a href="{{ route("tour_category", 'tury-na-noiabrskie-prazdniki') }}" class="item buss_item">
+    <img src="{{ asset('img/flags-russia.webp') }}" alt="Автобусные туры на день Народного Единства">
+    <div class="overlay"></div>
+    <div class="text">
+        Автобусные туры на день Народного Единства
+    </div>
+    <div class="label price_label">
+        от 2500 ₽
+    </div>
+</a>
+
+
+
+{{-- <a href="{{ route("tour_category", 'new-year') }}" class="item new_year_item">
     <img src="{{ asset('img/new_year/new_head_banner.webp') }}" alt="Новогодние туры от МирТуризма">
     <div class="overlay"></div>
     <div class="text">
@@ -18,7 +31,7 @@
     <div class="label price_label">
         от 2500 ₽
     </div>
-</a>
+</a> --}}
 <div class="dop_param__preview">
     @foreach ($tours as $item)
         <a href="{{ route('tour_page', $item->slug) }}" class="item">
@@ -35,7 +48,7 @@
 
     <a class="button button_icon yakor meny_tours" href="#tours_cat"> <i class="search_icon"></i><span>Больше туров</span></a>
 </div>
-{{-- 
+{{--
 <div class="dop_param__preview__mobile">
     @foreach ($tours as $item)
         <a href="{{ route('tour_page', $item->slug) }}" class="bable_item">
