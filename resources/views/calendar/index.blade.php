@@ -45,6 +45,19 @@
     </section>
 
 <section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const activeMonth = document.querySelector('.month_selector.active');
+            if (activeMonth && window.innerWidth <= 768) {
+                activeMonth.scrollIntoView({
+                    behavior: 'smooth',
+                    inline: 'center',
+                    block: 'nearest'
+                });
+            }
+        });
+    </script>
+
     <div class="container">
         <div class="calendar_selector">
             @foreach ($selector as $item)
