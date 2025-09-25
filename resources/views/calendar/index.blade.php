@@ -34,8 +34,6 @@
                     <br>
 
                     <x-cat-banner-btn-page></x-cat-banner-btn-page>
-
-
                 </div>
 
 

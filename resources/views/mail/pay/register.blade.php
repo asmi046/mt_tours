@@ -7,6 +7,7 @@
     <p><strong>Дата выезда:</strong> {{ $pay->start_data }}</p>
     <p><strong>Цена:</strong> {{ $pay->price }}</p>
     <p><strong>email:</strong> {{ $pay->email }}</p>
+    <p><strong>Ссылка на оплату в Т-банке:</strong> {{ $pay->payment_url ?? 'Не указана' }}</p>
 
 
     @foreach ($pay->clients as $client)
