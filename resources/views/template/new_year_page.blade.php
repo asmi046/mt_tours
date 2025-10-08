@@ -160,32 +160,7 @@
 
     <x-big-girliand :dop_class="'new_year'"></x-big-girliand>
 
-    <section class="up_sale new_year_section ">
-        <div class="container">
-            <h2 class="h2_in_page">Смотрите так же <br> другие <span class="gold">туры:</span></h2>
-
-            <swiper-container id="any_tours" init="false">
-                @foreach ($tour_any as $item)
-                    <swiper-slide>
-                        <x-tour-card :item="$item"></x-tour-card>
-                    </swiper-slide>
-                @endforeach
-            </swiper-container>
-
-            <div class="reviews_btn_wrapper">
-                <a class="arrow_button arrow_pred" id="any_tours_btn_prev" href="#">
-                    <svg class="sprite_icon">
-                        <use xlink:href="#arrow"></use>
-                    </svg>
-                </a>
-                <a class="arrow_button arrow_next" id="any_tours_btn_next" href="#">
-                    <svg class="sprite_icon">
-                        <use xlink:href="#arrow"></use>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
+    <category-any-tours :category-name="'Туры на Новогодние Праздники'"></category-any-tours>
 
     <x-contacts-section :dop_class="'new_year'"></x-contacts-section>
 
