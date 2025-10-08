@@ -4,6 +4,7 @@ namespace App\View\Components;
 
 use Closure;
 use App\Models\Tour;
+use App\Models\TourCategory;
 use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
 
