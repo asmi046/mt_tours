@@ -11,6 +11,7 @@ use App\Listeners\PayOrderConfirmedTgSendNotification;
 use App\Listeners\PayOrderConfirmedSmsSendNotification;
 use App\Listeners\PayOrderRegisterEmailSendNotification;
 use App\Listeners\PayOrderConfirmedEmailSendNotification;
+use App\Listeners\PayOrderConfirmedManagerEmailSendNotification;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
@@ -29,6 +30,7 @@ class EventServiceProvider extends ServiceProvider
 
         PayOrderConfirmed::class => [
             PayOrderConfirmedEmailSendNotification::class,
+            PayOrderConfirmedManagerEmailSendNotification::class,
             PayOrderConfirmedSmsSendNotification::class,
             PayOrderConfirmedTgSendNotification::class,
         ],

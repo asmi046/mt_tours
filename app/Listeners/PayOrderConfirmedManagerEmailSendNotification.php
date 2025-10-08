@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class PayOrderConfirmedEmailSendNotification implements ShouldQueue
+class PayOrderConfirmedManagerEmailSendNotification implements ShouldQueue
 {
 
     /**
@@ -17,8 +17,6 @@ class PayOrderConfirmedEmailSendNotification implements ShouldQueue
      */
     public function handle(PayOrderConfirmed $event): void
     {
-        if (isset($event->pay_order->email)) {
-            Mail::to($event->pay_order->email)->send(new ClienPaySuccessMail($event->pay_order));
-        }
+        Mail::to(explode(",",config('consultation.mailadresat')))->later(now()->addSeconds(13), new ManagerPaySuccessMail($event->pay_order));
     }
 }
