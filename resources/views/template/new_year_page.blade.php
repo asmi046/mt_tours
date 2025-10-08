@@ -160,7 +160,7 @@
 
     <x-big-girliand :dop_class="'new_year'"></x-big-girliand>
 
-    <category-any-tours :category-name="'Туры на Новогодние Праздники'"></category-any-tours>
+    <x-category-any-tours :category-name="'Туры на Новогодние Праздники'"></x-category-any-tours>
 
     <x-contacts-section :dop_class="'new_year'"></x-contacts-section>
 
