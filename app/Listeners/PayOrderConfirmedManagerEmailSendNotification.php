@@ -17,6 +17,21 @@ class PayOrderConfirmedManagerEmailSendNotification implements ShouldQueue
      */
     public function handle(PayOrderConfirmed $event): void
     {
-        Mail::to(explode(",",config('consultation.mailadresat')))->later(now()->addSeconds(13), new ManagerPaySuccessMail($event->pay_order));
+        try {
+            Mail::to(explode(",",config('consultation.mailadresat')))->later(now()->addSeconds(13), new ManagerPaySuccessMail($event->pay_order));
+
+        } catch (\Exception $e) {
+            \Log::error('Failed to send manager email notification: ' . $e->getMessage());
+            try {
+                sleep(15);
+                Mail::to(explode(",",config('consultation.mailadresat')))->send(new ManagerPaySuccessMail($event->pay_order));
+            } catch (\Exception $e) {
+                \Log::error('Retry also failed: ' . $e->getMessage());
+                sleep(20);
+                Mail::to(explode(",",config('consultation.mailadresat')))->send(new ManagerPaySuccessMail($event->pay_order));
+            }
+
+        }
+
     }
 }
