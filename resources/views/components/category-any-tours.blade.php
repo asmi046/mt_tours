@@ -1,4 +1,4 @@
-<section class="up_sale">
+<section class="up_sale new_year_section">
         <div class="container">
             <h2 class="h2_in_page">Смотрите так же <br> другие <span class="gold">туры:</span></h2>
 
