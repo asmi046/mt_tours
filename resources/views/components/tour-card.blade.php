@@ -9,7 +9,7 @@
         @endif
     </div>
     <div class="text">
-        <h3>{{ $item['title_card'] ?? $item['title']  }}</h3>
+        <h3>{!! $item['title_card'] ?? $item['title']  !!}</h3>
         <p class="label top_label">{{ $item['deycount'] }} {{ echo_days($item['deycount']) }}</p>
         <div class="m_data">
             @if ($item['multi_data'])
