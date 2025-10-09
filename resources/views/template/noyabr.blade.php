@@ -1,6 +1,5 @@
 @extends('layouts.all')
 
-@section('dop_class', 'new_year')
 @section('main')
     <section class="banner_video">
         <video autoplay muted loop playsinline preload="metadata"
@@ -9,7 +8,7 @@
             @if ($tour_info->header_bg)
                 <source src="{{ Storage::url($tour_info->header_bg) }}" type="video/mp4" fetchpriority="high">
             @else
-                <source src="{{ asset('video/new_year.mp4') }}" type="video/mp4" fetchpriority="high">
+                <source src="{{ asset('img/exkursionka.mp4') }}" type="video/mp4" fetchpriority="high">
             @endif
 
         </video>
@@ -65,7 +64,11 @@
         </div>
     </section>
 
-    <section id="tours_content" class="tours_content new_year_section" >
+    <section id="tours_content" class="tours_content {{ $tour_info->page_bg }}" >
+
+        <img class="obl obl_1" src="{{ asset('img/obl/obl_1.svg') }}" alt="">
+        <img class="obl obl_2" src="{{ asset('img/obl/obl_2.svg') }}" alt="">
+        <img class="obl obl_3" src="{{ asset('img/obl/obl_3.svg') }}" alt="">
 
         <div class="container">
             <div class="tour_info">
@@ -131,7 +134,7 @@
 
 
 
-                <div class="girland girland_new_year"></div>
+                <div class="girland"></div>
 
                 @if ($tour_info->in_price)
                     <div class="in_price">
@@ -158,11 +161,11 @@
         </div>
     </section>
 
-    <x-big-girliand :dop_class="'new_year'"></x-big-girliand>
+    <x-big-obl></x-big-obl>
 
-    <x-category-any-tours :category-name="'Туры на Новогодние Праздники'" :dop-class="'new_year_section'"></x-category-any-tours>
+    <x-category-any-tours :category-name="'Туры на Ноябрьские Праздники'" :dop-class="'noyabr_section'"></x-category-any-tours>
 
-    <x-contacts-section :dop_class="'new_year'"></x-contacts-section>
+    <x-contacts-section></x-contacts-section>
 
 @endsection
 
