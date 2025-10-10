@@ -1,6 +1,6 @@
 @use 'vars' as *;
 
-.toyr_program {
+.head_toyr_program {
     background-color: white;
     box-shadow: $box_shadow;
     border-radius: 20px;
@@ -18,10 +18,10 @@
 
     .line {
         height: calc(100% - 40px);
-        left:31px;
+        left:29px;
         top:20px;
         position: absolute;
-        border-left: 3px dashed $blue_color;
+        border-left: 3px dashed $blue_light_color;
     }
 
     .step:first-child {
@@ -46,13 +46,14 @@
             width:19px;
             height:19px;
             border-radius: 20px;
-            border: 3px solid $blue_color;
+            border: 3px solid $blue_light_color;
             background-color: white;
             margin-right: 10px;
         }
 
         span {
-            flex:1
+            flex:1;
+            color:$blue_light_color;
         }
     }
 

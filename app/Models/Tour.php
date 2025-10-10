@@ -29,7 +29,8 @@ class Tour extends Model
         'galery',
         'tour_program',
         'multi_data',
-        'prices'
+        'prices',
+        'head_tour_program'
     ];
 
     public $casts = [
@@ -37,6 +38,7 @@ class Tour extends Model
         'tour_program' => 'array',
         'galery' => 'array',
         'prices' => 'array',
+        'head_tour_program' => 'array',
     ];
 
 

@@ -36,20 +36,20 @@
                 @else
                     <p class="label label_white">{{ date ("d.m.Y", strtotime($tour_info['start_data'])) }}</p>
                 @endif
-{{--
-                @if ($tour_info->tour_program)
-                    <div class=toyr_program>
 
-                        @foreach ($tour_info->tour_program as $item)
+                @if ($tour_info->head_tour_program)
+                    <div class="head_toyr_program">
+
+                        @foreach ($tour_info->head_tour_program as $item)
                             <div class="step">
                                 <div class="point"></div>
-                                <span>{{ $item['type'] }}</span>
+                                <span>{{ $item['title'] }}</span>
                             </div>
                         @endforeach
 
                         <div class="line"></div>
                     </div>
-                @endif --}}
+                @endif
 
 
                 <a class="button yakor" href="#tours_content">Подробнее о туре</a>

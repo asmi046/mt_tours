@@ -127,6 +127,13 @@ class TourResource extends ModelResource
                 Tab::make('Программа тура', [
                     TinyMce::make('Программа тура', 'program'),
 
+                    Json::make('Программа тура в шапке', 'head_tour_program')
+                    ->removable()
+                    ->fields([
+                        Position::make(),
+                        Text::make('Заголовок', 'title'),
+                    ]),
+
                     Json::make('Программа тура', 'tour_program')
                     ->removable()
                             ->fields([
