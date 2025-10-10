@@ -3,6 +3,14 @@
 @section('dop_class', 'new_year')
 @section('main')
     <section id="banner_video_category" class="banner_video">
+        <div class="more_tours_caption">
+            <span>Больше туров</span>
+        </div>
+        <a href="#tours_cat" class="more_tours yakor">
+            <svg class="sprite_icon">
+                <use xlink:href="#arrow"></use>
+            </svg>
+        </a>
         <video autoplay muted loop playsinline poster="{{ asset('img/main-video-obl.webp') }}" class="_video">
             <source src="{{ asset('video/new_year.mp4') }}" type="video/mp4">
         </video>

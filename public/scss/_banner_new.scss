@@ -1,10 +1,66 @@
 @use 'vars' as *;
 
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform:  translateY(0);
+    }
+    40% {
+        transform:  translateY(-20px);
+    }
+    60% {
+        transform:  translateY(-10px);
+    }
+}
+
 .banner_video {
     padding: 0;
     position: relative;
     width: 100wh;
     height: 100vh;
+
+    .more_tours_caption {
+        position: absolute;
+        z-index: 4;
+        color:white;
+        display: block;
+        text-align: center;
+        bottom: 70px;
+        left:calc(50% - 61px);
+        font-family: 'Play';
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .more_tours {
+        position: absolute;
+        z-index: 4;
+        color:white;
+        display: block;
+        width:40px;
+        height:40px;
+        border-radius: 50%;
+        background-color: $main_color;
+        display: flex;
+        left:calc(50% - 20px);
+        bottom: 20px;
+        animation: bounce 3s infinite;
+        .sprite_icon {
+            rotate: 90deg;
+            margin: auto;
+            width: 20px;
+            height: 20px;
+            fill: $black_color;
+            transition: $main_transition;
+            stroke: $black_color;
+
+        }
+    }
+
+
+
+
 
     &.mini {
         height: auto;
@@ -214,6 +270,7 @@
 
             .dop_param {
                 padding-top: 100px;
+                padding-bottom: 100px;
                 .cat_banner_buttons {
                     width: 100%;
                 }
