@@ -48,16 +48,3 @@
 
     <a class="button button_icon yakor meny_tours" href="#tours_cat"> <i class="search_icon"></i><span>Больше туров</span></a>
 </div>
-{{--
-<div class="dop_param__preview__mobile">
-    @foreach ($tours as $item)
-        <a href="{{ route('tour_page', $item->slug) }}" class="bable_item">
-            <div class="text">
-                {{ $item->title_card }}
-            </div>
-            <div class="label price_label">
-                от {{ $item->prices[0]['price'] }} ₽
-            </div>
-        </a>
-    @endforeach
-</div> --}}
