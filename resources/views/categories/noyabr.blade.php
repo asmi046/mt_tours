@@ -2,6 +2,7 @@
 
 @section('main')
     <section id="banner_video_category" class="banner_video">
+        <x-tours-arrow></x-tours-arrow>
         <video autoplay muted loop playsinline poster="{{ asset('img/main-video-obl.webp') }}" class="_video">
             <source src="{{ asset('video/november.mp4') }}" type="video/mp4">
         </video>
