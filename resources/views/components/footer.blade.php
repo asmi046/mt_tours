@@ -12,7 +12,7 @@
     <br>
     <a class="email" href="mailto:{{ phone_format(config('contacts.email')) }}">{{ config('contacts.email') }}</a>
     <div class="reqvizites">
-        <span>ООО «Мир туризма 46»</span> <span>ИНН/КПП 4632297723/463201001</span> <span>ОГРН 1234600004638</span>
+        <span>ООО «Туристический центр «Мир туризма»</span> <span>ИНН/КПП 4632181253/463201001</span> <span>ОГРН 1134632011360</span>
     </div>
 
 </footer>
