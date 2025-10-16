@@ -12,26 +12,19 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 class PayOrderConfirmedManagerEmailSendNotification implements ShouldQueue
 {
 
+    public $tries = 5;
+    public $backoff = [30, 60, 120, 300, 500];
+
     /**
      * Handle the event.
      */
     public function handle(PayOrderConfirmed $event): void
     {
-        try {
-            Mail::to(explode(",",config('consultation.mailadresat')))->send(new ManagerPaySuccessMail($event->pay_order));
+        Mail::to(explode(",",config('consultation.mailadresat')))->send(new ManagerPaySuccessMail($event->pay_order));
+    }
 
-        } catch (\Exception $e) {
-            \Log::error('Failed to send manager email notification: ' . $e->getMessage());
-            try {
-                sleep(15);
-                Mail::to(explode(",",config('consultation.mailadresat')))->send(new ManagerPaySuccessMail($event->pay_order));
-            } catch (\Exception $e) {
-                \Log::error('Retry also failed: ' . $e->getMessage());
-                sleep(20);
-                Mail::to(explode(",",config('consultation.mailadresat')))->send(new ManagerPaySuccessMail($event->pay_order));
-            }
-
-        }
-
+    public function failed(\Throwable $exception): void
+    {
+        \Log::error('Все попытки отправки уведомления менеджера не удались: ' . $exception->getMessage());
     }
 }
