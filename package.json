@@ -16,7 +16,7 @@
         "send_vite_build": "scp -C -r public/build u1731342@31.31.198.62:www/tours.mirturizma46.ru/public",
         "migrate_rep": "ssh u1731342@31.31.198.62 \"cd www/tours.mirturizma46.ru && /opt/php/8.2/bin/php artisan migrate\"",
         "rollback_rep": "ssh u1731342@31.31.198.62 \"cd www/tours.mirturizma46.ru && /opt/php/8.2/bin/php artisan migrate:rollback\"",
-        "seed_rep_one": "ssh u1731342@31.31.198.62 \"cd www/tours.mirturizma46.ru && /opt/php/8.2/bin/php artisan DB:seed TourSeederOptina\"",
+        "seed_rep_one": "ssh u1731342@31.31.198.62 \"cd www/tours.mirturizma46.ru && /opt/php/8.2/bin/php artisan DB:seed ScholTourSeeder\"",
         "optimized_rep": "ssh u1731342@31.31.198.62 \"cd www/tours.mirturizma46.ru && /opt/php/8.2/bin/php composer.phar update --optimize-autoloader --no-dev\"",
         "dump_autoload": "ssh u1731342@31.31.198.62 \"cd www/tours.mirturizma46.ru && /opt/php/8.2/bin/php composer.phar dump-autoload\"",
         "storage_link": "ssh u1731342@31.31.198.62 \"cd www/tours.mirturizma46.ru && /opt/php/8.2/bin/php artisan storage:link\"",

@@ -2,7 +2,7 @@
 
 @section('main')
     <section class="banner_video">
-        <x-tours-arrow caption="О туре"></x-tours-arrow>
+        <x-tours-arrow link="tours_content" caption="О туре"></x-tours-arrow>
         <video autoplay muted loop playsinline preload="metadata"
         poster="{{ asset('img/poster.webp') }}"
         class="_video">
