@@ -12,7 +12,9 @@
         "laravel/tinker": "^2.8",
         "moonshine/moonshine": "^3.0",
         "moonshine/ru": "^1.0",
-        "moonshine/tinymce": "^1.0"
+        "moonshine/tinymce": "^1.0",
+        "symfony/css-selector": "^7.3",
+        "symfony/dom-crawler": "^7.3"
     },
     "require-dev": {
         "asmi046/site_skelet": "^1.0",

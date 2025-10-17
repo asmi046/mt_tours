@@ -3,6 +3,7 @@
 use App\Http\Controllers\FeedController;
 use App\Http\Controllers\TourController;
 use App\Http\Controllers\CalendarController;
+use App\Http\Controllers\ScholTourController;
 use App\Http\Controllers\TourCategoryController;
     use Illuminate\Support\Facades\Route;
     use App\Http\Controllers\ReviewController;
@@ -22,6 +23,7 @@ use App\Http\Controllers\TourCategoryController;
         return Redirect::back()->with('msg', 'Кеш сброшен');
     })->name('cache_clear');
 
+    Route::get('/school-tours', [ScholTourController::class, "index"])->name('school_tours');
     Route::get('/calendar/{month?}', [CalendarController::class, "index"])->name('calendar');
     Route::get('/yml-feed/{category?}', [FeedController::class, "yml_get_feed"])->name('yml_get_feed');
 
