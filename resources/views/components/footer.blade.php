@@ -1,6 +1,6 @@
 @props(['dop_class' => ''])
 <footer class="footer_all {{ $dop_class }}">
-    <a class="logo" href="https://www.mirturizma46.ru/">
+    <a class="logo" href="{{ route('home') }}">
         <img src="{{ asset('img/logo_white.svg')}}" alt="Экскурсионные туры из Курска - МирТуризма">
     </a>
 
