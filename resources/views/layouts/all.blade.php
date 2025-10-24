@@ -16,7 +16,7 @@
 
     <meta name="_token" content="{{ csrf_token() }}">
 
-    <script src="https://cdn.glitch.global/8352fc0e-bebe-4680-ae0b-269da8b54259/ScrollSmoother.min.js"></script>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
 
     @vite([
@@ -97,6 +97,6 @@
 
 </body>
 
-
+<script src="https://cdn.glitch.global/8352fc0e-bebe-4680-ae0b-269da8b54259/ScrollSmoother.min.js"></script>
 
 </html>
