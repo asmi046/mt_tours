@@ -39,6 +39,7 @@ class ScholTourResource extends ModelResource
             ID::make()->sortable(),
             Image::make('Изображение тура', 'img')->dir(''),
             Text::make('Заголовок тура', 'title'),
+            Text::make('Категория тура', 'category'),
             Number::make('Порядок сортировки', 'order'),
         ];
     }
@@ -93,6 +94,7 @@ class ScholTourResource extends ModelResource
     {
         return [
             Text::make('Заголовок тура', 'title'),
+            Text::make('Категория тура', 'category'),
         ];
     }
 }
