@@ -31,6 +31,14 @@ class CalendarResource extends ModelResource
 
     protected string $column = 'title';
 
+
+    public function filters(): array
+    {
+        return [
+            Text::make('Название', 'title'),
+        ];
+    }
+
     /**
      * @return list<FieldContract>
      */
