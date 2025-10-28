@@ -12,6 +12,7 @@ use MoonShine\UI\Fields\Json;
 use MoonShine\UI\Fields\Text;
 use MoonShine\UI\Fields\Image;
 use MoonShine\UI\Fields\Number;
+use MoonShine\UI\Fields\Switcher;
 use MoonShine\TinyMce\Fields\TinyMce;
 use Illuminate\Database\Eloquent\Model;
 use MoonShine\UI\Components\Layout\Box;
@@ -26,7 +27,9 @@ class CalendarResource extends ModelResource
 {
     protected string $model = Calendar::class;
 
-    protected string $title = 'Calendars';
+    protected string $title = 'Календарь туров';
+
+    protected string $column = 'title';
 
     /**
      * @return list<FieldContract>
@@ -60,6 +63,7 @@ class CalendarResource extends ModelResource
                 Json::make('Даты', 'dates')->fields([
                     Date::make('Дата', 'date'),
                     Number::make('Порядок', 'position'),
+                    Switcher::make('Нет мест', 'soldout')->default(false),
                 ])->removable(),
             ])
         ];
@@ -82,6 +86,7 @@ class CalendarResource extends ModelResource
             Json::make('Даты', 'dates')->fields([
                     Date::make('Дата', 'date'),
                     Number::make('Порядок', 'position'),
+                    Switcher::make('Нет мест', 'soldout')->default(false),
                 ])->removable(),
         ];
     }

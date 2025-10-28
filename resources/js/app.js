@@ -115,7 +115,7 @@ for (let anchor of anchors) {
   })
 }
 
-window.addEventListener('load', function () {
+window.addEventListener('DOMContentLoaded', function () {
     var preloader = document.getElementById('preloader');
     preloader.classList.add('hide');
 });

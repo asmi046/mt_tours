@@ -178,6 +178,8 @@ class CalendarServices {
                         $out.= '<a id="tcard_'.$t_index.'"  href="'.$event_elem['post_lnk'].'" class="calendar-tur-elem ' . $empty_class . '">';
                             $out.= '<div class="img_wraper">';
                                 $out.= '<img src="'. (isset($event_elem['post_thumbinal'])?Storage::url($event_elem['post_thumbinal']):"") .'">';
+                                if (isset($event_elem['soldout']) && ($event_elem['soldout'] == true))
+                                    $out.= '<img class="soldout" src="'.asset('img/soldout.webp').'">';
                             $out.= '</div>';
 
                             $out.= '<div class="all_info">'. ($event_elem['all_info']?html_entity_decode($event_elem['all_info']):"") .'</div>';
@@ -187,7 +189,9 @@ class CalendarServices {
 
 						$out.= '<div data-target="modal-js-example" data-cardid="'.$t_index.'" class="calendar-tur-mobile js-modal-trigger ' .$empty_class. '">';
 							$out.= '<img src="'. (isset($event_elem['post_thumbinal'])?Storage::url($event_elem['post_thumbinal']):"") .'">';
-						$out.= '</div>';
+                            if (isset($event_elem['soldout']) && ($event_elem['soldout'] == true))
+                                $out.= '<img class="soldout" src="'.asset('img/soldout.webp').'">';
+                        $out.= '</div>';
 
 						$t_index++;
                     }
