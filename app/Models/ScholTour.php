@@ -11,6 +11,7 @@ class ScholTour extends Model
         'img',
         'title',
         'description',
+        'category',
     ];
 
     protected $casts = [

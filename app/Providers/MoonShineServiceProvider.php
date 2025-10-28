@@ -16,6 +16,7 @@ use MoonShine\Laravel\DependencyInjection\MoonShineConfigurator;
 use MoonShine\Contracts\Core\DependencyInjection\ConfiguratorContract;
 use App\MoonShine\Resources\ReviewResource;
 use App\MoonShine\Resources\CalendarResource;
+use App\MoonShine\Resources\ScholTourResource;
 
 class MoonShineServiceProvider extends ServiceProvider
 {
@@ -37,6 +38,7 @@ class MoonShineServiceProvider extends ServiceProvider
                 MoonShineUserRoleResource::class,
                 ReviewResource::class,
                 CalendarResource::class,
+                ScholTourResource::class,
             ])
             ->pages([
                 ...$config->getPages(),

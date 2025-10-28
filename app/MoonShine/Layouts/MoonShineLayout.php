@@ -37,6 +37,7 @@ use MoonShine\UI\Components\{Breadcrumbs,
     When};
 use App\MoonShine\Resources\ReviewResource;
 use App\MoonShine\Resources\CalendarResource;
+use App\MoonShine\Resources\ScholTourResource;
 
 final class MoonShineLayout extends AppLayout
 {
@@ -70,10 +71,15 @@ final class MoonShineLayout extends AppLayout
                 fn() => route('cache_clear'),
             )->icon('arrow-path-rounded-square'),
 
+
+
+            MenuItem::make('Школьные туры', ScholTourResource::class)->icon('paper-clip'),
+
+            MenuItem::make('Отзывы', ReviewResource::class)->icon('chat-bubble-oval-left'),
+
             MenuItem::make('Календарь', CalendarResource::class)->icon('calendar-days'),
 
             ...parent::menu(),
-            MenuItem::make('Reviews', ReviewResource::class),
 
         ];
     }
