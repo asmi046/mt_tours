@@ -28,6 +28,23 @@
 
 }
 
+.tour_program_tap.new_year {
+    .tap_headers {
+        color: $blue_light_color;
+    }
+
+    .tap_bodys {
+        color: $blue_light_color;
+        strong {
+            color: $blue_light_color;
+        }
+
+        .tap_body {
+            background-color:white;
+        }
+    }
+}
+
 .tap_bodys {
     display: flex;
 
