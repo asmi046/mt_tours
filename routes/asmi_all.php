@@ -27,3 +27,5 @@ use App\Http\Controllers\TourCategoryController;
     Route::get('/calendar/{month?}', [CalendarController::class, "index"])->name('calendar');
     Route::get('/yml-feed/{category?}', [FeedController::class, "yml_get_feed"])->name('yml_get_feed');
 
+    Route::get('/news', [IndexController::class, "news"])->name('news');
+
