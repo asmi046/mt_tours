@@ -19,11 +19,7 @@
                     <br>
                     <x-cat-banner-btn-page></x-cat-banner-btn-page>
                 </div>
-
-
-
             </div>
-
     </section>
 
 <section class="school-tours" id="programm_tab">
@@ -51,10 +47,9 @@
 		</div>
 
 
-        <tap :header="{{ json_encode(array_keys($tours->toArray())) }}">
+        <tap class="add-flex-wrap" :header="{{ json_encode(array_keys($tours->toArray())) }}">
             @foreach ( $tours as $key => $item)
                 <template v-slot:body{{ $loop->index + 1 }}>
-
                     <div class="school-tour-list">
                         @foreach ($item as $tour)
                             <x-cards.school :item="$tour"></x-cards.school>
