@@ -91,7 +91,7 @@
         .tap_wrapper {
             width:100%;
             flex-direction: column;
-            &.add-flex-wrap {
+            .add-flex-wrap & {
                 flex-direction: row;
                 flex-wrap: wrap;
             }
