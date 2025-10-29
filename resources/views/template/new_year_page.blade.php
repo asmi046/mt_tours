@@ -108,7 +108,7 @@
                 </div>
 
                 @if (!empty($struct_programm))
-                    <div id="programm_tab" class="tour_program_tap .new_year">
+                    <div id="programm_tab" class="tour_program_tap new_year">
                         <h2 class="big"></h2>
                         <x-tour-program-tap :programm="$struct_programm"></x-tour-program-tap>
                     </div>
