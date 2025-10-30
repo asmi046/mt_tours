@@ -30,7 +30,9 @@ class Tour extends Model
         'tour_program',
         'multi_data',
         'prices',
-        'head_tour_program'
+        'head_tour_program',
+        'created_at',
+        'updated_at',
     ];
 
     public $casts = [

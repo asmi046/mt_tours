@@ -3,7 +3,7 @@
 @section('dop_class', 'new_year')
 @section('main')
     <section class="banner_video">
-        <x-tours-arrow caption="О туре"></x-tours-arrow>
+        <x-tours-arrow caption="О туре" link="tours_content"></x-tours-arrow>
         <video autoplay muted loop playsinline preload="metadata"
         poster="{{ asset('img/poster.webp') }}"
         class="_video">

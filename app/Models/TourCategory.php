@@ -13,7 +13,9 @@ class TourCategory extends Model
         "name",
         "slug",
         "template_name",
-        "description"
+        "description",
+        'created_at',
+        'updated_at',
     ];
 
     public $with = [

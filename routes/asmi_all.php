@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\FeedController;
 use App\Http\Controllers\TourController;
+use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\CalendarController;
 use App\Http\Controllers\ScholTourController;
 use App\Http\Controllers\TourCategoryController;
@@ -28,4 +29,6 @@ use App\Http\Controllers\TourCategoryController;
     Route::get('/yml-feed/{category?}', [FeedController::class, "yml_get_feed"])->name('yml_get_feed');
 
     Route::get('/news', [IndexController::class, "news"])->name('news');
+
+    Route::get('/sitemap.xml', [SitemapController::class, 'index']);
 
