@@ -79,6 +79,7 @@ class TourResource extends ModelResource
                 Tab::make('Основное', [
                     ID::make()->sortable(),
                     Switcher::make('Актуальный тур', 'actual'),
+                    Switcher::make('Тур продан', 'soldout'),
                     Number::make('Порядок', 'order'),
                     Url::make('Внешняя ссылка', 'out_lnk'),
                     Text::make('Шаблон', 'template_name'),
@@ -98,7 +99,7 @@ class TourResource extends ModelResource
                         Date::make('Дата тура', 'start_data')->format('d.m.Y')
                     ]),
 
-                    Switcher::make('Тур продан', 'soldout'),
+
 
                     Json::make('Варианты цены', 'prices')
                     ->removable()

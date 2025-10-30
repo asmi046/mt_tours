@@ -2,6 +2,10 @@
     <div class="img">
         <img src="{{ Storage::url($item['img']) }}" loading="lazy" alt="{{ $item['title'] }}">
 
+        @if ($item['soldout'])
+            <img class="soldout" src="{{ asset('img/soldout.webp') }}">
+        @endif
+
         @if ($item['prices'])
             <div class="label price_label">
                 от {{ $item['prices'][0]['price'] }} ₽

@@ -106,6 +106,14 @@
             right: 10px;
             top:10px;
         }
+
+        .soldout {
+            width:70%;
+            height: auto;
+            position: absolute;
+            left:calc(50% - 150px);
+            top:30%;
+        }
     }
 
     .text {
@@ -213,6 +221,10 @@ swiper-container {
             }
         }
 
+        .img .soldout {
+            left: calc(50% - 65px);
+        }
+
 
     }
 }
@@ -229,5 +241,7 @@ swiper-container {
 
     .tour_card  {
         width: 45%;
+
+
     }
 }
