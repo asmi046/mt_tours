@@ -1,2 +1,5 @@
 User-agent: *
 Disallow:
+
+
+Sitemap: https://tours.mirturizma46.ru/sitemap.xml
