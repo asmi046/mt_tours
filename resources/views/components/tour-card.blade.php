@@ -20,6 +20,9 @@
                 @foreach ($item['multi_data'] as $subitem)
                     <p class="label label_blue">
                         {{ date ("d.m.Y", strtotime($subitem['start_data'])) }}
+                        @if (isset($subitem['soldout']) && $subitem['soldout'])
+                            <span class="no_place">Нет мест</span>
+                        @endif
                     </p>
                 @endforeach
             @else

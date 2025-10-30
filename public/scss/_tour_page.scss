@@ -166,19 +166,7 @@
                 line-height: 1;
                 position: relative;
 
-                .no_place {
-                    color: white;
-                    background-color: red;
-                    font-size: 8px;
-                    position: absolute;
-                    padding: 3px 5px;
-                    border-radius: 5px;
-                    width: 45px;
-                    transform: rotate(40deg);
-                    right: -11px;
-                    top: 6px;
-                    text-align: center;
-                }
+
 
                 &:hover,
                 &.active {
@@ -244,6 +232,20 @@
     .girland_new_year {
         background-image: url(../img/new_year/gerlianda-DeaewzeZ.svg);
     }
+}
+
+.no_place {
+    color: white;
+    background-color: red;
+    font-size: 8px;
+    position: absolute;
+    padding: 3px 5px;
+    border-radius: 5px;
+    width: 45px;
+    transform: rotate(40deg);
+    right: -11px;
+    top: 6px;
+    text-align: center;
 }
 
 .main.new_year {

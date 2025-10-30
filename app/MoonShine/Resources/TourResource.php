@@ -96,7 +96,8 @@ class TourResource extends ModelResource
                     ->removable()
                     ->fields([
                         Position::make(),
-                        Date::make('Дата тура', 'start_data')->format('d.m.Y')
+                        Date::make('Дата тура', 'start_data')->format('d.m.Y'),
+                        Switcher::make('Нет мест', 'soldout')->default(false),
                     ]),
 
 
