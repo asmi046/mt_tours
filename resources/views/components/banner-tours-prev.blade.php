@@ -26,7 +26,7 @@
     <img src="{{ asset('img/new_year/new_head_banner.webp') }}" alt="Новогодние туры от МирТуризма">
     <div class="overlay"></div>
     <div class="text">
-        <p>Новый год <br><span class="gold">2025</span><br><span class="smoll">раннее бронирование</span></p>
+        <p>Новый год <br><span class="gold">2026</span><br><span class="smoll">раннее бронирование</span></p>
     </div>
     <div class="label price_label">
         от 2500 ₽
