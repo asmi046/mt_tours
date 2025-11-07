@@ -12,7 +12,10 @@
 
     @foreach ($pay->clients as $client)
       <p><strong>Клиент:</strong> {{ $client->fio }}</p>
-      <p><strong>Дата рождения:</strong> {{ $client->dr }}</p>
+      @php
+          $dr = date('Y-m-d', strtotime($client->dr));
+      @endphp
+      <p><strong>Дата рождения:</strong> {{ ($dr === '1970-01-01' ? 'Нужно уточнить' : $client->dr) }}</p>
       <p><strong>Номер документа:</strong> {{ $client->document_number }}</p>
     @endforeach
 

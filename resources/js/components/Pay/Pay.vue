@@ -162,11 +162,33 @@
             client_error_field.dr = true
             error = true
         } else {
-            const parsedData = new Date(client_data.dr)
-            console.log(parsedData)
-            if(isNaN(parsedData)) {
+            // Проверка формата даты ДД.ММ.ГГГГ
+            const dateRegex = /^(\d{2})\.(\d{2})\.(\d{4})$/;
+            const match = client_data.dr.match(dateRegex);
+
+            if (!match) {
                 client_error_field.dr = true
                 error = true
+            } else {
+                // Дополнительная проверка на валидность даты
+                const day = parseInt(match[1], 10);
+                const month = parseInt(match[2], 10);
+                const year = parseInt(match[3], 10);
+
+                // Проверяем валидность месяца и дня
+                if (month < 1 || month > 12 || day < 1 || day > 31) {
+                    client_error_field.dr = true
+                    error = true
+                } else {
+                    // Проверяем, существует ли такая дата
+                    const testDate = new Date(year, month - 1, day);
+                    if (testDate.getFullYear() !== year ||
+                        testDate.getMonth() !== month - 1 ||
+                        testDate.getDate() !== day) {
+                        client_error_field.dr = true
+                        error = true
+                    }
+                }
             }
         }
 
