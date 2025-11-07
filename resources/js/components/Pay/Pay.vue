@@ -48,7 +48,7 @@
 
                 <div class="field">
                     <label for="c_dr">Дата рождения<sup>*</sup></label>
-                    <input v-model="client_data.dr" :class="{_error: client_error_field.dr}" id="c_dr" type="text" placeholder="__.__.____">
+                    <input v-model="client_data.dr" :class="{_error: client_error_field.dr}" id="c_dr" type="date">
                 </div>
 
 
@@ -68,7 +68,7 @@
 
                 <div class="field">
                     <label for="c_number">Серия и № паспорта или свидетельства<sup>*</sup></label>
-                    <input  v-model="client_data.document_number" :class="{_error: client_error_field.number}" id="c_number" type="text"  placeholder="">
+                    <input  v-model="client_data.document_number" :class="{_error: client_error_field.document_number}" id="c_number" type="text"  placeholder="">
                 </div>
 
                 <!-- <div v-else class="field">
@@ -142,6 +142,7 @@
         client_error_field.fio = false
         client_error_field.phone = false
         client_error_field.document_number = false
+        client_error_field.dr = false
 
 
         let error = false
@@ -153,6 +154,20 @@
         if(client_data.phone == '') {
             client_error_field.phone = true
             error = true
+        }
+
+
+
+        if(client_data.dr=='') {
+            client_error_field.dr = true
+            error = true
+        } else {
+            const parsedData = new Date(client_data.dr)
+            console.log(parsedData)
+            if(isNaN(parsedData)) {
+                client_error_field.dr = true
+                error = true
+            }
         }
 
         if(client_data.document_number == '') {
