@@ -48,7 +48,7 @@
 
                 <div class="field">
                     <label for="c_dr">Дата рождения<sup>*</sup></label>
-                    <input v-model="client_data.dr" :class="{_error: client_error_field.dr}" id="c_dr" type="date">
+                    <input v-model="client_data.dr" :class="{_error: client_error_field.dr}" id="c_dr" type="text" placeholder="ДД.ММ.ГГГГ">
                 </div>
 
 

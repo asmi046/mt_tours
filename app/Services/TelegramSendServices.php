@@ -20,7 +20,8 @@ class TelegramSendServices {
         foreach ($pay->clients as $client) {
             $message .= "\n\r";
             $message .= "<b>Клиент:</b> ". $client->fio ."\n\r";
-            $message .= "<b>Дата рождения:</b> ". $client->dr ."\n\r";
+            $dr = date('Y-m-d', strtotime($client->dr));
+            $message .= "<b>Дата рождения:</b> " . ($dr === '1970-01-01' ? 'Нужно уточнить' : $client->dr) . "\n\r";
             // $message .= "<b>Тип документа:</b> ". $client->document_type ."\n\r";
             $message .= "<b>Номер документа:</b> ". $client->document_number ."\n\r";
         }
