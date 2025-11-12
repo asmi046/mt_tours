@@ -243,7 +243,7 @@
 
     <section class="up_sale">
         <div class="container">
-            <h2 class="h2_in_page">Смотрите так же <br> другие <span class="gold">туры:</span></h2>
+            <h2 class="h2_in_page">Смотрите также <br> другие <span class="gold">туры:</span></h2>
 
             <swiper-container id="any_tours" init="false">
                 @foreach ($tour_any as $item)
