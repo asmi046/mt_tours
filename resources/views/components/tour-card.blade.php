@@ -6,6 +6,10 @@
             <img class="soldout" src="{{ asset('img/soldout.webp') }}">
         @endif
 
+        @if ($item['new_tour'])
+            <img class="new_tour" src="{{ asset('img/bages/new-tour.svg') }}">
+        @endif
+
         @if ($item['prices'])
             <div class="label price_label">
                 от {{ $item['prices'][0]['price'] }} ₽

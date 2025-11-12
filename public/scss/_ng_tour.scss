@@ -90,6 +90,23 @@
 }
 
 
+@keyframes newTourWiggle {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.15) rotate(-7deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.9;
+  }
+}
+
+
+
 .tour_card {
     overflow: hidden;
     width: 30%;
@@ -105,6 +122,17 @@
             position: absolute;
             right: 10px;
             top:10px;
+        }
+
+        .new_tour {
+            width:25%;
+            height: auto;
+            position: absolute;
+            left:10px;
+            top:-10px;
+
+            transform-origin: bottom center;
+            animation: newTourWiggle 2s ease-in-out infinite;
         }
 
         .soldout {
