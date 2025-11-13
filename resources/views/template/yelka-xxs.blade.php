@@ -104,7 +104,7 @@
                     <div class="video_wrap video_2">
                         <div class="video-presentation-item">
                             <div class="video-container">
-                                <video controls preload="metadata">
+                                <video controls preload="metadata" loading="lazy" playsinline poster="{{ asset('video/elka-xxs.webp') }}">>
                                     <source src="{{ asset('video/elka_hhs.mp4') }}" type="video/mp4">
                                     Ваш браузер не поддерживает видео.
                                 </video>
@@ -113,7 +113,7 @@
                         </div>
                         <div class="video-presentation-item">
                             <div class="video-container">
-                                <video controls preload="metadata">
+                                <video controls preload="metadata" loading="lazy" playsinline poster="{{ asset('video/dm-usadba.webp') }}">>
                                     <source src="{{ asset('video/dm_usadba.mp4') }}" type="video/mp4">
                                     Ваш браузер не поддерживает видео.
                                 </video>
