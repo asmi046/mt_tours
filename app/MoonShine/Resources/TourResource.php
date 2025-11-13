@@ -151,7 +151,7 @@ class TourResource extends ModelResource
 
                 Tab::make('Оформление страницы', [
                     Image::make('Изображение', 'img')->dir('tours'),
-                    File::make("Фон шапки тура", 'header_bg')->dir('tours'),
+                    File::make("Фон шапки тура", 'header_bg')->dir('tours')->removable(),
                     Select::make("Нижний фон", "page_bg")->options([
                         'kazan_bg' => 'Казань',
                         'kudikina_bg' => 'Кудыкина гора',
