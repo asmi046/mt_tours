@@ -119,3 +119,33 @@ ________________
 _________
 
 Создай миграцию которая добавляет поле 'new_tour' типа boolean в таблицу 'tours' с добавлением комментария 'Новый тур'. Значение по умолчанию false.
+_________
+В текущем файле в в блок
+
+<div class="video_wrap video_2">
+
+</div>
+
+вставь 2 элемента первый это видео с ютуба:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ekPQjvUY14o?si=MCkx4nbl50V-JnTq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+второй локальное видео public\video\dm_usadba.mp4
+
+Под каждым видео должна быть подпись:
+
+Рождественская елка в Храме Христа Спасителя
+
+Московская усадьба дете мороза.
+
+Сделай разметку для этих элементов согласно следующих требований:
+
+Видео одинаковой высоты расположенны в одну линейку.
+
+Стили реализуй в scss и размести в файле: public\scss\_video-presentation.scss
+
+
+
+
+
+
+

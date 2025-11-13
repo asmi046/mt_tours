@@ -1,0 +1,70 @@
+
+.video_presentation {
+    display: flex;
+    flex-direction: column;
+
+    .big {
+        text-align: center;
+    }
+    .yel_from_video {
+        width: 100%;
+        max-width: 400px;
+        align-self: center;
+        margin: 30px auto;
+    }
+}
+
+.video_wrap.video_2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 20px;
+
+
+
+    .video-presentation-item {
+        flex: 1;
+        min-width: 0; // Важно для flex-элементов
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video-container {
+        position: relative;
+        width: 100%;
+        // Устанавливаем соотношение сторон 16:9 для одинаковой высоты
+        padding-top: 56.25%;
+        border-radius: 12px;
+        overflow: hidden;
+        background-color: #000;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+        iframe,
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    }
+
+    .video-caption {
+        font-family: 'Play', sans-serif;
+        font-size: 16px;
+        text-align: center;
+        margin-top: 15px;
+        line-height: 1.4;
+    }
+
+    // Адаптация для мобильных устройств
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 40px;
+
+        .video-caption {
+            font-size: 15px;
+        }
+    }
+}
