@@ -24,6 +24,7 @@
         top:20px;
         position: absolute;
         border-left: 3px dashed $blue_light_color;
+        z-index: 1;
     }
 
     .step:first-child {
@@ -33,11 +34,12 @@
     }
 
     .step {
-        margin: 15px 0;
+        padding: 5px 0;
         display: flex;
         flex-wrap: wrap;
-        position: relative;
-        z-index: 100;
+        z-index: 2;
+        background: transparent;
+        left:30px;
 
         & > * {
             margin-top: auto;
@@ -51,6 +53,8 @@
             border: 3px solid $blue_light_color;
             background-color: white;
             margin-right: 10px;
+            z-index: 3;
+
         }
 
         span {

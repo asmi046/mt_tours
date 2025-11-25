@@ -1,5 +1,7 @@
 User-agent: *
-Disallow:
 
+Disallow: /pay/success
+Disallow: /pay/
+Disallow: /ticket/
 
 Sitemap: https://tours.mirturizma46.ru/sitemap.xml
