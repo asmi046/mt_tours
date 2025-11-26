@@ -44,7 +44,10 @@
             </div>
         </div>
 
-        <div class="price">
+        <div v-if="showSale" class="price">
+            Цена: <span class="old_price">{{ selected_price }}</span> <strong>{{ selected_price - defaultSale }}</strong> <span class="v">₽</span>
+        </div>
+        <div v-else class="price">
             Цена: <strong>{{ selected_price }}</strong> <span class="v">₽</span>
         </div>
 
@@ -54,6 +57,16 @@
 
 <script setup>
 import { ref } from 'vue';
+
+// Получаем значения из мета-тегов
+const showSaleMeta = document.querySelector('meta[name="show_sale"]');
+const defaultSaleMeta = document.querySelector('meta[name="default_sale"]');
+
+const showSale = showSaleMeta ? showSaleMeta.getAttribute('content') === '1' : false;
+const defaultSale = defaultSaleMeta ? parseInt(defaultSaleMeta.getAttribute('content'), 10) : 0;
+
+console.log('Show Sale:', showSale);
+console.log('Default Sale:', defaultSale);
 
     const props = defineProps({
         prices: Array,
@@ -113,7 +126,7 @@ import { ref } from 'vue';
             img: props.img,
             client_count: 1,
             start_data: selected_data.value,
-            price: selected_price.value,
+            price: (showSale) ? selected_price.value - defaultSale : selected_price.value,
             name: props.title+" - "+selected_data.value+" - "+selected_type.value,
             back_link: document.location.origin + document.location.pathname,
             type: 'ekskursionka' // замените на нужный тип

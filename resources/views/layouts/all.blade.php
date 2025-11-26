@@ -15,6 +15,8 @@
     <link rel="icon" type="image/png" href="{{asset('/img/favicons/icon16.png')}}" sizes="16x16">
 
     <meta name="_token" content="{{ csrf_token() }}">
+    <meta name="default_sale" content="{{ config('sales.default_sale') }}">
+    <meta name="show_sale" content="{{ config('sales.show_sale') }}">
 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
@@ -60,20 +62,22 @@
     <main id="main"  class="main @yield('dop_class')">
         <div id="smooth-wrapper">
             <div id="smooth-content">
-                <section class="black_friday">
-                    <div class="marquee">
-                        <div class="marquee__content">
-                        @for ($i=0; $i<6; $i++)
-                            <p>Черная пятница! <strong>-500 ₽ НА ВСЕ ТУРЫ</strong></p>
-                            <img src="{{ asset('img/icon/bf_icon.svg') }}" alt="Снежинка">
-                            <p>Только <strong>28,29 и 30 ноября!</strong> Не упусти выгаду!</p>
-                            <img src="{{ asset('img/icon/bf_icon.svg') }}" alt="Снежинка">
-                        @endfor
+                @if (config('sales.show_marquee'))
+                    <section class="black_friday">
+                        <div class="marquee">
+                            <div class="marquee__content">
+                            @for ($i=0; $i<6; $i++)
+                                <p>Черная пятница! <strong>-500 ₽ НА ВСЕ ТУРЫ</strong></p>
+                                <img src="{{ asset('img/icon/bf_icon.svg') }}" alt="Снежинка">
+                                <p>Только <strong>28,29 и 30 ноября!</strong> Не упусти выгаду!</p>
+                                <img src="{{ asset('img/icon/bf_icon.svg') }}" alt="Снежинка">
+                            @endfor
 
 
+                            </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                @endif
 
                 @yield('main')
                 <x-footer></x-footer>

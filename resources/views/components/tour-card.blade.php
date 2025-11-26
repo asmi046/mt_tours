@@ -12,7 +12,11 @@
 
         @if ($item['prices'])
             <div class="label price_label">
+                @if (config('sales.show_sale'))
+                от <span class="old_price">{{ $item['prices'][0]['price'] }}</span> {{ $item['prices'][0]['price'] - config('sales.show_sale') }} ₽
+                @else
                 от {{ $item['prices'][0]['price'] }} ₽
+                @endif
             </div>
         @endif
     </div>

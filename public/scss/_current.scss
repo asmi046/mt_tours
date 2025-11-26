@@ -135,6 +135,12 @@ h1 {
     }
 }
 
+.old_price {
+    font-size: 10px;
+    color: darkgray;
+    text-decoration: line-through;
+}
+
 .label {
     line-height: 1;
     background-color: $main_color;
