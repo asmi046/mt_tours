@@ -60,6 +60,21 @@
     <main id="main"  class="main @yield('dop_class')">
         <div id="smooth-wrapper">
             <div id="smooth-content">
+                <section class="black_friday">
+                    <div class="marquee">
+                        <div class="marquee__content">
+                        @for ($i=0; $i<6; $i++)
+                            <p>Черная пятница! <strong>-500 ₽ НА ВСЕ ТУРЫ</strong></p>
+                            <img src="{{ asset('img/icon/bf_icon.svg') }}" alt="Снежинка">
+                            <p>Только <strong>28,29 и 30 ноября!</strong> Не упусти выгаду!</p>
+                            <img src="{{ asset('img/icon/bf_icon.svg') }}" alt="Снежинка">
+                        @endfor
+
+
+                        </div>
+                    </div>
+                </section>
+
                 @yield('main')
                 <x-footer></x-footer>
             </div>
