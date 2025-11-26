@@ -67,9 +67,9 @@
                         <div class="marquee">
                             <div class="marquee__content">
                             @for ($i=0; $i<6; $i++)
-                                <p>Черная пятница! <strong>-500 ₽ НА ВСЕ ТУРЫ</strong></p>
+                                <p>Черная пятница! <strong>НА ВСЕ ТУРЫ</strong></p>
                                 <img src="{{ asset('img/icon/bf_icon.svg') }}" alt="Снежинка">
-                                <p>Только <strong>28,29 и 30 ноября!</strong> Не упусти выгаду!</p>
+                                <p>Только <strong>28,29 и 30 ноября!</strong> Не упусти выгоду!</p>
                                 <img src="{{ asset('img/icon/bf_icon.svg') }}" alt="Снежинка">
                             @endfor
 
