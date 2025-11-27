@@ -15,7 +15,7 @@
     <link rel="icon" type="image/png" href="{{asset('/img/favicons/icon16.png')}}" sizes="16x16">
 
     <meta name="_token" content="{{ csrf_token() }}">
-    <meta name="default_sale" content="{{ config('sales.default_sale') }}">
+    <meta name="default_sale" content="{{ config('sales.default_sale') + (request()->is('tour/novogodniaia-adygeia') ? 500 : 0) }}">
     <meta name="show_sale" content="{{ config('sales.show_sale') }}">
 
 
