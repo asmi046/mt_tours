@@ -25,7 +25,7 @@
                     <p class="label label_gold">
 
                         @if (config('sales.show_sale'))
-                            от <span class="old_price">{{ $tour_info->prices[0]['price'] }}</span> {{ $tour_info->prices[0]['price'] - config('sales.show_sale') }} ₽
+                            от <span class="old_price">{{ $tour_info->prices[0]['price'] }}</span> {{ $tour_info->prices[0]['price'] - config('sales.default_sale') }} ₽
                         @else
                             от {{ $tour_info->prices[0]['price'] }} ₽
                         @endif
