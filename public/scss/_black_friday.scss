@@ -1,13 +1,17 @@
 @use 'vars' as *;
 
 .black_friday {
-    background-color: $gold_color;
-    color: $black_color;
+    background-color: #129AFF;
+    color: white;
     height: 30px;
     padding: 0;
     margin: 0;
     overflow: hidden;
     white-space: nowrap;
+
+    strong {
+        color:white;
+    }
 }
 marquee {
     display: flex;
@@ -21,8 +25,13 @@ marquee {
 
 .marquee__content p {
     font-family: "Play";
-    font-size: 18px;
     margin: 0 20px;
+    display: flex;
+    a {
+        color:white;
+        line-height: 1;
+        margin: auto;
+    }
 }
 
 .marquee__content img {

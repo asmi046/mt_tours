@@ -33,8 +33,8 @@
 
 
             <div class="field">
-                <label for="c_email">E-mail</label>
-                <input v-model="client_data.email" id="c_email" type="mail" placeholder="info@mail.ru">
+                <label for="c_email">E-mail<sup>*</sup></label>
+                <input v-model="client_data.email" id="c_email" :class="{_error: client_error_field.email}" type="mail" placeholder="info@mail.ru">
             </div>
         </div>
 
@@ -141,6 +141,7 @@
     const to_pay_lnk = async () => {
         client_error_field.fio = false
         client_error_field.phone = false
+        client_error_field.email = false
         client_error_field.document_number = false
         client_error_field.dr = false
 
@@ -153,6 +154,11 @@
 
         if(client_data.phone == '') {
             client_error_field.phone = true
+            error = true
+        }
+
+        if(client_data.email == '') {
+            client_error_field.email = true
             error = true
         }
 

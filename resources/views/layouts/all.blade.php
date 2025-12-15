@@ -67,10 +67,14 @@
                         <div class="marquee">
                             <div class="marquee__content">
                             @for ($i=0; $i<6; $i++)
-                                <p>Черная пятница! <strong>НА ВСЕ ТУРЫ</strong></p>
-                                <img src="{{ asset('img/icon/bf_icon.svg') }}" alt="Снежинка">
-                                <p>Только <strong>28,29 и 30 ноября!</strong> Не упусти выгоду!</p>
-                                <img src="{{ asset('img/icon/bf_icon.svg') }}" alt="Снежинка">
+                                <p><a href="https://tours.mirturizma46.ru/tour/tur-elka-xxs">Рождественская Ёлка в ХХС 🎄</a></p>
+                                <img src="{{ asset('img/icon/snow_lent.svg') }}" alt="Снежинка">
+                                <p><a href="https://tours.mirturizma46.ru/tour/novogodniaia-belarus">Новогодняя Беларусь 2026 🎅</a></p>
+                                <img src="{{ asset('img/icon/snow_lent.svg') }}" alt="Снежинка">
+                                <p><a href="https://tours.mirturizma46.ru/tour/novogodniaia-adygeia">Новогодняя Адыгея 2026 ⛰️</a></p>
+                                <img src="{{ asset('img/icon/snow_lent.svg') }}" alt="Снежинка">
+                                <p><a href="https://tours.mirturizma46.ru/tour/novogodnee-ledovoe-sou-tatiany-navka">Новогоднее Ледовое Шоу ⛸️</a></p>
+                                <img src="{{ asset('img/icon/snow_lent.svg') }}" alt="Снежинка">
                             @endfor
 
 
