@@ -67,17 +67,15 @@
                         <div class="marquee">
                             <div class="marquee__content">
                             @for ($i=0; $i<6; $i++)
-                                <p><a href="https://tours.mirturizma46.ru/tour/tur-elka-xxs">Рождественская Ёлка в ХХС 🎄</a></p>
+                                <p><a target="_blank" href="https://tours.mirturizma46.ru/tour/tur-elka-xxs">Рождественская Ёлка в ХХС 🎄</a></p>
                                 <img src="{{ asset('img/icon/snow_lent.svg') }}" alt="Снежинка">
-                                <p><a href="https://tours.mirturizma46.ru/tour/novogodniaia-belarus">Новогодняя Беларусь 2026 🎅</a></p>
+                                <p><a target="_blank" href="https://tours.mirturizma46.ru/tour/novogodniaia-belarus">Новогодняя Беларусь 2026 🎅</a></p>
                                 <img src="{{ asset('img/icon/snow_lent.svg') }}" alt="Снежинка">
-                                <p><a href="https://tours.mirturizma46.ru/tour/novogodniaia-adygeia">Новогодняя Адыгея 2026 ⛰️</a></p>
+                                <p><a target="_blank" href="https://tours.mirturizma46.ru/tour/novogodniaia-adygeia">Новогодняя Адыгея 2026 ⛰️</a></p>
                                 <img src="{{ asset('img/icon/snow_lent.svg') }}" alt="Снежинка">
-                                <p><a href="https://tours.mirturizma46.ru/tour/novogodnee-ledovoe-sou-tatiany-navka">Новогоднее Ледовое Шоу ⛸️</a></p>
+                                <p><a target="_blank" href="https://tours.mirturizma46.ru/tour/novogodnee-ledovoe-sou-tatiany-navka">Новогоднее Ледовое Шоу ⛸️</a></p>
                                 <img src="{{ asset('img/icon/snow_lent.svg') }}" alt="Снежинка">
                             @endfor
-
-
                             </div>
                         </div>
                     </section>
