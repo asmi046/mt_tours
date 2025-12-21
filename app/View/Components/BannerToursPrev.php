@@ -17,9 +17,9 @@ class BannerToursPrev extends Component
     {
 
         $this->tours = collect([
-            Tour::where('id', 26)->first(),
-            Tour::where('id', 32)->first(),
             Tour::where('id', 22)->first(),
+            Tour::where('id', 32)->first(),
+            Tour::where('id', 18)->first(),
             Tour::where('id', 24)->first(),
         ])->filter();
 
