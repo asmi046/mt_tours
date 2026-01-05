@@ -2,14 +2,15 @@
 
 namespace App\View\Components;
 
-use Closure;
 use App\Models\Tour;
-use Illuminate\View\Component;
+use Closure;
 use Illuminate\Contracts\View\View;
+use Illuminate\View\Component;
 
 class BannerToursPrev extends Component
 {
     public $tours;
+
     /**
      * Create a new component instance.
      */
@@ -17,9 +18,9 @@ class BannerToursPrev extends Component
     {
 
         $this->tours = collect([
-            Tour::where('id', 22)->first(),
-            Tour::where('id', 32)->first(),
-            Tour::where('id', 18)->first(),
+            Tour::where('id', 19)->first(),
+            Tour::where('id', 33)->first(),
+            Tour::where('id', 16)->first(),
             Tour::where('id', 24)->first(),
         ])->filter();
 
