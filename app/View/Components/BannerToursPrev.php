@@ -21,7 +21,7 @@ class BannerToursPrev extends Component
             Tour::where('id', 19)->first(),
             Tour::where('id', 33)->first(),
             Tour::where('id', 16)->first(),
-            Tour::where('id', 24)->first(),
+            Tour::where('id', 27)->first(),
         ])->filter();
 
         // $this->tours = Tour::whereIn('id', [10, 9, 11])->get();
