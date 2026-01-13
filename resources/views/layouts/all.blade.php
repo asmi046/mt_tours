@@ -137,6 +137,6 @@
 
 </body>
 
-<script src="https://cdn.glitch.global/8352fc0e-bebe-4680-ae0b-269da8b54259/ScrollSmoother.min.js"></script>
+<script src="{{ asset('js/ScrollSmoother.min.js') }}"></script>
 
 </html>
