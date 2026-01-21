@@ -113,9 +113,9 @@ class CalendarServices
 
         $out .= '<tr>';
 
-        // for ($x = 0; $x < $day_week; $x++) {
-        //     $out .= '<td class="calendar-day no_event"></td>';
-        // }
+        for ($x = 0; $x < $day_week; $x++) {
+            $out .= '<td class="calendar-day no_event"></td>';
+        }
 
         $days_counter = 0;
         $days_month = date('t', mktime(0, 0, 0, $month, 1, $year));
