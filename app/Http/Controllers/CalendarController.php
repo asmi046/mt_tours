@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Calendar;
-use Illuminate\Http\Request;
 use App\Services\CalendarServices;
 
 class CalendarController extends Controller
@@ -16,50 +15,50 @@ class CalendarController extends Controller
         });
 
         $result = [];
-        for($i=0; $i < count($cards)-1; $i++) {
+        for ($i = 0; $i < count($cards) - 1; $i++) {
             $result[] = $cards[$i];
-            if (($cards[$i]['index'] + 1) != $cards[$i+1]['index']) {
-                for ($j = $cards[$i]['index'] + 1; $j < $cards[$i+1]['index']; $j++) {
+            if (($cards[$i]['index'] + 1) != $cards[$i + 1]['index']) {
+                for ($j = $cards[$i]['index'] + 1; $j < $cards[$i + 1]['index']; $j++) {
                     $result[] = [
                         'title' => null,
                         'index' => $j,
                         'empty' => true,
-                        'post_lnk' => "#",
-                        'dey_count' => "",
+                        'post_lnk' => '#',
+                        'dey_count' => '',
                         'soldout' => false,
-                        'price' => "",
-                        'region' => "",
+                        'price' => '',
+                        'region' => '',
                         'all_info' => null,
                     ];
                 }
             }
         }
-        $result[] = $cards[count($cards)-1];
-
+        $result[] = $cards[count($cards) - 1];
 
         if ($cards[0]['index'] > 1) {
-                for ($j = 1; $j < $cards[0]['index']; $j++) {
-                    array_unshift($result, [
-                        'title' => null,
-                        'index' => $j,
-                        'empty' => true,
-                        'post_lnk' => "#",
-                        'dey_count' => "",
-                        'soldout' => false,
-                        'price' => "",
-                        'region' => "",
-                        'all_info' => null,
-                    ]);
-                }
+            for ($j = 1; $j < $cards[0]['index']; $j++) {
+                array_unshift($result, [
+                    'title' => null,
+                    'index' => $j,
+                    'empty' => true,
+                    'post_lnk' => '#',
+                    'dey_count' => '',
+                    'soldout' => false,
+                    'price' => '',
+                    'region' => '',
+                    'all_info' => null,
+                ]);
+            }
         }
 
         return $result;
+
         return $cards;
     }
 
     public function index($month = null)
     {
-        $curent_month = $month?$month:date("d.m.Y", strtotime("01.01.2026"));
+        $curent_month = $month ? $month : date('d.m.Y', strtotime('01.02.2026'));
 
         $src_event = Calendar::all();
         $events = [];
@@ -90,40 +89,32 @@ class CalendarController extends Controller
         }
 
         $selector = [
-            // [
-            //     'text' => CalendarServices::get_month_year("01.06.2025"),
-            //     'param' => "01.06.2025"
-            // ],
-            // [
-            //     'text' => CalendarServices::get_month_year("01.07.2025"),
-            //     'param' => "01.07.2025"
-            // ],
-            // [
-            //     'text' => CalendarServices::get_month_year("01.08.2025"),
-            //     'param' => "01.08.2025"
-            // ],
-            [
-                'text' => CalendarServices::get_month_year("01.09.2025"),
-                'param' => "01.09.2025"
-            ],
-            [
-                'text' => CalendarServices::get_month_year("01.10.2025"),
-                'param' => "01.10.2025"
-            ],
-            [
-                'text' => CalendarServices::get_month_year("01.11.2025"),
-                'param' => "01.11.2025"
-            ],
-            [
-                'text' => CalendarServices::get_month_year("01.12.2025"),
-                'param' => "01.12.2025"
-            ],
-            [
-                'text' => CalendarServices::get_month_year("01.01.2026"),
-                'param' => "01.01.2026"
-            ]
-        ];
 
+            // [
+            //     'text' => CalendarServices::get_month_year("01.09.2025"),
+            //     'param' => "01.09.2025"
+            // ],
+            // [
+            //     'text' => CalendarServices::get_month_year("01.10.2025"),
+            //     'param' => "01.10.2025"
+            // ],
+            [
+                'text' => CalendarServices::get_month_year('01.11.2025'),
+                'param' => '01.11.2025',
+            ],
+            [
+                'text' => CalendarServices::get_month_year('01.12.2025'),
+                'param' => '01.12.2025',
+            ],
+            [
+                'text' => CalendarServices::get_month_year('01.01.2026'),
+                'param' => '01.01.2026',
+            ],
+            [
+                'text' => CalendarServices::get_month_year('01.02.2026'),
+                'param' => '01.02.2026',
+            ],
+        ];
 
         $month = CalendarServices::getMonth(date('n', strtotime($curent_month)), date('Y', strtotime($curent_month)), $events);
 
@@ -131,7 +122,7 @@ class CalendarController extends Controller
             'month' => $month,
             'selector' => $selector,
             'curent_month' => $curent_month,
-            'month_year' => CalendarServices::get_month_year($curent_month)
+            'month_year' => CalendarServices::get_month_year($curent_month),
         ]);
     }
 }
