@@ -86,12 +86,12 @@
                                             href="https://tours.mirturizma46.ru/tour/gornolyznyi-tur-v-krasnuiu-polianu">Горнолыжный
                                             тур 2026 ⛷️</a></p>
                                     <img src="{{ asset('img/icon/snow_lent.svg') }}" alt="Снежинка">
-                                    <p><a target="_blank" href="https://tours.mirturizma46.ru/tour/optina">ОПТИНА
-                                            ПУСТЫНЬ + ШАМОРДИНО 🙏</a></p>
+                                    <p><a target="_blank" href="https://tours.mirturizma46.ru/tour/matrona"> Матрона
+                                            Московская 🙏</a></p>
                                     <img src="{{ asset('img/icon/snow_lent.svg') }}" alt="Снежинка">
                                     <p><a target="_blank"
-                                            href="https://tours.mirturizma46.ru/tour/novogodnee-putesestvie-v-voronez">Альпаки
-                                            + Хаски + Океанариум 🐕</a></p>
+                                            href="https://tours.mirturizma46.ru/tour/novogodniaia-adygeia">Адыгея 20-23
+                                            февраля ⛰️</a></p>
                                     <img src="{{ asset('img/icon/snow_lent.svg') }}" alt="Снежинка">
                                 @endfor
                             </div>
