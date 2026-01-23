@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('bus_schedules', function (Blueprint $table) {
+        Schema::create('sea_bus_schedules', function (Blueprint $table) {
             $table->id();
             $table->string('direction')->comment('Направление');
             $table->string('start_date')->comment('Дата отправления');
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('bus_schedules');
+        Schema::dropIfExists('sea_bus_schedules');
     }
 };

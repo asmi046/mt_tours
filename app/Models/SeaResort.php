@@ -4,35 +4,34 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Destination extends Model
+class SeaResort extends Model
 {
     use HasFactory;
 
     protected $fillable = [
+        'destination_id',
         'title',
+        'subtitle',
         'slug',
-        'description',
         'sort_order',
+        'description',
     ];
 
     protected $casts = [
+        'destination_id' => 'integer',
         'sort_order' => 'integer',
     ];
 
-    public function prices(): HasMany
+    public function destination(): BelongsTo
     {
-        return $this->hasMany(Price::class);
-    }
-
-    public function resorts(): HasMany
-    {
-        return $this->hasMany(Resort::class);
+        return $this->belongsTo(SeaDestination::class);
     }
 
     public function hotels(): HasMany
     {
-        return $this->hasMany(Hotel::class);
+        return $this->hasMany(SeaHotel::class);
     }
 }

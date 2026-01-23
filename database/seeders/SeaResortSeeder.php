@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class ResortSeeder extends Seeder
+class SeaResortSeeder extends Seeder
 {
     /**
      * Run the database seeds.

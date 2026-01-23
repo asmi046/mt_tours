@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class BusScheduleSeeder extends Seeder
+class SeaBusScheduleSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -292,6 +292,6 @@ class BusScheduleSeeder extends Seeder
             'updated_at' => now(),
         ];
 
-        DB::table('bus_schedules')->insert($busSchedules);
+        DB::table('sea_bus_schedules')->insert($busSchedules);
     }
 }

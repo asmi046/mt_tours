@@ -11,12 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('destinations', function (Blueprint $table) {
+        Schema::create('sea_resorts', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('destination_id')->constrained()->onDelete('cascade')->comment('Связь с таблицей Направления');
             $table->string('title')->comment('Заголовок');
-            $table->string('slug')->unique()->comment('Slug');
-            $table->text('description')->nullable()->comment('Описание');
+            $table->string('subtitle')->nullable()->comment('Подзаголовок');
+            $table->string('slug')->comment('Slug');
             $table->integer('sort_order')->default(0)->comment('Порядок вывода');
+            $table->text('description')->nullable()->comment('Описание');
             $table->timestamps();
         });
     }
@@ -26,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('destinations');
+        Schema::dropIfExists('sea_resorts');
     }
 };
