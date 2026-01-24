@@ -89,8 +89,7 @@
                                     <p><a target="_blank" href="https://tours.mirturizma46.ru/tour/matrona"> Матрона
                                             Московская 🙏</a></p>
                                     <img src="{{ asset('img/icon/snow_lent.svg') }}" alt="Снежинка">
-                                    <p><a target="_blank"
-                                            href="https://tours.mirturizma46.ru/tour/novogodniaia-adygeia">Адыгея 20-23
+                                    <p><a target="_blank" href="https://tours.mirturizma46.ru/tour/adygeia">Адыгея 20-23
                                             февраля ⛰️</a></p>
                                     <img src="{{ asset('img/icon/snow_lent.svg') }}" alt="Снежинка">
                                 @endfor
