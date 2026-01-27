@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('sea_resorts', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('destination_id')->constrained()->onDelete('cascade')->comment('Связь с таблицей Направления');
+            $table->foreignId('sea_destination_id')->constrained()->onDelete('cascade')->comment('Связь с таблицей Направления');
             $table->string('title')->comment('Заголовок');
             $table->string('subtitle')->nullable()->comment('Подзаголовок');
             $table->string('slug')->comment('Slug');

@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class SeoPriceSeeder extends Seeder
+class SeaPriceSeeder extends Seeder
 {
     /**
      * Run the database seeds.

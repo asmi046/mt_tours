@@ -12,6 +12,10 @@ class SeaBusScheduleSeeder extends Seeder
      */
     public function run(): void
     {
+        DB::statement('SET FOREIGN_KEY_CHECKS=0;');
+        DB::table('sea_bus_schedules')->truncate();
+        DB::statement('SET FOREIGN_KEY_CHECKS=1;');
+
         $busSchedules = [];
 
         // Курск - Крым

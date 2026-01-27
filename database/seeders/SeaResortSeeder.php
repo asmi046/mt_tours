@@ -12,15 +12,19 @@ class SeaResortSeeder extends Seeder
      */
     public function run(): void
     {
-        $krasnodarId = DB::table('destinations')->where('slug', 'krasnodarskiy-kray')->value('id');
-        $crimeaId = DB::table('destinations')->where('slug', 'crimea')->value('id');
+        DB::statement('SET FOREIGN_KEY_CHECKS=0;');
+        DB::table('sea_resorts')->truncate();
+        DB::statement('SET FOREIGN_KEY_CHECKS=1;');
+
+        $krasnodarId = DB::table('sea_destinations')->where('slug', 'krasnodarskiy-kray')->value('id');
+        $crimeaId = DB::table('sea_destinations')->where('slug', 'crimea')->value('id');
 
         $resorts = [];
 
         // Краснодарский край
         if ($krasnodarId) {
             $resorts[] = [
-                'destination_id' => $krasnodarId,
+                'sea_destination_id' => $krasnodarId,
                 'title' => 'Анапа',
                 'subtitle' => null,
                 'slug' => 'anapa',
@@ -30,7 +34,7 @@ class SeaResortSeeder extends Seeder
                 'updated_at' => now(),
             ];
             $resorts[] = [
-                'destination_id' => $krasnodarId,
+                'sea_destination_id' => $krasnodarId,
                 'title' => 'Кабардинка',
                 'subtitle' => null,
                 'slug' => 'kabardinka',
@@ -40,7 +44,7 @@ class SeaResortSeeder extends Seeder
                 'updated_at' => now(),
             ];
             $resorts[] = [
-                'destination_id' => $krasnodarId,
+                'sea_destination_id' => $krasnodarId,
                 'title' => 'Геленджик',
                 'subtitle' => null,
                 'slug' => 'gelendzhik',
@@ -50,7 +54,7 @@ class SeaResortSeeder extends Seeder
                 'updated_at' => now(),
             ];
             $resorts[] = [
-                'destination_id' => $krasnodarId,
+                'sea_destination_id' => $krasnodarId,
                 'title' => 'Лермонтово',
                 'subtitle' => 'Туапсинский р-н.',
                 'slug' => 'lermontovo',
@@ -60,7 +64,7 @@ class SeaResortSeeder extends Seeder
                 'updated_at' => now(),
             ];
             $resorts[] = [
-                'destination_id' => $krasnodarId,
+                'sea_destination_id' => $krasnodarId,
                 'title' => 'Новомихайловский',
                 'subtitle' => 'Туапсинский р-н.',
                 'slug' => 'novomikhaylovskiy',
@@ -70,7 +74,7 @@ class SeaResortSeeder extends Seeder
                 'updated_at' => now(),
             ];
             $resorts[] = [
-                'destination_id' => $krasnodarId,
+                'sea_destination_id' => $krasnodarId,
                 'title' => 'Дедеркой',
                 'subtitle' => 'Туапсинский р-н.',
                 'slug' => 'dederkoy',
@@ -80,7 +84,7 @@ class SeaResortSeeder extends Seeder
                 'updated_at' => now(),
             ];
             $resorts[] = [
-                'destination_id' => $krasnodarId,
+                'sea_destination_id' => $krasnodarId,
                 'title' => 'Лазаревское',
                 'subtitle' => null,
                 'slug' => 'lazarevskoye',
@@ -90,7 +94,7 @@ class SeaResortSeeder extends Seeder
                 'updated_at' => now(),
             ];
             $resorts[] = [
-                'destination_id' => $krasnodarId,
+                'sea_destination_id' => $krasnodarId,
                 'title' => 'Адлер',
                 'subtitle' => null,
                 'slug' => 'adler',
@@ -104,7 +108,7 @@ class SeaResortSeeder extends Seeder
         // Крым
         if ($crimeaId) {
             $resorts[] = [
-                'destination_id' => $crimeaId,
+                'sea_destination_id' => $crimeaId,
                 'title' => 'Приморский',
                 'subtitle' => null,
                 'slug' => 'primorskiy',
@@ -114,7 +118,7 @@ class SeaResortSeeder extends Seeder
                 'updated_at' => now(),
             ];
             $resorts[] = [
-                'destination_id' => $crimeaId,
+                'sea_destination_id' => $crimeaId,
                 'title' => 'Береговое',
                 'subtitle' => null,
                 'slug' => 'beregovoye',
@@ -124,7 +128,7 @@ class SeaResortSeeder extends Seeder
                 'updated_at' => now(),
             ];
             $resorts[] = [
-                'destination_id' => $crimeaId,
+                'sea_destination_id' => $crimeaId,
                 'title' => 'Феодосия',
                 'subtitle' => null,
                 'slug' => 'feodosia',
@@ -134,7 +138,7 @@ class SeaResortSeeder extends Seeder
                 'updated_at' => now(),
             ];
             $resorts[] = [
-                'destination_id' => $crimeaId,
+                'sea_destination_id' => $crimeaId,
                 'title' => 'Коктебель',
                 'subtitle' => null,
                 'slug' => 'koktebel',
@@ -144,7 +148,7 @@ class SeaResortSeeder extends Seeder
                 'updated_at' => now(),
             ];
             $resorts[] = [
-                'destination_id' => $crimeaId,
+                'sea_destination_id' => $crimeaId,
                 'title' => 'Курортное',
                 'subtitle' => null,
                 'slug' => 'kurortnoye',
@@ -154,7 +158,7 @@ class SeaResortSeeder extends Seeder
                 'updated_at' => now(),
             ];
             $resorts[] = [
-                'destination_id' => $crimeaId,
+                'sea_destination_id' => $crimeaId,
                 'title' => 'Судак',
                 'subtitle' => null,
                 'slug' => 'sudak',
@@ -164,7 +168,7 @@ class SeaResortSeeder extends Seeder
                 'updated_at' => now(),
             ];
             $resorts[] = [
-                'destination_id' => $crimeaId,
+                'sea_destination_id' => $crimeaId,
                 'title' => 'Морское',
                 'subtitle' => null,
                 'slug' => 'morskoye',
@@ -175,6 +179,6 @@ class SeaResortSeeder extends Seeder
             ];
         }
 
-        DB::table('resorts')->insert($resorts);
+        DB::table('sea_resorts')->insert($resorts);
     }
 }
