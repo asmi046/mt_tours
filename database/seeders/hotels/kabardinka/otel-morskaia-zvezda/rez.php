@@ -4,6 +4,7 @@ $otel_morskaia_zvezda = array (
   'direction' => 'Курск - Анапа',
   'url' => 'https://www.mirturizma46.ru/otel-morskaya-zvezda/',
   'slug' => 'otel-morskaia-zvezda',
+  'title' => 'Отель «Морская звезда»',
   'images' => 
   array (
     0 => '1.jpg',

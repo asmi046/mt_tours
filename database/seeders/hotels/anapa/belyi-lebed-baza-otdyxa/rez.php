@@ -4,6 +4,7 @@ $belyi_lebed_baza_otdyxa = array (
   'direction' => 'Курск - Анапа',
   'url' => 'https://www.mirturizma46.ru/beliy-lebed-anapa/',
   'slug' => 'belyi-lebed-baza-otdyxa',
+  'title' => '«Белый лебедь» база отдыха',
   'images' => 
   array (
     0 => '1-1.jpg',

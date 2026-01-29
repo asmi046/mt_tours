@@ -102,6 +102,7 @@ class ParseHotelPage extends Command
             'direction' => $direction,
             'url' => $url,
             'slug' => $slugForDir,
+            'title' => $h1Text,
             'images' => $images,
             'base_description' => $baseDescription,
             'numbers' => $numbers,

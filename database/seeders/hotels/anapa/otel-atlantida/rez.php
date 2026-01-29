@@ -4,6 +4,7 @@ $otel_atlantida = array (
   'direction' => 'Курск - Анапа',
   'url' => 'https://www.mirturizma46.ru/otel-atlantida/',
   'slug' => 'otel-atlantida',
+  'title' => 'Отель «Атлантида»',
   'images' => 
   array (
     0 => '1-1.jpg',

@@ -12,7 +12,7 @@ class SeaResort extends Model
     use HasFactory;
 
     protected $fillable = [
-        'destination_id',
+        'sea_destination_id',
         'title',
         'subtitle',
         'slug',
@@ -21,13 +21,13 @@ class SeaResort extends Model
     ];
 
     protected $casts = [
-        'destination_id' => 'integer',
+        'sea_destination_id' => 'integer',
         'sort_order' => 'integer',
     ];
 
     public function destination(): BelongsTo
     {
-        return $this->belongsTo(SeaDestination::class);
+        return $this->belongsTo(SeaDestination::class, 'sea_destination_id', 'id');
     }
 
     public function hotels(): HasMany

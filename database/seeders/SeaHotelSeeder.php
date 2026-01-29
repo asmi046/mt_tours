@@ -63,16 +63,22 @@ class SeaHotelSeeder extends Seeder
                     continue;
                 }
 
+                // Копируем фото в storage
+                $imgDir = dirname($fullPath);
+                $copiedImages = $this->copyHotelImages($imgDir, $data['slug'], $data['images'] ?? []);
+
                 $hotel = [
                     'sea_destination_id' => $destinationId,
                     'sea_resort_id' => $resortId,
-                    'title' => $data['resort'].' - '.$this->extractHotelName($data['slug']),
+                    'title' => $data['title'],
                     'slug' => $data['slug'],
-                    'gallery' => $this->encodeJson($data['images'] ?? []),
+                    'geo' => $data['geo'] ?? null,
+                    'gallery' => $this->encodeJson($copiedImages),
                     'parameters' => $this->encodeJson($data['base_description'] ?? []),
                     'before_5_price' => $this->parsePrice($data['before_5_price'] ?? null),
                     'before_12_price' => $this->parsePrice($data['before_12_price'] ?? null),
                     'number_prices' => $this->encodeJson($data['numbers'] ?? []),
+                    'img' => reset($copiedImages) ?: null,
                     'created_at' => now(),
                     'updated_at' => now(),
                 ];
@@ -164,6 +170,77 @@ class SeaHotelSeeder extends Seeder
     private function extractHotelName(string $slug): string
     {
         return ucfirst(str_replace('-', ' ', $slug));
+    }
+
+    /**
+     * Получить первое изображение из галереи
+     */
+    private function getFirstImageFromGallery(?array $gallery): ?string
+    {
+        if (empty($gallery) || ! is_array($gallery)) {
+            return null;
+        }
+
+        // Если это массив со строками (пути)
+        if (is_string($gallery[0])) {
+            return $gallery[0];
+        }
+
+        // Если это массив ассоциативный с ключами (например, 'filename', 'url')
+        if (isset($gallery[0]) && is_array($gallery[0])) {
+            // Ищем поле с названием фото (filename, url, image, img и т.д.)
+            foreach (['filename', 'url', 'image', 'img', 'path'] as $key) {
+                if (isset($gallery[0][$key])) {
+                    return $gallery[0][$key];
+                }
+            }
+
+            // Если это ассоциативный массив, берём первое значение
+            return reset($gallery[0]);
+        }
+
+        return null;
+    }
+
+    /**
+     * Копировать фото отеля из seeders в storage
+     */
+    private function copyHotelImages(string $imgDir, string $hotelSlug, ?array $images = []): array
+    {
+        if (empty($images) || ! is_array($images)) {
+            return [];
+        }
+
+        $sourceDir = $imgDir.'/img';
+        if (! File::isDirectory($sourceDir)) {
+            return [];
+        }
+
+        // Создаём папку для всех отелей в storage (без подпапок)
+        $fullStoragePath = storage_path('app/public/sea-hotels');
+        File::makeDirectory($fullStoragePath, 0755, true, true);
+
+        $copiedImages = [];
+
+        // Копируем все фото с префиксом
+        foreach ($images as $image) {
+            if (is_string($image)) {
+                $sourceFile = $sourceDir.'/'.$image;
+
+                if (File::exists($sourceFile)) {
+                    // Добавляем префикс к имени файла
+                    $newFileName = $hotelSlug.'_'.$image;
+                    $destFile = $fullStoragePath.'/'.$newFileName;
+
+                    File::copy($sourceFile, $destFile);
+
+                    // Сохраняем путь для storage
+                    $copiedImages[] = '/storage/sea-hotels/'.$newFileName;
+                }
+            }
+        }
+
+        return $copiedImages;
     }
 
     /**

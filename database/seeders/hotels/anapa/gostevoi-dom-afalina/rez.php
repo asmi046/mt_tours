@@ -4,6 +4,7 @@ $gostevoi_dom_afalina = array (
   'direction' => 'Курск - Анапа',
   'url' => 'https://www.mirturizma46.ru/gstevoj-dom-afalina/',
   'slug' => 'gostevoi-dom-afalina',
+  'title' => 'Гостевой дом «Афалина»',
   'images' => 
   array (
     0 => '1.jpg',

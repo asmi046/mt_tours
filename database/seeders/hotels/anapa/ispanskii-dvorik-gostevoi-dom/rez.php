@@ -4,6 +4,7 @@ $ispanskii_dvorik_gostevoi_dom = array (
   'direction' => 'Курск - Анапа',
   'url' => 'https://www.mirturizma46.ru/anapa-ispanskij-dvorik/',
   'slug' => 'ispanskii-dvorik-gostevoi-dom',
+  'title' => '«Испанский дворик» гостевой дом',
   'images' => 
   array (
     0 => '5.jpg',
@@ -11,7 +12,7 @@ $ispanskii_dvorik_gostevoi_dom = array (
     2 => '2.jpg',
     3 => '1.jpg',
     4 => '2-1.jpg',
-    5 => 'img69779f18a02ed.jpg',
+    5 => 'img697bdb18b3ecc.jpg',
     6 => '642df6e3b7bd1-d45c870fbb29530c45312ae7ccfda0da-min.jpg',
     7 => '2-1-1.jpg',
     8 => '3-1-2.jpg',

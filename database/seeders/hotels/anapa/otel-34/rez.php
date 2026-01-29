@@ -4,6 +4,7 @@ $otel_34 = array (
   'direction' => 'Курск - Анапа',
   'url' => 'https://www.mirturizma46.ru/otel34/',
   'slug' => 'otel-34',
+  'title' => '«Отель 34»',
   'images' => 
   array (
     0 => '34logo.jpg',

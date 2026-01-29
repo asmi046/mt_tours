@@ -4,6 +4,7 @@ $mini_otel_skazka = array (
   'direction' => 'Курск - Анапа',
   'url' => 'https://www.mirturizma46.ru/mini-otel-skazka/',
   'slug' => 'mini-otel-skazka',
+  'title' => 'Мини-отель «Сказка»',
   'images' => 
   array (
     0 => '1-1.jpg',

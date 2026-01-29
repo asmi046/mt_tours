@@ -4,6 +4,7 @@ $sanatorii_zemcuzina_u_moria = array (
   'direction' => 'Курск - Анапа',
   'url' => 'https://www.mirturizma46.ru/sanatori-zgemchugina-u-morya/',
   'slug' => 'sanatorii-zemcuzina-u-moria',
+  'title' => 'Санаторий «Жемчужина у моря»',
   'images' => 
   array (
     0 => '1-1.jpg',
