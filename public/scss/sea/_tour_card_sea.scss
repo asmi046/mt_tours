@@ -1,0 +1,14 @@
+@use '../vars' as *;
+
+.tour_card_sea {
+    .resort_label {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+
+    .short_description {
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+}

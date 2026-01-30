@@ -2,6 +2,7 @@
 $otel_atlantida = array (
   'resort' => 'Анапа',
   'direction' => 'Курск - Анапа',
+  'short_description' => 'Отличное место для отдыха всей семьёй в центре Анапы, рядом с набережной!',
   'url' => 'https://www.mirturizma46.ru/otel-atlantida/',
   'slug' => 'otel-atlantida',
   'title' => 'Отель «Атлантида»',
@@ -93,4 +94,7 @@ $otel_atlantida = array (
   'before_5_price' => '11000',
   'before_12_price' => '10',
   'geo' => '[44.897142, 37.304258]',
+  'min_price' => '31500',
+  'sea_distantion' => '10-15 минутах ходьбы до пляжа',
+  'numbers_type' => '2-х местные номера с удобствами',
 );

@@ -2,6 +2,7 @@
 $ispanskii_dvorik_gostevoi_dom = array (
   'resort' => 'Анапа',
   'direction' => 'Курск - Анапа',
+  'short_description' => 'Эконом вариант: хорошее соотношение цены и качества!',
   'url' => 'https://www.mirturizma46.ru/anapa-ispanskij-dvorik/',
   'slug' => 'ispanskii-dvorik-gostevoi-dom',
   'title' => '«Испанский дворик» гостевой дом',
@@ -12,7 +13,7 @@ $ispanskii_dvorik_gostevoi_dom = array (
     2 => '2.jpg',
     3 => '1.jpg',
     4 => '2-1.jpg',
-    5 => 'img697bdb18b3ecc.jpg',
+    5 => 'img697c98ffecd30.jpg',
     6 => '642df6e3b7bd1-d45c870fbb29530c45312ae7ccfda0da-min.jpg',
     7 => '2-1-1.jpg',
     8 => '3-1-2.jpg',
@@ -70,7 +71,7 @@ $ispanskii_dvorik_gostevoi_dom = array (
     array (
       'title' => 'Пляж:',
       'description' => '<br>
-В 10-15 мин ходьбы расположен п�счаный пляж.<br>
+В 10-15 мин ходьбы расположен песчаный пляж.<br>
 На пляже есть лежаки и зонтики, которые можно взять в аренду.<p></p>',
     ),
     6 => 
@@ -103,4 +104,7 @@ $ispanskii_dvorik_gostevoi_dom = array (
   'before_5_price' => '11000',
   'before_12_price' => '10',
   'geo' => '[44.900562, 37.326302]',
+  'min_price' => '18500',
+  'sea_distantion' => '15 мин. до пляжа',
+  'numbers_type' => '2-х, 3-х, 4-х местные номера',
 );

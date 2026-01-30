@@ -2,6 +2,7 @@
 $sanatorii_zemcuzina_u_moria = array (
   'resort' => 'Кабардинка',
   'direction' => 'Курск - Анапа',
+  'short_description' => 'Санаторий располагается у самого моря среди хвойных деревьев.',
   'url' => 'https://www.mirturizma46.ru/sanatori-zgemchugina-u-morya/',
   'slug' => 'sanatorii-zemcuzina-u-moria',
   'title' => 'Санаторий «Жемчужина у моря»',
@@ -40,7 +41,7 @@ $sanatorii_zemcuzina_u_moria = array (
     array (
       'title' => 'Размещение:',
       'description' => '<p></p>
-<p>2-х местные номера эконом класса.<br>
+<p>2-х мес�ные номера эконом класса.<br>
 В каждом номере есть кровать, кондиционер, телевизор, холодильник, шкаф, санузел и душ, возможно наличие балкона.<br>
 </p>',
     ),
@@ -83,4 +84,7 @@ $sanatorii_zemcuzina_u_moria = array (
   'before_5_price' => '11000',
   'before_12_price' => '10',
   'geo' => '[44.645191, 37.933194]',
+  'min_price' => '35500',
+  'sea_distantion' => '70 метров до собственного галечного пляжа',
+  'numbers_type' => '2-х местные номера',
 );

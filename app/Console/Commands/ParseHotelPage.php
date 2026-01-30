@@ -96,10 +96,15 @@ class ParseHotelPage extends Command
         $before5Price = $this->textOrEmpty($crawler, '#to_import_before_5_price');
         $before12Price = $this->textOrEmpty($crawler, '#to_import_before_12_price');
         $geo = $this->textOrEmpty($crawler, '#to_import_geo');
+        $minPrice = str_replace(['₽', ' ', '.', ','], '', $this->textOrEmpty($crawler, '#to_import_min_price'));
+        $shortDescription = strip_tags($this->textOrEmpty($crawler, '#to_import_exc'));
+        $sea_distantion = strip_tags($this->textOrEmpty($crawler, '#to_plyazg'));
+        $numbers_type = strip_tags($this->textOrEmpty($crawler, '#to_number_types'));
 
         $result = [
             'resort' => $resort,
             'direction' => $direction,
+            'short_description' => $shortDescription,
             'url' => $url,
             'slug' => $slugForDir,
             'title' => $h1Text,
@@ -109,6 +114,9 @@ class ParseHotelPage extends Command
             'before_5_price' => $before5Price,
             'before_12_price' => $before12Price,
             'geo' => $geo,
+            'min_price' => $minPrice,
+            'sea_distantion' => $sea_distantion,
+            'numbers_type' => $numbers_type,
         ];
 
         $this->writeResult($basePath.'/rez.php', $slugForVar, $result);

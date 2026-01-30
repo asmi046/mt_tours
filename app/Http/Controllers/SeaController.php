@@ -11,7 +11,7 @@ class SeaController extends Controller
         $resorts = app(SeaDataService::class)->getAllResorts();
         $geoPoints = app(SeaDataService::class)->getHotelGeoPoint();
         $hotels = app(SeaDataService::class)->getAllHotels();
-        // dd($geoPoints);
+        // dd($hotels);
 
         return view('sea.index', compact('resorts', 'geoPoints', 'hotels'));
     }

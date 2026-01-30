@@ -1,5 +1,5 @@
 <a href="{{ $item['out_lnk'] ? $item['out_lnk'] : route('tour_page', $item['slug']) }}" data-id="{{ $item['id'] }}"
-    class="tour_card">
+    class="tour_card tour_card_sea">
     <div class="img">
         <img src="{{ $item['img'] }}" loading="lazy" alt="{{ $item['title'] }}">
 
@@ -11,35 +11,30 @@
             <img class="new_tour" src="{{ asset('img/bages/new-tour.svg') }}">
         @endif
 
-        @if ($item['prices'])
+        @if ($item['min_price'])
             <div class="label price_label">
-                @if (config('sales.show_sale'))
-                    от <span class="old_price">{{ $item['prices'][0]['price'] }}</span>
-                    {{ $item['prices'][0]['price'] - ($item['id'] == 22 ? 1000 : config('sales.default_sale')) }} ₽
-                @else
-                    от {{ $item['prices'][0]['price'] }} ₽
-                @endif
+                от {{ $item['min_price'] }} ₽
             </div>
         @endif
+
+        <div class="label resort_label">
+            {{ $item['resort']['title'] ?? '' }}
+        </div>
     </div>
     <div class="text">
         <h3>{!! $item['title_card'] ?? $item['title'] !!}</h3>
-        <p class="label top_label">{{ $item['deycount'] }} {{ echo_days($item['deycount']) }}</p>
-        <div class="m_data">
-            @if ($item['multi_data'])
-                @foreach ($item['multi_data'] as $subitem)
-                    <p class="label label_blue">
-                        {{ date('d.m.Y', strtotime($subitem['start_data'])) }}
-                        @if (isset($subitem['soldout']) && $subitem['soldout'])
-                            <span class="no_place">Нет мест</span>
-                        @endif
-                    </p>
-                @endforeach
-            @else
-                <p class="label label_blue">{{ date('d.m.Y', strtotime($item['start_data'])) }}</p>
-            @endif
-        </div>
 
+        @if ($item['short_description'])
+            <p class="short_description">{!! $item['short_description'] !!}</p>
+        @endif
+
+        @if ($item['sea_distantion'])
+            <p class="label top_label">{{ $item['sea_distantion'] }}</p>
+        @endif
+
+        @if ($item['numbers_type'])
+            <p class="label label_blue">{{ $item['numbers_type'] }}</p>
+        @endif
 
         <button class="button">Подробнее</button>
     </div>

@@ -11,8 +11,8 @@ class SeaHotel extends Model
     use HasFactory;
 
     protected $fillable = [
-        'destination_id',
-        'resort_id',
+        'sea_destination_id',
+        'sea_resort_id',
         'title',
         'slug',
         'sort_order',
@@ -30,13 +30,15 @@ class SeaHotel extends Model
         'parameters' => 'array',
     ];
 
+    public $with = ['destination', 'resort'];
+
     public function destination(): BelongsTo
     {
-        return $this->belongsTo(SeaDestination::class);
+        return $this->belongsTo(SeaDestination::class, 'sea_destination_id');
     }
 
     public function resort(): BelongsTo
     {
-        return $this->belongsTo(SeaResort::class);
+        return $this->belongsTo(SeaResort::class, 'sea_resort_id');
     }
 }
