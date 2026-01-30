@@ -24,7 +24,7 @@ class SeaDataService
                 'title' => $hotel->title,
                 'img' => $hotel->img,
                 'geo' => $hotel->geo,
-                'link' => '#',
+                'link' => route('sea_hotel', ['hotel' => $hotel->slug, 'resort' => $hotel->resort->slug]),
             ];
         }
 
@@ -34,5 +34,10 @@ class SeaDataService
     public function getAllHotels()
     {
         return SeaHotel::all();
+    }
+
+    public function getResortBySlug(string $slug)
+    {
+        return SeaResort::where('slug', $slug)->with('hotels')->firstOrFail();
     }
 }

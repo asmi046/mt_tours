@@ -14,6 +14,8 @@ class SeaResort extends Model
     protected $fillable = [
         'sea_destination_id',
         'title',
+        'page_title',
+        'page_subtitle',
         'subtitle',
         'slug',
         'sort_order',

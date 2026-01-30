@@ -21,6 +21,7 @@
         border: 1px solid $gray_border_color;
         border-radius: $border_rad;
 
+        &.active,
         &:hover {
             background-color: $main_color;
             border-color: $main_color;

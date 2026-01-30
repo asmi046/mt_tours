@@ -15,4 +15,20 @@ class SeaController extends Controller
 
         return view('sea.index', compact('resorts', 'geoPoints', 'hotels'));
     }
+
+    public function resort(string $resort)
+    {
+        $resort = app(SeaDataService::class)->getResortBySlug($resort);
+        $resorts = app(SeaDataService::class)->getAllResorts();
+
+        return view('sea.resort', compact('resort', 'resorts'));
+    }
+
+    public function hotel(string $resort, string $hotel)
+    {
+        $hotel = app(SeaDataService::class)->getHotelBySlug($hotel);
+        $resorts = app(SeaDataService::class)->getAllResorts();
+
+        return view('sea.hotel', compact('hotel', 'resorts'));
+    }
 }

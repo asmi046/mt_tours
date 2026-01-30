@@ -12,3 +12,22 @@
         margin-bottom: 20px;
     }
 }
+
+@media screen and (max-width:512px) {
+    .tour_card_sea .label {
+        font-size: 12px;
+    }
+
+    .short_description {
+        line-height: 1.1;
+        font-size: 12px;
+    }
+
+    .tour_card_sea .resort_label {
+        position: absolute;
+        left: unset;
+        right: 10px;
+        top: 40px;
+
+    }
+}
