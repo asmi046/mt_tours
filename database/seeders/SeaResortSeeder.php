@@ -53,7 +53,7 @@ class SeaResortSeeder extends Seeder
                 'page_title' => 'Автобусные туры в Геленджик',
                 'page_subtitle' => 'Лучшие предложения на отдых в Геленджике, автобусные туры прямо из Курска',
                 'subtitle' => null,
-                'slug' => 'gelendzhik',
+                'slug' => 'gelendzik',
                 'sort_order' => 3,
                 'description' => null,
                 'created_at' => now(),
@@ -77,7 +77,7 @@ class SeaResortSeeder extends Seeder
                 'page_title' => 'Автобусные туры в Новомихайловский',
                 'page_subtitle' => 'Лучшие предложения на отдых в Новомихайловском, автобусные туры прямо из Курска',
                 'subtitle' => 'Туапсинский р-н.',
-                'slug' => 'novomikhaylovskiy',
+                'slug' => 'novomixailovskii',
                 'sort_order' => 5,
                 'description' => null,
                 'created_at' => now(),
@@ -89,7 +89,7 @@ class SeaResortSeeder extends Seeder
                 'page_title' => 'Автобусные туры в Дедеркой',
                 'page_subtitle' => 'Лучшие предложения на отдых в Дедеркое, автобусные туры прямо из Курска',
                 'subtitle' => 'Туапсинский р-н.',
-                'slug' => 'dederkoy',
+                'slug' => 'dederkoi',
                 'sort_order' => 6,
                 'description' => null,
                 'created_at' => now(),
@@ -101,7 +101,7 @@ class SeaResortSeeder extends Seeder
                 'page_title' => 'Автобусные туры в Лазаревское',
                 'page_subtitle' => 'Лучшие предложения на отдых в Лазаревском, автобусные туры прямо из Курска',
                 'subtitle' => null,
-                'slug' => 'lazarevskoye',
+                'slug' => 'lazarevskoe',
                 'sort_order' => 7,
                 'description' => null,
                 'created_at' => now(),
@@ -210,5 +210,16 @@ class SeaResortSeeder extends Seeder
         }
 
         DB::table('sea_resorts')->insert($resorts);
+
+        foreach ($resorts as $item) {
+            DB::table('seo_data')->updateOrInsert(
+                ['url' => 'turi-na-more/'.$item['slug']],
+                [
+                    'url' => 'turi-na-more/'.$item['slug'],
+                    'seo_title' => $item['page_title'],
+                    'seo_description' => $item['page_subtitle'],
+                ]
+            );
+        }
     }
 }

@@ -27,8 +27,8 @@ class SeaController extends Controller
     public function hotel(string $resort, string $hotel)
     {
         $hotel = app(SeaDataService::class)->getHotelBySlug($hotel);
-        $resorts = app(SeaDataService::class)->getAllResorts();
+        $upsaleHotels = app(SeaDataService::class)->getHotelUpsale($hotel->bus_direction, $hotel->slug);
 
-        return view('sea.hotel', compact('hotel', 'resorts'));
+        return view('sea.hotel', compact('hotel', 'upsaleHotels'));
     }
 }

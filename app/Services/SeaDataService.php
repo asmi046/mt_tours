@@ -36,8 +36,22 @@ class SeaDataService
         return SeaHotel::all();
     }
 
+    public function getHotelBySlug(string $slug)
+    {
+        return SeaHotel::where('slug', $slug)->firstOrFail();
+    }
+
     public function getResortBySlug(string $slug)
     {
-        return SeaResort::where('slug', $slug)->with('hotels')->firstOrFail();
+        return SeaResort::where('slug', $slug)->firstOrFail();
+    }
+
+    public function getHotelUpsale(string $bus_direction, string $exclude_slug, int $limit = 3)
+    {
+        return SeaHotel::where('bus_direction', $bus_direction)
+            ->where('slug', '!=', $exclude_slug)
+            ->inRandomOrder()
+            ->limit($limit)
+            ->get();
     }
 }

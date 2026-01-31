@@ -20,6 +20,12 @@
         </div>
     </section>
 
+    <section class="breadcrumbs_section">
+        <div class="container">
+            <x-breadcrumbs.main :title="$resort->title"></x-breadcrumbs.main>
+        </div>
+    </section>
+
     <x-sea.kurorts-select :resorts="$resorts->toArray()"></x-sea.kurorts-select>
 
     <section>

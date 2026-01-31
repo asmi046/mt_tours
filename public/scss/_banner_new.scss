@@ -3,14 +3,21 @@
 
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform:  translateY(0);
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
     }
+
     40% {
-        transform:  translateY(-20px);
+        transform: translateY(-20px);
     }
+
     60% {
-        transform:  translateY(-10px);
+        transform: translateY(-10px);
     }
 }
 
@@ -22,14 +29,14 @@
 
     .more_tours_caption {
         position: absolute;
-        width:200px;
+        width: 200px;
         z-index: 4;
-        color:white;
+        color: white;
         display: block;
         text-align: center;
         bottom: 70px;
         text-align: center;
-        left:calc(50% - 100px);
+        left: calc(50% - 100px);
         font-family: 'Play';
         font-size: 18px;
         font-weight: bold;
@@ -38,16 +45,17 @@
     .more_tours {
         position: absolute;
         z-index: 4;
-        color:white;
+        color: white;
         display: block;
-        width:40px;
-        height:40px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
         background-color: $main_color;
         display: flex;
-        left:calc(50% - 20px);
+        left: calc(50% - 20px);
         bottom: 20px;
         animation: bounce 3s infinite;
+
         .sprite_icon {
             rotate: 90deg;
             margin: auto;
@@ -66,13 +74,15 @@
 
     &.mini {
         height: auto;
+
         .left_text {
-            height: auto ;
+            height: auto;
             padding: 30px 0;
         }
 
 
     }
+
     ._video {
         position: absolute;
         // right: 0;
@@ -88,7 +98,7 @@
     }
 
     .shadow {
-        width:100%;
+        width: 100%;
         height: 100%;
         position: absolute;
         z-index: 2;
@@ -102,18 +112,19 @@
         color: white;
         height: calc(100vh - 89px);
         display: flex;
+
         .bnr_text {
-            width:46%;
+            width: 46%;
             flex: 1;
             margin: auto 3% auto 0;
         }
 
         .dop_param {
-            flex:1;
+            flex: 1;
             margin: auto 0;
             position: relative;
             flex-direction: column;
-            display:  flex;
+            display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             gap: 20px;
@@ -128,6 +139,7 @@
                 top: calc(50% - 45px);
                 left: 5%;
                 position: absolute;
+
                 .arrow {
                     position: absolute;
                     top: -15px;
@@ -145,7 +157,7 @@
                     animation-name: animation_rotate;
                     animation-iteration-count: infinite;
                     animation-timing-function: linear;
-                    animation-fill-mode:none;
+                    animation-fill-mode: none;
 
                 }
 
@@ -156,7 +168,7 @@
                     top: 61px;
                     left: -20px;
                     font-family: 'Play';
-                    color:$main_color;
+                    color: $main_color;
                     text-transform: uppercase;
                     font-weight: bold;
                     font-size: 22px;
@@ -167,7 +179,7 @@
                     animation-name: animation_rotate_2;
                     animation-iteration-count: infinite;
                     animation-timing-function: linear;
-                    animation-fill-mode:none;
+                    animation-fill-mode: none;
 
                 }
 
@@ -207,7 +219,7 @@
         position: absolute;
         background-color: $black_color;
         bottom: 0;
-        width:100%;
+        width: 100%;
         height: 30px;
         padding: 5px 0;
         overflow: hidden;
@@ -225,7 +237,7 @@
                 font-family: 'Play';
                 margin: auto 10px;
                 white-space: nowrap;
-                color:$main_color;
+                color: $main_color;
             }
         }
     }
@@ -237,7 +249,7 @@
         flex-direction: column;
 
         .label,
-        .button{
+        .button {
             margin-right: auto;
         }
 
@@ -264,22 +276,24 @@
         .left_text {
             flex-direction: column;
             height: auto;
+
             .bnr_text {
                 width: 100%;
                 margin: 20px 0;
-                flex:unset
+                flex: unset
             }
 
             .dop_param {
                 padding-top: 100px;
                 padding-bottom: 100px;
+
                 .cat_banner_buttons {
                     width: 100%;
                 }
 
                 .arrow_widget {
-                    left:calc(50% - 40px);
-                    top:0;
+                    left: calc(50% - 40px);
+                    top: 0;
 
                     span {
                         left: -55px;
@@ -290,40 +304,40 @@
                     }
 
                     .arrow {
-                        top:10px;
-                        left:70px;
+                        top: 10px;
+                        left: 70px;
                         transform: rotate(30deg);
                         animation-name: animation_rotate_mobile;
                     }
 
 
-                @keyframes animation_rotate_mobile {
-                    0% {
-                        transform: rotate(30deg);
+                    @keyframes animation_rotate_mobile {
+                        0% {
+                            transform: rotate(30deg);
+                        }
+
+                        50% {
+                            transform: rotate(40deg);
+                        }
+
+                        100% {
+                            transform: rotate(30deg);
+                        }
                     }
 
-                    50% {
-                        transform: rotate(40deg);
-                    }
+                    @keyframes animation_rotate_2_mobile {
+                        0% {
+                            transform: rotate(10deg);
+                        }
 
-                    100% {
-                        transform: rotate(30deg);
-                    }
-                }
+                        50% {
+                            transform: rotate(5deg);
+                        }
 
-                @keyframes animation_rotate_2_mobile {
-                    0% {
-                        transform: rotate(10deg);
+                        100% {
+                            transform: rotate(10deg);
+                        }
                     }
-
-                    50% {
-                        transform: rotate(5deg);
-                    }
-
-                    100% {
-                        transform: rotate(10deg);
-                    }
-                }
 
                 }
             }
@@ -338,39 +352,46 @@
 
 @media (max-width:480px) {
 
-        .img_5,
-        .img_6 {
-            display: none;
-        }
+    .img_5,
+    .img_6 {
+        display: none;
+    }
 
-        .banner_video {
-            min-height: 100vh;
-            height: auto;
+    .banner_video {
+        min-height: 100vh;
+        height: auto;
 
-            &.mini {
-                min-height: unset;
+        &.mini {
+            min-height: unset;
 
-                h1 {
-                    margin-bottom: 20px;
-                }
-
-                .bnr_text {
-                    margin-bottom: 0;
-                    margin-top: 0;
-                }
+            h1 {
+                margin-bottom: 20px;
             }
 
-            .left_text  {
-                height: auto;
-                padding-bottom: 90px;
-                .dop_param {
-                    gap:20px;
-                    height: auto;
+            .bnr_text {
+                margin-bottom: 0;
+                margin-top: 0;
+                padding: 0;
+            }
 
-                    .cat_banner_buttons {
-                        min-width: unset;
-                    }
+            .left_text {
+                padding: 10px 0 20px 0;
+            }
+        }
+
+        .left_text {
+            height: auto;
+            padding-bottom: 90px;
+
+
+            .dop_param {
+                gap: 20px;
+                height: auto;
+
+                .cat_banner_buttons {
+                    min-width: unset;
                 }
+            }
         }
     }
 }

@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 
 class SeaHotelSeeder extends Seeder
 {
@@ -33,10 +34,40 @@ class SeaHotelSeeder extends Seeder
                 'database/seeders/hotels/kabardinka/otel-morskaia-zvezda/rez.php',
                 'database/seeders/hotels/kabardinka/sanatorii-zemcuzina-u-moria/rez.php',
             ],
+            'gelendzik' => [
+                'database/seeders/hotels/gelendzik/gostevoi-dom-asiiat/rez.php',
+                'database/seeders/hotels/gelendzik/gostevoi-dom-viktoriia/rez.php',
+                'database/seeders/hotels/gelendzik/gostinica-ckazka-na-more/rez.php',
+                'database/seeders/hotels/gelendzik/gostinica-iz-sruba-sosnovyi-bor/rez.php',
+                'database/seeders/hotels/gelendzik/mini-otel-roza/rez.php',
+                'database/seeders/hotels/gelendzik/pansionat-kuban/rez.php',
+            ],
+            'lermontovo' => [
+                'database/seeders/hotels/lermontovo/avtorskii-otel-esenin/rez.php',
+                'database/seeders/hotels/lermontovo/baza-otdyxa-u-moria-lermontovo/rez.php',
+                'database/seeders/hotels/lermontovo/gostinica-biriuza/rez.php',
+                'database/seeders/hotels/lermontovo/otel-granat/rez.php',
+            ],
+            'novomixailovskii' => [
+                'database/seeders/hotels/novomixailovskii/gostinicnyi-kompleks-tornado/rez.php',
+            ],
+            'dederkoi' => [
+                'database/seeders/hotels/dederkoi/gostinica-primorskaia-rakuska/rez.php',
+            ],
+            'lazarevskoe' => [
+                'database/seeders/hotels/lazarevskoe/gostevoi-dom-gorizont/rez.php',
+                'database/seeders/hotels/lazarevskoe/gostevoi-dom-more-gory/rez.php',
+                'database/seeders/hotels/lazarevskoe/gostinica-terracotta/rez.php',
+            ],
+            'adler' => [
+                'database/seeders/hotels/adler/azimut-hotel-sochi-3/rez.php',
+                'database/seeders/hotels/adler/barxatnye-sezony-gorod-otel/rez.php',
+            ],
         ];
 
         // Загружаем данные из каждого файла
         foreach ($hotelFiles as $resortSlug => $files) {
+            echo "\nProcessing resort: {$resortSlug}\n";
             foreach ($files as $filePath) {
                 $fullPath = base_path($filePath);
 
@@ -58,7 +89,7 @@ class SeaHotelSeeder extends Seeder
                 $resortId = $this->getResortId($resortSlug);
 
                 if (! $destinationId || ! $resortId) {
-                    echo "Could not find destination or resort for: {$data['slug']}";
+                    echo "\nCould not find destination or resort for: {$data['slug']} {$data['direction']}\n";
 
                     continue;
                 }
@@ -73,6 +104,7 @@ class SeaHotelSeeder extends Seeder
                     'title' => $data['title'],
                     'slug' => $data['slug'],
                     'geo' => $data['geo'] ?? null,
+                    'bus_direction' => $data['direction'] ?? null,
                     'sea_distantion' => $data['sea_distantion'] ?? null,
                     'numbers_type' => $data['numbers_type'] ?? null,
                     'min_price' => $this->parsePrice($data['min_price'] ?? null),
@@ -83,11 +115,20 @@ class SeaHotelSeeder extends Seeder
                     'before_12_price' => $this->parsePrice($data['before_12_price'] ?? null),
                     'number_prices' => $this->encodeJson($data['numbers'] ?? []),
                     'img' => reset($copiedImages) ?: null,
+                    'in_price' => $data['in_price'] ?? null,
                     'created_at' => now(),
                     'updated_at' => now(),
                 ];
 
+                $seo = [
+                    'slug' => $data['slug'],
+                    'resort' => $data['resort'] ?? null,
+                    'seo_title' => $data['seo_title'] ?? null,
+                    'seo_description' => $data['seo_description'] ?? null,
+                ];
+
                 $hotels[] = $hotel;
+                $seos[] = $seo;
                 echo "Loaded: {$hotel['title']}";
             }
         }
@@ -96,6 +137,17 @@ class SeaHotelSeeder extends Seeder
         if (! empty($hotels)) {
             DB::table('sea_hotels')->insert($hotels);
             echo 'Inserted '.count($hotels).' hotels';
+
+            foreach ($seos as $hotel) {
+                DB::table('seo_data')->updateOrInsert(
+                    ['url' => 'turi-na-more/'.Str::slug($hotel['resort']).'/'.$hotel['slug']],
+                    [
+                        'url' => 'turi-na-more/'.Str::slug($hotel['resort']).'/'.$hotel['slug'],
+                        'seo_title' => $hotel['seo_title'] ?? 'Страницы',
+                        'seo_description' => $hotel['seo_description'] ?? 'Страницы',
+                    ]
+                );
+            }
         }
     }
 
@@ -158,7 +210,12 @@ class SeaHotelSeeder extends Seeder
         $resortMap = [
             'anapa' => 'anapa',
             'kabardinka' => 'kabardinka',
-            'gelendzhik' => 'gelendzhik',
+            'gelendzik' => 'gelendzik',
+            'lermontovo' => 'lermontovo',
+            'novomixailovskii' => 'novomixailovskii',
+            'dederkoi' => 'dederkoi',
+            'lazarevskoe' => 'lazarevskoe',
+            'adler' => 'adler',
         ];
 
         $resortSlug = $resortMap[$slug] ?? $slug;

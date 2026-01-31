@@ -100,6 +100,10 @@ class ParseHotelPage extends Command
         $shortDescription = strip_tags($this->textOrEmpty($crawler, '#to_import_exc'));
         $sea_distantion = strip_tags($this->textOrEmpty($crawler, '#to_plyazg'));
         $numbers_type = strip_tags($this->textOrEmpty($crawler, '#to_number_types'));
+        $in_price = $this->textOrEmpty($crawler, '#to_in_price');
+
+        $seo_title = html_entity_decode(str_replace([' - Мир Туризма46'], '', $this->textOrEmpty($crawler, '#to_seo_title')));
+        $seo_description = html_entity_decode($this->textOrEmpty($crawler, '#to_seo_description'));
 
         $result = [
             'resort' => $resort,
@@ -117,6 +121,9 @@ class ParseHotelPage extends Command
             'min_price' => $minPrice,
             'sea_distantion' => $sea_distantion,
             'numbers_type' => $numbers_type,
+            'in_price' => $in_price,
+            'seo_title' => $seo_title,
+            'seo_description' => $seo_description,
         ];
 
         $this->writeResult($basePath.'/rez.php', $slugForVar, $result);

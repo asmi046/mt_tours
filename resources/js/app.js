@@ -2,8 +2,10 @@ import './bootstrap';
 import './sliders';
 import './modal';
 
+import './sliders/sea-hotel-galery.js';
 
-import {createApp} from 'vue/dist/vue.esm-bundler';
+
+import { createApp } from 'vue/dist/vue.esm-bundler';
 import ModalWindow from "./components/ModalWindow.vue"
 import EmptyModal from "./components/EmptyModal.vue"
 import TourPrice from "./components/TourPrice.vue"
@@ -19,7 +21,7 @@ import fslightbox from 'fslightbox'
 
 if (document.getElementById("review_app")) {
     const review_app = createApp({
-        components:{
+        components: {
             Review,
             ModalWindow,
         },
@@ -32,11 +34,11 @@ if (document.getElementById("review_app")) {
 
 if (document.getElementById("global_app")) {
     const global_app = createApp({
-        components:{
+        components: {
             ModalWindow,
             EmptyModal,
         },
-        setup() {}
+        setup() { }
     })
 
 
@@ -47,11 +49,11 @@ if (document.getElementById("global_app")) {
 
 if (document.getElementById("price_app")) {
     const price_app = createApp({
-        components:{
+        components: {
             TourPrice,
             TourPriceSelect,
         },
-        setup() {}
+        setup() { }
     })
 
     price_app.use(VueAxios, axios)
@@ -61,10 +63,10 @@ if (document.getElementById("price_app")) {
 
 if (document.getElementById("programm_tab")) {
     const programm_tab = createApp({
-        components:{
+        components: {
             Tap,
         },
-        setup() {}
+        setup() { }
     })
 
     programm_tab.use(VueAxios, axios)
@@ -75,10 +77,10 @@ if (document.getElementById("programm_tab")) {
 
 if (document.getElementById("pay_app")) {
     const pay_app = createApp({
-        components:{
+        components: {
             Pay
         },
-        setup() {}
+        setup() { }
     })
 
     pay_app.use(VueAxios, axios)
@@ -97,22 +99,22 @@ import smoother from "./animation/main.js";
 const anchors = document.querySelectorAll('a[href*="#"].yakor')
 
 for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault()
 
-    main_side_menue.classList.remove('active');
-    const blockID = anchor.getAttribute('href').substr(1)
+        main_side_menue.classList.remove('active');
+        const blockID = anchor.getAttribute('href').substr(1)
 
-    if (!window.isMobile) {
-        smoother.scrollTo("#"+blockID, true)
-    } else {
-        document.getElementById(blockID).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        })
-    }
+        if (!window.isMobile) {
+            smoother.scrollTo("#" + blockID, true)
+        } else {
+            document.getElementById(blockID).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            })
+        }
 
-  })
+    })
 }
 
 window.addEventListener('DOMContentLoaded', function () {
@@ -121,7 +123,7 @@ window.addEventListener('DOMContentLoaded', function () {
 });
 
 // Резервный таймер на случай долгой загрузки
-setTimeout(function() {
+setTimeout(function () {
     var preloader = document.getElementById('preloader');
     if (preloader && !preloader.classList.contains('hide')) {
         preloader.classList.add('hide');

@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class SeaHotel extends Model
 {
@@ -20,6 +21,15 @@ class SeaHotel extends Model
         'short_description',
         'gallery',
         'parameters',
+        'img',
+        'min_price',
+        'sea_distantion',
+        'numbers_type',
+        'bus_direction',
+        'before_5_price',
+        'before_12_price',
+        'number_prices',
+        'in_price',
     ];
 
     protected $casts = [
@@ -28,9 +38,10 @@ class SeaHotel extends Model
         'sort_order' => 'integer',
         'gallery' => 'array',
         'parameters' => 'array',
+        'number_prices' => 'array',
     ];
 
-    public $with = ['destination', 'resort'];
+    public $with = ['destination', 'resort', 'busSchedules'];
 
     public function destination(): BelongsTo
     {
@@ -40,5 +51,10 @@ class SeaHotel extends Model
     public function resort(): BelongsTo
     {
         return $this->belongsTo(SeaResort::class, 'sea_resort_id');
+    }
+
+    public function busSchedules(): HasMany
+    {
+        return $this->hasMany(SeaBusSchedule::class, 'direction', 'bus_direction');
     }
 }
