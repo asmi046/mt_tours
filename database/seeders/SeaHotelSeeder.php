@@ -63,6 +63,32 @@ class SeaHotelSeeder extends Seeder
                 'database/seeders/hotels/adler/azimut-hotel-sochi-3/rez.php',
                 'database/seeders/hotels/adler/barxatnye-sezony-gorod-otel/rez.php',
             ],
+            'primorskii' => [
+                'database/seeders/hotels/primorskii/baza-otdyxa-u-moria-feodosiia-p-primorskii/rez.php',
+                'database/seeders/hotels/primorskii/villa-nimfei/rez.php',
+                'database/seeders/hotels/primorskii/villa-nimfei-2/rez.php',
+            ],
+            'beregovoe' => [
+                'database/seeders/hotels/beregovoe/gostinica-solnecnyi-bereg/rez.php',
+            ],
+            'feodosiia' => [
+                'database/seeders/hotels/feodosiia/baza-otdyxa-svetlaia/rez.php',
+                'database/seeders/hotels/feodosiia/pansionat-feodosiia/rez.php',
+            ],
+            'koktebel' => [
+                'database/seeders/hotels/koktebel/baza-otdyxa-andre/rez.php',
+                'database/seeders/hotels/koktebel/kottedznyi-poselok-dim-2/rez.php',
+            ],
+            'kurortnoe' => [
+                'database/seeders/hotels/kurortnoe/otel-aravana/rez.php',
+            ],
+            'sudak' => [
+                'database/seeders/hotels/sudak/gostevoi-dom-otdyx/rez.php',
+                'database/seeders/hotels/sudak/otel-diva/rez.php',
+            ],
+            'morskoe' => [
+                'database/seeders/hotels/morskoe/mini-otel-morskoi/rez.php',
+            ],
         ];
 
         // Загружаем данные из каждого файла
@@ -216,6 +242,13 @@ class SeaHotelSeeder extends Seeder
             'dederkoi' => 'dederkoi',
             'lazarevskoe' => 'lazarevskoe',
             'adler' => 'adler',
+            'primorskii' => 'primorskii',
+            'beregovoe' => 'beregovoe',
+            'feodosiia' => 'feodosiia',
+            'koktebel' => 'koktebel',
+            'kurortnoe' => 'kurortnoe',
+            'sudak' => 'sudak',
+            'morskoe' => 'morskoe',
         ];
 
         $resortSlug = $resortMap[$slug] ?? $slug;
