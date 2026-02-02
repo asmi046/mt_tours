@@ -47,5 +47,7 @@
         </div>
     </section>
 
+    <x-rew></x-rew>
+
     <x-contacts-section></x-contacts-section>
 @endsection

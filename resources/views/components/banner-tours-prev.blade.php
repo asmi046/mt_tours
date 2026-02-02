@@ -22,7 +22,7 @@
 
 
 
-<a href="{{ route("tour_category", 'new-year') }}" class="item new_year_item">
+<a href="{{ route('tour_category', 'new-year') }}" class="item new_year_item">
     <img src="{{ asset('img/new_year/new_head_banner.webp') }}" alt="Новогодние туры от МирТуризма">
     <div class="overlay"></div>
     <div class="text">
@@ -34,8 +34,8 @@
 </a>
 <div class="dop_param__preview">
     @foreach ($tours as $item)
-        <a href="{{ route('tour_page', $item->slug) }}" class="item">
-            <img src="{{ Storage::url($item->img) }}" alt="{{$item->title}}">
+        <a href="{{ $item->out_lnk ?? route('tour_page', $item->slug) }}" class="item">
+            <img src="{{ Storage::url($item->img) }}" alt="{{ $item->title }}">
             <div class="overlay"></div>
             <div class="text">
                 {{-- {{ $item->title_card }} --}}
@@ -46,5 +46,6 @@
         </a>
     @endforeach
 
-    <a class="button button_icon yakor meny_tours" href="#tours_cat"> <i class="search_icon"></i><span>Больше туров</span></a>
+    <a class="button button_icon yakor meny_tours" href="#tours_cat"> <i class="search_icon"></i><span>Больше
+            туров</span></a>
 </div>

@@ -4,25 +4,27 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class SeaPrice extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'destination_id',
-        'title',
+        'viezd',
+        'vozvrashenie',
+        'june_day_count',
+        'july_day_count',
+        'august_day_count',
+        'september_day_count',
+        'direction',
         'sort_order',
     ];
 
     protected $casts = [
-        'destination_id' => 'integer',
+        'june_day_count' => 'integer',
+        'july_day_count' => 'integer',
+        'august_day_count' => 'integer',
+        'september_day_count' => 'integer',
         'sort_order' => 'integer',
     ];
-
-    public function destination(): BelongsTo
-    {
-        return $this->belongsTo(SeaDestination::class);
-    }
 }

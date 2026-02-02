@@ -13,7 +13,13 @@ return new class extends Migration
     {
         Schema::create('sea_prices', function (Blueprint $table) {
             $table->id();
-            $table->string('title')->comment('Заголовок');
+            $table->string('viezd')->comment('Выезд');
+            $table->string('vozvrashenie')->comment('Возвращение');
+            $table->integer('june_day_count')->comment('Количество дней июнь');
+            $table->integer('july_day_count')->comment('Количество дней июль');
+            $table->integer('august_day_count')->comment('Количество дней август');
+            $table->integer('september_day_count')->comment('Количество дней сентябрь');
+            $table->string('direction')->comment('Направление');
             $table->integer('sort_order')->default(0)->comment('Порядок вывода');
             $table->timestamps();
         });

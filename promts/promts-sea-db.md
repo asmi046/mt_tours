@@ -50,3 +50,4 @@
 - Краткое описание (nullable)
 - Галерея (json nullable)
 - Параметры (json nullable)
+

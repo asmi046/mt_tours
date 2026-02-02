@@ -9,6 +9,7 @@ $reis_data = [
         'august_day_count' => '0',
         'september_day_count' => '0',
         'direction' => 'Курск - Анапа',
+        'sort_order' => 0,
     ],
     1 => [
         'viezd' => '17 Июня',
@@ -18,6 +19,7 @@ $reis_data = [
         'august_day_count' => '0',
         'september_day_count' => '0',
         'direction' => 'Курск - Анапа',
+        'sort_order' => 0,
     ],
     2 => [
         'viezd' => '26 Июня',
@@ -27,6 +29,7 @@ $reis_data = [
         'august_day_count' => '0',
         'september_day_count' => '0',
         'direction' => 'Курск - Анапа',
+        'sort_order' => 0,
     ],
     3 => [
         'viezd' => '05 Июля',
@@ -36,6 +39,7 @@ $reis_data = [
         'august_day_count' => '0',
         'september_day_count' => '0',
         'direction' => 'Курск - Анапа',
+        'sort_order' => 0,
     ],
     4 => [
         'viezd' => '14 Июля',
@@ -45,6 +49,7 @@ $reis_data = [
         'august_day_count' => '0',
         'september_day_count' => '0',
         'direction' => 'Курск - Анапа',
+        'sort_order' => 0,
     ],
     5 => [
         'viezd' => '23 Июля',
@@ -54,6 +59,7 @@ $reis_data = [
         'august_day_count' => '2',
         'september_day_count' => '0',
         'direction' => 'Курск - Анапа',
+        'sort_order' => 0,
     ],
     6 => [
         'viezd' => '01 Августа',
@@ -63,6 +69,7 @@ $reis_data = [
         'august_day_count' => '10',
         'september_day_count' => '0',
         'direction' => 'Курск - Анапа',
+        'sort_order' => 0,
     ],
     7 => [
         'viezd' => '10 Августа',
@@ -72,6 +79,7 @@ $reis_data = [
         'august_day_count' => '10',
         'september_day_count' => '0',
         'direction' => 'Курск - Анапа',
+        'sort_order' => 0,
     ],
     8 => [
         'viezd' => '19 Августа',
@@ -81,6 +89,7 @@ $reis_data = [
         'august_day_count' => '10',
         'september_day_count' => '0',
         'direction' => 'Курск - Анапа',
+        'sort_order' => 0,
     ],
     9 => [
         'viezd' => '28 Августа',
@@ -90,6 +99,7 @@ $reis_data = [
         'august_day_count' => '3',
         'september_day_count' => '7',
         'direction' => 'Курск - Анапа',
+        'sort_order' => 0,
     ],
     10 => [
         'viezd' => '06 Сентября',
