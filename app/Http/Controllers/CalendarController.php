@@ -114,6 +114,10 @@ class CalendarController extends Controller
                 'text' => CalendarServices::get_month_year('01.02.2026'),
                 'param' => '01.02.2026',
             ],
+            [
+                'text' => CalendarServices::get_month_year('01.03.2026'),
+                'param' => '01.03.2026',
+            ],
         ];
 
         $month = CalendarServices::getMonth(date('n', strtotime($curent_month)), date('Y', strtotime($curent_month)), $events);

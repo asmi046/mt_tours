@@ -1,4 +1,5 @@
-{{-- <a href="https://www.mirturizma46.ru/turi-na-more" class="item buss_item">
+{{--
+<a href="https://www.mirturizma46.ru/turi-na-more" class="item buss_item">
     <img src="{{ asset('img/buss.webp') }}" alt="Автобусные туры на море">
     <div class="overlay"></div>
     <div class="text">
@@ -7,9 +8,11 @@
     <div class="label price_label">
         от 15000 ₽
     </div>
-</a> --}}
+</a>
+--}}
 
-{{-- <a href="{{ route("tour_category", 'tury-na-noiabrskie-prazdniki') }}" class="item buss_item">
+{{--
+<a href="{{ route("tour_category", 'tury-na-noiabrskie-prazdniki') }}" class="item buss_item">
     <img src="{{ asset('img/flags-russia.webp') }}" alt="Автобусные туры на день Народного Единства">
     <div class="overlay"></div>
     <div class="text">
@@ -18,7 +21,8 @@
     <div class="label price_label">
         от 2500 ₽
     </div>
-</a> --}}
+</a>
+--}}
 
 
 
