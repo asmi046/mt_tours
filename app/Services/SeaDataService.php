@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Models\AleanSeaHotel;
 use App\Models\SeaHotel;
 use App\Models\SeaResort;
 
@@ -33,7 +34,9 @@ class SeaDataService
 
     public function getAllHotels()
     {
-        return SeaHotel::all();
+        $allHotels = SeaHotel::all()->concat(AleanSeaHotel::all());
+
+        return $allHotels;
     }
 
     public function getHotelBySlug(string $slug)

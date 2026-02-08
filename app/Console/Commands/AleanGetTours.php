@@ -2,8 +2,11 @@
 
 namespace App\Console\Commands;
 
+use App\Models\AleanTour;
+use App\Models\SeaResort;
 use App\Services\AleanApiService;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\DB;
 
 class AleanGetTours extends Command
 {
@@ -13,6 +16,13 @@ class AleanGetTours extends Command
      * @var string
      */
     protected $signature = 'alean:get-tours';
+
+    /**
+     * The timeout for the command in seconds.
+     *
+     * @var int|null
+     */
+    protected $timeout = 300;
 
     /**
      * The console command description.
@@ -26,23 +36,53 @@ class AleanGetTours extends Command
      */
     public function handle()
     {
-        try {
-            $aleanService = new AleanApiService;
-            $result = $aleanService->getTours();
+        $startTime = microtime(true);
 
-            // Создаём директорию если её нет
-            $directory = public_path('alean_data');
-            if (! is_dir($directory)) {
-                mkdir($directory, 0755, true);
+        try {
+            // Очищаем таблицу перед импортом
+            DB::table('alean_tours')->truncate();
+
+            $resorts = SeaResort::all();
+            $aleanService = new AleanApiService;
+
+            foreach ($resorts as $resort) {
+
+                foreach ($resort->busSchedules as $busSchedule) {
+                    $startDate = ru_date_to_current_year($busSchedule->start_date);
+                    $this->info("Обработка курорта: {$resort->title} (Дата заезда: {$startDate})");
+                    if (! $resort->alean_id) {
+                        $this->warn("Пропуск курорта: {$resort->title} (нет Alean ID)");
+
+                        continue;
+                    }
+
+                    $result = $aleanService->getTours($resort->alean_id, $startDate);
+
+                    // Парсим JSON и берём массив "data"
+                    $data = json_decode($result, true);
+
+                    if (isset($data['data']) && is_array($data['data'])) {
+                        // Добавляем туры в таблицу
+                        foreach ($data['data'] as $tour) {
+                            $this->info(json_encode($tour, JSON_UNESCAPED_UNICODE));
+
+                            AleanTour::create($tour);
+                        }
+                        $this->info('Добавлено '.count($data['data'])." туров для курорта: {$resort->title}");
+                    } else {
+                        $this->warn("Нет данных для курорта: {$resort->title}");
+                    }
+                }
+
             }
 
-            // Сохраняем результат в JSON файл
-            $filePath = $directory.'/currencyCode.json';
-            file_put_contents($filePath, $result);
+            $endTime = microtime(true);
+            $executionTime = round($endTime - $startTime, 2);
 
-            $this->info('Tours saved to: '.$filePath);
+            $this->info('Туры загружены!');
+            $this->info("Время выполнения: {$executionTime} секунд");
         } catch (\Exception $e) {
-            $this->error('Error: '.$e->getMessage());
+            $this->error('Ошибка: '.$e->getMessage());
         }
     }
 }

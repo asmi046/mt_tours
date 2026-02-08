@@ -30,6 +30,16 @@ class AleanGetResorts extends Command
             $aleanService = new AleanApiService;
             $result = $aleanService->getResorts();
 
+            // Создаём директорию если её нет
+            $directory = public_path('alean_data');
+            if (! is_dir($directory)) {
+                mkdir($directory, 0755, true);
+            }
+
+            // Сохраняем результат в JSON файл
+            $filePath = $directory.'/resorts.json';
+            file_put_contents($filePath, $result);
+
             $this->info('Resorts from Alean API:');
             $this->line($result);
         } catch (\Exception $e) {

@@ -27,6 +27,8 @@ class SeaResort extends Model
         'sort_order' => 'integer',
     ];
 
+    protected $with = ['busSchedules'];
+
     public function destination(): BelongsTo
     {
         return $this->belongsTo(SeaDestination::class, 'sea_destination_id', 'id');
@@ -34,6 +36,11 @@ class SeaResort extends Model
 
     public function hotels(): HasMany
     {
-        return $this->hasMany(SeaHotel::class);
+        return $this->hasMany(SeaHotel::class, 'sea_resort_id', 'id');
+    }
+
+    public function busSchedules(): HasMany
+    {
+        return $this->hasMany(SeaBusSchedule::class, 'direction', 'bus_schedule');
     }
 }

@@ -1,0 +1,4025 @@
+{
+    "version": "2.3",
+    "data": [
+        {
+            "id": 1,
+            "name": "Феодосия",
+            "countryId": 1,
+            "cid": "feodosiya"
+        },
+        {
+            "id": 3,
+            "name": "Судак",
+            "countryId": 1,
+            "cid": "sudak"
+        },
+        {
+            "id": 4,
+            "name": "Геленджик",
+            "countryId": 1,
+            "cid": "gelendzhik"
+        },
+        {
+            "id": 5,
+            "name": "Ялта",
+            "countryId": 1,
+            "cid": "yalta"
+        },
+        {
+            "id": 6,
+            "name": "Сочи",
+            "countryId": 1,
+            "cid": "sochi"
+        },
+        {
+            "id": 7,
+            "name": "Алушта",
+            "countryId": 1,
+            "cid": "alushta"
+        },
+        {
+            "id": 9,
+            "name": "Евпатория",
+            "countryId": 1,
+            "cid": "evpatoriya"
+        },
+        {
+            "id": 10,
+            "name": "Саки",
+            "countryId": 1,
+            "cid": "saki"
+        },
+        {
+            "id": 11,
+            "name": "Севастополь",
+            "countryId": 1,
+            "cid": "sevastopol'"
+        },
+        {
+            "id": 12,
+            "name": "Песчаное",
+            "countryId": 1,
+            "cid": "peschanoe"
+        },
+        {
+            "id": 13,
+            "name": "Николаевка",
+            "countryId": 1,
+            "cid": "nikolaevka"
+        },
+        {
+            "id": 14,
+            "name": "Кисловодск",
+            "countryId": 1,
+            "cid": "kislovodsk"
+        },
+        {
+            "id": 15,
+            "name": "Ессентуки",
+            "countryId": 1,
+            "cid": "essentuki"
+        },
+        {
+            "id": 16,
+            "name": "Пятигорск",
+            "countryId": 1,
+            "cid": "pyatigorsk"
+        },
+        {
+            "id": 17,
+            "name": "Железноводск",
+            "countryId": 1,
+            "cid": "zheleznovodsk"
+        },
+        {
+            "id": 18,
+            "name": "Анапа",
+            "countryId": 1,
+            "cid": "anapa"
+        },
+        {
+            "id": 31,
+            "name": "Ростов-на-Дону, гостиницы",
+            "countryId": 1,
+            "cid": "rostov-na-donu__gostinic"
+        },
+        {
+            "id": 32,
+            "name": "Новосибирск, гостиницы",
+            "countryId": 1,
+            "cid": "novosibirsk__gostinicy"
+        },
+        {
+            "id": 33,
+            "name": "Екатеринбург, гостиницы",
+            "countryId": 1,
+            "cid": "ekaterinburg__gostinicy"
+        },
+        {
+            "id": 34,
+            "name": "Москва, гостиницы",
+            "countryId": 1,
+            "cid": "moskva__gostinicy"
+        },
+        {
+            "id": 49,
+            "name": "Симферополь",
+            "countryId": 1,
+            "cid": "simferopol'"
+        },
+        {
+            "id": 52,
+            "name": "Красная Поляна",
+            "countryId": 1,
+            "cid": "krasnaya_polyana"
+        },
+        {
+            "id": 56,
+            "name": "Баку",
+            "countryId": 3,
+            "cid": "baku"
+        },
+        {
+            "id": 60,
+            "name": "Нижний Новгород, гостиницы",
+            "countryId": 1,
+            "cid": "nizhnii_novgorod__gostin"
+        },
+        {
+            "id": 64,
+            "name": "Воронеж, гостиницы",
+            "countryId": 1,
+            "cid": "voronezh__gostinicy"
+        },
+        {
+            "id": 67,
+            "name": "Иркутск",
+            "countryId": 1,
+            "cid": "irkutsk"
+        },
+        {
+            "id": 73,
+            "name": "Уфа, гостиницы",
+            "countryId": 1,
+            "cid": "ufa__gostinicy"
+        },
+        {
+            "id": 79,
+            "name": "Астархань, гостиницы",
+            "countryId": 1,
+            "cid": "astrahan'__gostinicy"
+        },
+        {
+            "id": 85,
+            "name": "Великий Новгород, гостиницы",
+            "countryId": 1,
+            "cid": "velikii_novgorod__g-cy"
+        },
+        {
+            "id": 86,
+            "name": "Минская область",
+            "countryId": 4,
+            "cid": "minskaya_oblast'"
+        },
+        {
+            "id": 89,
+            "name": "Владивосток",
+            "countryId": 1,
+            "cid": "vladivostok"
+        },
+        {
+            "id": 93,
+            "name": "Смоленская",
+            "countryId": 1,
+            "cid": "smolenskaya"
+        },
+        {
+            "id": 97,
+            "name": "Нальчик, КБР",
+            "countryId": 1,
+            "cid": "nal'chik"
+        },
+        {
+            "id": 98,
+            "name": "Горячий ключ",
+            "countryId": 1,
+            "cid": "goryachii_klyuch"
+        },
+        {
+            "id": 100,
+            "name": "Белокуриха",
+            "countryId": 1,
+            "cid": "belokuriha"
+        },
+        {
+            "id": 102,
+            "name": "Гагра",
+            "countryId": 5,
+            "cid": "gagra"
+        },
+        {
+            "id": 106,
+            "name": "Пицунда",
+            "countryId": 5,
+            "cid": "picunda"
+        },
+        {
+            "id": 109,
+            "name": "Мюссера (Пицунда)",
+            "countryId": 5,
+            "cid": "myussera"
+        },
+        {
+            "id": 111,
+            "name": "Сухум",
+            "countryId": 5,
+            "cid": "suhum"
+        },
+        {
+            "id": 112,
+            "name": "Ташкент",
+            "countryId": 6,
+            "cid": "tashkent"
+        },
+        {
+            "id": 114,
+            "name": "Селигер",
+            "countryId": 1,
+            "cid": "seliger"
+        },
+        {
+            "id": 116,
+            "name": "Гудаута",
+            "countryId": 5,
+            "cid": "gudauta"
+        },
+        {
+            "id": 119,
+            "name": "Ереван",
+            "countryId": 7,
+            "cid": "erevan"
+        },
+        {
+            "id": 122,
+            "name": "Приэльбрусье, КБР",
+            "countryId": 1,
+            "cid": "priel'brus'e"
+        },
+        {
+            "id": 123,
+            "name": "Новый Афон",
+            "countryId": 5,
+            "cid": "novyi_afon"
+        },
+        {
+            "id": 127,
+            "name": "Щелкино",
+            "countryId": 1,
+            "cid": "schelkino"
+        },
+        {
+            "id": 130,
+            "name": "Зеленоградск",
+            "countryId": 1,
+            "cid": "zelenogradsk"
+        },
+        {
+            "id": 134,
+            "name": "Гродненская область",
+            "countryId": 4,
+            "cid": "grodnenskaya_oblast'"
+        },
+        {
+            "id": 135,
+            "name": "Брестская область",
+            "countryId": 4,
+            "cid": "brestskaya_oblast'"
+        },
+        {
+            "id": 136,
+            "name": "Витебская область",
+            "countryId": 4,
+            "cid": "vitebskaya_oblast'"
+        },
+        {
+            "id": 137,
+            "name": "Гомельская область",
+            "countryId": 4,
+            "cid": "gomel'skaya_oblast'"
+        },
+        {
+            "id": 138,
+            "name": "Могилевская область",
+            "countryId": 4,
+            "cid": "mogilevskaya_oblast'"
+        },
+        {
+            "id": 146,
+            "name": "Светлогорск",
+            "countryId": 1,
+            "cid": "svetlogorsk"
+        },
+        {
+            "id": 148,
+            "name": "Ольхонский район",
+            "countryId": 1,
+            "cid": "ol'honskii_raion"
+        },
+        {
+            "id": 149,
+            "name": "Балтийск",
+            "countryId": 1,
+            "cid": "baltiisk"
+        },
+        {
+            "id": 150,
+            "name": "Иссык-Куль",
+            "countryId": 8,
+            "cid": "issyk-kul'"
+        },
+        {
+            "id": 156,
+            "name": "Домбай, КЧР",
+            "countryId": 1,
+            "cid": "dombai"
+        },
+        {
+            "id": 162,
+            "name": "Керчь",
+            "countryId": 1,
+            "cid": "kerch'"
+        },
+        {
+            "id": 163,
+            "name": "Куршская коса",
+            "countryId": 1,
+            "cid": "kurshskaya_kosa"
+        },
+        {
+            "id": 165,
+            "name": "Нафталан",
+            "countryId": 3,
+            "cid": "naftalan"
+        },
+        {
+            "id": 171,
+            "name": "Байкал",
+            "countryId": 1,
+            "cid": "baikal"
+        },
+        {
+            "id": 173,
+            "name": "Самарканд",
+            "countryId": 6,
+            "cid": "samarkand"
+        },
+        {
+            "id": 201,
+            "name": "Бухара",
+            "countryId": 6,
+            "cid": "buhara"
+        },
+        {
+            "id": 202,
+            "name": "Тбилиси",
+            "countryId": 13,
+            "cid": "tbilisi"
+        },
+        {
+            "id": 204,
+            "name": "Батуми",
+            "countryId": 13,
+            "cid": "batumi"
+        },
+        {
+            "id": 206,
+            "name": "Цахкадзор",
+            "countryId": 7,
+            "cid": "cahkadzor"
+        },
+        {
+            "id": 207,
+            "name": "Гудаури",
+            "countryId": 13,
+            "cid": "gudauri"
+        },
+        {
+            "id": 208,
+            "name": "Бакуриани",
+            "countryId": 13,
+            "cid": "bakuriani"
+        },
+        {
+            "id": 212,
+            "name": "Благовещенская",
+            "countryId": 1,
+            "cid": "blagoveschenskaya"
+        },
+        {
+            "id": 219,
+            "name": "Шахдаг",
+            "countryId": 3,
+            "cid": "shahdag"
+        },
+        {
+            "id": 222,
+            "name": "Алтай",
+            "countryId": 1,
+            "cid": "respublika_altai"
+        },
+        {
+            "id": 225,
+            "name": "Суздаль, гостиницы",
+            "countryId": 1,
+            "cid": "suzdal'__gostinicy"
+        },
+        {
+            "id": 431,
+            "name": "Подмосковье",
+            "countryId": 1,
+            "cid": "podmoskov'e"
+        },
+        {
+            "id": 492,
+            "name": "Абзаково",
+            "countryId": 1,
+            "cid": "abzakovo"
+        },
+        {
+            "id": 497,
+            "name": "Казань, гостиницы",
+            "countryId": 1,
+            "cid": "kazan'__gostinicy"
+        },
+        {
+            "id": 501,
+            "name": "Ярославль, гостиницы",
+            "countryId": 1,
+            "cid": "yaroslavl'__gostinicy"
+        },
+        {
+            "id": 508,
+            "name": "Брест, гостиницы",
+            "countryId": 4,
+            "cid": "brest__gostinicy"
+        },
+        {
+            "id": 524,
+            "name": "Боржоми",
+            "countryId": 13,
+            "cid": "borzhomi"
+        },
+        {
+            "id": 527,
+            "name": "Рязань, гостиницы",
+            "countryId": 1,
+            "cid": "ryazan'__gostinicy"
+        },
+        {
+            "id": 537,
+            "name": "Краснодарский край",
+            "countryId": 1,
+            "cid": "krasnodarskii_krai"
+        },
+        {
+            "id": 538,
+            "name": "Самарская область",
+            "countryId": 1,
+            "cid": "samarskaya_oblast'"
+        },
+        {
+            "id": 539,
+            "name": "Туапсе",
+            "countryId": 1,
+            "cid": "tuapse"
+        },
+        {
+            "id": 540,
+            "name": "Ярославская область",
+            "countryId": 1,
+            "cid": "yaroslavskaya_oblast'"
+        },
+        {
+            "id": 541,
+            "name": "Калужская область",
+            "countryId": 1,
+            "cid": "kaluzhskaya_oblast'"
+        },
+        {
+            "id": 542,
+            "name": "Крым",
+            "countryId": 1,
+            "cid": "krym"
+        },
+        {
+            "id": 545,
+            "name": "Костромская область",
+            "countryId": 1,
+            "cid": "kostromskaya_oblast'"
+        },
+        {
+            "id": 546,
+            "name": "Нижегородская область",
+            "countryId": 1,
+            "cid": "nizhegorodskaya_oblast'"
+        },
+        {
+            "id": 547,
+            "name": "Владимирская область",
+            "countryId": 1,
+            "cid": "vladimirskaya_oblast'"
+        },
+        {
+            "id": 548,
+            "name": "Тамбовская область",
+            "countryId": 1,
+            "cid": "tambovskaya_oblast'"
+        },
+        {
+            "id": 549,
+            "name": "Тюменская область",
+            "countryId": 1,
+            "cid": "tyumenskaya_oblast'"
+        },
+        {
+            "id": 550,
+            "name": "Свердловская область",
+            "countryId": 1,
+            "cid": "sverdlovskaya_oblast'"
+        },
+        {
+            "id": 551,
+            "name": "Брянская область",
+            "countryId": 1,
+            "cid": "bryanskaya_oblast'"
+        },
+        {
+            "id": 552,
+            "name": "Астраханская область",
+            "countryId": 1,
+            "cid": "astrahanskaya_oblast'"
+        },
+        {
+            "id": 553,
+            "name": "Тульская",
+            "countryId": 1,
+            "cid": "tul'skaya"
+        },
+        {
+            "id": 554,
+            "name": "Башкирия",
+            "countryId": 1,
+            "cid": "bashkiriya"
+        },
+        {
+            "id": 555,
+            "name": "Новгородская область",
+            "countryId": 1,
+            "cid": "novgorodskaya_oblast'"
+        },
+        {
+            "id": 556,
+            "name": "Ивановская область",
+            "countryId": 1,
+            "cid": "ivanovskaya_oblast'"
+        },
+        {
+            "id": 557,
+            "name": "Рязанская область",
+            "countryId": 1,
+            "cid": "ryazanskaya_oblast'"
+        },
+        {
+            "id": 558,
+            "name": "Курганская область",
+            "countryId": 1,
+            "cid": "kurganskaya_oblast'"
+        },
+        {
+            "id": 559,
+            "name": "Карелия",
+            "countryId": 1,
+            "cid": "kareliya"
+        },
+        {
+            "id": 560,
+            "name": "Саратовская область",
+            "countryId": 1,
+            "cid": "saratovskaya_oblast'"
+        },
+        {
+            "id": 561,
+            "name": "Псковская область",
+            "countryId": 1,
+            "cid": "pskovskaya_oblast'"
+        },
+        {
+            "id": 562,
+            "name": "Приморский край",
+            "countryId": 1,
+            "cid": "primorskii_krai"
+        },
+        {
+            "id": 563,
+            "name": "Челябинская область",
+            "countryId": 1,
+            "cid": "chelyabinskaya_oblast'"
+        },
+        {
+            "id": 564,
+            "name": "Тверская",
+            "countryId": 1,
+            "cid": "tverskaya"
+        },
+        {
+            "id": 565,
+            "name": "Кировская область",
+            "countryId": 1,
+            "cid": "kirovskaya_oblast'"
+        },
+        {
+            "id": 566,
+            "name": "Татарстан",
+            "countryId": 1,
+            "cid": "tatarstan"
+        },
+        {
+            "id": 569,
+            "name": "Калининградская область",
+            "countryId": 1,
+            "cid": "kaliningradskaya_oblast'"
+        },
+        {
+            "id": 570,
+            "name": "Банное",
+            "countryId": 1,
+            "cid": "bannoe"
+        },
+        {
+            "id": 573,
+            "name": "Новосибирская область",
+            "countryId": 1,
+            "cid": "novosibirskaya_oblast'"
+        },
+        {
+            "id": 574,
+            "name": "Ульяновская область",
+            "countryId": 1,
+            "cid": "ul'yanovskaya_oblast'"
+        },
+        {
+            "id": 576,
+            "name": "Адлер",
+            "countryId": 1,
+            "cid": "adler"
+        },
+        {
+            "id": 577,
+            "name": "Лазаревское",
+            "countryId": 1,
+            "cid": "lazarevskoe"
+        },
+        {
+            "id": 578,
+            "name": "Лоо",
+            "countryId": 1,
+            "cid": "loo"
+        },
+        {
+            "id": 579,
+            "name": "Дагомыс",
+            "countryId": 1,
+            "cid": "dagomys"
+        },
+        {
+            "id": 580,
+            "name": "Кудепста",
+            "countryId": 1,
+            "cid": "kudepsta"
+        },
+        {
+            "id": 581,
+            "name": "Хоста",
+            "countryId": 1,
+            "cid": "hosta"
+        },
+        {
+            "id": 586,
+            "name": "Минск, гостиницы",
+            "countryId": 4,
+            "cid": "minsk__gostinicy"
+        },
+        {
+            "id": 594,
+            "name": "Архыз, КЧР",
+            "countryId": 1,
+            "cid": "arhyz"
+        },
+        {
+            "id": 603,
+            "name": "Очамчыра",
+            "countryId": 5,
+            "cid": "ochamchyra"
+        },
+        {
+            "id": 618,
+            "name": "Курортное",
+            "countryId": 1,
+            "cid": "kurortnoe"
+        },
+        {
+            "id": 621,
+            "name": "Тульская область",
+            "countryId": 1,
+            "cid": "tul'skaya_oblast'"
+        },
+        {
+            "id": 625,
+            "name": "Кострома, гостиницы",
+            "countryId": 1,
+            "cid": "kostroma__gostinicy"
+        },
+        {
+            "id": 630,
+            "name": "Калуга, гостиницы",
+            "countryId": 1,
+            "cid": "kaluga__gostinicy"
+        },
+        {
+            "id": 632,
+            "name": "Цхалтубо",
+            "countryId": 13,
+            "cid": "chaltubo"
+        },
+        {
+            "id": 633,
+            "name": "Великий Устюг, гостиницы",
+            "countryId": 1,
+            "cid": "velikii_ustyug__gostinic"
+        },
+        {
+            "id": 635,
+            "name": "Майкопский район",
+            "countryId": 1,
+            "cid": "maikopskii_raion"
+        },
+        {
+            "id": 637,
+            "name": "Новофедоровка",
+            "countryId": 1,
+            "cid": "novofedorovka"
+        },
+        {
+            "id": 638,
+            "name": "Береговое",
+            "countryId": 1,
+            "cid": "beregovoe"
+        },
+        {
+            "id": 639,
+            "name": "Морское",
+            "countryId": 1,
+            "cid": "morskoe"
+        },
+        {
+            "id": 640,
+            "name": "Новый Свет",
+            "countryId": 1,
+            "cid": "novyi_svet"
+        },
+        {
+            "id": 641,
+            "name": "Балаклава",
+            "countryId": 1,
+            "cid": "balaklava"
+        },
+        {
+            "id": 642,
+            "name": "Заозерное",
+            "countryId": 1,
+            "cid": "zaozernoe"
+        },
+        {
+            "id": 644,
+            "name": "Оленевка",
+            "countryId": 1,
+            "cid": "olenevka"
+        },
+        {
+            "id": 645,
+            "name": "Угловое",
+            "countryId": 1,
+            "cid": "uglovoe"
+        },
+        {
+            "id": 646,
+            "name": "Учкуевка",
+            "countryId": 1,
+            "cid": "uchkuevka"
+        },
+        {
+            "id": 647,
+            "name": "Черноморское",
+            "countryId": 1,
+            "cid": "chernomorskoe"
+        },
+        {
+            "id": 650,
+            "name": "Кореиз",
+            "countryId": 1,
+            "cid": "koreiz"
+        },
+        {
+            "id": 652,
+            "name": "Ласпи",
+            "countryId": 1,
+            "cid": "laspi"
+        },
+        {
+            "id": 653,
+            "name": "Алупка",
+            "countryId": 1,
+            "cid": "alupka"
+        },
+        {
+            "id": 654,
+            "name": "Гаспра",
+            "countryId": 1,
+            "cid": "gaspra"
+        },
+        {
+            "id": 655,
+            "name": "Гурзуф",
+            "countryId": 1,
+            "cid": "gurzuf"
+        },
+        {
+            "id": 656,
+            "name": "Ливадия",
+            "countryId": 1,
+            "cid": "livadiya"
+        },
+        {
+            "id": 657,
+            "name": "Малореченское",
+            "countryId": 1,
+            "cid": "malorechenskoe"
+        },
+        {
+            "id": 658,
+            "name": "Мисхор",
+            "countryId": 1,
+            "cid": "mishor"
+        },
+        {
+            "id": 659,
+            "name": "Партенит",
+            "countryId": 1,
+            "cid": "partenit"
+        },
+        {
+            "id": 660,
+            "name": "Понизовка",
+            "countryId": 1,
+            "cid": "ponizovka"
+        },
+        {
+            "id": 661,
+            "name": "Утёс",
+            "countryId": 1,
+            "cid": "utes"
+        },
+        {
+            "id": 663,
+            "name": "Каракол",
+            "countryId": 8,
+            "cid": "karakol"
+        },
+        {
+            "id": 664,
+            "name": "Габала",
+            "countryId": 3,
+            "cid": "gabala"
+        },
+        {
+            "id": 1004,
+            "name": "Абрау-Дюрсо",
+            "countryId": 1,
+            "cid": "abrau_dyurso"
+        },
+        {
+            "id": 1005,
+            "name": "Абхазия",
+            "countryId": 5,
+            "cid": "abhaziya"
+        },
+        {
+            "id": 1008,
+            "name": "Автозаводская",
+            "countryId": 1,
+            "cid": "avtozavodskaya"
+        },
+        {
+            "id": 1009,
+            "name": "Агой",
+            "countryId": 1,
+            "cid": "agoi"
+        },
+        {
+            "id": 1010,
+            "name": "Адлерский район",
+            "countryId": 1,
+            "cid": "adlerskii_raion"
+        },
+        {
+            "id": 1011,
+            "name": "Республика Адыгея",
+            "countryId": 1,
+            "cid": "adygeya"
+        },
+        {
+            "id": 1013,
+            "name": "Азербайджан, отели",
+            "countryId": 3,
+            "cid": "azerbaidzhan"
+        },
+        {
+            "id": 1024,
+            "name": "Алушта, профессорский уголок",
+            "countryId": 1,
+            "cid": "alushta_professorskii_ug"
+        },
+        {
+            "id": 1025,
+            "name": "Альпика-сервис",
+            "countryId": 1,
+            "cid": "al'pika-servis"
+        },
+        {
+            "id": 1026,
+            "name": "Анапа, город",
+            "countryId": 1,
+            "cid": "anapa__gorod"
+        },
+        {
+            "id": 1030,
+            "name": "Армения, отели",
+            "countryId": 7,
+            "cid": "armeniya__oteli"
+        },
+        {
+            "id": 1034,
+            "name": "Архипо-Осиповка",
+            "countryId": 1,
+            "cid": "arhipo-osipovka"
+        },
+        {
+            "id": 1038,
+            "name": "Аше",
+            "countryId": 1,
+            "cid": "ashe"
+        },
+        {
+            "id": 1040,
+            "name": "Багмаран (Сухум)",
+            "countryId": 5,
+            "cid": "bagmaran"
+        },
+        {
+            "id": 1053,
+            "name": "Бамбора (Гудаута)",
+            "countryId": 5,
+            "cid": "bambora"
+        },
+        {
+            "id": 1054,
+            "name": "Барнаул, гостиницы",
+            "countryId": 1,
+            "cid": "barnaul__gostinicy"
+        },
+        {
+            "id": 1057,
+            "name": "Бауманская",
+            "countryId": 1,
+            "cid": "baumanskaya"
+        },
+        {
+            "id": 1061,
+            "name": "Беларусь",
+            "countryId": 4,
+            "cid": "belarus'"
+        },
+        {
+            "id": 1063,
+            "name": "Беларусь, гостиницы",
+            "countryId": 4,
+            "cid": "belarus'__gostinicy"
+        },
+        {
+            "id": 1078,
+            "name": "Бетта",
+            "countryId": 1,
+            "cid": "betta"
+        },
+        {
+            "id": 1079,
+            "name": "Бжид",
+            "countryId": 1,
+            "cid": "bzhid"
+        },
+        {
+            "id": 1096,
+            "name": "Бытха",
+            "countryId": 1,
+            "cid": "bytha"
+        },
+        {
+            "id": 1102,
+            "name": "Вардане",
+            "countryId": 1,
+            "cid": "vardane"
+        },
+        {
+            "id": 1103,
+            "name": "ВДНХ",
+            "countryId": 1,
+            "cid": "vdnh"
+        },
+        {
+            "id": 1110,
+            "name": "Витязево",
+            "countryId": 1,
+            "cid": "vityazevo"
+        },
+        {
+            "id": 1111,
+            "name": "Владивосток, гостиницы",
+            "countryId": 1,
+            "cid": "vladivostok__gostinicy"
+        },
+        {
+            "id": 1113,
+            "name": "Владыкино",
+            "countryId": 1,
+            "cid": "vladykino"
+        },
+        {
+            "id": 1119,
+            "name": "Волгоградская область",
+            "countryId": 1,
+            "cid": "volgogradskaya_oblast'"
+        },
+        {
+            "id": 1123,
+            "name": "Воронежская область",
+            "countryId": 1,
+            "cid": "voronezhskaya_oblast'"
+        },
+        {
+            "id": 1128,
+            "name": "Высокий берег",
+            "countryId": 1,
+            "cid": "vysokii_bereg"
+        },
+        {
+            "id": 1133,
+            "name": "г.Калининград",
+            "countryId": 1,
+            "cid": "g_kaliningrad"
+        },
+        {
+            "id": 1134,
+            "name": "Гагра город",
+            "countryId": 5,
+            "cid": "gagra_gorod"
+        },
+        {
+            "id": 1135,
+            "name": "Газпром (Лаура) ГК",
+            "countryId": 1,
+            "cid": "gazprom_(laura)"
+        },
+        {
+            "id": 1139,
+            "name": "Геленджик центр",
+            "countryId": 1,
+            "cid": "gelendzhik_centr"
+        },
+        {
+            "id": 1140,
+            "name": "География",
+            "countryId": 1,
+            "cid": "geografiya"
+        },
+        {
+            "id": 1143,
+            "name": "Головинка",
+            "countryId": 1,
+            "cid": "golovinka"
+        },
+        {
+            "id": 1144,
+            "name": "Голубая бухта",
+            "countryId": 1,
+            "cid": "golubaya_buhta"
+        },
+        {
+            "id": 1145,
+            "name": "Голубицкая",
+            "countryId": 1,
+            "cid": "golubickaya"
+        },
+        {
+            "id": 1147,
+            "name": "Гомель, гостиницы",
+            "countryId": 4,
+            "cid": "gomel'__gostinicy"
+        },
+        {
+            "id": 1153,
+            "name": "Горки город (Горная карусель) ГК",
+            "countryId": 1,
+            "cid": "gorki_gorod"
+        },
+        {
+            "id": 1154,
+            "name": "Горная карусель",
+            "countryId": 1,
+            "cid": "gornaya_karusel'"
+        },
+        {
+            "id": 1166,
+            "name": "Гродно, гостиницы",
+            "countryId": 4,
+            "cid": "grodno__gostinicy"
+        },
+        {
+            "id": 1168,
+            "name": "Грузия, отели",
+            "countryId": 13,
+            "cid": "gruziya__oteli"
+        },
+        {
+            "id": 1170,
+            "name": "Гудаута город",
+            "countryId": 5,
+            "cid": "gudauta_gorod"
+        },
+        {
+            "id": 1176,
+            "name": "Дальнее Подмосковье",
+            "countryId": 1,
+            "cid": "dal'nee_podmoskov'e"
+        },
+        {
+            "id": 1179,
+            "name": "Дедеркой",
+            "countryId": 1,
+            "cid": "dederkoi"
+        },
+        {
+            "id": 1182,
+            "name": "Детский отдых",
+            "countryId": 1,
+            "cid": "detskii_otdyh"
+        },
+        {
+            "id": 1183,
+            "name": "Джанхот",
+            "countryId": 1,
+            "cid": "dzhanhot"
+        },
+        {
+            "id": 1184,
+            "name": "Джемете",
+            "countryId": 1,
+            "cid": "dzhemete"
+        },
+        {
+            "id": 1185,
+            "name": "Джермук",
+            "countryId": 7,
+            "cid": "dzhermuk"
+        },
+        {
+            "id": 1186,
+            "name": "Джубга",
+            "countryId": 1,
+            "cid": "dzhubga"
+        },
+        {
+            "id": 1190,
+            "name": "Дивноморское",
+            "countryId": 1,
+            "cid": "divnomorskoe"
+        },
+        {
+            "id": 1191,
+            "name": "Динамо",
+            "countryId": 1,
+            "cid": "dinamo"
+        },
+        {
+            "id": 1203,
+            "name": "Евпатория, город",
+            "countryId": 1,
+            "cid": "evpatoriya__gorod"
+        },
+        {
+            "id": 1205,
+            "name": "Ейск",
+            "countryId": 1,
+            "cid": "eisk"
+        },
+        {
+            "id": 1206,
+            "name": "Екатеринбург, экскурсии",
+            "countryId": 1,
+            "cid": "ekaterinburg__ekskursii"
+        },
+        {
+            "id": 1224,
+            "name": "Золотой берег (Гудаута)",
+            "countryId": 5,
+            "cid": "zolotoi_bereg"
+        },
+        {
+            "id": 1233,
+            "name": "Имеретинская бухта",
+            "countryId": 1,
+            "cid": "imeretinskaya_buhta"
+        },
+        {
+            "id": 1234,
+            "name": "Иркутск, экскурсии",
+            "countryId": 1,
+            "cid": "irkutsk__ekskursii"
+        },
+        {
+            "id": 1235,
+            "name": "Иркутская область",
+            "countryId": 1,
+            "cid": "irkutskaya_oblast'"
+        },
+        {
+            "id": 1236,
+            "name": "Иркутский район",
+            "countryId": 1,
+            "cid": "irkutskii_raion"
+        },
+        {
+            "id": 1238,
+            "name": "Кабардинка",
+            "countryId": 1,
+            "cid": "kabardinka"
+        },
+        {
+            "id": 1239,
+            "name": "Кавказские Минеральные Воды",
+            "countryId": 1,
+            "cid": "kavkazskie_mineral'nye_v"
+        },
+        {
+            "id": 1242,
+            "name": "Казахстан, отели",
+            "countryId": 9,
+            "cid": "kazahstan"
+        },
+        {
+            "id": 1243,
+            "name": "Калининградская область, экскурсии",
+            "countryId": 1,
+            "cid": "kaliningrad__ekskursii"
+        },
+        {
+            "id": 1252,
+            "name": "Камчатка, гостиницы",
+            "countryId": 1,
+            "cid": "kamchatka__gostinicy"
+        },
+        {
+            "id": 1272,
+            "name": "Каширская",
+            "countryId": 1,
+            "cid": "kashirskaya"
+        },
+        {
+            "id": 1273,
+            "name": "Кемеровская область",
+            "countryId": 1,
+            "cid": "kemerovskaya_oblast'"
+        },
+        {
+            "id": 1281,
+            "name": "Киргизия",
+            "countryId": 8,
+            "cid": "kirgiziya"
+        },
+        {
+            "id": 1285,
+            "name": "Кавказские Минеральные Воды",
+            "countryId": 1,
+            "cid": "kmv"
+        },
+        {
+            "id": 1291,
+            "name": "Коктебель",
+            "countryId": 1,
+            "cid": "koktebel'"
+        },
+        {
+            "id": 1297,
+            "name": "Комсомольская",
+            "countryId": 1,
+            "cid": "komsomol'skaya"
+        },
+        {
+            "id": 1305,
+            "name": "Кострома, экскурсии",
+            "countryId": 1,
+            "cid": "kostroma__ekskursii"
+        },
+        {
+            "id": 1306,
+            "name": "Краснодар, гостиницы",
+            "countryId": 1,
+            "cid": "krasnodar__gostinicy"
+        },
+        {
+            "id": 1307,
+            "name": "Красносельская",
+            "countryId": 1,
+            "cid": "krasnosel'skaya"
+        },
+        {
+            "id": 1311,
+            "name": "Красноярский край",
+            "countryId": 1,
+            "cid": "krasnoyarskii_krai"
+        },
+        {
+            "id": 1313,
+            "name": "Криница",
+            "countryId": 1,
+            "cid": "krinica"
+        },
+        {
+            "id": 1317,
+            "name": "Азовское побережье",
+            "countryId": 1,
+            "cid": "krym__azovskoe_poberezh'"
+        },
+        {
+            "id": 1324,
+            "name": "Кузнецкий мост",
+            "countryId": 1,
+            "cid": "kuzneckii_most"
+        },
+        {
+            "id": 1331,
+            "name": "Курпаты",
+            "countryId": 1,
+            "cid": "kurpaty"
+        },
+        {
+            "id": 1337,
+            "name": "Кындыг (Сухум)",
+            "countryId": 5,
+            "cid": "kyndyg"
+        },
+        {
+            "id": 1339,
+            "name": "Лазаревский район",
+            "countryId": 1,
+            "cid": "lazarevskii_raion"
+        },
+        {
+            "id": 1342,
+            "name": "Лаура",
+            "countryId": 1,
+            "cid": "laura"
+        },
+        {
+            "id": 1343,
+            "name": "Лдзаа (Пицунда)",
+            "countryId": 5,
+            "cid": "ldzaa"
+        },
+        {
+            "id": 1345,
+            "name": "Лермонтово",
+            "countryId": 1,
+            "cid": "lermontovo"
+        },
+        {
+            "id": 1351,
+            "name": "Листвянский район",
+            "countryId": 1,
+            "cid": "listvyanskii_raion"
+        },
+        {
+            "id": 1360,
+            "name": "Макопсе",
+            "countryId": 1,
+            "cid": "makopse"
+        },
+        {
+            "id": 1364,
+            "name": "Малый Маяк",
+            "countryId": 1,
+            "cid": "malyi_mayak"
+        },
+        {
+            "id": 1365,
+            "name": "Мамайка",
+            "countryId": 1,
+            "cid": "mamaika"
+        },
+        {
+            "id": 1370,
+            "name": "Массандра",
+            "countryId": 1,
+            "cid": "massandra"
+        },
+        {
+            "id": 1379,
+            "name": "Минеральные воды",
+            "countryId": 1,
+            "cid": "mineral'nye_vody"
+        },
+        {
+            "id": 1385,
+            "name": "Могилев, гостиницы",
+            "countryId": 4,
+            "cid": "mogilev__gostinicy"
+        },
+        {
+            "id": 1387,
+            "name": "Москва, экскурсии",
+            "countryId": 1,
+            "cid": "moskva__ekskursii"
+        },
+        {
+            "id": 1403,
+            "name": "Небуг",
+            "countryId": 1,
+            "cid": "nebug"
+        },
+        {
+            "id": 1410,
+            "name": "Нижегородская область, экскурсии",
+            "countryId": 1,
+            "cid": "nizhnii_novgorod__ekskur"
+        },
+        {
+            "id": 1412,
+            "name": "Нижняя Беранда",
+            "countryId": 1,
+            "cid": "nizhnyaya_beranda"
+        },
+        {
+            "id": 1417,
+            "name": "Новокузнецкая",
+            "countryId": 1,
+            "cid": "novokuzneckaya"
+        },
+        {
+            "id": 1418,
+            "name": "Новомихайловский",
+            "countryId": 1,
+            "cid": "novomihailovskii"
+        },
+        {
+            "id": 1419,
+            "name": "Новороссийский район",
+            "countryId": 1,
+            "cid": "novorossiiskii_raion"
+        },
+        {
+            "id": 1440,
+            "name": "Ольгинка",
+            "countryId": 1,
+            "cid": "ol'ginka"
+        },
+        {
+            "id": 1442,
+            "name": "Омская область",
+            "countryId": 1,
+            "cid": "omskaya_oblast'"
+        },
+        {
+            "id": 1446,
+            "name": "Ореанда",
+            "countryId": 1,
+            "cid": "oreanda"
+        },
+        {
+            "id": 1449,
+            "name": "Орловка",
+            "countryId": 1,
+            "cid": "orlovka"
+        },
+        {
+            "id": 1453,
+            "name": "Отрадное",
+            "countryId": 1,
+            "cid": "otradnoe"
+        },
+        {
+            "id": 1454,
+            "name": "Отрадное",
+            "countryId": 1,
+            "cid": "otradnoe_p_"
+        },
+        {
+            "id": 1464,
+            "name": "Парковое",
+            "countryId": 1,
+            "cid": "parkovoe"
+        },
+        {
+            "id": 1467,
+            "name": "Партизанская",
+            "countryId": 1,
+            "cid": "partizanskaya"
+        },
+        {
+            "id": 1470,
+            "name": "Пензенская область",
+            "countryId": 1,
+            "cid": "penzenskaya_oblast'"
+        },
+        {
+            "id": 1473,
+            "name": "Пермский край",
+            "countryId": 1,
+            "cid": "permskii_krai"
+        },
+        {
+            "id": 1481,
+            "name": "Пионерский проспект",
+            "countryId": 1,
+            "cid": "pionerskii_prospekt"
+        },
+        {
+            "id": 1482,
+            "name": "Пицунда город",
+            "countryId": 5,
+            "cid": "picunda_gorod"
+        },
+        {
+            "id": 1495,
+            "name": "Полянка",
+            "countryId": 1,
+            "cid": "polyanka"
+        },
+        {
+            "id": 1496,
+            "name": "Поповка",
+            "countryId": 1,
+            "cid": "popovka"
+        },
+        {
+            "id": 1498,
+            "name": "Прасковеевка",
+            "countryId": 1,
+            "cid": "praskoveevka"
+        },
+        {
+            "id": 1501,
+            "name": "Приветное",
+            "countryId": 1,
+            "cid": "privetnoe"
+        },
+        {
+            "id": 1502,
+            "name": "Проспект мира",
+            "countryId": 1,
+            "cid": "prospekt_mira"
+        },
+        {
+            "id": 1512,
+            "name": "район Балашихинский",
+            "countryId": 1,
+            "cid": "balashihinskii_raion"
+        },
+        {
+            "id": 1513,
+            "name": "район Воскресенский",
+            "countryId": 1,
+            "cid": "voskresenskii_raion"
+        },
+        {
+            "id": 1515,
+            "name": "район Дмитровский",
+            "countryId": 1,
+            "cid": "dmitrovskii_raion"
+        },
+        {
+            "id": 1516,
+            "name": "район Домодедовский",
+            "countryId": 1,
+            "cid": "domodedovskii_raion"
+        },
+        {
+            "id": 1517,
+            "name": "район Железнодорожный",
+            "countryId": 1,
+            "cid": "zheleznodorozhnyi_raion"
+        },
+        {
+            "id": 1518,
+            "name": "район Звенигородский",
+            "countryId": 1,
+            "cid": "zvenigorodskii_raion"
+        },
+        {
+            "id": 1519,
+            "name": "район Истринский",
+            "countryId": 1,
+            "cid": "istrinskii_raion"
+        },
+        {
+            "id": 1520,
+            "name": "район Каширский",
+            "countryId": 1,
+            "cid": "kashirskii_raion"
+        },
+        {
+            "id": 1521,
+            "name": "район Клинский",
+            "countryId": 1,
+            "cid": "klinskii_raion"
+        },
+        {
+            "id": 1522,
+            "name": "район Коломенский",
+            "countryId": 1,
+            "cid": "kolomenskii_raion"
+        },
+        {
+            "id": 1523,
+            "name": "район Красногорский",
+            "countryId": 1,
+            "cid": "krasnogorskii_raion"
+        },
+        {
+            "id": 1524,
+            "name": "район Ленинский",
+            "countryId": 1,
+            "cid": "leninskii_raion"
+        },
+        {
+            "id": 1525,
+            "name": "район Луховицкий",
+            "countryId": 1,
+            "cid": "luhovickii_raion"
+        },
+        {
+            "id": 1526,
+            "name": "район Можайский",
+            "countryId": 1,
+            "cid": "mozhaiskii_raion"
+        },
+        {
+            "id": 1527,
+            "name": "район Мытищинский",
+            "countryId": 1,
+            "cid": "mytischinskii_raion"
+        },
+        {
+            "id": 1528,
+            "name": "район Наро-Фоминский",
+            "countryId": 1,
+            "cid": "naro-fominskii_raion"
+        },
+        {
+            "id": 1529,
+            "name": "район Ново-Переделкино",
+            "countryId": 1,
+            "cid": "raion_novo-peredelkino"
+        },
+        {
+            "id": 1530,
+            "name": "район Ногинский",
+            "countryId": 1,
+            "cid": "noginskii_raion"
+        },
+        {
+            "id": 1531,
+            "name": "район Одинцовский",
+            "countryId": 1,
+            "cid": "odincovskii_raion"
+        },
+        {
+            "id": 1532,
+            "name": "район Подольский",
+            "countryId": 1,
+            "cid": "podol'skii_raion"
+        },
+        {
+            "id": 1533,
+            "name": "район Пушкинский",
+            "countryId": 1,
+            "cid": "pushkinskii_raion"
+        },
+        {
+            "id": 1534,
+            "name": "район Раменский",
+            "countryId": 1,
+            "cid": "ramenskii_raion"
+        },
+        {
+            "id": 1535,
+            "name": "район Рузский",
+            "countryId": 1,
+            "cid": "ruzskii_raion"
+        },
+        {
+            "id": 1536,
+            "name": "район Сергиево-Посадский",
+            "countryId": 1,
+            "cid": "sergievo-posadskii_raion"
+        },
+        {
+            "id": 1537,
+            "name": "район Серпуховской",
+            "countryId": 1,
+            "cid": "serpuhovskii_raion"
+        },
+        {
+            "id": 1538,
+            "name": "район Солнечногорский",
+            "countryId": 1,
+            "cid": "solnechnogorskii_raion"
+        },
+        {
+            "id": 1539,
+            "name": "район Ступинский",
+            "countryId": 1,
+            "cid": "stupinskii_raion"
+        },
+        {
+            "id": 1540,
+            "name": "район Талдомский",
+            "countryId": 1,
+            "cid": "taldomskii_raion"
+        },
+        {
+            "id": 1541,
+            "name": "район Химки",
+            "countryId": 1,
+            "cid": "himki_gorodskoi_okrug"
+        },
+        {
+            "id": 1542,
+            "name": "район Чеховский",
+            "countryId": 1,
+            "cid": "chehovskii_raion"
+        },
+        {
+            "id": 1543,
+            "name": "район Шатурский",
+            "countryId": 1,
+            "cid": "shaturskii_raion"
+        },
+        {
+            "id": 1544,
+            "name": "район Щелковский",
+            "countryId": 1,
+            "cid": "schelkovskii_raion"
+        },
+        {
+            "id": 1554,
+            "name": "Регионы России",
+            "countryId": 1,
+            "cid": "regiony_rossii"
+        },
+        {
+            "id": 1559,
+            "name": "Роза Хутор",
+            "countryId": 1,
+            "cid": "roza_hutor"
+        },
+        {
+            "id": 1560,
+            "name": "Роза Хутор ГК",
+            "countryId": 1,
+            "cid": "roza_hutor_gk"
+        },
+        {
+            "id": 1565,
+            "name": "Ростовская область",
+            "countryId": 1,
+            "cid": "rostovskaya_oblast'"
+        },
+        {
+            "id": 1569,
+            "name": "Архангельская область, экскурсии",
+            "countryId": 1,
+            "cid": "russkii_sever__ekskurs"
+        },
+        {
+            "id": 1570,
+            "name": "Рыбачье",
+            "countryId": 1,
+            "cid": "rybach'e"
+        },
+        {
+            "id": 1576,
+            "name": "Саирме",
+            "countryId": 13,
+            "cid": "sairme"
+        },
+        {
+            "id": 1577,
+            "name": "Саки, город",
+            "countryId": 1,
+            "cid": "saki__gorod"
+        },
+        {
+            "id": 1579,
+            "name": "Санкт-Петербург, экскурсии",
+            "countryId": 1,
+            "cid": "sankt-peterburg__ekskurs"
+        },
+        {
+            "id": 1583,
+            "name": "Сатера",
+            "countryId": 1,
+            "cid": "satera"
+        },
+        {
+            "id": 1585,
+            "name": "Сахалин, гостиницы",
+            "countryId": 1,
+            "cid": "sahalin__gostinicy"
+        },
+        {
+            "id": 1586,
+            "name": "Светлогорск, экскурсии",
+            "countryId": 1,
+            "cid": "svetlogorsk__ekskursii"
+        },
+        {
+            "id": 1590,
+            "name": "Севастополь, город",
+            "countryId": 1,
+            "cid": "sevastopol'__gorod"
+        },
+        {
+            "id": 1592,
+            "name": "Северный Кавказ, курорты",
+            "countryId": 1,
+            "cid": "severnyi_kavkaz__kurorty"
+        },
+        {
+            "id": 1598,
+            "name": "Семидворье",
+            "countryId": 1,
+            "cid": "semidvor'e"
+        },
+        {
+            "id": 1608,
+            "name": "Симеиз",
+            "countryId": 1,
+            "cid": "simeiz"
+        },
+        {
+            "id": 1609,
+            "name": "Симеиз-2",
+            "countryId": 1,
+            "cid": "simeiz-2"
+        },
+        {
+            "id": 1612,
+            "name": "Славянский бульвар",
+            "countryId": 1,
+            "cid": "slavyanskii_bul'var"
+        },
+        {
+            "id": 1615,
+            "name": "Смоленская область",
+            "countryId": 1,
+            "cid": "smolenskaya_oblast'"
+        },
+        {
+            "id": 1618,
+            "name": "Сокольники",
+            "countryId": 1,
+            "cid": "sokol'niki"
+        },
+        {
+            "id": 1624,
+            "name": "Сочи центр",
+            "countryId": 1,
+            "cid": "sochi_centr"
+        },
+        {
+            "id": 1635,
+            "name": "Судак, город",
+            "countryId": 1,
+            "cid": "sudak__gorod"
+        },
+        {
+            "id": 1638,
+            "name": "Сукко",
+            "countryId": 1,
+            "cid": "sukko"
+        },
+        {
+            "id": 1639,
+            "name": "Сухаревская",
+            "countryId": 1,
+            "cid": "suharevskaya"
+        },
+        {
+            "id": 1640,
+            "name": "Сухум город",
+            "countryId": 5,
+            "cid": "suhum_gorod"
+        },
+        {
+            "id": 1650,
+            "name": "Тверская область",
+            "countryId": 1,
+            "cid": "tverskaya_oblast'"
+        },
+        {
+            "id": 1658,
+            "name": "Толстый мыс",
+            "countryId": 1,
+            "cid": "tolstyi_mys"
+        },
+        {
+            "id": 1660,
+            "name": "Тонкий мыс",
+            "countryId": 1,
+            "cid": "tonkii_mys"
+        },
+        {
+            "id": 1663,
+            "name": "Третьяковская",
+            "countryId": 1,
+            "cid": "tret'yakovskaya"
+        },
+        {
+            "id": 1664,
+            "name": "Трубная",
+            "countryId": 1,
+            "cid": "trubnaya"
+        },
+        {
+            "id": 1673,
+            "name": "Узбекистан, отели",
+            "countryId": 6,
+            "cid": "uzbekistan__oteli"
+        },
+        {
+            "id": 1681,
+            "name": "Улица 1905 года",
+            "countryId": 1,
+            "cid": "ulica_1905_goda"
+        },
+        {
+            "id": 1683,
+            "name": "Урал и Сибирь",
+            "countryId": 1,
+            "cid": "ural_i_sibir'"
+        },
+        {
+            "id": 1689,
+            "name": "Усть-Качка курорт",
+            "countryId": 1,
+            "cid": "ust'-kachka"
+        },
+        {
+            "id": 1691,
+            "name": "Уч-Дере",
+            "countryId": 1,
+            "cid": "uch-dere"
+        },
+        {
+            "id": 1692,
+            "name": "Феодосия, город",
+            "countryId": 1,
+            "cid": "feodosiya__gorod"
+        },
+        {
+            "id": 1695,
+            "name": "Форос",
+            "countryId": 1,
+            "cid": "foros"
+        },
+        {
+            "id": 1704,
+            "name": "Холодная речка (Гагра)",
+            "countryId": 5,
+            "cid": "holodnaya_rechka"
+        },
+        {
+            "id": 1705,
+            "name": "Хостинский район",
+            "countryId": 1,
+            "cid": "hostinskii_raion"
+        },
+        {
+            "id": 1707,
+            "name": "Цандрипш (Гагра)",
+            "countryId": 5,
+            "cid": "candripsh"
+        },
+        {
+            "id": 1710,
+            "name": "Цитрусовый совхоз (Пицунда)",
+            "countryId": 5,
+            "cid": "citrusovyi_sovhoz"
+        },
+        {
+            "id": 1725,
+            "name": "Чувашская республика",
+            "countryId": 1,
+            "cid": "chuvashiya"
+        },
+        {
+            "id": 1728,
+            "name": "Шабран",
+            "countryId": 3,
+            "cid": "shabran"
+        },
+        {
+            "id": 1732,
+            "name": "Шепси",
+            "countryId": 1,
+            "cid": "shepsi"
+        },
+        {
+            "id": 1733,
+            "name": "Широкая балка",
+            "countryId": 1,
+            "cid": "shirokaya_balka"
+        },
+        {
+            "id": 1735,
+            "name": "шоссе Варшавское",
+            "countryId": 1,
+            "cid": "varshavskoe_shossse"
+        },
+        {
+            "id": 1736,
+            "name": "шоссе Волоколамское",
+            "countryId": 1,
+            "cid": "volokolamskoe_shosse"
+        },
+        {
+            "id": 1737,
+            "name": "шоссе Горьковское",
+            "countryId": 1,
+            "cid": "gor'kovskoe_shosse"
+        },
+        {
+            "id": 1738,
+            "name": "шоссе Дмитровское",
+            "countryId": 1,
+            "cid": "dmitrovskoe_shosse"
+        },
+        {
+            "id": 1739,
+            "name": "шоссе Егорьевское",
+            "countryId": 1,
+            "cid": "egor'evskoe_shosse"
+        },
+        {
+            "id": 1740,
+            "name": "шоссе Калужское",
+            "countryId": 1,
+            "cid": "kaluzhskoe_shosse"
+        },
+        {
+            "id": 1741,
+            "name": "шоссе Каширское",
+            "countryId": 1,
+            "cid": "kashirskoe_shosse"
+        },
+        {
+            "id": 1742,
+            "name": "шоссе Киевское",
+            "countryId": 1,
+            "cid": "kievskoe_shosse"
+        },
+        {
+            "id": 1743,
+            "name": "шоссе Ленинградское",
+            "countryId": 1,
+            "cid": "leningradskoe_shosse"
+        },
+        {
+            "id": 1744,
+            "name": "шоссе Минское",
+            "countryId": 1,
+            "cid": "minskoe_shosse"
+        },
+        {
+            "id": 1745,
+            "name": "шоссе Можайское",
+            "countryId": 1,
+            "cid": "mozhaiskoe_shosse"
+        },
+        {
+            "id": 1746,
+            "name": "шоссе Новорижское",
+            "countryId": 1,
+            "cid": "novorizhskoe_shosse"
+        },
+        {
+            "id": 1747,
+            "name": "шоссе Новорязанское",
+            "countryId": 1,
+            "cid": "novoryazanskoe_shosse"
+        },
+        {
+            "id": 1748,
+            "name": "шоссе Осташковское",
+            "countryId": 1,
+            "cid": "ostashkovskoe_shosse"
+        },
+        {
+            "id": 1749,
+            "name": "шоссе Пятницкое",
+            "countryId": 1,
+            "cid": "pyatnickoe_shosse"
+        },
+        {
+            "id": 1750,
+            "name": "шоссе Рублево-Успенское",
+            "countryId": 1,
+            "cid": "rublevo-uspenskoe_shosse"
+        },
+        {
+            "id": 1751,
+            "name": "шоссе Рязанское",
+            "countryId": 1,
+            "cid": "ryazanskoe_shosse"
+        },
+        {
+            "id": 1752,
+            "name": "шоссе Симферопольское",
+            "countryId": 1,
+            "cid": "simferopol'skoe_shosse"
+        },
+        {
+            "id": 1753,
+            "name": "шоссе Щелковское",
+            "countryId": 1,
+            "cid": "schelkovskoe_shosse"
+        },
+        {
+            "id": 1754,
+            "name": "шоссе Ярославское",
+            "countryId": 1,
+            "cid": "yaroslavskoe_shosse"
+        },
+        {
+            "id": 1760,
+            "name": "Эсто-Садок",
+            "countryId": 1,
+            "cid": "esto-sadok"
+        },
+        {
+            "id": 1764,
+            "name": "Юго-Западная",
+            "countryId": 1,
+            "cid": "yugo-zapadnaya"
+        },
+        {
+            "id": 1772,
+            "name": "Якорная щель",
+            "countryId": 1,
+            "cid": "yakornaya_schel'"
+        },
+        {
+            "id": 1776,
+            "name": "Ялта, город",
+            "countryId": 1,
+            "cid": "yalta__gorod"
+        },
+        {
+            "id": 1777,
+            "name": "Ялта, центр",
+            "countryId": 1,
+            "cid": "yalta__centr"
+        },
+        {
+            "id": 1780,
+            "name": "Янтарный",
+            "countryId": 1,
+            "cid": "yantarnyi"
+        },
+        {
+            "id": 1786,
+            "name": "Волгоград, гостиницы",
+            "countryId": 1,
+            "cid": "volgograd__gostinicy"
+        },
+        {
+            "id": 1787,
+            "name": "Ленинградская область",
+            "countryId": 1,
+            "cid": "len_oblast'"
+        },
+        {
+            "id": 1788,
+            "name": "Санкт-Петербург",
+            "countryId": 1,
+            "cid": "sankt-peterburg"
+        },
+        {
+            "id": 1790,
+            "name": "Переславль-Залесский гостиницы",
+            "countryId": 1,
+            "cid": "pereslavl'_gostinicy"
+        },
+        {
+            "id": 1791,
+            "name": "Петрозаводск, гостиницы",
+            "countryId": 1,
+            "cid": "petrozavodsk__gostinicy"
+        },
+        {
+            "id": 1792,
+            "name": "Владимир, гостиницы",
+            "countryId": 1,
+            "cid": "vladimir__gostinicy"
+        },
+        {
+            "id": 1793,
+            "name": "Псков, гостиницы",
+            "countryId": 1,
+            "cid": "pskov_gostinicy"
+        },
+        {
+            "id": 1796,
+            "name": "Пермь, гостиницы",
+            "countryId": 1,
+            "cid": "perm'__gostinicy"
+        },
+        {
+            "id": 1798,
+            "name": "Прибрежное",
+            "countryId": 1,
+            "cid": "pribrezhnoe"
+        },
+        {
+            "id": 1799,
+            "name": "Симферополь, гостиницы",
+            "countryId": 1,
+            "cid": "simferopol'__gostinicy"
+        },
+        {
+            "id": 1800,
+            "name": "Нур-Султан",
+            "countryId": 9,
+            "cid": "astana"
+        },
+        {
+            "id": 1801,
+            "name": "Тула, гостиницы",
+            "countryId": 1,
+            "cid": "tula__gostinicy"
+        },
+        {
+            "id": 1802,
+            "name": "Канака",
+            "countryId": 1,
+            "cid": "kanaka"
+        },
+        {
+            "id": 1804,
+            "name": "Саки, море",
+            "countryId": 1,
+            "cid": "saki__more"
+        },
+        {
+            "id": 1805,
+            "name": "Чеченская республика, гостиницы",
+            "countryId": 1,
+            "cid": "chechenskaya_respublika"
+        },
+        {
+            "id": 1806,
+            "name": "Новокузнецк, гостиницы",
+            "countryId": 1,
+            "cid": "novokuzneck__gostinicy"
+        },
+        {
+            "id": 1808,
+            "name": "Темрюкский район",
+            "countryId": 1,
+            "cid": "temryukskii_raion"
+        },
+        {
+            "id": 1809,
+            "name": "Курск, гостиницы",
+            "countryId": 1,
+            "cid": "kursk__gostinicy"
+        },
+        {
+            "id": 1810,
+            "name": "Белгород, гостиницы",
+            "countryId": 1,
+            "cid": "belgorod__gostinicy"
+        },
+        {
+            "id": 1811,
+            "name": "Тамбов, гостиницы",
+            "countryId": 1,
+            "cid": "tambov__gostinicy"
+        },
+        {
+            "id": 1812,
+            "name": "Самара, гостиницы",
+            "countryId": 1,
+            "cid": "samara"
+        },
+        {
+            "id": 1813,
+            "name": "Алматы",
+            "countryId": 9,
+            "cid": "almaty"
+        },
+        {
+            "id": 1814,
+            "name": "Архангельская область",
+            "countryId": 1,
+            "cid": "arhangel'skaya_oblast'"
+        },
+        {
+            "id": 1815,
+            "name": "Орел, гостиницы",
+            "countryId": 1,
+            "cid": "orel__gostinicy"
+        },
+        {
+            "id": 1816,
+            "name": "Ставропольский кр (без КМВ)",
+            "countryId": 1,
+            "cid": "stavropol'skii_kr"
+        },
+        {
+            "id": 1819,
+            "name": "Хабаровск, гостиницы",
+            "countryId": 1,
+            "cid": "habarovsk__gostinicy"
+        },
+        {
+            "id": 1820,
+            "name": "Шерегеш",
+            "countryId": 1,
+            "cid": "sheregesh"
+        },
+        {
+            "id": 1821,
+            "name": "Омск, гостиницы",
+            "countryId": 1,
+            "cid": "omsk__gostinicy"
+        },
+        {
+            "id": 1822,
+            "name": "Ульяновск, гостиницы",
+            "countryId": 1,
+            "cid": "ul'yanovsk__gostinicy"
+        },
+        {
+            "id": 1823,
+            "name": "Кызыл, гостиницы",
+            "countryId": 1,
+            "cid": "kyzyl__gostinicy"
+        },
+        {
+            "id": 1824,
+            "name": "Якутск, гостиницы",
+            "countryId": 1,
+            "cid": "yakutsk__gostinicy"
+        },
+        {
+            "id": 1825,
+            "name": "Пенза, гостиницы",
+            "countryId": 1,
+            "cid": "penza__gostinicy"
+        },
+        {
+            "id": 1827,
+            "name": "Кемерово, гостиницы",
+            "countryId": 1,
+            "cid": "kemerovo__gostinicy"
+        },
+        {
+            "id": 1828,
+            "name": "Псков, гостиницы",
+            "countryId": 1,
+            "cid": "pskov__gostinicy"
+        },
+        {
+            "id": 1829,
+            "name": "Пересыпь",
+            "countryId": 1,
+            "cid": "peresyp'"
+        },
+        {
+            "id": 1831,
+            "name": "Коряжма, гостиницы",
+            "countryId": 1,
+            "cid": "koryazhma__gostiniy"
+        },
+        {
+            "id": 1832,
+            "name": "Киров, гостиницы",
+            "countryId": 1,
+            "cid": "kirov__gostinicy"
+        },
+        {
+            "id": 1833,
+            "name": "Чебоксары, гостиницы",
+            "countryId": 1,
+            "cid": "cheboksary__gostinicy"
+        },
+        {
+            "id": 1834,
+            "name": "Красноярск, гостиницы",
+            "countryId": 1,
+            "cid": "krasnoyarsk__gostinicy"
+        },
+        {
+            "id": 1836,
+            "name": "Новороссийск, гостиницы",
+            "countryId": 1,
+            "cid": "novorossiisk__gostinicy"
+        },
+        {
+            "id": 1838,
+            "name": "Смоленск, гостиницы",
+            "countryId": 1,
+            "cid": "smolensk__gostinicy"
+        },
+        {
+            "id": 1839,
+            "name": "Тверь, гостиницы",
+            "countryId": 1,
+            "cid": "tver'__gostinicy"
+        },
+        {
+            "id": 1842,
+            "name": "Мурманск, гостиницы",
+            "countryId": 1,
+            "cid": "murmansk__gostinicy"
+        },
+        {
+            "id": 1843,
+            "name": "Тюмень",
+            "countryId": 1,
+            "cid": "tyumen'"
+        },
+        {
+            "id": 1844,
+            "name": "Мурманская область",
+            "countryId": 1,
+            "cid": "murmanskaya_oblast'"
+        },
+        {
+            "id": 1845,
+            "name": "Тимашевск, гостиницы",
+            "countryId": 1,
+            "cid": "timashevsk__gostinicy"
+        },
+        {
+            "id": 1846,
+            "name": "Челябинск, гостиницы",
+            "countryId": 1,
+            "cid": "chelyabinsk__gostinicy"
+        },
+        {
+            "id": 1847,
+            "name": "Набережные Челны, гостиницы",
+            "countryId": 1,
+            "cid": "naberezhnye_chelny__g-cy"
+        },
+        {
+            "id": 1848,
+            "name": "Белгородская область",
+            "countryId": 1,
+            "cid": "belgorodskaya_oblast'"
+        },
+        {
+            "id": 1849,
+            "name": "Орджоникидзе",
+            "countryId": 1,
+            "cid": "ordzhonikidze"
+        },
+        {
+            "id": 1850,
+            "name": "Курган, гостиницы",
+            "countryId": 1,
+            "cid": "kurgan__gostinicy"
+        },
+        {
+            "id": 1851,
+            "name": "Московская область",
+            "countryId": 1,
+            "cid": "moskovskaya_oblast'"
+        },
+        {
+            "id": 1852,
+            "name": "с.Подгорное",
+            "countryId": 1,
+            "cid": "s_podgornoe"
+        },
+        {
+            "id": 1853,
+            "name": "Казань",
+            "countryId": 1,
+            "cid": "kazan'"
+        },
+        {
+            "id": 1855,
+            "name": "Ростов Великий, гостиницы",
+            "countryId": 1,
+            "cid": "rostov_velikii_gostinicy"
+        },
+        {
+            "id": 1856,
+            "name": "Елабуга, гостиницы",
+            "countryId": 1,
+            "cid": "elabuga__gostinicy"
+        },
+        {
+            "id": 1857,
+            "name": "Ижевск, гостиницы",
+            "countryId": 1,
+            "cid": "izhevsk__gostinicy"
+        },
+        {
+            "id": 1858,
+            "name": "Иваново,гостиницы",
+            "countryId": 1,
+            "cid": "ivanovo_gostinicy"
+        },
+        {
+            "id": 1859,
+            "name": "Ленкорань",
+            "countryId": 3,
+            "cid": "lenkoran'"
+        },
+        {
+            "id": 1860,
+            "name": "Бердск",
+            "countryId": 1,
+            "cid": "berdsk"
+        },
+        {
+            "id": 1861,
+            "name": "Бийск",
+            "countryId": 1,
+            "cid": "biisk"
+        },
+        {
+            "id": 1862,
+            "name": "Выборг",
+            "countryId": 1,
+            "cid": "vyborg"
+        },
+        {
+            "id": 1863,
+            "name": "Дагестан республика",
+            "countryId": 1,
+            "cid": "dagestan"
+        },
+        {
+            "id": 1864,
+            "name": "Майкоп",
+            "countryId": 1,
+            "cid": "maikop"
+        },
+        {
+            "id": 1865,
+            "name": "Межводное",
+            "countryId": 1,
+            "cid": "mezhvodnoe"
+        },
+        {
+            "id": 1866,
+            "name": "Республика Ингушетия",
+            "countryId": 1,
+            "cid": "respublika_ingushetiya"
+        },
+        {
+            "id": 1867,
+            "name": "Хакасия,гостиницы",
+            "countryId": 1,
+            "cid": "abakan__gostinicy"
+        },
+        {
+            "id": 1868,
+            "name": "Хакасия,гостиницы",
+            "countryId": 1,
+            "cid": "hakasiya_gostinicy"
+        },
+        {
+            "id": 1869,
+            "name": "Иркутск, гостиницы",
+            "countryId": 1,
+            "cid": "irkutsk__gostinicy"
+        },
+        {
+            "id": 1870,
+            "name": "Миасс",
+            "countryId": 1,
+            "cid": "miass"
+        },
+        {
+            "id": 1871,
+            "name": " Северная Осетия-Алания республика",
+            "countryId": 1,
+            "cid": "severnaya_osetiya"
+        },
+        {
+            "id": 1872,
+            "name": "Магнитогорск, гостиницы",
+            "countryId": 1,
+            "cid": "magnitogorsk__gostinicy"
+        },
+        {
+            "id": 1874,
+            "name": "Бурятия Республика",
+            "countryId": 1,
+            "cid": "buryatiya_respublika"
+        },
+        {
+            "id": 1875,
+            "name": "Липецк,гостиницы",
+            "countryId": 1,
+            "cid": "lipeck_gostinicy"
+        },
+        {
+            "id": 1876,
+            "name": "Ангарск",
+            "countryId": 1,
+            "cid": "angarsk"
+        },
+        {
+            "id": 1877,
+            "name": "Подмосковье, гостиницы",
+            "countryId": 1,
+            "cid": "podmoskov'e_gostinicy"
+        },
+        {
+            "id": 1879,
+            "name": "Курская область",
+            "countryId": 1,
+            "cid": "kurskaya_oblast'"
+        },
+        {
+            "id": 1880,
+            "name": "Орловская область",
+            "countryId": 1,
+            "cid": "orlovskaya_oblast'"
+        },
+        {
+            "id": 1881,
+            "name": "Йошкар-Ола, Гостиницы",
+            "countryId": 1,
+            "cid": "ioshkar-ola__gostinicy"
+        },
+        {
+            "id": 1882,
+            "name": "Сургут,гостиницы",
+            "countryId": 1,
+            "cid": "surgut_gostinicy"
+        },
+        {
+            "id": 1883,
+            "name": "Томск, гостиницы",
+            "countryId": 1,
+            "cid": "tomsk__gostinicy"
+        },
+        {
+            "id": 1884,
+            "name": "Чита, гостиницы",
+            "countryId": 1,
+            "cid": "chita__gostinicy"
+        },
+        {
+            "id": 1885,
+            "name": "Амурская область",
+            "countryId": 1,
+            "cid": "amurskaya_oblast'"
+        },
+        {
+            "id": 1886,
+            "name": "Благовещенск",
+            "countryId": 1,
+            "cid": "blagoveschensk"
+        },
+        {
+            "id": 1887,
+            "name": "Благовещенск, гостиницы",
+            "countryId": 1,
+            "cid": "blagoveschensk__gostinic"
+        },
+        {
+            "id": 1888,
+            "name": "Саранск, гостиницы",
+            "countryId": 1,
+            "cid": "saransk__gostinicy"
+        },
+        {
+            "id": 1890,
+            "name": "Кемерово",
+            "countryId": 1,
+            "cid": "kemerovo"
+        },
+        {
+            "id": 1891,
+            "name": "Альметьевск",
+            "countryId": 1,
+            "cid": "al'met'evsk"
+        },
+        {
+            "id": 1892,
+            "name": "Южная Озереевка",
+            "countryId": 1,
+            "cid": "yuzhnaya_ozereevka"
+        },
+        {
+            "id": 1893,
+            "name": "Новороссийск",
+            "countryId": 1,
+            "cid": "novorossiisk"
+        },
+        {
+            "id": 1894,
+            "name": "Белорецк",
+            "countryId": 1,
+            "cid": "beloreck"
+        },
+        {
+            "id": 1895,
+            "name": "Краснодарский край, экскурсии",
+            "countryId": 1,
+            "cid": "krasnodarskii_krai__eks"
+        },
+        {
+            "id": 1896,
+            "name": "ЗаРодину",
+            "countryId": 1,
+            "cid": "zarodinu"
+        },
+        {
+            "id": 1898,
+            "name": "Перевальное",
+            "countryId": 1,
+            "cid": "pereval'noe"
+        },
+        {
+            "id": 1899,
+            "name": "Оренбург, гостиницы",
+            "countryId": 1,
+            "cid": "orenburg__gostinicy"
+        },
+        {
+            "id": 1900,
+            "name": "Березовский",
+            "countryId": 1,
+            "cid": "berezovskii"
+        },
+        {
+            "id": 1901,
+            "name": "Исмаиллинский район",
+            "countryId": 3,
+            "cid": "ismaillinskii_raion"
+        },
+        {
+            "id": 1902,
+            "name": "Гянджа",
+            "countryId": 3,
+            "cid": "gyandzha"
+        },
+        {
+            "id": 1903,
+            "name": "Звенигово",
+            "countryId": 1,
+            "cid": "zvenigovo"
+        },
+        {
+            "id": 1904,
+            "name": "Марий Эл",
+            "countryId": 1,
+            "cid": "marii_el"
+        },
+        {
+            "id": 1905,
+            "name": "Апшеронский район",
+            "countryId": 1,
+            "cid": "apsheronskii_raion"
+        },
+        {
+            "id": 1908,
+            "name": "Андижан",
+            "countryId": 6,
+            "cid": "andizhan"
+        },
+        {
+            "id": 1909,
+            "name": "Альпика Сервис",
+            "countryId": 1,
+            "cid": "al'pika_servis"
+        },
+        {
+            "id": 1910,
+            "name": "Астана",
+            "countryId": 9,
+            "cid": "astana_3orj"
+        },
+        {
+            "id": 1911,
+            "name": "Соловецкий, гостиницы",
+            "countryId": 1,
+            "cid": "soloveckii__gostinicy"
+        },
+        {
+            "id": 1912,
+            "name": "Томская область",
+            "countryId": 1,
+            "cid": "tomskaya_oblast'"
+        },
+        {
+            "id": 1913,
+            "name": "Улан-Уде, гостиницы",
+            "countryId": 1,
+            "cid": "ulan-ude__gostinicy"
+        },
+        {
+            "id": 1914,
+            "name": "Архангельск, гостиницы",
+            "countryId": 1,
+            "cid": "arhangel'sk__gostinicy"
+        },
+        {
+            "id": 1915,
+            "name": "Магадан гостиницы",
+            "countryId": 1,
+            "cid": "magadan_gostinicy"
+        },
+        {
+            "id": 1916,
+            "name": "Тольятти, гостиницы",
+            "countryId": 1,
+            "cid": "tol'yatti__gostinicy"
+        },
+        {
+            "id": 1917,
+            "name": "Брянск, гостиницы",
+            "countryId": 1,
+            "cid": "bryansk__gostinicy"
+        },
+        {
+            "id": 1918,
+            "name": "Муром, гостиницы",
+            "countryId": 1,
+            "cid": "murom__gostinicy"
+        },
+        {
+            "id": 1920,
+            "name": "Сыктывкар, гостиницы",
+            "countryId": 1,
+            "cid": "syktyvkar__gostinicy"
+        },
+        {
+            "id": 1921,
+            "name": "Саратов, гостиницы",
+            "countryId": 1,
+            "cid": "saratov__gostinicy"
+        },
+        {
+            "id": 1922,
+            "name": "Северодвинск, гостиницы",
+            "countryId": 1,
+            "cid": "severodvinsk__gostinicy"
+        },
+        {
+            "id": 1925,
+            "name": "Череповец, гостиницы",
+            "countryId": 1,
+            "cid": "cherepovec__gostinicy"
+        },
+        {
+            "id": 1926,
+            "name": "Элиста, гостиницы",
+            "countryId": 1,
+            "cid": "elista__gostinicy"
+        },
+        {
+            "id": 1928,
+            "name": "Таганрог, гостиницы",
+            "countryId": 1,
+            "cid": "taganrog__gostinicy"
+        },
+        {
+            "id": 1929,
+            "name": "Ачинск ",
+            "countryId": 1,
+            "cid": "achinsk"
+        },
+        {
+            "id": 1930,
+            "name": "Тобольск",
+            "countryId": 1,
+            "cid": "tobol'sk"
+        },
+        {
+            "id": 1931,
+            "name": "Бурятия республика",
+            "countryId": 1,
+            "cid": "buryatiya"
+        },
+        {
+            "id": 1932,
+            "name": "Молчановский район",
+            "countryId": 1,
+            "cid": "molchanovskii_raion"
+        },
+        {
+            "id": 1933,
+            "name": "Парабельский район",
+            "countryId": 1,
+            "cid": "parabel'skii_raion"
+        },
+        {
+            "id": 1934,
+            "name": "Северск",
+            "countryId": 1,
+            "cid": "seversk"
+        },
+        {
+            "id": 1935,
+            "name": "Хабаровский край",
+            "countryId": 1,
+            "cid": "habarovskii_krai"
+        },
+        {
+            "id": 1937,
+            "name": "Губкинский",
+            "countryId": 1,
+            "cid": "gubkinskii"
+        },
+        {
+            "id": 1938,
+            "name": "Междуреченский",
+            "countryId": 1,
+            "cid": "mezhdurechenskii"
+        },
+        {
+            "id": 1939,
+            "name": "Новый Уренгой ",
+            "countryId": 1,
+            "cid": "novyi_urengoi"
+        },
+        {
+            "id": 1940,
+            "name": "Ноябрьск",
+            "countryId": 1,
+            "cid": "noyabr'sk"
+        },
+        {
+            "id": 1941,
+            "name": "Тарко-Сале",
+            "countryId": 1,
+            "cid": "tarko-sale"
+        },
+        {
+            "id": 1942,
+            "name": "Ханты-Мансийский Автономный Округ",
+            "countryId": 1,
+            "cid": "hmao"
+        },
+        {
+            "id": 1943,
+            "name": "Ямало-Ненецкий Автономный Округ",
+            "countryId": 1,
+            "cid": "yanao"
+        },
+        {
+            "id": 1944,
+            "name": "Сургут",
+            "countryId": 1,
+            "cid": "surgut"
+        },
+        {
+            "id": 1945,
+            "name": "Имени Лазо",
+            "countryId": 1,
+            "cid": "imeni_lazo"
+        },
+        {
+            "id": 1946,
+            "name": "Еврейская область",
+            "countryId": 1,
+            "cid": "evreiskaya_oblast'"
+        },
+        {
+            "id": 1947,
+            "name": "Кульдур",
+            "countryId": 1,
+            "cid": "kul'dur"
+        },
+        {
+            "id": 1948,
+            "name": "Тургояк",
+            "countryId": 1,
+            "cid": "turgoyak"
+        },
+        {
+            "id": 1949,
+            "name": "Еловое озеро",
+            "countryId": 1,
+            "cid": "elovoe_ozero"
+        },
+        {
+            "id": 1950,
+            "name": "Увильды",
+            "countryId": 1,
+            "cid": "uvil'dy"
+        },
+        {
+            "id": 1951,
+            "name": "Верхняя Салда",
+            "countryId": 1,
+            "cid": "verhnyaya_salda"
+        },
+        {
+            "id": 1952,
+            "name": "Биробиджан",
+            "countryId": 1,
+            "cid": "birobidzhan"
+        },
+        {
+            "id": 1953,
+            "name": "Карелия, гостиницы",
+            "countryId": 1,
+            "cid": "kareliya__gostinicy"
+        },
+        {
+            "id": 1954,
+            "name": "Челябинск",
+            "countryId": 1,
+            "cid": "chelyabinsk"
+        },
+        {
+            "id": 1955,
+            "name": "Донецк",
+            "countryId": 1,
+            "cid": "doneck"
+        },
+        {
+            "id": 1956,
+            "name": "Донецкая Народная Республика",
+            "countryId": 1,
+            "cid": "dnr"
+        },
+        {
+            "id": 1957,
+            "name": "Барабинск",
+            "countryId": 1,
+            "cid": "barabinsk"
+        },
+        {
+            "id": 1958,
+            "name": "Чебаркуль озеро",
+            "countryId": 1,
+            "cid": "chebarkul'_ozero"
+        },
+        {
+            "id": 1959,
+            "name": "Надым",
+            "countryId": 1,
+            "cid": "nadym"
+        },
+        {
+            "id": 1960,
+            "name": "Губинский район",
+            "countryId": 3,
+            "cid": "gubinskii_raion"
+        },
+        {
+            "id": 1961,
+            "name": "Южноуральск",
+            "countryId": 1,
+            "cid": "yuzhnoural'sk"
+        },
+        {
+            "id": 1962,
+            "name": "Миндальное",
+            "countryId": 1,
+            "cid": "mindal'noe"
+        },
+        {
+            "id": 1964,
+            "name": "Зюраткуль",
+            "countryId": 1,
+            "cid": "zyuratkul'"
+        },
+        {
+            "id": 1965,
+            "name": "Талица",
+            "countryId": 1,
+            "cid": "talica"
+        },
+        {
+            "id": 1966,
+            "name": "Белово",
+            "countryId": 1,
+            "cid": "belovo"
+        },
+        {
+            "id": 1968,
+            "name": "Салехард",
+            "countryId": 1,
+            "cid": "salehard"
+        },
+        {
+            "id": 1969,
+            "name": "Екатеринбург",
+            "countryId": 1,
+            "cid": "ekaterinburg"
+        },
+        {
+            "id": 1970,
+            "name": "Режевской район",
+            "countryId": 1,
+            "cid": "rezhevskoi_raion"
+        },
+        {
+            "id": 1971,
+            "name": "Каменск-Уральский",
+            "countryId": 1,
+            "cid": "kamensk-ural'skii"
+        },
+        {
+            "id": 1972,
+            "name": "Артемовский",
+            "countryId": 1,
+            "cid": "artemovskii"
+        },
+        {
+            "id": 1973,
+            "name": "Асбест",
+            "countryId": 1,
+            "cid": "asbest"
+        },
+        {
+            "id": 1974,
+            "name": "Белоярский район",
+            "countryId": 1,
+            "cid": "beloyarskii_raion"
+        },
+        {
+            "id": 1975,
+            "name": "Белоярское водохранилище",
+            "countryId": 1,
+            "cid": "beloyarskoe_vodohr_"
+        },
+        {
+            "id": 1976,
+            "name": "Верхняя Пышма",
+            "countryId": 1,
+            "cid": "verhnyaya_pyshma"
+        },
+        {
+            "id": 1977,
+            "name": "Ежовая гора",
+            "countryId": 1,
+            "cid": "ezhovaya_gora"
+        },
+        {
+            "id": 1978,
+            "name": "Камышловский район",
+            "countryId": 1,
+            "cid": "kamyshlovskii_raion"
+        },
+        {
+            "id": 1979,
+            "name": "Леневка",
+            "countryId": 1,
+            "cid": "lenevka"
+        },
+        {
+            "id": 1980,
+            "name": "Нижние Серги ",
+            "countryId": 1,
+            "cid": "nizhnie_sergi"
+        },
+        {
+            "id": 1981,
+            "name": "Сысертский район",
+            "countryId": 1,
+            "cid": "syrsetskii_raion"
+        },
+        {
+            "id": 1982,
+            "name": "Таватуй озеро",
+            "countryId": 1,
+            "cid": "tavatui_ozero"
+        },
+        {
+            "id": 1983,
+            "name": "Алапаевск",
+            "countryId": 1,
+            "cid": "alapaevsk"
+        },
+        {
+            "id": 1984,
+            "name": "Ирбит",
+            "countryId": 1,
+            "cid": "irbit"
+        },
+        {
+            "id": 1985,
+            "name": "Первоуральский ГО",
+            "countryId": 1,
+            "cid": "pervoural'skii_go"
+        },
+        {
+            "id": 1986,
+            "name": "Рефтинское водохранилище",
+            "countryId": 1,
+            "cid": "reftinskoe_vodohranilisc"
+        },
+        {
+            "id": 1987,
+            "name": "Качканар",
+            "countryId": 1,
+            "cid": "kachkanar"
+        },
+        {
+            "id": 1988,
+            "name": "Ревда",
+            "countryId": 1,
+            "cid": "revda"
+        },
+        {
+            "id": 1989,
+            "name": "Серов",
+            "countryId": 1,
+            "cid": "serov"
+        },
+        {
+            "id": 1990,
+            "name": "Южный",
+            "countryId": 1,
+            "cid": "yuzhnyi"
+        },
+        {
+            "id": 1992,
+            "name": "Таймыр п-ов",
+            "countryId": 1,
+            "cid": "hatanga"
+        },
+        {
+            "id": 1993,
+            "name": "Кандрыкуль озеро",
+            "countryId": 1,
+            "cid": "kandrykul'_ozero"
+        },
+        {
+            "id": 1994,
+            "name": "Новосибирск",
+            "countryId": 1,
+            "cid": "novosibirsk"
+        },
+        {
+            "id": 1995,
+            "name": "Нижневартовск гостиницы",
+            "countryId": 1,
+            "cid": "nizhnevartovsk_gostinicy"
+        },
+        {
+            "id": 1996,
+            "name": "Нижний Тагил гостиницы",
+            "countryId": 1,
+            "cid": "nizhnii_tagil_gostinicy"
+        },
+        {
+            "id": 1997,
+            "name": "Ханка",
+            "countryId": 1,
+            "cid": "hanka"
+        },
+        {
+            "id": 1998,
+            "name": "Совет-квадже",
+            "countryId": 1,
+            "cid": "sovet-kvadzhe"
+        },
+        {
+            "id": 1999,
+            "name": "Свердловская область, экскурсии",
+            "countryId": 1,
+            "cid": "sverdlovskaya_oblast'_ek"
+        },
+        {
+            "id": 2000,
+            "name": "Нижний Тагил",
+            "countryId": 1,
+            "cid": "nizhnii_tagil"
+        },
+        {
+            "id": 2001,
+            "name": "Долинск",
+            "countryId": 1,
+            "cid": "dolinsk"
+        },
+        {
+            "id": 2002,
+            "name": "Сахалинская область",
+            "countryId": 1,
+            "cid": "sahalinskaya_oblast'"
+        },
+        {
+            "id": 2003,
+            "name": "Магнитогорск",
+            "countryId": 1,
+            "cid": "magnitogorsk"
+        },
+        {
+            "id": 2004,
+            "name": "Елизово",
+            "countryId": 1,
+            "cid": "elizovo"
+        },
+        {
+            "id": 2005,
+            "name": "Камчатский край",
+            "countryId": 1,
+            "cid": "kamchatskii_krai"
+        },
+        {
+            "id": 2006,
+            "name": "Новокузнецк",
+            "countryId": 1,
+            "cid": "novokuzneck"
+        },
+        {
+            "id": 2007,
+            "name": "Нижневартовск",
+            "countryId": 1,
+            "cid": "nizhnevartovsk"
+        },
+        {
+            "id": 2008,
+            "name": "Кировск гостиницы",
+            "countryId": 1,
+            "cid": "kirovsk_gostinicy"
+        },
+        {
+            "id": 2009,
+            "name": "Северный Кавказ, активные туры",
+            "countryId": 1,
+            "cid": "severnyi_kavkaz__aktiv"
+        },
+        {
+            "id": 2010,
+            "name": "Ливадия.",
+            "countryId": 1,
+            "cid": "livadiya_"
+        },
+        {
+            "id": 2012,
+            "name": "Бахчисарай",
+            "countryId": 1,
+            "cid": "bahchisarai"
+        },
+        {
+            "id": 2013,
+            "name": "Ходжа Сала",
+            "countryId": 1,
+            "cid": "hodzha_sala"
+        },
+        {
+            "id": 2014,
+            "name": "Находка",
+            "countryId": 1,
+            "cid": "nahodka"
+        },
+        {
+            "id": 2015,
+            "name": "Вологда, гостиницы",
+            "countryId": 1,
+            "cid": "vologda__gostinicy"
+        },
+        {
+            "id": 2016,
+            "name": "Артем",
+            "countryId": 1,
+            "cid": "artem"
+        },
+        {
+            "id": 2018,
+            "name": "Запорожская область",
+            "countryId": 1,
+            "cid": "zaporozhskaya_oblast'"
+        },
+        {
+            "id": 2019,
+            "name": "Кирилловка",
+            "countryId": 1,
+            "cid": "kirillovka"
+        },
+        {
+            "id": 2020,
+            "name": "Верхотурье",
+            "countryId": 1,
+            "cid": "verhotur'e"
+        },
+        {
+            "id": 2021,
+            "name": "Армавир",
+            "countryId": 1,
+            "cid": "armavir"
+        },
+        {
+            "id": 2022,
+            "name": "Белогорск",
+            "countryId": 1,
+            "cid": "belogorsk"
+        },
+        {
+            "id": 2023,
+            "name": "Белогорский район",
+            "countryId": 1,
+            "cid": "belogorskii_r-n"
+        },
+        {
+            "id": 2024,
+            "name": "Паратунка",
+            "countryId": 1,
+            "cid": "paratunka"
+        },
+        {
+            "id": 2025,
+            "name": "Ленинский район ",
+            "countryId": 1,
+            "cid": "leninskii_r-n"
+        },
+        {
+            "id": 2026,
+            "name": "Курильские о-ва, гост-цы",
+            "countryId": 1,
+            "cid": "kuril'skie_o-va__gost-cy"
+        },
+        {
+            "id": 2027,
+            "name": "Ханты-Мансийск",
+            "countryId": 1,
+            "cid": "hanty-mansiisk"
+        },
+        {
+            "id": 2028,
+            "name": "Бобруйск, гостиницы",
+            "countryId": 4,
+            "cid": "bobruisk__gostinicy"
+        },
+        {
+            "id": 2029,
+            "name": "Уссурийск",
+            "countryId": 1,
+            "cid": "ussuriisk"
+        },
+        {
+            "id": 2030,
+            "name": "Бердянск",
+            "countryId": 1,
+            "cid": "berdyansk"
+        },
+        {
+            "id": 2031,
+            "name": "Бахчисарай,город",
+            "countryId": 1,
+            "cid": "bahchisarai_gorod"
+        },
+        {
+            "id": 2032,
+            "name": "Сызрань гостиницы",
+            "countryId": 1,
+            "cid": "syzran'_gostinicy"
+        },
+        {
+            "id": 2033,
+            "name": "Телецкое",
+            "countryId": 1,
+            "cid": "teleckoe"
+        },
+        {
+            "id": 2034,
+            "name": "Учалинский район",
+            "countryId": 1,
+            "cid": "uchalinskii_raion"
+        },
+        {
+            "id": 2035,
+            "name": "Дюртюлинский район",
+            "countryId": 1,
+            "cid": "dyurtyulinskii_raion"
+        },
+        {
+            "id": 2036,
+            "name": "Краснокамский район",
+            "countryId": 1,
+            "cid": "krasnokamskii_raion"
+        },
+        {
+            "id": 2037,
+            "name": "Акташ",
+            "countryId": 1,
+            "cid": "aktash"
+        },
+        {
+            "id": 2038,
+            "name": "Мегион",
+            "countryId": 1,
+            "cid": "megion"
+        },
+        {
+            "id": 2040,
+            "name": "Кизильский район",
+            "countryId": 1,
+            "cid": "kizil'skii_raion"
+        },
+        {
+            "id": 2041,
+            "name": "Кунашакский район",
+            "countryId": 1,
+            "cid": "kunashakskii_raion"
+        },
+        {
+            "id": 2042,
+            "name": "Солнечная долина ГК",
+            "countryId": 1,
+            "cid": "solnechnaya_dolina_gk"
+        },
+        {
+            "id": 2043,
+            "name": "Аксай, гостиницы",
+            "countryId": 1,
+            "cid": "aksai__gostinicy"
+        },
+        {
+            "id": 2044,
+            "name": "Апатиты, гостиницы",
+            "countryId": 1,
+            "cid": "apatity__gostinicy"
+        },
+        {
+            "id": 2045,
+            "name": "Искитим, гостиницы",
+            "countryId": 1,
+            "cid": "iskitin__gostinicy"
+        },
+        {
+            "id": 2046,
+            "name": "Алтайский район",
+            "countryId": 1,
+            "cid": "altaiskii_raion"
+        },
+        {
+            "id": 2047,
+            "name": "Илекский район",
+            "countryId": 1,
+            "cid": "ilekskii_raion"
+        },
+        {
+            "id": 2048,
+            "name": "Кувандыкский район",
+            "countryId": 1,
+            "cid": "kuvandyk"
+        },
+        {
+            "id": 2049,
+            "name": "Новоорский район",
+            "countryId": 1,
+            "cid": "novoorskii_raion"
+        },
+        {
+            "id": 2050,
+            "name": "Оренбургская область",
+            "countryId": 1,
+            "cid": "orenburgskaya_oblast'"
+        },
+        {
+            "id": 2051,
+            "name": "Бирюзовая Катунь",
+            "countryId": 1,
+            "cid": "biryuzovaya_katun'"
+        },
+        {
+            "id": 2052,
+            "name": "Кызыл",
+            "countryId": 1,
+            "cid": "kyzyl"
+        },
+        {
+            "id": 2053,
+            "name": "Манжерок",
+            "countryId": 1,
+            "cid": "manzherok"
+        },
+        {
+            "id": 2054,
+            "name": "Нурлант, гостиницы",
+            "countryId": 1,
+            "cid": "nurlant__gostinicy"
+        },
+        {
+            "id": 2055,
+            "name": "Республика Тыва",
+            "countryId": 1,
+            "cid": "respublika_tyva"
+        },
+        {
+            "id": 2056,
+            "name": "Саяногорск",
+            "countryId": 1,
+            "cid": "sayanogorsk"
+        },
+        {
+            "id": 2057,
+            "name": "Хакасия",
+            "countryId": 1,
+            "cid": "hakasiya"
+        },
+        {
+            "id": 2058,
+            "name": "Чемал",
+            "countryId": 1,
+            "cid": "chemal"
+        },
+        {
+            "id": 2059,
+            "name": "Ширинский район",
+            "countryId": 1,
+            "cid": "shirinskii_raion"
+        },
+        {
+            "id": 2061,
+            "name": "Орск, гостиницы",
+            "countryId": 1,
+            "cid": "orsk__gostinicy"
+        },
+        {
+            "id": 2062,
+            "name": "Приисковое",
+            "countryId": 1,
+            "cid": "priiskovoe"
+        },
+        {
+            "id": 2063,
+            "name": "Тандинский район",
+            "countryId": 1,
+            "cid": "tandinskii_raion"
+        },
+        {
+            "id": 2064,
+            "name": "Уссурийск, гостиницы",
+            "countryId": 1,
+            "cid": "ussuriisk__gostinicy"
+        },
+        {
+            "id": 2065,
+            "name": "Шарыповский район",
+            "countryId": 1,
+            "cid": "sharypovskii_raion"
+        },
+        {
+            "id": 2066,
+            "name": "Яровое",
+            "countryId": 1,
+            "cid": "yarovoe"
+        },
+        {
+            "id": 2067,
+            "name": "Ая",
+            "countryId": 1,
+            "cid": "aya"
+        },
+        {
+            "id": 2068,
+            "name": "Барнаул",
+            "countryId": 1,
+            "cid": "barnaul"
+        },
+        {
+            "id": 2069,
+            "name": "Горно-Алтайск ",
+            "countryId": 1,
+            "cid": "gorno-altaisk"
+        },
+        {
+            "id": 2070,
+            "name": "Онгудайский район",
+            "countryId": 1,
+            "cid": "ongudaiskii_raion"
+        },
+        {
+            "id": 2071,
+            "name": "Майминский район",
+            "countryId": 1,
+            "cid": "maiminskii_raion"
+        },
+        {
+            "id": 2072,
+            "name": "Абаза",
+            "countryId": 1,
+            "cid": "abaza"
+        },
+        {
+            "id": 2073,
+            "name": "Усть-Коксинский район",
+            "countryId": 1,
+            "cid": "ust'-koksinskii_raion"
+        },
+        {
+            "id": 2074,
+            "name": "Рубцовск",
+            "countryId": 1,
+            "cid": "rubcovsk"
+        },
+        {
+            "id": 2075,
+            "name": "Териберка, гостиницы",
+            "countryId": 1,
+            "cid": "teriberka__gostinicy"
+        },
+        {
+            "id": 2076,
+            "name": "Оренбург",
+            "countryId": 1,
+            "cid": "orenburg"
+        },
+        {
+            "id": 2077,
+            "name": "Сосновский район",
+            "countryId": 1,
+            "cid": "sosnovskii_raion"
+        },
+        {
+            "id": 2078,
+            "name": "Комсомольск-на-Амуре",
+            "countryId": 1,
+            "cid": "komsomol'sk-na-amure"
+        },
+        {
+            "id": 2079,
+            "name": "Хабаровск",
+            "countryId": 1,
+            "cid": "habarovsk"
+        },
+        {
+            "id": 2080,
+            "name": "Заводоуковск",
+            "countryId": 1,
+            "cid": "zavodoukovsk"
+        },
+        {
+            "id": 2081,
+            "name": "Ишим",
+            "countryId": 1,
+            "cid": "ishim"
+        },
+        {
+            "id": 2082,
+            "name": "Ялуторовск",
+            "countryId": 1,
+            "cid": "yalutorovsk"
+        },
+        {
+            "id": 2083,
+            "name": "Арсеньев",
+            "countryId": 1,
+            "cid": "arsen'ev"
+        },
+        {
+            "id": 2084,
+            "name": "Забайкальский край",
+            "countryId": 1,
+            "cid": "zabaikal'skii_krai"
+        },
+        {
+            "id": 2085,
+            "name": "Омск",
+            "countryId": 1,
+            "cid": "omsk"
+        },
+        {
+            "id": 2086,
+            "name": "Караидельский район",
+            "countryId": 1,
+            "cid": "karaidel'skii_raion"
+        },
+        {
+            "id": 2087,
+            "name": "Каслинский район",
+            "countryId": 1,
+            "cid": "kaslinskii_raion"
+        },
+        {
+            "id": 2088,
+            "name": "Пионерский",
+            "countryId": 1,
+            "cid": "pionerskii"
+        },
+        {
+            "id": 2089,
+            "name": "Республика Саха (Якутия)",
+            "countryId": 1,
+            "cid": "respublika_saha_(yakutiy"
+        },
+        {
+            "id": 2090,
+            "name": "Ленинградская область, экскурсии",
+            "countryId": 1,
+            "cid": "leningradskaya_obl__eksk"
+        },
+        {
+            "id": 2091,
+            "name": "Мариуполь",
+            "countryId": 1,
+            "cid": "mariupol'"
+        },
+        {
+            "id": 2092,
+            "name": "Воткинск",
+            "countryId": 1,
+            "cid": "votkinsk"
+        },
+        {
+            "id": 2093,
+            "name": "Удмуртия",
+            "countryId": 1,
+            "cid": "udmurtiya"
+        },
+        {
+            "id": 2094,
+            "name": "Норильск",
+            "countryId": 1,
+            "cid": "noril'sk"
+        },
+        {
+            "id": 2095,
+            "name": "Горный Алтай",
+            "countryId": 1,
+            "cid": "gornyi_altai"
+        },
+        {
+            "id": 2096,
+            "name": "Советск",
+            "countryId": 1,
+            "cid": "sovetsk"
+        },
+        {
+            "id": 2097,
+            "name": "Сатка",
+            "countryId": 1,
+            "cid": "satka"
+        },
+        {
+            "id": 2098,
+            "name": "Луганск",
+            "countryId": 1,
+            "cid": "lugansk"
+        },
+        {
+            "id": 2099,
+            "name": "Луганская Народная Республика",
+            "countryId": 1,
+            "cid": "lnr"
+        },
+        {
+            "id": 2100,
+            "name": "Аскания Нова",
+            "countryId": 1,
+            "cid": "askaniya_nova"
+        },
+        {
+            "id": 2101,
+            "name": "Херсонская область",
+            "countryId": 1,
+            "cid": "hersonskaya_oblast'"
+        },
+        {
+            "id": 2103,
+            "name": "Абакан",
+            "countryId": 1,
+            "cid": "abakan_5orb"
+        },
+        {
+            "id": 2104,
+            "name": "Арзамас, гостиницы",
+            "countryId": 1,
+            "cid": "arzamas__gostinicy"
+        },
+        {
+            "id": 2105,
+            "name": "Торжок, гостиницы",
+            "countryId": 1,
+            "cid": "torzhok__gostinicy"
+        },
+        {
+            "id": 2107,
+            "name": "Славянка",
+            "countryId": 1,
+            "cid": "slavyanka"
+        },
+        {
+            "id": 2108,
+            "name": "Красноярск",
+            "countryId": 1,
+            "cid": "krasnoyarsk"
+        },
+        {
+            "id": 2109,
+            "name": "Рыбинск, гостиницы",
+            "countryId": 1,
+            "cid": "rybinsk__gostinicy"
+        },
+        {
+            "id": 2110,
+            "name": "Калмыкия",
+            "countryId": 1,
+            "cid": "kalmykiya"
+        },
+        {
+            "id": 2112,
+            "name": "Веселое",
+            "countryId": 1,
+            "cid": "veseloe"
+        },
+        {
+            "id": 2113,
+            "name": "Краснознаменск",
+            "countryId": 1,
+            "cid": "krasnoznamensk"
+        },
+        {
+            "id": 2114,
+            "name": "Марий Эл, экскурсии",
+            "countryId": 1,
+            "cid": "marii_el__ekskursii"
+        },
+        {
+            "id": 2115,
+            "name": "Альметьевск, гостиницы",
+            "countryId": 1,
+            "cid": "al'met'evsk__gostinicy"
+        },
+        {
+            "id": 2116,
+            "name": "Троицк",
+            "countryId": 1,
+            "cid": "troick"
+        },
+        {
+            "id": 2117,
+            "name": "Озеро Карачи",
+            "countryId": 1,
+            "cid": "ozero_karachi"
+        },
+        {
+            "id": 2118,
+            "name": "Лабытнанги",
+            "countryId": 1,
+            "cid": "labytnangi"
+        },
+        {
+            "id": 2119,
+            "name": "Витино, село",
+            "countryId": 1,
+            "cid": "vitino__selo"
+        },
+        {
+            "id": 2120,
+            "name": "Кондрово, гостиницы",
+            "countryId": 1,
+            "cid": "kondrovo__gostinicy"
+        },
+        {
+            "id": 2121,
+            "name": "Нижний Новгород, экскурсии",
+            "countryId": 1,
+            "cid": "nizhnii_novgorod__eksku_"
+        },
+        {
+            "id": 2122,
+            "name": "Павловск, гостиницы",
+            "countryId": 1,
+            "cid": "pavlovsk__gostinicy"
+        }
+    ]
+}

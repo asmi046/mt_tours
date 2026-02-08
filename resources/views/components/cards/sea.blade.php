@@ -25,7 +25,7 @@
         <h3>{!! $item['title_card'] ?? $item['title'] !!}</h3>
 
         @if ($item['short_description'])
-            <p class="short_description">{!! $item['short_description'] !!}</p>
+            <p class="short_description">{{ Str::limit(strip_tags($item['short_description']), 90) }}</p>
         @endif
 
         @if ($item['sea_distantion'])

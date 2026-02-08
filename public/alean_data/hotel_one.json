@@ -1,0 +1,1737 @@
+{
+    "CID": "feodosiya",
+    "HotelTypeCID": "otel'",
+    "HotelTypeName": "Отель",
+    "HotelTypeShortName": "Отель",
+    "HotelName": "Феодосия (отель)",
+    "HotelShortName": "Феодосия (отель)",
+    "TownShortName": "Феодосия город",
+    "TownName": "Феодосия, город",
+    "CountryName": "Россия",
+    "Level": "3*",
+    "Description": "<p style=\"text-align: justify;\">Отель «Феодосия» в Крыму находится в историческом центре города, на тихой улочке. Рядом с ним – Набережная Десантников и известный проспект Айвазовского. Прославленный «Золотой пляж» в 15 минутах езды на городском транспорте.</p><p style=\"text-align: justify;\">4-этажное здание без лифта, включает в себя 77 номеров. Все номера, независимо от категории, укомплектованы необходимой мебелью, оборудованы санузлом с душем, мини-сейфом, кондиционером, ТВ, холодильником, чайником, есть доступ к wi-fi.</p><p style=\"text-align: justify;\">К услугам гостей отеля ресторан, где предоставляется питание. Можно выбрать разные варианты- завтраки, 2-разовое или 3-разовое. Для тех кто прибыл на автомобиле имеется парковка.</p><p style=\"text-align: justify;\">До городского оборудованного песчано-галечного пляжа 200 метров.</p><div style=\"text-align: justify;\"><br></div>",
+    "Advantages": "<p>Отель расположен в исторической части города Феодосии, в непосредственной близости к деловому и туристическому центру города. Центральная городская набережная и городской пляж, всего в 5 минутах прогулочным шагом от Отеля.</p>",
+    "QuantitySeats": "148",
+    "BuiltYear": "2009",
+    "PriceIncludes": "<ul><li>проживание в выбранной категории номера</li><li>питание согласно выбранного тарифа</li></ul><p><strong>Бесплатно предоставляются услуги:</strong></p><ul><li>интернет Wi-Fi</li><li>посещение СПА комплекса (финская сауна, хаммам, джакузи) по предварительной записи</li></ul><o:p></o:p><p><o:p></o:p></p><p><o:p></o:p></p><p><o:p></o:p></p>",
+    "ExtraCharged": "<ul><li>услуги прачечной</li><li>дополнительная уборка номера</li><li> дополнительная смена белья</li><li> аренда детской кроватки</li><li> экскурсионное обслуживание</li><li> доставка букетов и других товаров</li><li> услуги по СПА - меню</li></ul>",
+    "RequiredDocuments": "<div><div>Для взрослых</div><div><div>Общее</div><div><div>ваучер</div><div>общегражданский российский паспорт — оригинал</div><div>страховой медицинский полис</div></div></div><div>Для детей</div><div><div>Общее</div><div><div>общегражданский российский паспорт (от 14 лет и старше) — оригинал</div><div>свидетельство о рождении (до 14 лет) — оригинал</div><div>согласие родителей письменное - без сопровождающих лиц (от 14 лет и старше)</div><div>согласие родителей письменное - в сопровождении третьих лиц (не родителей, законных опекунов)</div><div>страховой медицинский полис</div></div></div><div>Для иностранных граждан дополнительно</div><div><div>Общее</div><div><div>загранпаспорт — оригинал</div><div>виза</div><div>миграционная карта (в т.ч. при условии безвизового режима)</div></div></div></div>",
+    "AnimalsAllowed": "",
+    "WaterSupply": "горячая и холодная вода круглосуточно",
+    "HowToReach": "<p><strong>Самолетом до аэропорта г. Симферополя</strong>, далее на автобусе №49 или троллейбусе №17 до остановки «ГРЭС», далее на автобусе №459-23 до остановки «Железнодорожный вокзал», далее на автобусе «Симферополь – Феодосия» до остановки «Винсовхоз», далее на автобусе №3,1 до остановки «Белая Акация», далее 370 м до отеля.</p><p><strong>Поездом до ж/д вокзала <strong>г. Феодосии</strong></strong>, далее на автобусе №4,2 до остановки «Улица Пушкина», далее 157 м до отеля.</p><p><strong>Рекомендуем заказывать трансфер.</strong></p>",
+    "SpecialConditions": "<p><strong>Важно </strong></p><p>СПА комплекс временно находится на реконструкции.</p>",
+    "HotelCategoryCID": "R_3",
+    "HotelCategoryName": "3 звезды  официальный рейтинг",
+    "AreaName": "Феодосия городской округ",
+    "RegionName": "Крым республика",
+    "RegistryRecordNumber": "С912024006786",
+    "RegistryInclusionDate": "2025-01-01",
+    "RegistryRecordLink": "https://tourism.fsa.gov.ru/ru/resorts/hotels/4e3ba677-c606-11ef-92da-4f4b39f6a740/about-resort",
+    "Address": "Республика Крым, г. Феодосия, ул. Пушкина, 11",
+    "CheckInTime": "14:00:00.000",
+    "CheckOutTime": "12:00:00.000",
+    "SpecialRequirements": "Дети до 5 лет без места принимаются с ОБЯЗАТЕЛЬНОЙ оплатой завтрака,бронируется доп.услугой и автоматически добавляется в счёт.Питание шведский стол при загрузке от 30 человек,в межсезонье - комплексное.",
+    "Coordinates": {
+        "Latitude": "45.0367",
+        "Longitude": "35.3804"
+    },
+    "DistanceList": [
+        {
+            "Name": "до аэропорта",
+            "Distance": "130 км - г. Симферополь"
+        },
+        {
+            "Name": "до ж/д вокзала",
+            "Distance": "3 км - г. Феодосия"
+        },
+        {
+            "Name": "до моря",
+            "Distance": "200"
+        },
+        {
+            "Name": "до пляжа",
+            "Distance": "200"
+        }
+    ],
+    "WorkPeriod": {
+        "Name": "круглогодично"
+    },
+    "RoomCategoryList": [
+        {
+            "RoomTypeCID": "lyuks",
+            "RoomTypeShortName": "Люкс",
+            "RoomCategoryCID": "lyuks_1_5-komnatnyi_2-m[",
+            "RoomCategoryShortName": "1,5-комнатный 2-местный",
+            "RoomCategoryName": "1,5-комнатный 2-местный",
+            "Quantity": "6",
+            "RoomArea": "40",
+            "RoomTypeName": "Люкс",
+            "RoomCategoryDescription": "С/У,душ,ТВ,мини-холодильник,К",
+            "BaseSeatQuantity": "2",
+            "ExtSeatQuantity": "2",
+            "InteriorList": [
+                {
+                    "Name": "Балкон",
+                    "Description": "",
+                    "ContentList": [
+                        {
+                            "Name": "не во всех номерах",
+                            "Description": "на 2 этаже с балконом (2 номера), на 3 и 4 этаже без балкона (4 номера)"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Мебель",
+                    "Description": "",
+                    "ContentList": [
+                        {
+                            "Name": "вешалка",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "диван",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "зеркало",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "кресло",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "кровать двуспальная",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "прикроватные тумбочки",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "столик журнальный",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "столик туалетный",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "стулья",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "тумба",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "шкаф",
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Оборудование",
+                    "Description": "",
+                    "ContentList": [
+                        {
+                            "Name": "кондиционер",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "сейф",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "телевизор",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "холодильник",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "чайный набор посуды",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "электрочайник",
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Санузел",
+                    "Description": "",
+                    "ContentList": [
+                        {
+                            "Name": "с душем (поддон)",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "тапочки",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "туалетные принадлежности",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "фен",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "халат",
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Сервис",
+                    "Description": "",
+                    "ContentList": [
+                        {
+                            "Name": "Wi-Fi бесплатно",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "смена полотенец",
+                            "Description": "1 раз в 3 дня"
+                        },
+                        {
+                            "Name": "смена постельного белья",
+                            "Description": "1 раз в 3 дня"
+                        },
+                        {
+                            "Name": "уборка номера",
+                            "Description": "ежедневно"
+                        }
+                    ]
+                }
+            ],
+            "RoomImageList": [
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/b/0c/b0cece01a587a99cac6a07c5d8280ddd.png",
+                    "Index": "0",
+                    "Description": "Люкс 2-местный 1,5-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/a/d0/ad0990c707f0e82364a98a43fbe58998.png",
+                    "Index": "1",
+                    "Description": "Люкс 2-местный 1,5-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/7/e1/7e11ef5c9b462af3c12763d14ed767f8.png",
+                    "Index": "2",
+                    "Description": "Люкс 2-местный 1,5-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/5/02/5026475968b61556c918fef1845915d2.png",
+                    "Index": "3",
+                    "Description": "Люкс 2-местный 1,5-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/5/b7/5b7e035fb9c67cb7ac14d768f92f6e9f.png",
+                    "Index": "4",
+                    "Description": "Люкс 2-местный 1,5-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/b/6e/b6ec0e7bff40607b0e20a52515e15138.png",
+                    "Index": "5",
+                    "Description": "Люкс 2-местный 1,5-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/9/dc/9dcac42400b5c9dffc4767ce3260f9bb.png",
+                    "Index": "6",
+                    "Description": "Люкс 2-местный 1,5-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/c/ab/cab90f500cd5df27122d9737e967449b.png",
+                    "Index": "7",
+                    "Description": "Люкс 2-местный 1,5-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/f/c5/fc5a1b58c6b3a8c03ae9df784b43e9ed.png",
+                    "Index": "8",
+                    "Description": "Люкс 2-местный 1,5-комнатный"
+                }
+            ]
+        },
+        {
+            "RoomTypeCID": "polulyuks",
+            "RoomTypeShortName": "Полулюкс",
+            "RoomCategoryCID": "polulyuks_2-mestnyi_vid]",
+            "RoomCategoryShortName": "2-местный 1-комнатный",
+            "RoomCategoryName": "2-местный 1-комнатный",
+            "Quantity": "14",
+            "RoomArea": "23",
+            "RoomTypeName": "Полулюкс",
+            "RoomCategoryDescription": "С/У,душ,ТВ,мини-холодильник,К",
+            "BaseSeatQuantity": "2",
+            "ExtSeatQuantity": "1",
+            "InteriorList": [
+                {
+                    "Name": "Мебель",
+                    "ContentList": [
+                        {
+                            "Name": "вешалка"
+                        },
+                        {
+                            "Name": "зеркало"
+                        },
+                        {
+                            "Name": "кресло-кровать"
+                        },
+                        {
+                            "Name": "кровать двуспальная"
+                        },
+                        {
+                            "Name": "прикроватные тумбочки"
+                        },
+                        {
+                            "Name": "стол"
+                        },
+                        {
+                            "Name": "столик туалетный"
+                        },
+                        {
+                            "Name": "стул"
+                        },
+                        {
+                            "Name": "тумба"
+                        },
+                        {
+                            "Name": "шкаф"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Оборудование",
+                    "ContentList": [
+                        {
+                            "Name": "кондиционер"
+                        },
+                        {
+                            "Name": "сейф"
+                        },
+                        {
+                            "Name": "телевизор"
+                        },
+                        {
+                            "Name": "холодильник"
+                        },
+                        {
+                            "Name": "чайный набор посуды"
+                        },
+                        {
+                            "Name": "электрочайник"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Санузел",
+                    "ContentList": [
+                        {
+                            "Name": "с душевой кабиной"
+                        },
+                        {
+                            "Name": "туалетные принадлежности"
+                        },
+                        {
+                            "Name": "фен"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Сервис",
+                    "ContentList": [
+                        {
+                            "Name": "Wi-Fi бесплатно"
+                        },
+                        {
+                            "Name": "смена полотенец",
+                            "Description": "1 раз в 3 дня"
+                        },
+                        {
+                            "Name": "смена постельного белья",
+                            "Description": "1 раз в 3 дня"
+                        },
+                        {
+                            "Name": "уборка номера",
+                            "Description": "ежедневно"
+                        }
+                    ]
+                }
+            ],
+            "RoomImageList": [
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/d/58/d58c831715503d096b78bcba00a870e5.png",
+                    "Index": "0",
+                    "Description": "Полулюкс 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/2/35/235dbdc2689e6732dd5e4f5fd97cd3ca.png",
+                    "Index": "1",
+                    "Description": "Полулюкс 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/d/6f/d6fef2a193443464c4d4de38c440f3df.png",
+                    "Index": "2",
+                    "Description": "Полулюкс 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/1/0e/10ecf45abbb67b14910627af251da55e.png",
+                    "Index": "3",
+                    "Description": "Полулюкс 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/5/59/559472d4f096cb9675672c9da1b419ee.png",
+                    "Index": "4",
+                    "Description": "Полулюкс 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/d/55/d55ca9a15a05d4d65858bf4a65b96398.png",
+                    "Index": "5",
+                    "Description": "Полулюкс 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/4/b7/4b7b42475f3b61446bc298cac10451c8.png",
+                    "Index": "6",
+                    "Description": "Полулюкс 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/8/9c/89cfdcb549a6671cd7e0ecb4272e45a7.png",
+                    "Index": "7",
+                    "Description": "Полулюкс 2-местный 1-комнатный"
+                }
+            ]
+        },
+        {
+            "RoomTypeCID": "polulyuks",
+            "RoomTypeShortName": "Полулюкс",
+            "RoomCategoryCID": "polulyuks_panoramnyi_2-l",
+            "RoomCategoryShortName": "Панорамный 2-местный",
+            "RoomCategoryName": "Панорамный 2-местный 1-комнатный",
+            "Quantity": "6",
+            "RoomArea": "23",
+            "RoomTypeName": "Полулюкс",
+            "RoomCategoryDescription": "С/У,душ,ТВ,мини-холодильник,К",
+            "BaseSeatQuantity": "2",
+            "ExtSeatQuantity": "1",
+            "InteriorList": [
+                {
+                    "Name": "Мебель",
+                    "Description": "",
+                    "ContentList": [
+                        {
+                            "Name": "вешалка",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "зеркало",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "комод",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "кресла",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "кровать двуспальная",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "прикроватные тумбочки",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "столик журнальный",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "шкаф",
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Оборудование",
+                    "Description": "",
+                    "ContentList": [
+                        {
+                            "Name": "кондиционер",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "сейф",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "телевизор",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "холодильник",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "чайный набор посуды",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "электрочайник",
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Санузел",
+                    "Description": "",
+                    "ContentList": [
+                        {
+                            "Name": "с душевой кабиной",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "тапочки",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "туалетные принадлежности",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "фен",
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Сервис",
+                    "Description": "",
+                    "ContentList": [
+                        {
+                            "Name": "Wi-Fi бесплатно",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "смена полотенец",
+                            "Description": "1 раз в 3 дня"
+                        },
+                        {
+                            "Name": "смена постельного белья",
+                            "Description": "1 раз в 3 дня"
+                        },
+                        {
+                            "Name": "уборка номера",
+                            "Description": "ежедневно"
+                        }
+                    ]
+                }
+            ],
+            "RoomImageList": [
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/9/27/927427d2078f0a06c49e130387382901.png",
+                    "Index": "0",
+                    "Description": "Полулюкс 2-местный 1-комнатный (панорамный)"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/2/2e/22edd618f65058cb28ef46368a5944f5.png",
+                    "Index": "1",
+                    "Description": "Полулюкс 2-местный 1-комнатный (панорамный)"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/8/f4/8f4f4f8ddc103ed300f03fbd6e61d853.png",
+                    "Index": "2",
+                    "Description": "Полулюкс 2-местный 1-комнатный (панорамный)"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/1/77/177676f71ed15f3d99a56030cb2d1823.png",
+                    "Index": "3",
+                    "Description": "Полулюкс 2-местный 1-комнатный (панорамный)"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/8/1e/81ee43b810883e8287f99c3a68da5c34.png",
+                    "Index": "4",
+                    "Description": "Полулюкс 2-местный 1-комнатный (панорамный)"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/4/ef/4ef43a271b2ec63684d611a720f6e439.png",
+                    "Index": "5",
+                    "Description": "Полулюкс 2-местный 1-комнатный (панорамный)"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/8/99/8990045fc85739f0d1e4f106b07b6481.png",
+                    "Index": "6",
+                    "Description": "Полулюкс 2-местный 1-комнатный (панорамный)"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/f/1b/f1b9ae7ac7cbf193ef1ca12bd9be08e5.png",
+                    "Index": "7",
+                    "Description": "Полулюкс 2-местный 1-комнатный (панорамный)"
+                }
+            ]
+        },
+        {
+            "RoomTypeCID": "standartnyi",
+            "RoomTypeShortName": "Стандартный",
+            "RoomCategoryCID": "standartnyi_1-mestnyi_74",
+            "RoomCategoryShortName": "1-местный 1-комнатный",
+            "RoomCategoryName": "1-местный 1-комнатный",
+            "Quantity": "5",
+            "RoomArea": "14",
+            "Announcement": "<p>Одноместные номера находятся только на 4 этаже</p>",
+            "RoomTypeName": "Стандартный",
+            "RoomCategoryDescription": "С/У,душ,ТВ,мини-холодильник,К",
+            "BaseSeatQuantity": "1",
+            "ExtSeatQuantity": "1",
+            "InteriorList": [
+                {
+                    "Name": "Мебель",
+                    "Description": "",
+                    "ContentList": [
+                        {
+                            "Name": "вешалка",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "зеркало",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "кровать односпальная",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "прикроватная тумбочка",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "стол",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "стулья",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "шкаф",
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Оборудование",
+                    "Description": "",
+                    "ContentList": [
+                        {
+                            "Name": "кондиционер",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "сейф",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "телевизор",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "холодильник",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "чайный набор посуды",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "электрочайник",
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Санузел",
+                    "Description": "",
+                    "ContentList": [
+                        {
+                            "Name": "с душем (поддон)",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "туалетные принадлежности",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "фен",
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Сервис",
+                    "Description": "",
+                    "ContentList": [
+                        {
+                            "Name": "Wi-Fi бесплатно",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "смена полотенец",
+                            "Description": "1 раз в 3 дня"
+                        },
+                        {
+                            "Name": "смена постельного белья",
+                            "Description": "1 рза в 3 дня"
+                        },
+                        {
+                            "Name": "уборка номера",
+                            "Description": "ежедневно"
+                        }
+                    ]
+                }
+            ],
+            "RoomImageList": [
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/0/d6/0d6ead469cdda9d284d96e629882b991.png",
+                    "Index": "0",
+                    "Description": "Стандартный 1-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/4/71/471107419d5ee1b93e78d9a36cb5f44e.png",
+                    "Index": "1",
+                    "Description": "Стандартный 1-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/1/09/10911830abc00c7bd08e677c7c877adf.png",
+                    "Index": "2",
+                    "Description": "Стандартный 1-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/7/fa/7fab31cfbce9099453e9a966d3386ee4.png",
+                    "Index": "3",
+                    "Description": "Стандартный 1-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/f/aa/faab68566c0227bb9958194c5838dc45.png",
+                    "Index": "4",
+                    "Description": "Стандартный 1-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/c/2d/c2d295e68189e5b6a9f63585932905a6.png",
+                    "Index": "5",
+                    "Description": "Стандартный 1-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/6/5b/65b94ffbad74d5ff88f0a83b0cb1cd74.png",
+                    "Index": "6",
+                    "Description": "Стандартный 1-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/3/e2/3e2051c365e84d3c3f43f1dbcdcae1ad.png",
+                    "Index": "7",
+                    "Description": "Стандартный 1-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/4/52/452297dbc259bd13c4794ea5dd439463.png",
+                    "Index": "8",
+                    "Description": "Стандартный 1-местный 1-комнатный"
+                }
+            ]
+        },
+        {
+            "RoomTypeCID": "standartnyi",
+            "RoomTypeShortName": "Стандартный",
+            "RoomCategoryCID": "vg1506p4vkefql_wt0q50g==",
+            "RoomCategoryShortName": "2-местный 1-комнатный",
+            "RoomCategoryName": "2-местный 1-комнатный",
+            "Quantity": "37",
+            "RoomArea": "25",
+            "RoomTypeName": "Стандартный",
+            "RoomCategoryDescription": "С/У,душ,ТВ,мини-холодильник,К",
+            "BaseSeatQuantity": "2",
+            "ExtSeatQuantity": "2",
+            "InteriorList": [
+                {
+                    "Name": "Мебель",
+                    "Description": "",
+                    "ContentList": [
+                        {
+                            "Name": "вешалка",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "диван",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "зеркало",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "кресло",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "кровати односпальные",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "прикроватные тумбочки",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "столик журнальный",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "стул",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "тумба под телевизор",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "шкаф",
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Оборудование",
+                    "Description": "",
+                    "ContentList": [
+                        {
+                            "Name": "кондиционер",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "сейф",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "телевизор",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "холодильник",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "чайный набор посуды",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "электрочайник",
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Санузел",
+                    "Description": "",
+                    "ContentList": [
+                        {
+                            "Name": "с душем (поддон)",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "туалетные принадлежности",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "фен",
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Сервис",
+                    "Description": "",
+                    "ContentList": [
+                        {
+                            "Name": "Wi-Fi бесплатно",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "смена полотенец",
+                            "Description": "1 раз в 3 дня"
+                        },
+                        {
+                            "Name": "смена постельного белья",
+                            "Description": "1 раз в 3 дня"
+                        },
+                        {
+                            "Name": "уборка номера",
+                            "Description": "ежедневно"
+                        }
+                    ]
+                }
+            ],
+            "RoomImageList": [
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/b/17/b1783f6fc49b544330726c24ff7fbec0.png",
+                    "Index": "0",
+                    "Description": "Стандартный 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/2/8b/28b0616b1a8b94e90521cfcb3326e779.png",
+                    "Index": "1",
+                    "Description": "Стандартный 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/2/30/23059a5e56079b7a5e76302db8a8fa3e.png",
+                    "Index": "2",
+                    "Description": "Стандартный 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/6/ae/6aea3782ce0414a919319ce99d191425.png",
+                    "Index": "3",
+                    "Description": "Стандартный 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/1/f0/1f0f251627fb16de9751dc4c744fbb09.png",
+                    "Index": "4",
+                    "Description": "Стандартный 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/6/b2/6b246052874e0c8dc7ad975821d391af.png",
+                    "Index": "5",
+                    "Description": "Стандартный 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/d/d7/dd77b1d15cbd9bf83df16bacbc963048.png",
+                    "Index": "6",
+                    "Description": "Стандартный 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/2/66/2663e786a65942e541733f38c468c5b4.png",
+                    "Index": "7",
+                    "Description": "Стандартный 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/4/6a/46a54a8609465268f8b1cfbd349e997f.png",
+                    "Index": "8",
+                    "Description": "Стандартный 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/5/c9/5c9450fda47082b516b26eae6c34f31d.png",
+                    "Index": "9",
+                    "Description": "Стандартный 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/8/47/84776a6029de64d5b78159191a28997c.png",
+                    "Index": "10",
+                    "Description": "Стандартный 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/d/55/d55d0092c938f7b46f8f972ec04da676.png",
+                    "Index": "11",
+                    "Description": "Стандартный 2-местный 1-комнатный"
+                }
+            ]
+        },
+        {
+            "RoomTypeCID": "standart",
+            "RoomTypeShortName": "Стандарт",
+            "RoomCategoryCID": "RYVMF13ia06Se6oSdbXOpA==",
+            "RoomCategoryShortName": "Комфорт 2-местный",
+            "RoomCategoryName": "Комфорт 2-местный 1-комнатный",
+            "Quantity": "12",
+            "Announcement": "<p>До 28.10.24 категория называлась \"Стандарт Улучшенный 2-местный 1-комнатный\".</p>",
+            "RoomTypeName": "Стандарт",
+            "RoomCategoryDescription": "С/У,душ,ТВ,мини-холодильник,К",
+            "BaseSeatQuantity": "2",
+            "ExtSeatQuantity": "2",
+            "InteriorList": [
+                {
+                    "Name": "Мебель",
+                    "ContentList": [
+                        {
+                            "Name": "вешалка"
+                        },
+                        {
+                            "Name": "диван раскладной"
+                        },
+                        {
+                            "Name": "зеркало"
+                        },
+                        {
+                            "Name": "кровати односпальные",
+                            "Description": "2"
+                        },
+                        {
+                            "Name": "прикроватные тумбочки"
+                        },
+                        {
+                            "Name": "стол"
+                        },
+                        {
+                            "Name": "стулья"
+                        },
+                        {
+                            "Name": "тумба под телевизор"
+                        },
+                        {
+                            "Name": "шкаф"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Оборудование",
+                    "ContentList": [
+                        {
+                            "Name": "кондиционер"
+                        },
+                        {
+                            "Name": "мини-холодильник"
+                        },
+                        {
+                            "Name": "сейф"
+                        },
+                        {
+                            "Name": "телевизор"
+                        },
+                        {
+                            "Name": "чайный набор посуды"
+                        },
+                        {
+                            "Name": "электрочайник"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Санузел",
+                    "ContentList": [
+                        {
+                            "Name": "с душем"
+                        },
+                        {
+                            "Name": "туалетные принадлежности"
+                        },
+                        {
+                            "Name": "фен"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Сервис",
+                    "ContentList": [
+                        {
+                            "Name": "Wi-Fi бесплатно"
+                        },
+                        {
+                            "Name": "смена полотенец",
+                            "Description": "1 раз в 3 дня"
+                        },
+                        {
+                            "Name": "смена постельного белья",
+                            "Description": "1 раз в 3 дня"
+                        },
+                        {
+                            "Name": "уборка номера",
+                            "Description": "ежедневно"
+                        }
+                    ]
+                }
+            ],
+            "RoomImageList": [
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/9/74/974668e224f5af2dc3134ceb80b84933.png",
+                    "Index": "0",
+                    "Description": "Стандартный улучшенный 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/8/50/85035c339f58c0a0a06f0a0e91435e92.png",
+                    "Index": "1",
+                    "Description": "Стандартный улучшенный 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/3/dc/3dc7b5d8143eacfc0bed939c0df47b0a.png",
+                    "Index": "2",
+                    "Description": "Стандартный улучшенный 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/f/ff/fff4ec1323bc3ebdf931c91e92de725e.png",
+                    "Index": "3",
+                    "Description": "Стандартный улучшенный 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/8/af/8afbe17ab869138560ca57631bb33d15.png",
+                    "Index": "4",
+                    "Description": "Стандартный улучшенный 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/0/70/0705a8c9160c519514a965632de4b17b.png",
+                    "Index": "5",
+                    "Description": "Стандартный улучшенный 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/4/28/428332c0c78d2825ed0711a32a1b646d.png",
+                    "Index": "6",
+                    "Description": "Стандартный улучшенный 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/6/5a/65acfb5b77ef7bd2dc7087f44dbf0e93.png",
+                    "Index": "7",
+                    "Description": "Стандартный улучшенный 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/a/36/a361e15687af947390b7a7e6f119386a.png",
+                    "Index": "8",
+                    "Description": "Стандартный улучшенный 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/jpg/a/9f/a9f2eeb9e0e853418db2e598cafdc438.jpg",
+                    "Index": "9",
+                    "Description": "Стандартный улучшенный 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/2/e6/2e64210960f963012e593c9590f8e53e.png",
+                    "Index": "10",
+                    "Description": "Стандартный улучшенный 2-местный 1-комнатный"
+                }
+            ]
+        },
+        {
+            "RoomTypeCID": "standart",
+            "RoomTypeShortName": "Стандарт",
+            "RoomCategoryCID": "standart_ekonom_2-mestn2",
+            "RoomCategoryShortName": "Эконом Promo Room 2-мест",
+            "RoomCategoryName": "Эконом Promo Room 2-местный 1-комнатный",
+            "Quantity": "3",
+            "RoomArea": "14",
+            "View": "",
+            "Announcement": "<p>Номера данной категории находятся на 4 этаже.</p>",
+            "RoomTypeName": "Стандарт",
+            "RoomCategoryDescription": "С/У,душ,ТВ,мини-холодильник,К",
+            "BaseSeatQuantity": "2",
+            "ExtSeatQuantity": "0",
+            "InteriorList": [
+                {
+                    "Name": "Мебель",
+                    "ContentList": [
+                        {
+                            "Name": "вешалка"
+                        },
+                        {
+                            "Name": "зеркало"
+                        },
+                        {
+                            "Name": "кровати односпальные",
+                            "Description": "2"
+                        },
+                        {
+                            "Name": "прикроватные тумбочки"
+                        },
+                        {
+                            "Name": "тумба под телевизор"
+                        },
+                        {
+                            "Name": "шкаф"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Оборудование",
+                    "ContentList": [
+                        {
+                            "Name": "кондиционер"
+                        },
+                        {
+                            "Name": "мини-холодильник"
+                        },
+                        {
+                            "Name": "сейф"
+                        },
+                        {
+                            "Name": "телевизор"
+                        },
+                        {
+                            "Name": "чайный набор посуды"
+                        },
+                        {
+                            "Name": "электрочайник"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Санузел",
+                    "ContentList": [
+                        {
+                            "Name": "с душем"
+                        },
+                        {
+                            "Name": "туалетные принадлежности"
+                        },
+                        {
+                            "Name": "фен"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Сервис",
+                    "ContentList": [
+                        {
+                            "Name": "Wi-Fi бесплатно"
+                        },
+                        {
+                            "Name": "смена полотенец",
+                            "Description": "1 раз в 3 дня"
+                        },
+                        {
+                            "Name": "смена постельного белья",
+                            "Description": "1 раз в 3 дня"
+                        },
+                        {
+                            "Name": "уборка номера",
+                            "Description": "ежедневно"
+                        }
+                    ]
+                }
+            ],
+            "RoomImageList": [
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/9/32/932b761dc4d828a4578b32fb71369f41.png",
+                    "Index": "0",
+                    "Description": "Стандартный Эконом 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/9/c3/9c3c81bfdeec2f13ae9ef80466d8cea6.png",
+                    "Index": "1",
+                    "Description": "Стандартный Эконом 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/d/91/d91b9bc5f98ae4666ee5749c90299b22.png",
+                    "Index": "2",
+                    "Description": "Стандартный Эконом 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/9/3d/93d854735297a7b91cfdc99f87e53711.png",
+                    "Index": "3",
+                    "Description": "Стандартный Эконом 2-местный 1-комнатный"
+                },
+                {
+                    "Url": "https://uploads2.stells.info/storage/png/8/5c/85c737c8502078a61221a0367dbb8f27.png",
+                    "Index": "4",
+                    "Description": "Стандартный Эконом 2-местный 1-комнатный"
+                }
+            ]
+        },
+        {
+            "RoomTypeCID": "standartnyi",
+            "RoomTypeShortName": "Стандартный",
+            "RoomTypeName": "Стандартный",
+            "RoomCategoryCID": "standartnyi_3-mestnyi_v1",
+            "RoomCategoryShortName": "3-местный вид на город",
+            "RoomCategoryName": "3-местный вид на город",
+            "RoomCategoryDescription": "С/У,душ,ТВ,Х,К",
+            "BaseSeatQuantity": "3",
+            "ExtSeatQuantity": "0",
+            "Inactive": "true"
+        },
+        {
+            "RoomTypeCID": "standartnyi",
+            "RoomTypeShortName": "Стандартный",
+            "RoomTypeName": "Стандартный",
+            "RoomCategoryCID": "standartnyi_2-mestnyi_ai",
+            "RoomCategoryShortName": "А 2-местный 1-комнатный",
+            "RoomCategoryName": "А 2-местный 1-комнатный вид на море",
+            "RoomCategoryDescription": "С/У,душ,ТВ,Х,К",
+            "BaseSeatQuantity": "2",
+            "ExtSeatQuantity": "1",
+            "Inactive": "true"
+        }
+    ],
+    "MealList": [
+        {
+            "System": "3-разовое",
+            "Kind": "-",
+            "Description": "(завтраки, ужины - шведский стол при загрузке от 30 человек, в межсезонье - комплексное, обеды - комплексные, не зависимо от сезона)"
+        },
+        {
+            "System": "Завтрак",
+            "Kind": "шведский стол",
+            "Description": "(шведский стол при загрузке от 30 человек, в межсезонье - комплексное)"
+        },
+        {
+            "System": "2-разовое (завтрак+ужин)",
+            "Kind": "шведский стол",
+            "Description": "(шведский стол при загрузке от 30 человек, в межсезонье - комплексное)"
+        }
+    ],
+    "InfrastructureObjectList": [
+        {
+            "Name": "Бизнес-центр ",
+            "Description": ""
+        },
+        {
+            "Name": "Парковка",
+            "Description": "(при наличии свободных мест)"
+        },
+        {
+            "Name": "Рестораны и бары",
+            "Description": "",
+            "ContentList": [
+                {
+                    "Name": "основной ресторан",
+                    "Description": "в корпусе, европейская кухня, время работы: завтраки с 8.00-10.00, обеды с 13.00-15.00, ужины с 18.00-20.00"
+                },
+                {
+                    "Name": "ресторан",
+                    "Description": "На живописной территории Отеля в парковой зоне можно насладиться уютной атмосферой, Lounge музыкой, а дети могут активно провести время на детской площадке или в детской комнате, расположенной на 1-м этаже Арт- объекта  «Замок Чая»"
+                }
+            ]
+        },
+        {
+            "Name": "СПА-центр",
+            "Description": ""
+        },
+        {
+            "Name": "Экскурсионное бюро",
+            "Description": ""
+        }
+    ],
+    "HotelImageList": [
+        {
+            "Url": "https://uploads2.stells.info/storage/png/6/a8/6a86df9773f67a89dd8523ba042191b9.png",
+            "Index": "0",
+            "Description": "«Феодосия» отель"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/9/74/974668e224f5af2dc3134ceb80b84933.png",
+            "Index": "1",
+            "Description": "Стандартный улучшенный 2-местный 1-комнатный"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/6/db/6db2a3a0787a5ed22b16c95beda601e8.png",
+            "Index": "2",
+            "Description": "«Феодосия» отель"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/5/be/5be963f13598b855abb6bb0e6239adbb.png",
+            "Index": "3",
+            "Description": "«Феодосия» отель"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/1/bc/1bcd36cf7743f6162027e1b182bb2d93.png",
+            "Index": "4",
+            "Description": "«Феодосия» отель"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/5/08/508a114a6804a49ef94f12713d583044.png",
+            "Index": "5",
+            "Description": "«Феодосия» отель"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/9/53/953a187c8df53cd149d6686e31c607a5.png",
+            "Index": "6",
+            "Description": "«Феодосия» отель"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/6/b9/6b9ce0e752eea0a64a7bce42fbf549f3.png",
+            "Index": "7",
+            "Description": "«Феодосия» отель"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/8/8a/88aab5f2255cf9eafba9a9a16c40ddec.png",
+            "Index": "8",
+            "Description": "«Феодосия» отель"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/7/01/7010886869aa0b26cdda453db2079b73.png",
+            "Index": "9",
+            "Description": "«Феодосия» отель"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/9/d7/9d75ea7b6b3dfa42254495cd3e3bd2be.png",
+            "Index": "10",
+            "Description": "«Феодосия» отель"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/0/1c/01c8333bce62e677ee5315d5555f2b9e.png",
+            "Index": "11",
+            "Description": "«Феодосия» отель"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/2/74/2747b074b9569a7ce3998c9430105083.png",
+            "Index": "12",
+            "Description": "«Феодосия» отель"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/7/fb/7fb53816085ccd70b640be850b407baa.png",
+            "Index": "13",
+            "Description": "«Феодосия» отель"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/d/69/d690d8aac078c1dd30284f264c840bdf.png",
+            "Index": "14",
+            "Description": "«Феодосия» отель"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/3/98/39839e3867c54e6cfdf214e0e91bab3d.png",
+            "Index": "15",
+            "Description": "«Феодосия» отель"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/b/fa/bfa3f24e431fd05d7acd6da6fe0933ee.png",
+            "Index": "16",
+            "Description": "«Феодосия» отель"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/4/2a/42ae5e68b00c6395f39472b3a24d6bab.png",
+            "Index": "17",
+            "Description": "«Феодосия» отель"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/0/6f/06ffbd833513435cdfcdd4dccea2c2da.png",
+            "Index": "18",
+            "Description": "«Феодосия» отель"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/9/24/924b84129a8b34537df99bac57a9de48.png",
+            "Index": "19",
+            "Description": "«Феодосия» отель"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/7/b4/7b4cd47dfee12fd7d588be7def470f2e.png",
+            "Index": "20",
+            "Description": "«Феодосия» отель"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/1/d4/1d40ea95c6656922bb6bb16ee1a42224.png",
+            "Index": "21",
+            "Description": "«Феодосия» отель"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/5/5d/55d99df9b62e5c3a2ec9e8fe73f43d15.png",
+            "Index": "22",
+            "Description": "«Феодосия» отель"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/7/e6/7e6803a180d1367ee8d408191d094a1c.png",
+            "Index": "23",
+            "Description": "«Феодосия» отель"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/1/54/154ebaef2afc2b246ac5548d870cc21d.png",
+            "Index": "24",
+            "Description": "«Феодосия» отель"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/2/31/23132ef229bc703e3d5f1a87a5053409.png",
+            "Index": "25",
+            "Description": "«Феодосия» отель"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/9/32/932b761dc4d828a4578b32fb71369f41.png",
+            "Index": "26",
+            "Description": "Стандартный Эконом 2-местный 1-комнатный"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/9/c3/9c3c81bfdeec2f13ae9ef80466d8cea6.png",
+            "Index": "27",
+            "Description": "Стандартный Эконом 2-местный 1-комнатный"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/9/3d/93d854735297a7b91cfdc99f87e53711.png",
+            "Index": "28",
+            "Description": "Стандартный Эконом 2-местный 1-комнатный"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/8/50/85035c339f58c0a0a06f0a0e91435e92.png",
+            "Index": "29",
+            "Description": "Стандартный улучшенный 2-местный 1-комнатный"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/0/70/0705a8c9160c519514a965632de4b17b.png",
+            "Index": "30",
+            "Description": "Стандартный улучшенный 2-местный 1-комнатный"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/b/17/b1783f6fc49b544330726c24ff7fbec0.png",
+            "Index": "31",
+            "Description": "Стандартный 2-местный 1-комнатный"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/2/8b/28b0616b1a8b94e90521cfcb3326e779.png",
+            "Index": "32",
+            "Description": "Стандартный 2-местный 1-комнатный"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/6/b2/6b246052874e0c8dc7ad975821d391af.png",
+            "Index": "33",
+            "Description": "Стандартный 2-местный 1-комнатный"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/d/d7/dd77b1d15cbd9bf83df16bacbc963048.png",
+            "Index": "34",
+            "Description": "Стандартный 2-местный 1-комнатный"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/1/09/10911830abc00c7bd08e677c7c877adf.png",
+            "Index": "35",
+            "Description": "Стандартный 1-местный 1-комнатный"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/f/aa/faab68566c0227bb9958194c5838dc45.png",
+            "Index": "36",
+            "Description": "Стандартный 1-местный 1-комнатный"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/2/2e/22edd618f65058cb28ef46368a5944f5.png",
+            "Index": "37",
+            "Description": "Полулюкс 2-местный 1-комнатный (панорамный)"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/1/77/177676f71ed15f3d99a56030cb2d1823.png",
+            "Index": "38",
+            "Description": "Полулюкс 2-местный 1-комнатный (панорамный)"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/4/ef/4ef43a271b2ec63684d611a720f6e439.png",
+            "Index": "39",
+            "Description": "Полулюкс 2-местный 1-комнатный (панорамный)"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/d/58/d58c831715503d096b78bcba00a870e5.png",
+            "Index": "40",
+            "Description": "Полулюкс 2-местный 1-комнатный"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/2/35/235dbdc2689e6732dd5e4f5fd97cd3ca.png",
+            "Index": "41",
+            "Description": "Полулюкс 2-местный 1-комнатный"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/5/59/559472d4f096cb9675672c9da1b419ee.png",
+            "Index": "42",
+            "Description": "Полулюкс 2-местный 1-комнатный"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/b/0c/b0cece01a587a99cac6a07c5d8280ddd.png",
+            "Index": "43",
+            "Description": "Люкс 2-местный 1,5-комнатный"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/5/02/5026475968b61556c918fef1845915d2.png",
+            "Index": "44",
+            "Description": "Люкс 2-местный 1,5-комнатный"
+        },
+        {
+            "Url": "https://uploads2.stells.info/storage/png/b/6e/b6ec0e7bff40607b0e20a52515e15138.png",
+            "Index": "45",
+            "Description": "Люкс 2-местный 1,5-комнатный"
+        }
+    ],
+    "ServiceList": [
+        {
+            "Name": "Заказ",
+            "Description": "",
+            "ContentList": [
+                {
+                    "Name": "авиа и ж\\д билетов",
+                    "Description": ""
+                },
+                {
+                    "Name": "такси",
+                    "Description": "и скорой помощи"
+                }
+            ]
+        },
+        {
+            "Name": "Интернет",
+            "Description": "",
+            "ContentList": [
+                {
+                    "Name": "wi-fi в номерах",
+                    "Description": ""
+                },
+                {
+                    "Name": "wi-fi на территории",
+                    "Description": ""
+                }
+            ]
+        },
+        {
+            "Name": "На стойке регистрации",
+            "Description": "",
+            "ContentList": [
+                {
+                    "Name": "поднос багажа",
+                    "Description": ""
+                },
+                {
+                    "Name": "утреннее пробуждение по телефону",
+                    "Description": ""
+                }
+            ]
+        }
+    ],
+    "EntertainmentServiceList": [
+        {
+            "Name": "Беседки",
+            "Description": "чайные"
+        },
+        {
+            "Name": "Экскурсии",
+            "Description": ""
+        }
+    ],
+    "SPAServiceList": [
+        {
+            "Name": "Cпециализированные программы с элементами СПА",
+            "Description": ""
+        },
+        {
+            "Name": "Дополнительно",
+            "Description": "",
+            "ContentList": [
+                {
+                    "Name": "джакузи",
+                    "Description": ""
+                }
+            ]
+        },
+        {
+            "Name": "Массаж",
+            "Description": "за доп.плату"
+        },
+        {
+            "Name": "Термальные процедуры",
+            "Description": "",
+            "ContentList": [
+                {
+                    "Name": "финская сауна",
+                    "Description": ""
+                },
+                {
+                    "Name": "хаммам (турецкая баня)",
+                    "Description": ""
+                }
+            ]
+        }
+    ],
+    "BeachList": [
+        {
+            "Description": "<p> Городской галечный пляж находится в 150 м от отеля. </p><p> Городской маршруткой можно доехать до песчаных пляжей - «Золотой пляж», в районе поселка Береговое. По времени около 15 мин. </p>",
+            "Name": "",
+            "ContentList": [
+                {
+                    "Name": "Характеристики пляжа",
+                    "Description": "200 м",
+                    "ContentList": [
+                        {
+                            "Name": "городской",
+                            "Description": ""
+                        },
+                        {
+                            "Name": "песчано-галечный",
+                            "Description": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "ForChildren": {
+        "Announcement": "<p \"=\"\" style=\"text-align: justify;\">Дети до 7 лет без места принимаются с ОБЯЗАТЕЛЬНОЙ оплатой завтрака, бронируется дополнительной услугой и автоматически включается в счёт. При выборе 3-раз.питания для основных мест необходимо добронировать услуги питания (обед,ужин) для ребёнка до 7 лет без места.</p>",
+        "AgeFrom": "0",
+        "ChargeFreeAgeTo": "5",
+        "DiscountOnExtSeatAgeTo": "12",
+        "ChildServiceList": [
+            {
+                "Name": " Инфраструктура для детей",
+                "Description": "",
+                "ContentList": [
+                    {
+                        "Name": "игровая комната",
+                        "Description": "сезонно"
+                    }
+                ]
+            },
+            {
+                "Name": "Развлечения",
+                "Description": ""
+            }
+        ]
+    },
+    "ConferenceCapabilities": {
+        "ConferenceCenterList": [
+            {
+                "Name": "Конференц-зал",
+                "Kind": "конференц-зал",
+                "QuantitySeat": "80",
+                "SeatingOptionList": [
+                    {
+                        "Name": "«П»"
+                    }
+                ],
+                "EquipmentList": [
+                    {
+                        "Name": "экран"
+                    }
+                ],
+                "FurnitureList": [
+                    {
+                        "Name": "стулья"
+                    }
+                ]
+            }
+        ]
+    },
+    "GroupHotelList": [
+        {
+            "CID": "shvedskii_stol"
+        },
+        {
+            "CID": "1-mestnoe_razmeschenie"
+        },
+        {
+            "CID": "svobodnyi_grafik"
+        },
+        {
+            "CID": "bez_mesta__bez_pitaniya"
+        },
+        {
+            "CID": "rb_2013"
+        },
+        {
+            "CID": "prb"
+        },
+        {
+            "CID": "krym"
+        },
+        {
+            "CID": "feodosiya"
+        },
+        {
+            "CID": "rb_2014"
+        },
+        {
+            "CID": "feodosiya__gorod"
+        },
+        {
+            "CID": "rannee_bronirovanie_2015"
+        },
+        {
+            "CID": "rossiya"
+        },
+        {
+            "CID": "krym_oteli"
+        },
+        {
+            "CID": "feodosiya_oteli"
+        },
+        {
+            "CID": "av_16-20_"
+        },
+        {
+            "CID": "feodosiya_centr_goroda_s"
+        }
+    ]
+}
