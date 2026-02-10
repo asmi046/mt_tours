@@ -7,8 +7,8 @@
 }
 
 .pagination__nav-links {
-	display: flex;
-	align-items: center;
+    display: flex;
+    align-items: center;
 
     .pagination__back {
         margin-right: 10px;
@@ -17,35 +17,35 @@
 
 
 .pagination__numbers {
-	display: flex;
-	padding: 5px 5px;
-	min-width: 30px;
-	color: #C6C6C6;
-	align-items: center;
-	justify-content: center;
-	border: 1px solid #C6C6C6;
-	margin-right: 10px;
-	transition: all 0.3s ease 0s;
+    display: flex;
+    padding: 5px 5px;
+    min-width: 30px;
+    color: #C6C6C6;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #C6C6C6;
+    margin-right: 10px;
+    transition: all 0.3s ease 0s;
 
-	&:last-child {
-		margin-right: 0;
-	}
+    &:last-child {
+        margin-right: 0;
+    }
 
-	&.current {
-		color: #fff;
-		background-color: $main_color;
-		border: 1px solid $main_color;
-	}
+    &.current {
+        color: $black_color;
+        background-color: $main_color;
+        border: 1px solid $black_color;
+    }
 
-	@media (min-width:1025px) {
-		&:hover {
-			color: #fff;
-			background-color: $main_color;
-			border: 1px solid $main_color;
-		}
-	}
+    @media (min-width:1025px) {
+        &:hover {
+            color: $black_color;
+            background-color: $main_color;
+            border: 1px solid $black_color;
+        }
+    }
 }
 
 .pagination__block-dot {
-	margin-right: 10px;
+    margin-right: 10px;
 }

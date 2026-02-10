@@ -2,7 +2,7 @@
 
 @section('main')
     <section id="banner_video_category" class="banner_video">
-        <x-tours-arrow caption="Все отели"></x-tours-arrow>
+        <x-tours-arrow caption="Все отели" link="sea_tour"></x-tours-arrow>
         <video autoplay muted loop playsinline poster="{{ asset('video/sea_black.webp') }}" class="_video">
             <source src="{{ asset('video/sea_black.mp4') }}" type="video/mp4">
         </video>
@@ -37,13 +37,19 @@
     <x-sea.kurorts-select :resorts="$resorts->toArray()"></x-sea.kurorts-select>
     <x-sea.all-hotel-map :geoPoints="$geoPoints"></x-sea.all-hotel-map>
 
-    <section>
+    <section id="sea_tour">
         <div class="container">
             <div class="all_tour_wrapper greed">
                 @foreach ($hotels as $item)
                     <x-cards.sea :item="$item"></x-cards.sea>
                 @endforeach
             </div>
+        </div>
+    </section>
+
+    <section class="bc_section">
+        <div class="container">
+            <x-pagination :tovars="$hotels"></x-pagination>
         </div>
     </section>
 

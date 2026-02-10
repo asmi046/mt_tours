@@ -7,6 +7,7 @@ use App\Models\SeaResort;
 use App\Services\AleanApiService;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class AleanGetHotels extends Command
 {
@@ -39,39 +40,40 @@ class AleanGetHotels extends Command
         // Увеличиваем лимит памяти для обработки изображений
         ini_set('memory_limit', '512M');
 
-        try {
-            $aleanService = new AleanApiService;
-            // Проверяем, не пуста ли таблица alean_tours
-            $count = DB::table('alean_tours')->count();
-            if ($count === 0) {
-                $this->error('Таблица alean_tours пуста. Сначала запустите alean:get-tours');
+        $aleanService = new AleanApiService;
+        // Проверяем, не пуста ли таблица alean_tours
+        $count = DB::table('alean_tours')->count();
+        if ($count === 0) {
+            $this->error('Таблица alean_tours пуста. Сначала запустите alean:get-tours');
 
-                return;
-            }
+            return;
+        }
 
-            $this->info("Найдено {$count} туров в таблице alean_tours");
+        $this->info("Найдено {$count} туров в таблице alean_tours");
 
-            // Выбираем hotelId и hotelCID, группируем по hotelId
-            $hotels = DB::table('alean_tours')
-                ->select('hotelId', 'hotelCID', 'resortId')
-                ->distinct()
-                ->orderBy('hotelId')
-                ->get();
+        // Выбираем hotelId и hotelCID, группируем по hotelId
+        $hotels = DB::table('alean_tours')
+            ->select('hotelId', 'hotelCID', 'resortId')
+            ->distinct()
+            ->orderBy('hotelId')
+            ->get();
 
-            $this->info('Найдено '.count($hotels).' уникальных отелей:');
-            $this->newLine();
+        $this->info('Найдено '.count($hotels).' уникальных отелей:');
+        $this->newLine();
 
-            // Выводим результат в виде таблицы
-            // $this->table(
-            //     ['Hotel ID', 'Hotel CID'],
-            //     $hotels->map(fn ($hotel) => [
-            //         $hotel->hotelId,
-            //         $hotel->hotelCID,
-            //     ])->toArray()
-            // );
+        // Выводим результат в виде таблицы
+        // $this->table(
+        //     ['Hotel ID', 'Hotel CID'],
+        //     $hotels->map(fn ($hotel) => [
+        //         $hotel->hotelId,
+        //         $hotel->hotelCID,
+        //     ])->toArray()
+        // );
 
-            foreach ($hotels as $hotel) {
-                $resort = SeaResort::where('alean_id', $hotel->resortId)->first();
+        foreach ($hotels as $hotel) {
+            try {
+                // $resort = SeaResort::where('alean_id', $hotel->resortId)->first();
+                $resort = SeaResort::where('alean_areas_id', 'LIKE', "%{$hotel->resortId}%")->first();
 
                 if (! $resort) {
                     $this->warn("Пропуск отеля с hotelId: {$hotel->hotelId} (не найден курорт с alean_id: {$hotel->resortId})");
@@ -89,15 +91,24 @@ class AleanGetHotels extends Command
                     $aleanService->getHotelStructuresDescription($alean_data, $resort->id, $resort->sea_destination_id, $resort->bus_schedule)
                 );
 
-                $this->info("Добавлен отель: {$hotel->hotelCID}");
+                $this->info("Добавлен отель: {$hotel->hotelCID}  {$alean_data['HotelName']}");
+
+                DB::table('seo_data')->updateOrInsert(
+                    ['url' => 'turi-na-more/'.$resort->slug.'/'.Str::slug($alean_data['HotelName'])],
+                    [
+                        'url' => 'turi-na-more/'.$resort->slug.'/'.Str::slug($alean_data['HotelName']),
+                        'seo_title' => $alean_data['HotelName'].' - автобусный тур из Курска' ?? 'Страницы',
+                        'seo_description' => $alean_data['HotelName'].' - автобусный тур из Курска по выгодным ценам. Туры на черное море от МирТуризма' ?? 'Страницы',
+                    ]
+                );
 
                 // Освобождаем память
                 unset($hotel_description, $alean_data);
                 gc_collect_cycles();
+            } catch (\Exception $e) {
+                $this->error('Error: '.$e->getMessage());
             }
-
-        } catch (\Exception $e) {
-            $this->error('Error: '.$e->getMessage());
         }
+
     }
 }

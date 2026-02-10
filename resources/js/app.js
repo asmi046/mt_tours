@@ -16,6 +16,7 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import { VMaskDirective } from 'v-slim-mask'
 import Pay from "./components/Pay/Pay.vue"
+import AleanCalc from "./components/Sea/AleanCalc.vue"
 
 import fslightbox from 'fslightbox'
 
@@ -88,6 +89,18 @@ if (document.getElementById("pay_app")) {
     pay_app.mount("#pay_app");
 }
 
+if (document.getElementById("alean_calc")) {
+    const alean_calc = createApp({
+        components: {
+            AleanCalc
+        },
+        setup() { }
+    })
+
+    alean_calc.use(VueAxios, axios)
+    alean_calc.directive('mask', VMaskDirective)
+    alean_calc.mount("#alean_calc");
+}
 
 
 import SideMenu from './menues.js';

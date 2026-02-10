@@ -31,10 +31,16 @@
     <section>
         <div class="container">
             <div class="all_tour_wrapper greed">
-                @foreach ($resort->hotels as $item)
+                @foreach ($hotels as $item)
                     <x-cards.sea :item="$item"></x-cards.sea>
                 @endforeach
             </div>
+        </div>
+    </section>
+
+    <section class="bc_section">
+        <div class="container">
+            <x-pagination :tovars="$hotels"></x-pagination>
         </div>
     </section>
 

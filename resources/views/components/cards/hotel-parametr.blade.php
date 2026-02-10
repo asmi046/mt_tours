@@ -49,13 +49,19 @@
                 </svg>
             @break
 
+            @case('За отдельную плату:')
+                <svg class="p_icon">
+                    <use xlink:href="#hotel_no_price"></use>
+                </svg>
+            @break
+
             @default
                 <svg class="p_icon">
                     <use xlink:href="#hotel_territ"></use>
                 </svg>
         @endswitch
     </div>
-    <div class="text">
+    <div class="text text_styles">
         <h3>{!! $item['title'] !!}</h3>
         {!! $item['description'] !!}
     </div>

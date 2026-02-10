@@ -20,3 +20,61 @@
         float: left;
     }
 }
+
+.alenan_calc_box {
+    display: flex;
+    gap:20px;
+    flex-grow: 1;
+    .field {
+        flex-grow: 1;
+    }
+    @media screen and (max-width:520px){
+        gap:0;
+        flex-direction: column;
+    }
+}
+
+.alenan_calc_result_box{
+    .preloader_spinner {
+        width:50px;
+    }
+
+    .alean_tour_results {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &__item {
+            display: flex;
+            gap:20px;
+            justify-content: space-between;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: $border_rad;
+            box-sizing: border-box;
+
+            & > * {
+                flex:1;
+            }
+
+            span {
+                font-size:12px;
+                color: $gray_dark_color;
+            }
+
+
+            @media screen and (max-width:520px){
+                flex-wrap: wrap;
+                gap:5px;
+                & > * {
+                    width:48%;
+                    flex: unset;
+                }
+
+                h4 {
+                    word-break: break-all;
+                }
+            }
+        }
+    }
+}

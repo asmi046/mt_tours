@@ -125,6 +125,55 @@ class AleanApiService
         return null;
     }
 
+    private function getDistanceParameters(array $alean_data): ?array
+    {
+        $results = null;
+
+        if (isset($alean_data['Address'])) {
+            $results[] = [
+                'title' => 'Расположение:',
+                'description' => $alean_data['Address'],
+            ];
+        }
+
+        if (isset($alean_data['Description'])) {
+            $results[] = [
+                'title' => 'Описание:',
+                'description' => $alean_data['Description'],
+            ];
+        }
+
+        if (isset($alean_data['RoomCategoryList'])) {
+            $info = '<ul>';
+            foreach ($alean_data['RoomCategoryList'] as $roomCategory) {
+                if (isset($roomCategory['RoomTypeShortName'])) {
+                    $info .= "<li>{$roomCategory['RoomTypeShortName']}, {$roomCategory['RoomCategoryName']} ".($roomCategory['RoomCategoryDescription'] ?? '').'</li>';
+                }
+            }
+            $info .= '</ul>';
+            $results[] = [
+                'title' => 'Размещение:',
+                'description' => $info,
+            ];
+        }
+
+        if (isset($alean_data['BeachList'][0]['Description'])) {
+            $results[] = [
+                'title' => 'Пляж:',
+                'description' => $alean_data['BeachList'][0]['Description'],
+            ];
+        }
+
+        if (isset($alean_data['ExtraCharged'])) {
+            $results[] = [
+                'title' => 'За отдельную плату:',
+                'description' => $alean_data['ExtraCharged'],
+            ];
+        }
+
+        return $results;
+    }
+
     public function getHotelStructuresDescription(array $alean_data, int $resortId, string $sea_destination_id, string $bus_schedule): array
     {
         $structures = [];
@@ -132,7 +181,7 @@ class AleanApiService
         $structures['sea_destination_id'] = $sea_destination_id;
         $structures['CID'] = $alean_data['CID'];
         $structures['bus_direction'] = $bus_schedule;
-        $structures['title'] = $alean_data['HotelName'] ?? 'Отель';
+        $structures['title'] = $alean_data['HotelTypeName'].' '.$alean_data['HotelName'] ?? 'Отель';
         $structures['slug'] = Str::slug($alean_data['HotelName'] ?? 'Отель');
         $structures['geo'] = '['.$alean_data['Coordinates']['Latitude'].', '.$alean_data['Coordinates']['Longitude'].']';
         $structures['sort_order'] = 0;
@@ -140,6 +189,7 @@ class AleanApiService
         $structures['short_description'] = $alean_data['Description'] ?? null;
         $structures['in_price'] = $alean_data['PriceIncludes'] ?? null;
         $structures['numbers_type'] = 'Доступно '.count($alean_data['RoomCategoryList'] ?? []).' типов номеров';
+        $structures['parameters'] = $this->getDistanceParameters($alean_data);
         $structures['sea_distantion'] = isset($alean_data['DistanceList'])
             ? $this->getDistanceToBeach($alean_data['DistanceList']).' м до моря'
             : null;
@@ -147,14 +197,14 @@ class AleanApiService
         // Обрабатываем изображения
         if (isset($alean_data['HotelImageList']) && is_array($alean_data['HotelImageList'])) {
             $imageData = $this->processHotelImages($alean_data['HotelImageList']);
-            $structures['gallery'] = json_encode($imageData['gallery']);
+            $structures['gallery'] = $imageData['gallery'];
             $structures['img'] = $imageData['img'];
         }
 
         return $structures;
     }
 
-    public function getTours(string $resortId = '18', string $dateFromTo = '09.06.2026'): string
+    public function getTours(string $resortId = '18', string $dateFromTo = '09.06.2026', int $adults = 2, string $hotels = ''): string
     {
         // dd($this->apiKey, $this->apiSecret, $this->baseUrl);
         $response = Http::withBasicAuth($this->apiKey, $this->apiSecret)
@@ -167,8 +217,9 @@ class AleanApiService
                     'resorts' => $resortId, // ID Анапы
                     'dateFrom' => $dateFromTo,
                     'dateTo' => $dateFromTo,
-                    'adults' => 2,
+                    'adults' => $adults,
                     'kids' => 0,
+                    'hotelCIDs' => $hotels,
                     'nightsMin' => 9,
                     'nightsMax' => 9,
                     'count' => 10000,

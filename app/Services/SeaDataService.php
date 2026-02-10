@@ -5,6 +5,7 @@ namespace App\Services;
 use App\Models\AleanSeaHotel;
 use App\Models\SeaHotel;
 use App\Models\SeaResort;
+use Illuminate\Pagination\LengthAwarePaginator;
 
 class SeaDataService
 {
@@ -32,16 +33,42 @@ class SeaDataService
         return $result;
     }
 
-    public function getAllHotels()
+    public function getAllHotels($resortId = null, $perPage = 30)
     {
-        $allHotels = SeaHotel::all()->concat(AleanSeaHotel::all());
+        $page = request()->get('page', 1);
 
-        return $allHotels;
+        // Если resortId не передан - получаем все отели, иначе только по курорту
+        if ($resortId) {
+            $seaHotels = SeaHotel::where('sea_resort_id', $resortId)->get();
+            $aleanHotels = AleanSeaHotel::where('sea_resort_id', $resortId)->get();
+        } else {
+            $seaHotels = SeaHotel::all();
+            $aleanHotels = AleanSeaHotel::all();
+        }
+
+        // Объединяем коллекции отелей
+        $allHotels = $seaHotels->concat($aleanHotels);
+
+        // Создаём пагинацию вручную
+        $paginated = new LengthAwarePaginator(
+            $allHotels->forPage($page, $perPage),
+            $allHotels->count(),
+            $perPage,
+            $page,
+            ['path' => request()->url(), 'query' => request()->query()]
+        );
+
+        return $paginated;
     }
 
     public function getHotelBySlug(string $slug)
     {
-        return SeaHotel::where('slug', $slug)->firstOrFail();
+        return SeaHotel::where('slug', $slug)->first();
+    }
+
+    public function getAleanHotelBySlug(string $slug)
+    {
+        return AleanSeaHotel::where('slug', $slug)->first();
     }
 
     public function getResortBySlug(string $slug)
@@ -52,6 +79,15 @@ class SeaDataService
     public function getHotelUpsale(string $bus_direction, string $exclude_slug, int $limit = 3)
     {
         return SeaHotel::where('bus_direction', $bus_direction)
+            ->where('slug', '!=', $exclude_slug)
+            ->inRandomOrder()
+            ->limit($limit)
+            ->get();
+    }
+
+    public function getAleanHotelUpsale(string $bus_direction, string $exclude_slug, int $limit = 3)
+    {
+        return AleanSeaHotel::where('bus_direction', $bus_direction)
             ->where('slug', '!=', $exclude_slug)
             ->inRandomOrder()
             ->limit($limit)
