@@ -17,6 +17,7 @@ import VueAxios from 'vue-axios'
 import { VMaskDirective } from 'v-slim-mask'
 import Pay from "./components/Pay/Pay.vue"
 import AleanCalc from "./components/Sea/AleanCalc.vue"
+import WayCalc from "./components/Sea/WayCalc.vue"
 
 import fslightbox from 'fslightbox'
 
@@ -102,6 +103,18 @@ if (document.getElementById("alean_calc")) {
     alean_calc.mount("#alean_calc");
 }
 
+if (document.getElementById("way_calc")) {
+    const way_calc = createApp({
+        components: {
+            WayCalc
+        },
+        setup() { }
+    })
+
+    way_calc.use(VueAxios, axios)
+    way_calc.directive('mask', VMaskDirective)
+    way_calc.mount("#way_calc");
+}
 
 import SideMenu from './menues.js';
 

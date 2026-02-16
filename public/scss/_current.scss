@@ -1,4 +1,4 @@
-@use 'vars' as *;
+@use "vars" as *;
 
 body {
     font-family: $main_fonts;
@@ -18,13 +18,12 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-
 }
 
 h2,
 h3,
 h4 {
-    font-family: 'Play';
+    font-family: "Play";
     line-height: 1.1;
     font-weight: bold;
 }
@@ -57,7 +56,7 @@ h1 {
     font-size: 46px;
     margin-top: 0;
     font-weight: bold;
-    font-family: 'Play';
+    font-family: "Play";
     line-height: 1.1;
     margin-bottom: 50px;
 
@@ -68,14 +67,21 @@ h1 {
 
 .h2_in_page {
     font-size: 42px;
-    margin: .8em 0;
+    margin: 0.8em 0;
 }
 
 .d_flex {
     display: flex;
 }
 
-
+.cols {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    .col {
+        flex: 1;
+    }
+}
 
 .breadcrumbs_section a {
     &:hover {
@@ -116,8 +122,6 @@ h1 {
             background-color: $hover_color;
         }
     }
-
-
 }
 
 .new_year {
@@ -141,7 +145,6 @@ h1 {
 .gold {
     color: $gold_color;
 }
-
 
 .in_tur {
     .wrapper {
@@ -170,7 +173,7 @@ h1 {
 
     &_blue {
         background-color: $blue_light_color;
-        color: white
+        color: white;
     }
 }
 
@@ -178,7 +181,7 @@ h1 {
     display: block;
     width: 20px;
     height: 20px;
-    background-image: url('../img/icon/ruble.svg');
+    background-image: url("../img/icon/ruble.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -188,7 +191,7 @@ h1 {
     display: block;
     width: 20px;
     height: 20px;
-    background-image: url('../img/icon/babl.svg');
+    background-image: url("../img/icon/babl.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -198,7 +201,7 @@ h1 {
     display: block;
     width: 20px;
     height: 20px;
-    background-image: url('../img/icon/search.svg');
+    background-image: url("../img/icon/search.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -213,16 +216,16 @@ h1 {
     font-family: "Caveat", cursive;
 }
 
-@media (max-width:1280px) {
+@media (max-width: 1280px) {
     .container {
         width: 96%;
         margin: 0 2%;
     }
 }
 
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
     h1 {
-        font-size: 38px
+        font-size: 38px;
     }
 
     h2 {
@@ -230,7 +233,7 @@ h1 {
     }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
     h1 {
         font-size: 28px;
 
@@ -267,9 +270,8 @@ swiper-container {
 
 swiper-slide {
     display: flex;
-    height: auto
+    height: auto;
 }
-
 
 .arrow_button {
     width: 40px;

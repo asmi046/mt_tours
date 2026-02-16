@@ -21,8 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('tours', function (Blueprint $table) {
-            $table->json('head_tour_program')->nullable(false)->comment('Программа тура')->change();
-        });
+        // Schema::table('tours', function (Blueprint $table) {
+        //     $table->json('head_tour_program')->nullable(false)->comment('Программа тура')->change();
+        // });
     }
 };

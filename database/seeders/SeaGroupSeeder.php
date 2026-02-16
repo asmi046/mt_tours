@@ -17,6 +17,7 @@ class SeaGroupSeeder extends Seeder
             SeaHotelSeeder::class,
             SeaBusScheduleSeeder::class,
             SeaPriceSeeder::class,
+            SeaWayPriceSeeder::class,
         ]);
     }
 }

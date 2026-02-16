@@ -56,4 +56,11 @@ class SeaController extends Controller
 
         return $tours;
     }
+
+    public function kupit_proezd()
+    {
+        $sea_way_prices = app(SeaDataService::class)->getAllSeaWayPrices();
+
+        return view('sea.way', compact('sea_way_prices'));
+    }
 }

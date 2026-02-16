@@ -5,6 +5,7 @@ namespace App\Services;
 use App\Models\AleanSeaHotel;
 use App\Models\SeaHotel;
 use App\Models\SeaResort;
+use App\Models\SeaWayPrice;
 use Illuminate\Pagination\LengthAwarePaginator;
 
 class SeaDataService
@@ -92,5 +93,10 @@ class SeaDataService
             ->inRandomOrder()
             ->limit($limit)
             ->get();
+    }
+
+    public function getAllSeaWayPrices()
+    {
+        return SeaWayPrice::with('busSchedules')->orderBy('order')->get();
     }
 }
