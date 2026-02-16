@@ -174,13 +174,14 @@ class AleanApiService
         return $results;
     }
 
-    public function getHotelStructuresDescription(array $alean_data, int $resortId, string $sea_destination_id, string $bus_schedule): array
+    public function getHotelStructuresDescription(array $alean_data, int $resortId, string $sea_destination_id, string $bus_schedule, ?float $minPrice = null): array
     {
         $structures = [];
         $structures['sea_resort_id'] = $resortId;
         $structures['sea_destination_id'] = $sea_destination_id;
         $structures['CID'] = $alean_data['CID'];
         $structures['bus_direction'] = $bus_schedule;
+        $structures['min_price'] = $minPrice;
         $structures['title'] = $alean_data['HotelTypeName'].' '.$alean_data['HotelName'] ?? 'Отель';
         $structures['slug'] = Str::slug($alean_data['HotelName'] ?? 'Отель');
         $structures['geo'] = '['.$alean_data['Coordinates']['Latitude'].', '.$alean_data['Coordinates']['Longitude'].']';
@@ -204,7 +205,7 @@ class AleanApiService
         return $structures;
     }
 
-    public function getTours(string $resortId = '18', string $dateFromTo = '09.06.2026', int $adults = 2, string $hotels = ''): string
+    public function getTours(string $resortId = '18', string $dateFromTo = '09.06.2026', int $adults = 1, string $hotels = ''): string
     {
         // dd($this->apiKey, $this->apiSecret, $this->baseUrl);
         $response = Http::withBasicAuth($this->apiKey, $this->apiSecret)

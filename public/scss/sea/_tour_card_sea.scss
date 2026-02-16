@@ -1,4 +1,4 @@
-@use '../vars' as *;
+@use "../vars" as *;
 
 .tour_card_sea {
     .resort_label {
@@ -13,7 +13,7 @@
     }
 }
 
-@media screen and (max-width:512px) {
+@media screen and (max-width: 512px) {
     .tour_card_sea .label {
         font-size: 12px;
     }
@@ -23,11 +23,13 @@
         font-size: 12px;
     }
 
+    .tour_card .img .price_label {
+        top: 40px;
+    }
     .tour_card_sea .resort_label {
         position: absolute;
         left: unset;
         right: 10px;
-        top: 40px;
-
+        top: 10px;
     }
 }

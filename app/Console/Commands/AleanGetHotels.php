@@ -84,11 +84,21 @@ class AleanGetHotels extends Command
 
                 $hotel_description = $aleanService->getHotelDescription($hotel->hotelId);
                 $alean_data = json_decode($hotel_description, true);
+
+                $minPrice = DB::table('alean_tours')
+                    ->where('hotelCID', $alean_data['CID'])
+                    ->orderBy('price', 'asc')
+                    ->value('price');
+
+                if ($minPrice === null) {
+                    $this->warn("Не найдена цена в alean_tours для hotelCID: {$alean_data['CID']}");
+                }
+
                 AleanSeaHotel::updateOrCreate(
                     [
                         'CID' => $alean_data['CID'],
                     ],
-                    $aleanService->getHotelStructuresDescription($alean_data, $resort->id, $resort->sea_destination_id, $resort->bus_schedule)
+                    $aleanService->getHotelStructuresDescription($alean_data, $resort->id, $resort->sea_destination_id, $resort->bus_schedule, $minPrice)
                 );
 
                 $this->info("Добавлен отель: {$hotel->hotelCID}  {$alean_data['HotelName']}");
