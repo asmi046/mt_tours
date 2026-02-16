@@ -11,29 +11,29 @@
         <x-header></x-header>
 
 
-            <div class="container left_text">
-                <div class="bnr_text">
-                    <h1>{!! seo_data()->seo_data->page_title !!}</h1>
-                    <p class="subtext">{!! seo_data()->seo_data->page_sub_title !!}</p>
-                    <br>
-                    <br>
+        <div class="container left_text">
+            <div class="bnr_text">
+                <h1>{!! seo_data()->seo_data->page_title !!}</h1>
+                <p class="subtext">{!! seo_data()->seo_data->page_sub_title !!}</p>
+                <br>
+                <br>
 
-                    <x-cat-banner-btn></x-cat-banner-btn>
+                <x-cat-banner-btn></x-cat-banner-btn>
 
-
-                </div>
-
-                <div class="dop_param">
-                    <div class="arrow_widget">
-                        <div class="arrow"></div>
-                        <span>Последние<br>Места!</span>
-                    </div>
-                    <x-banner-tours-prev></x-banner-tours-prev>
-                </div>
 
             </div>
 
-            {{-- <div class="marque_wrap">
+            <div class="dop_param">
+                <div class="arrow_widget">
+                    <div class="arrow"></div>
+                    <span>Последние<br>Места!</span>
+                </div>
+                <x-banner-tours-prev></x-banner-tours-prev>
+            </div>
+
+        </div>
+
+        {{-- <div class="marque_wrap">
                 <div class="marque">
                     <span class='str'>Лучшие предложения</span>
                     <span class='str'>Постоянные скидки</span>
@@ -55,12 +55,14 @@
         <div class="container">
             <div class="about_tours">
                 <div class="text">
-                    <h2>Самые актуальные туры <br>из Курска <strong class="gold">2025</strong></h2>
-                    <p class="subtitle">Выберите тур самостоятельно или оставьте заявку и наши специалисты помогут Вам и ответят на все Ваши вопросы!</p>
+                    <h2>Самые актуальные туры <br>из Курска <strong class="gold">2026</strong></h2>
+                    <p class="subtitle">Выберите тур самостоятельно или оставьте заявку и наши специалисты помогут Вам и
+                        ответят на все Ваши вопросы!</p>
                     <a class="button" href="#showModal">Получить консультацию</a>
                 </div>
                 <div class="el">
-                    <img class="turists" src="{{ asset('img/turists.svg') }}" alt="Каталог экскурсионных туров из Курска 2025">
+                    <img class="turists" src="{{ asset('img/turists.svg') }}"
+                        alt="Каталог экскурсионных туров из Курска 2025">
                     <img class="buss" src="{{ asset('img/buss.svg') }}" alt="Каталог экскурсионных туров из Курска 2025">
                 </div>
             </div>
@@ -74,6 +76,4 @@
     <x-rew></x-rew>
 
     <x-contacts-section></x-contacts-section>
-
 @endsection
-

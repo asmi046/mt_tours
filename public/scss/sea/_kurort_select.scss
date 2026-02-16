@@ -1,4 +1,4 @@
-@use '../vars' as *;
+@use "../vars" as *;
 
 .kurort_select {
     &__line {
@@ -6,13 +6,11 @@
         justify-content: start;
         flex-wrap: wrap;
         gap: 20px;
-        padding: 10px 0;
-
-
+        padding: 5px 0;
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 16px;
         padding: 3px 0;
     }
 
@@ -20,20 +18,27 @@
         padding: 10px 20px;
         border: 1px solid $gray_border_color;
         border-radius: $border_rad;
+        font-size: 14px;
+        text-align: center;
+        line-height: 1;
 
         &.active,
         &:hover {
             background-color: $main_color;
             border-color: $main_color;
         }
-    }
 
+        span {
+            font-size: 10px;
+            color: $gray_dark_color;
+        }
+    }
 }
 
-@media screen and (max-width:780px) {
+@media screen and (max-width: 780px) {
     .kurort_select {
         &__line {
-            gap: 10px
+            gap: 10px;
         }
 
         .select_button {

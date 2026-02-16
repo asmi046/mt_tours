@@ -4,11 +4,15 @@
             <h3>{{ $direction }}</h3>
             <div class="kurort_select__line">
                 @foreach ($resorts as $resort)
-                    <a href="{{ route('sea_resort', $resort['slug']) }}"
-                        @class([
-                            'select_button',
-                            'active' => request()->route('resort') === $resort['slug'],
-                        ])>{{ $resort['title'] }}</a>
+                    <a href="{{ route('sea_resort', $resort['slug']) }}" @class([
+                        'select_button',
+                        'active' => request()->route('resort') === $resort['slug'],
+                    ])>
+                        {{ $resort['title'] }}
+                        @if ($resort['subtitle'])
+                            <span><br>{{ $resort['subtitle'] }}</span>
+                        @endif
+                    </a>
                 @endforeach
             </div>
         @endforeach
