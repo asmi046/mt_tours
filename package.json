@@ -28,7 +28,9 @@
         "optimize": "ssh u1731342@31.31.198.62 \"cd www/tours.mirturizma46.ru && /opt/php/8.2/bin/php artisan optimize\"",
         "optimize_all": "npm run optimize && npm run cache_clear && npm run cache_view && npm run cache_route && npm run cache_config",
         "orchid_user": "ssh u1731342@31.31.198.62 \"cd www/tours.mirturizma46.ru && /opt/php/8.2/bin/php artisan orchid:admin admin asmi046@gmail.com 123\"",
-        "deploy_m": "vite build && npm run send_vite_build && npm run pull_rep && npm run optimize_all && npm run chmode"
+        "deploy_m": "vite build && npm run send_vite_build && npm run pull_rep && npm run optimize_all && npm run chmode",
+        "alean_tour": "ssh u1731342@31.31.198.62 \"cd www/tours.mirturizma46.ru && /opt/php/8.2/bin/php artisan alean:get-tours\"",
+        "alean_hotel": "ssh u1731342@31.31.198.62 \"cd www/tours.mirturizma46.ru && /opt/php/8.2/bin/php artisan alean:get-hotels\""
     },
     "devDependencies": {
         "axios": "^1.7.7",

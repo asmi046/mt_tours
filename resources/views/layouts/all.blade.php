@@ -81,18 +81,18 @@
                                 @for ($i = 0; $i < 6; $i++)
                                     <p><a target="_blank"
                                             href="https://tours.mirturizma46.ru/tour/gastrotur-syr-xleb-i-vino">ГастроТур
-                                            «Кофе/Сыр. Хлеб и Вино» 🎄</a></p>
-                                    <img src="{{ asset('img/icon/snow_lent.svg') }}" alt="Снежинка">
+                                            «Кофе/Сыр. Хлеб и Вино» 🍷</a></p>
+                                    {{-- <img src="{{ asset('img/icon/flovers.svg') }}" alt="Снежинка"> --}}
                                     <p><a target="_blank"
                                             href="https://tours.mirturizma46.ru/tour/gornolyznyi-tur-v-krasnuiu-polianu">Горнолыжный
                                             тур 2026 ⛷️</a></p>
-                                    <img src="{{ asset('img/icon/snow_lent.svg') }}" alt="Снежинка">
+                                    {{-- <img src="{{ asset('img/icon/flovers.svg') }}" alt="Снежинка"> --}}
                                     <p><a target="_blank" href="https://tours.mirturizma46.ru/tour/matrona"> Матрона
                                             Московская 🙏</a></p>
-                                    <img src="{{ asset('img/icon/snow_lent.svg') }}" alt="Снежинка">
+                                    {{-- <img src="{{ asset('img/icon/flovers.svg') }}" alt="Снежинка"> --}}
                                     <p><a target="_blank" href="https://tours.mirturizma46.ru/tour/adygeia">Адыгея 20-23
                                             февраля ⛰️</a></p>
-                                    <img src="{{ asset('img/icon/snow_lent.svg') }}" alt="Снежинка">
+                                    {{-- <img src="{{ asset('img/icon/flovers.svg') }}" alt="Снежинка"> --}}
                                 @endfor
                             </div>
                         </div>

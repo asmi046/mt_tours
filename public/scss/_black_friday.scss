@@ -1,7 +1,7 @@
-@use 'vars' as *;
+@use "vars" as *;
 
 .black_friday {
-    background-color: #129AFF;
+    background-color: #129aff;
     color: white;
     height: 30px;
     padding: 0;
@@ -10,17 +10,19 @@
     white-space: nowrap;
 
     strong {
-        color:white;
+        color: white;
     }
 }
-marquee {
+.marquee {
     display: flex;
     // align-items: center;
+    height: 30px;
 }
 
 .marquee__content {
     display: flex;
     animation: scroll 30s linear infinite;
+    margin: auto;
 }
 
 .marquee__content p {
@@ -28,7 +30,7 @@ marquee {
     margin: 0 20px;
     display: flex;
     a {
-        color:white;
+        color: white;
         line-height: 1;
         margin: auto;
     }
@@ -39,7 +41,7 @@ marquee {
     height: 30px;
 }
 
-@media screen and (max-width:512px) {
+@media screen and (max-width: 512px) {
     .marquee__content {
         animation: scroll_mobile 30s linear infinite;
     }

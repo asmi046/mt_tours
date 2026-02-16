@@ -1,5 +1,4 @@
-{{--
-<a href="https://www.mirturizma46.ru/turi-na-more" class="item buss_item">
+<a href="{{ route('sea_home') }}" class="item buss_item">
     <img src="{{ asset('img/buss.webp') }}" alt="Автобусные туры на море">
     <div class="overlay"></div>
     <div class="text">
@@ -9,7 +8,7 @@
         от 15000 ₽
     </div>
 </a>
---}}
+
 
 {{--
 <a href="{{ route("tour_category", 'tury-na-noiabrskie-prazdniki') }}" class="item buss_item">
@@ -26,7 +25,7 @@
 
 
 
-<a href="{{ route('tour_category', 'new-year') }}" class="item new_year_item">
+{{-- <a href="{{ route('tour_category', 'new-year') }}" class="item new_year_item">
     <img src="{{ asset('img/new_year/new_head_banner.webp') }}" alt="Новогодние туры от МирТуризма">
     <div class="overlay"></div>
     <div class="text">
@@ -35,7 +34,8 @@
     <div class="label price_label">
         от 2500 ₽
     </div>
-</a>
+</a> --}}
+
 <div class="dop_param__preview">
     @foreach ($tours as $item)
         <a href="{{ $item->out_lnk ?? route('tour_page', $item->slug) }}" class="item">
