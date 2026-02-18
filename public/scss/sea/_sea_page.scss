@@ -1,4 +1,4 @@
-@use '../vars' as *;
+@use "../vars" as *;
 
 .sea_hotel_page_section {
     .cols {
@@ -26,9 +26,13 @@
         --swiper-pagination-bullet-inactive-color: #{$gold_color};
         --swiper-pagination-bullet-inactive-opacity: 0.3;
         --swiper-pagination-bullet-size: 10px;
+        --swiper-navigation-color: #{$gold_color};
     }
 
-
+    .sea-hotel-gallery::part(pagination) {
+        width: 90%;
+        left: 5%;
+    }
 
     .swiper-slide {
         img {
@@ -87,18 +91,16 @@
     }
 
     .schedule {
-
-
         .schedule_table {
             display: flex;
             flex-direction: column;
 
             .schedule_row {
                 padding: 5px 15px;
-                background-color: rgba(#72B7B0, 0.4);
+                background-color: rgba(#72b7b0, 0.4);
 
                 &:nth-child(2n) {
-                    background-color: rgba(#72B7B0, 0.2);
+                    background-color: rgba(#72b7b0, 0.2);
                 }
 
                 strong {
@@ -106,7 +108,6 @@
                 }
             }
         }
-
     }
 
     h2 {
@@ -114,16 +115,15 @@
     }
 
     .hotel_prices {
-
         .number_tr,
         th {
-            background-color: rgba(#72B7B0, 0.4);
-            color: $black_color
+            background-color: rgba(#72b7b0, 0.4);
+            color: $black_color;
         }
     }
 }
 
-@media screen and (max-width:780px) {
+@media screen and (max-width: 780px) {
     .sea_hotel_page_section {
         .cols {
             flex-direction: column;

@@ -1,9 +1,9 @@
-@use '../vars' as *;
+@use "../vars" as *;
 button,
 .button {
     background-color: $main_color;
     border: 1px solid $main_color;
-    color:$black_color;
+    color: $black_color;
     padding: 10px 30px;
     cursor: pointer;
     transition: $main_transition;
@@ -12,6 +12,7 @@ button,
     font-family: $main_fonts;
     font-size: 16px;
     border-radius: 10px;
+    text-align: center;
 
     &:hover {
         background-color: $gold_color;
@@ -24,7 +25,7 @@ button,
     display: inline-flex;
 
     & > * {
-        margin:auto 5px;
+        margin: auto 5px;
     }
 }
 
@@ -34,7 +35,7 @@ button,
     border: 1px solid $main_color;
     text-decoration: none;
 
-    &:hover{
+    &:hover {
         color: white;
         text-decoration: none;
     }
@@ -46,7 +47,7 @@ button,
     border: 1px solid $blue_light_color;
     text-decoration: none;
 
-    &:hover{
+    &:hover {
         color: white;
         background-color: $hover_color;
         border: 1px solid $hover_color;
@@ -58,35 +59,34 @@ button,
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #FEFA17;
+    background-color: #fefa17;
     border-radius: 50px;
     border: 1px solid white;
     display: flex;
     .sprite_icon {
-        width:25px;
-        height:25px;
+        width: 25px;
+        height: 25px;
         margin: auto;
     }
 }
 
-
 .cat_banner_buttons {
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
 }
 
 .banner_button {
     background-color: $main_color;
-    font-family: 'Play';
+    font-family: "Play";
     font-weight: bold;
     font-size: 22px;
     padding: 10px 20px 10px 10px;
     border-radius: $border_rad;
     display: flex;
-    gap:10px;
+    gap: 10px;
 
-    &:hover{
+    &:hover {
         background-color: $gold_color;
     }
 
@@ -98,23 +98,21 @@ button,
         display: flex;
         img {
             margin: auto;
-            width:70%;
+            width: 70%;
             height: auto;
         }
     }
 
     span {
-        margin: auto auto auto 0 ;
+        margin: auto auto auto 0;
     }
 
-    @media (max-width:768px) {
+    @media (max-width: 768px) {
         font-size: 14px;
     }
-
-
 }
 
-@media (max-width:414px) {
+@media (max-width: 414px) {
     .button_icon {
         padding: 10px 10px;
         font-size: 14px;

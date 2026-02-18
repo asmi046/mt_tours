@@ -41,9 +41,12 @@
                     <x-sea.one-hotel-map :geoPoint="$hotel->geo"></x-sea.one-hotel-map>
                     <x-sea.bas_shadule :schedule="$hotel->busSchedules"></x-sea.bas_shadule>
                     <div id="alean_calc">
-                        <alean-calc :hotels="{{ json_encode($hotel->CID) }}"
+                        <alean-calc :hotels="{{ json_encode($hotel->CID) }}" :hotel_name="{{ json_encode($hotel->title) }}"
                             :resort="{{ json_encode($hotel->resort->alean_id) }}"
+                            :resort_name="{{ json_encode($hotel->resort->title) }}"
                             :schedule="{{ json_encode($hotel->busSchedules) }}"
+                            :hotel_img="{{ json_encode($hotel->gallery[0]['img']) }}"
+                            :way_price="{{ json_encode($wayPrice) }}"
                             :priceup="{{ json_encode($hotel->resort->alean_price_up) }}"></alean-calc>
                     </div>
                 </div>
@@ -65,6 +68,10 @@
                             <div class="text text_styles">
                                 <h3>В цену входит:</h3>
                                 {!! $hotel->in_price !!}
+                                <p class="way_in_price">
+                                    🚌 + Проезд на комфортабельном автобусе, <strong>Курск -
+                                        {{ $hotel->resort->title }}</strong> в обе стороны.
+                                </p>
                             </div>
                         </div>
 

@@ -12,7 +12,7 @@
 
         <div class="field">
             <label>Выберите вид проезда<sup>*</sup></label>
-            <select v-model="wayType" @change="wayTypeSelect">
+            <select v-model="wayType" @change="wayTypeSelect" disabled>
                 <option value="two_way">Туда и обратно</option>
                 <option value="one_way" :disabled="oneWayDisabled">
                     В одну сторону

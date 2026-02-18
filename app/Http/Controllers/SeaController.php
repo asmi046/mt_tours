@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\SeaWayPrice;
 use App\Services\AleanApiService;
 use App\Services\SeaDataService;
 use Illuminate\Http\Request;
@@ -29,7 +30,9 @@ class SeaController extends Controller
 
     public function hotel(string $resort, string $hotel)
     {
+
         $hotel_data = app(SeaDataService::class)->getHotelBySlug($hotel);
+
         if ($hotel_data) {
             $upsaleHotels = app(SeaDataService::class)->getHotelUpsale($hotel_data->bus_direction, $hotel_data->slug);
 
@@ -37,9 +40,11 @@ class SeaController extends Controller
         } else {
             $hotel_data = app(SeaDataService::class)->getAleanHotelBySlug($hotel);
             $upsaleHotels = app(SeaDataService::class)->getAleanHotelUpsale($hotel_data->bus_direction, $hotel_data->slug);
-            // dd($hotel_data, $upsaleHotels);
+            if ($hotel_data->resort) {
+                $wayPrice = SeaWayPrice::where('city', $hotel_data->resort->title)->first();
+            }
 
-            return view('sea.alean-hotel', ['hotel' => $hotel_data, 'upsaleHotels' => $upsaleHotels]);
+            return view('sea.alean-hotel', ['hotel' => $hotel_data, 'upsaleHotels' => $upsaleHotels, 'wayPrice' => $wayPrice ? $wayPrice->two_way : 0]);
         }
         abort(404);
     }
@@ -51,8 +56,10 @@ class SeaController extends Controller
         $dateFromTo = $request->input('datefromto', '');
         $adults = $request->input('adults', 2);
         $hotels = $request->input('hotels', '');
-        // dd($resortId, $dateFromTo, $adults, $hotels);
-        $tours = app(AleanApiService::class)->getTours($resortId, ru_date_to_current_year($dateFromTo), $adults, $hotels);
+        $children = $request->input('children', '');
+        $children_ages = $request->input('children_ages', '');
+        // dd($resortId, $dateFromTo, $adults, $hotels, $children, $children_ages);
+        $tours = app(AleanApiService::class)->getTours($resortId, ru_date_to_current_year($dateFromTo), $adults, $hotels, (int) $children, $children_ages ?? '');
 
         return $tours;
     }

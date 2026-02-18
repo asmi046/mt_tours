@@ -205,7 +205,7 @@ class AleanApiService
         return $structures;
     }
 
-    public function getTours(string $resortId = '18', string $dateFromTo = '09.06.2026', int $adults = 1, string $hotels = ''): string
+    public function getTours(string $resortId = '18', string $dateFromTo = '09.06.2026', int $adults = 1, string $hotels = '', int $children = 0, string $children_ages = ''): string
     {
         // dd($this->apiKey, $this->apiSecret, $this->baseUrl);
         $response = Http::withBasicAuth($this->apiKey, $this->apiSecret)
@@ -219,7 +219,8 @@ class AleanApiService
                     'dateFrom' => $dateFromTo,
                     'dateTo' => $dateFromTo,
                     'adults' => $adults,
-                    'kids' => 0,
+                    'kids' => $children,
+                    'kidsAges' => $children_ages,
                     'hotelCIDs' => $hotels,
                     'nightsMin' => 9,
                     'nightsMax' => 9,

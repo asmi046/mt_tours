@@ -288,9 +288,9 @@ class SeaResortSeeder extends Seeder
 
         foreach ($resorts as $item) {
             DB::table('seo_data')->updateOrInsert(
-                ['url' => 'turi-na-more/'.$item['slug']],
+                ['url' => 'tury-na-more/'.$item['slug']],
                 [
-                    'url' => 'turi-na-more/'.$item['slug'],
+                    'url' => 'tury-na-more/'.$item['slug'],
                     'seo_title' => $item['page_title'],
                     'seo_description' => $item['page_subtitle'],
                 ]

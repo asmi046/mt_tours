@@ -166,9 +166,9 @@ class SeaHotelSeeder extends Seeder
 
             foreach ($seos as $hotel) {
                 DB::table('seo_data')->updateOrInsert(
-                    ['url' => 'turi-na-more/'.Str::slug($hotel['resort']).'/'.$hotel['slug']],
+                    ['url' => 'tury-na-more/'.Str::slug($hotel['resort']).'/'.$hotel['slug']],
                     [
-                        'url' => 'turi-na-more/'.Str::slug($hotel['resort']).'/'.$hotel['slug'],
+                        'url' => 'tury-na-more/'.Str::slug($hotel['resort']).'/'.$hotel['slug'],
                         'seo_title' => $hotel['seo_title'] ?? 'Страницы',
                         'seo_description' => $hotel['seo_description'] ?? 'Страницы',
                     ]

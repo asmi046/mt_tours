@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         pagination: {
             clickable: true,
         },
+        navigation: true,
     });
 
     swiperEl.initialize();

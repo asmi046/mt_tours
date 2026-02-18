@@ -104,9 +104,9 @@ class AleanGetHotels extends Command
                 $this->info("Добавлен отель: {$hotel->hotelCID}  {$alean_data['HotelName']}");
 
                 DB::table('seo_data')->updateOrInsert(
-                    ['url' => 'turi-na-more/'.$resort->slug.'/'.Str::slug($alean_data['HotelName'])],
+                    ['url' => 'tury-na-more/'.$resort->slug.'/'.Str::slug($alean_data['HotelName'])],
                     [
-                        'url' => 'turi-na-more/'.$resort->slug.'/'.Str::slug($alean_data['HotelName']),
+                        'url' => 'tury-na-more/'.$resort->slug.'/'.Str::slug($alean_data['HotelName']),
                         'seo_title' => $alean_data['HotelName'].' - автобусный тур из Курска' ?? 'Страницы',
                         'seo_description' => $alean_data['HotelName'].' - автобусный тур из Курска по выгодным ценам. Туры на черное море от МирТуризма' ?? 'Страницы',
                     ]
