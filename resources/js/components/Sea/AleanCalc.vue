@@ -190,7 +190,7 @@ const onParamsChange = async () => {
 const priceCalculation = (aleanPrice) => {
     return (
         parseFloat(aleanPrice) +
-        parseFloat(props.priceup) +
+        parseFloat(props.priceup) * (adoult_count.value + childrenCount.value) +
         parseFloat(props.way_price) * (adoult_count.value + childrenCount.value)
     );
     // return parseFloat(aleanPrice) + parseFloat(props.priceup);
