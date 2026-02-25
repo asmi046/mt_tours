@@ -35,6 +35,7 @@ class SeaController extends Controller
 
         if ($hotel_data) {
             $upsaleHotels = app(SeaDataService::class)->getHotelUpsale($hotel_data->bus_direction, $hotel_data->slug);
+            // dd($hotel_data);
 
             return view('sea.hotel', ['hotel' => $hotel_data, 'upsaleHotels' => $upsaleHotels]);
         } else {
@@ -47,6 +48,21 @@ class SeaController extends Controller
             return view('sea.alean-hotel', ['hotel' => $hotel_data, 'upsaleHotels' => $upsaleHotels, 'wayPrice' => $wayPrice ? $wayPrice->two_way : 0]);
         }
         abort(404);
+    }
+
+    public function getTourPrice(Request $request)
+    {
+        $hotelId = $request->input('hotelid');
+        $numberType = $request->input('numbertype');
+        $startData = $request->input('startdata');
+        $endData = $request->input('enddata');
+        $adult = $request->input('adult', 0);
+        $before5 = $request->input('before5', 0);
+        $before12 = $request->input('before12', 0);
+
+        $price = app(SeaDataService::class)->getTourPrice($hotelId, $numberType, $startData, $endData, $adult, $before5, $before12);
+
+        return $price;
     }
 
     public function getTourList(Request $request)

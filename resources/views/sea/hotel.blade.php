@@ -12,7 +12,7 @@
 
         <div class="container left_text">
             <div class="bnr_text">
-                <h1>{!! $hotel->title !!}</h1>
+                <h1 data-pid="{{ $hotel->id }}">{!! $hotel->title !!}</h1>
                 <p class="subtext">{!! $hotel->short_description !!}</p>
                 <br>
                 <x-cat-banner-btn-page></x-cat-banner-btn-page>
@@ -38,7 +38,13 @@
                             </swiper-slide>
                         @endforeach
                     </swiper-container>
-
+                    <div class="calc" id="main_calc">
+                        <h2>Рассчитать стоимость</h2>
+                        <main-calc :hotelid="{{ $hotel->id }}" :hotel_name="'{{ $hotel->title }}'"
+                            :resort_name="'{{ $hotel->resort->name }}'" :hotel_img="'{{ $hotel->img }}'"
+                            :room-types="{{ json_encode($hotel->number_prices) }}"
+                            :schedule="{{ json_encode($hotel->busSchedules) }}"></main-calc>
+                    </div>
                     <x-sea.one-hotel-map :geoPoint="$hotel->geo"></x-sea.one-hotel-map>
                     <x-sea.bas_shadule :schedule="$hotel->busSchedules"></x-sea.bas_shadule>
                     <x-sea.hotel-price :prices="$hotel->number_prices" :befor5="$hotel->before_5_price" :before11="$hotel->before_12_price"></x-sea.hotel-price>

@@ -4,6 +4,7 @@ namespace App\Services;
 
 use App\Models\AleanSeaHotel;
 use App\Models\SeaHotel;
+use App\Models\SeaPrice;
 use App\Models\SeaResort;
 use App\Models\SeaWayPrice;
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -98,5 +99,27 @@ class SeaDataService
     public function getAllSeaWayPrices()
     {
         return SeaWayPrice::with('busSchedules')->orderBy('order')->get();
+    }
+
+    public function getTourPrice($hotelId, $numberType, $startData, $endData, $adult = 0, $before5 = 0, $before12 = 0)
+    {
+        $hotel = SeaHotel::where('id', $hotelId)->firstOrFail();
+        $prices = SeaPrice::where('viezd', $startData)->where('vozvrashenie', $endData)->firstOrFail();
+
+        $hotelPrice = collect($hotel->number_prices)->firstWhere('number_type', $numberType);
+
+        // dd($prices, $hotelPrice, $hotel->before_5_price, $hotel->before_12_price);
+
+        $basePrice = ($prices->june_day_count * $hotelPrice['june_night_price']) +
+        ($prices->july_day_count * $hotelPrice['july_night_price']) +
+        ($prices->august_day_count * $hotelPrice['august_night_price']) +
+        ($prices->september_day_count * $hotelPrice['september_night_price']);
+
+        $price =
+        ($basePrice * $adult) +
+        ($before5 * $hotel->before_5_price) +
+        ($before12 * ($basePrice * (1 - ($hotel->before_12_price / 100))));
+
+        return $price;
     }
 }

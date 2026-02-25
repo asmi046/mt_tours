@@ -8,3 +8,4 @@ Route::get('/tury-na-more/{resort}', [SeaController::class, 'resort'])->name('se
 Route::get('/tury-na-more/{resort}/{hotel}', [SeaController::class, 'hotel'])->name('sea_hotel');
 
 Route::get('/get_tour_list', [SeaController::class, 'getTourList'])->name('sea_get_tour_list');
+Route::get('/get_tour_price', [SeaController::class, 'getTourPrice'])->name('sea_get_tour_price');
