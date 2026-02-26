@@ -2,21 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\PayOrderConfirmed;
+use App\Events\PayOrderRegister;
+use App\Http\Requests\Pay\ClientOrderRequest;
+use App\Http\Requests\Pay\PayOrderRequest;
 use App\Models\PayOrder;
-use Illuminate\Support\Str;
+use App\Services\ClientServices;
+use App\Services\TinkoffPayService;
 use App\Services\VkServices;
 use Illuminate\Http\Request;
-use App\Events\PayOrderRegister;
-use App\Services\ClientServices;
-use App\Events\PayOrderConfirmed;
-use App\Services\TinkoffPayService;
 use Illuminate\Support\Facades\Log;
-use App\Http\Requests\Pay\PayOrderRequest;
-use App\Http\Requests\Pay\ClientOrderRequest;
+use Illuminate\Support\Str;
 
 class PayOrderController extends Controller
 {
-    public function create_pay_order(PayOrderRequest $request) {
+    public function create_pay_order(PayOrderRequest $request)
+    {
         $data = $request->validated();
         $data['uuid'] = Str::uuid();
         $pay = PayOrder::create($data);
@@ -28,21 +29,30 @@ class PayOrderController extends Controller
         ];
     }
 
-    public function show_pay_form(string $uuid) {
+    public function show_pay_form(string $uuid)
+    {
         $data = PayOrder::where('uuid', $uuid)->firstOrFail();
+
         return view('pay.index', ['pay_data' => $data]);
     }
 
-    public function get_active_pay_data(string $uuid) {
+    public function get_active_pay_data(string $uuid)
+    {
         $pay = PayOrder::where('status', 'Создан')->where('uuid', $uuid)->first();
-        if (!$pay) abort(419, 'Платеж не найден');
+        if (! $pay) {
+            abort(419, 'Платеж не найден');
+        }
+
         return $pay;
     }
 
-    public function get_pay_state($uuid) {
+    public function get_pay_state($uuid)
+    {
 
         $pay = PayOrder::where('uuid', $uuid)->first();
-        if (!$pay) abort(419, 'Платеж не найден');
+        if (! $pay) {
+            abort(419, 'Платеж не найден');
+        }
 
         return [
             'status' => $pay->status,
@@ -51,41 +61,49 @@ class PayOrderController extends Controller
         ];
     }
 
-    public function get_pay_lnk(ClientOrderRequest $request, ClientServices $clientServices, TinkoffPayService $tpc, VkServices $vkService) {
+    public function get_pay_lnk(ClientOrderRequest $request, ClientServices $clientServices, TinkoffPayService $tpc, VkServices $vkService)
+    {
         $data = $request->validated();
         $pay = PayOrder::where('status', 'Создан')->where('uuid', $data['uuid'])->first();
-        if (!$pay) abort(419, 'Платеж не найден');
+        if (! $pay) {
+            abort(419, 'Платеж не найден');
+        }
 
         $clientServices->sync_pay_order_clients($pay, $data['clients']);
-        $tp = $tpc->gey_payment_link($pay->price, $pay->uuid);
+        $tp = $tpc->gey_payment_link($pay->price, $pay->uuid, $data['email'], $pay->name);
+
+        // dd($tp);
 
         $pay->ticket_short_lnk = $vkService->get_short_lnk($pay);
         $pay->phone = $data['phone'];
-        $pay->email = isset($data['email'])?$data['email']:null;
+        $pay->email = isset($data['email']) ? $data['email'] : null;
         $pay->payment_url = $tp['PaymentURL'];
         $pay->payment_id = $tp['PaymentId'];
-        $pay->status = "Зарегистрирован";
+        $pay->status = 'Зарегистрирован';
         $pay->save();
 
         event(new PayOrderRegister($pay));
 
         return [
-            'payment_url' => $tp['PaymentURL']
+            'payment_url' => $tp['PaymentURL'],
         ];
     }
 
-
-    public function success(Request $request) {
+    public function success(Request $request)
+    {
         $uuid = $request->input('uuid');
         $pay = PayOrder::where('uuid', $uuid)->first();
+
         return view('pay.success', ['pay' => $pay]);
     }
 
-    public function fail(Request $request) {
+    public function fail(Request $request)
+    {
         return view('pay.fail');
     }
 
-    public function notification(Request $request) {
+    public function notification(Request $request)
+    {
 
         $state = $request->input('Status');
         $order = $request->input('OrderId');
@@ -95,28 +113,31 @@ class PayOrderController extends Controller
         if ($pay) {
             Log::shareContext($request->all());
 
-            if ($pay->status === "Проведен") return [];
-            if ($pay->status === "Ошибка") return [];
-
-            if ($state === "AUTHORIZED") {
-                $pay->status = "Авторизован";
-                Log::alert("pay AUTHORIZED");
+            if ($pay->status === 'Проведен') {
+                return [];
+            }
+            if ($pay->status === 'Ошибка') {
+                return [];
             }
 
-            if ($state === "CONFIRMED") {
-                $pay->status = "Проведен";
-                Log::alert("pay CONFIRMED");
+            if ($state === 'AUTHORIZED') {
+                $pay->status = 'Авторизован';
+                Log::alert('pay AUTHORIZED');
+            }
+
+            if ($state === 'CONFIRMED') {
+                $pay->status = 'Проведен';
+                Log::alert('pay CONFIRMED');
                 event(new PayOrderConfirmed($pay));
             }
 
-            if ($state === "REJECTED") {
-                $pay->status = "Ошибка";
-                Log::alert("pay REJECTED");
+            if ($state === 'REJECTED') {
+                $pay->status = 'Ошибка';
+                Log::alert('pay REJECTED');
             }
 
             $pay->save();
         }
-
 
         return [];
     }

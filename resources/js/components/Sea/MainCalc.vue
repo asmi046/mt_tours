@@ -76,7 +76,6 @@
         />
         <div v-if="tourPrice !== null">
             <p class="way_price_result">Стоимость тура: {{ tourPrice }} руб.</p>
-            <br />
             <a @click.prevent="goToPayNew()" href="#" class="button"
                 >Забронировать</a
             >
