@@ -121,8 +121,8 @@ $belyi_lebed_baza_otdyxa = [
             '_type' => '_',
             'number_type' => '2-х, 3-х местный Домик (с удобствами)',
             'june_night_price' => '2300',
-            'july_night_price' => '2800',
-            'august_night_price' => '2800',
+            'july_night_price' => '2900',
+            'august_night_price' => '2900',
             'september_night_price' => '2300',
         ],
         2 => [

@@ -142,23 +142,24 @@ class SeaResortSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ];
-            $resorts[] = [
-                'sea_destination_id' => $krasnodarId,
-                'title' => 'Адлер',
-                'page_title' => 'Автобусные туры в Адлер',
-                'page_subtitle' => 'Лучшие предложения на отдых в Адлере, автобусные туры прямо из Курска',
-                'subtitle' => null,
-                'slug' => 'adler',
-                'alean_id' => 576,
-                'alean_areas_id' => '576',
-                'alean_cid' => 'adler',
-                'alean_price_up' => 3000,
-                'sort_order' => 8,
-                'description' => null,
-                'bus_schedule' => 'Курск - Лазаревское',
-                'created_at' => now(),
-                'updated_at' => now(),
-            ];
+
+            // $resorts[] = [
+            //     'sea_destination_id' => $krasnodarId,
+            //     'title' => 'Адлер',
+            //     'page_title' => 'Автобусные туры в Адлер',
+            //     'page_subtitle' => 'Лучшие предложения на отдых в Адлере, автобусные туры прямо из Курска',
+            //     'subtitle' => null,
+            //     'slug' => 'adler',
+            //     'alean_id' => 576,
+            //     'alean_areas_id' => '576',
+            //     'alean_cid' => 'adler',
+            //     'alean_price_up' => 3000,
+            //     'sort_order' => 8,
+            //     'description' => null,
+            //     'bus_schedule' => 'Курск - Лазаревское',
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ];
         }
 
         // Крым

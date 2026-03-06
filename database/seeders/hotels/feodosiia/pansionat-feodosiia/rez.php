@@ -64,9 +64,7 @@ $pansionat_feodosiia = [
             'description' => '<p></p>
 <p>на территории пансионата медицинский пункт!<br>
 В шаговой доступности исторические места, рядом парк, набережная, магазины,кафе, рестораны и многое другое.<br>
-Рекомендована для тихого отдыха всей семьёй, при этом удачное расположение позволяет быть в центре курортной жизни города.</p>
-<h2 id="videoM">Видеообзор пансионата «Феодосия» :</h2>
-<p><iframe title="Пансионат Феодосия" width="500" height="281" src="https://www.youtube.com/embed/BlDu-gPnk-4?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></p>',
+Рекомендована для тихого отдыха всей семьёй, при этом удачное расположение позволяет быть в центре курортной жизни города.</p>',
         ],
     ],
     'numbers' => [
@@ -88,7 +86,7 @@ $pansionat_feodosiia = [
         ],
     ],
     'before_5_price' => '10000',
-    'before_12_price' => '15',
+    'before_12_price' => '10',
     'geo' => '[45.043384, 35.382402]',
     'min_price' => '37000',
     'sea_distantion' => '100 м. до галечного пляжа',

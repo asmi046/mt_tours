@@ -85,8 +85,8 @@
                                     <p><a target="_blank" href="https://tours.mirturizma46.ru/tour/matrona"> Матрона
                                             Московская 🙏</a></p>
                                     {{-- <img src="{{ asset('img/icon/flovers.svg') }}" alt="Снежинка"> --}}
-                                    <p><a target="_blank" href="https://tours.mirturizma46.ru/tour/adygeia">Адыгея 20-23
-                                            февраля ⛰️</a></p>
+                                    <p><a target="_blank" href="https://tours.mirturizma46.ru/tour/adygea">Адыгея на
+                                            майские праздники ⛰️</a></p>
                                     {{-- <img src="{{ asset('img/icon/flovers.svg') }}" alt="Снежинка"> --}}
                                 @endfor
                             </div>

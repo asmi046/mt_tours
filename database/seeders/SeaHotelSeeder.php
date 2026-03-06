@@ -59,10 +59,10 @@ class SeaHotelSeeder extends Seeder
                 'database/seeders/hotels/lazarevskoe/gostevoi-dom-more-gory/rez.php',
                 'database/seeders/hotels/lazarevskoe/gostinica-terracotta/rez.php',
             ],
-            'adler' => [
-                'database/seeders/hotels/adler/azimut-hotel-sochi-3/rez.php',
-                'database/seeders/hotels/adler/barxatnye-sezony-gorod-otel/rez.php',
-            ],
+            // 'adler' => [
+            //     'database/seeders/hotels/adler/azimut-hotel-sochi-3/rez.php',
+            //     'database/seeders/hotels/adler/barxatnye-sezony-gorod-otel/rez.php',
+            // ],
             'primorskii' => [
                 'database/seeders/hotels/primorskii/baza-otdyxa-u-moria-feodosiia-p-primorskii/rez.php',
                 'database/seeders/hotels/primorskii/villa-nimfei/rez.php',
