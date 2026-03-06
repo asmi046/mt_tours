@@ -79,13 +79,8 @@
                         <div class="marquee">
                             <div class="marquee__content">
                                 @for ($i = 0; $i < 10; $i++)
-                                    <p><a target="_blank"
-                                            href="https://tours.mirturizma46.ru/tour/gastrotur-syr-xleb-i-vino">ГастроТур
+                                    <p><a target="_blank" href="https://tours.mirturizma46.ru/tour/gastro-tur">ГастроТур
                                             «Кофе/Сыр. Хлеб и Вино» 🍷</a></p>
-                                    {{-- <img src="{{ asset('img/icon/flovers.svg') }}" alt="Снежинка"> --}}
-                                    <p><a target="_blank"
-                                            href="https://tours.mirturizma46.ru/tour/gornolyznyi-tur-v-krasnuiu-polianu">Горнолыжный
-                                            тур 2026 ⛷️</a></p>
                                     {{-- <img src="{{ asset('img/icon/flovers.svg') }}" alt="Снежинка"> --}}
                                     <p><a target="_blank" href="https://tours.mirturizma46.ru/tour/matrona"> Матрона
                                             Московская 🙏</a></p>
