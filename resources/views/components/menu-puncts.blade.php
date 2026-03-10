@@ -1,5 +1,5 @@
 <ul class="menue_puncts_list">
-    <li><a class="yakor" href="/tour/mai">Туры на Майские праздники 🌸</a></li>
+    <li><a class="yakor" href="/tours/mai">Туры на Майские праздники 🌸</a></li>
     <li><a href="{{ route('sea_home') }}"><span class="emoji">🌴</span> Туры на море 2026</a>
         <ul>
             <li>
