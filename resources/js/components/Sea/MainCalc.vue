@@ -41,7 +41,7 @@
                 <select v-model="selectedRoomType" @change="onParamsChange">
                     <option value="">-- Выберите тип номера --</option>
                     <option
-                        v-for="room in roomTypes"
+                        v-for="room in availableRoomTypes"
                         :key="room.id"
                         :value="room.number_type"
                     >
@@ -116,6 +116,10 @@ const props = defineProps({
         type: String,
         default: () => "",
     },
+});
+
+const availableRoomTypes = computed(() => {
+    return props.roomTypes.filter((room) => Number(room.june_night_price) > 0);
 });
 
 console.log("Полученные пропсы:", props);

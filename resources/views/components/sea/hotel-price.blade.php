@@ -17,10 +17,15 @@
                 @foreach ($prices as $price)
                     <tr>
                         <td class="number_tr">{{ $price['number_type'] }}</td>
-                        <td>{{ $price['june_night_price'] * 10 }} ₽</td>
-                        <td>{{ $price['july_night_price'] * 10 }} ₽</td>
-                        <td>{{ $price['august_night_price'] * 10 }} ₽</td>
-                        <td>{{ $price['september_night_price'] * 10 }} ₽</td>
+                        @if ($price['june_night_price'] == 0)
+                            <td colspan="4">Под запрос</td>
+                        @else
+                            <td>{{ $price['june_night_price'] * 10 }} ₽</td>
+                            <td>{{ $price['july_night_price'] * 10 }} ₽</td>
+                            <td>{{ $price['august_night_price'] * 10 }} ₽</td>
+                            <td>{{ $price['september_night_price'] * 10 }} ₽</td>
+                        @endif
+
                     </tr>
                 @endforeach
                 <tr>
