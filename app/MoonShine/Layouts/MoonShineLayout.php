@@ -4,40 +4,18 @@ declare(strict_types=1);
 
 namespace App\MoonShine\Layouts;
 
-use App\MoonShine\Resources\TourResource;
-use App\MoonShine\Resources\TourCategoryResource;
+use App\MoonShine\Resources\CalendarResource;
+use App\MoonShine\Resources\MenuResource;
+use App\MoonShine\Resources\ReviewResource;
+use App\MoonShine\Resources\ScholTourResource;
 use App\MoonShine\Resources\SeoDataResource;
-
-use MoonShine\MenuManager\MenuItem;
-use MoonShine\Laravel\Layouts\AppLayout;
+use App\MoonShine\Resources\TourCategoryResource;
+use App\MoonShine\Resources\TourResource;
 use MoonShine\ColorManager\ColorManager;
 use MoonShine\Contracts\ColorManager\ColorManagerContract;
-use MoonShine\Laravel\Components\Layout\{Locales, Notifications, Profile, Search};
-use MoonShine\UI\Components\{Breadcrumbs,
-    Components,
-    Layout\Flash,
-    Layout\Div,
-    Layout\Body,
-    Layout\Burger,
-    Layout\Content,
-    Layout\Footer,
-    Layout\Head,
-    Layout\Favicon,
-    Layout\Assets,
-    Layout\Meta,
-    Layout\Header,
-    Layout\Html,
-    Layout\Layout,
-    Layout\Logo,
-    Layout\Menu,
-    Layout\Sidebar,
-    Layout\ThemeSwitcher,
-    Layout\TopBar,
-    Layout\Wrapper,
-    When};
-use App\MoonShine\Resources\ReviewResource;
-use App\MoonShine\Resources\CalendarResource;
-use App\MoonShine\Resources\ScholTourResource;
+use MoonShine\Laravel\Layouts\AppLayout;
+use MoonShine\MenuManager\MenuItem;
+use MoonShine\UI\Components\Layout\Layout;
 
 final class MoonShineLayout extends AppLayout
 {
@@ -51,27 +29,26 @@ final class MoonShineLayout extends AppLayout
     protected function menu(): array
     {
         return [
+            MenuItem::make('Меню', MenuResource::class)->icon('bars-3'),
             MenuItem::make(
-                static fn() => __('Туры'),
+                static fn () => __('Туры'),
                 TourResource::class,
             )->icon('globe-alt'),
 
             MenuItem::make(
-                static fn() => __('Категории'),
+                static fn () => __('Категории'),
                 TourCategoryResource::class,
             )->icon('rectangle-group'),
 
             MenuItem::make(
-                static fn() => __('SEO'),
+                static fn () => __('SEO'),
                 SeoDataResource::class,
             )->icon('chart-bar-square'),
 
             MenuItem::make(
-                static fn() => __('Сброс кеша'),
-                fn() => route('cache_clear'),
+                static fn () => __('Сброс кеша'),
+                fn () => route('cache_clear'),
             )->icon('arrow-path-rounded-square'),
-
-
 
             MenuItem::make('Школьные туры', ScholTourResource::class)->icon('paper-clip'),
 
@@ -85,7 +62,7 @@ final class MoonShineLayout extends AppLayout
     }
 
     /**
-     * @param ColorManager $colorManager
+     * @param  ColorManager  $colorManager
      */
     protected function colors(ColorManagerContract $colorManager): void
     {

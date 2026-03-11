@@ -2,11 +2,12 @@
     <div class="shadow"></div>
     <nav class="side_menue">
 
-        <x-menu-puncts></x-menu-puncts>
+        <x-menues.puncts :name="'Боковое меню'"></x-menues.puncts>
 
         <div class="contacts_side_menue">
             <a class="phone" href="tel:+7{{ phone_format(config('contacts.phone')) }}">{{ config('contacts.phone') }}</a>
-            <a class="email" href="mailto:{{ phone_format(config('contacts.email')) }}">{{ config('contacts.email') }}</a>
+            <a class="email"
+                href="mailto:{{ phone_format(config('contacts.email')) }}">{{ config('contacts.email') }}</a>
         </div>
         <x-social-net></x-social-net>
     </nav>
@@ -24,4 +25,3 @@
         </svg>
     </a>
 </div>
-

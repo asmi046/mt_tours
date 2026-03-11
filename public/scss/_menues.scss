@@ -94,7 +94,7 @@
     position: fixed;
     width: 0;
     height: 0;
-    z-index: 20;
+    z-index: 4000;
 
     a {
         color: $blue_light_color;
@@ -131,7 +131,7 @@
         position: fixed;
         right: -500px;
         top: 0;
-        z-index: 21;
+        z-index: 4001;
         transition: $main_transition;
         box-shadow:
             0 8px 10px -5px rgba(0, 0, 0, 0.2),

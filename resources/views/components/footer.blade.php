@@ -5,7 +5,7 @@
     </a>
 
     <nav>
-        <x-menu-puncts></x-menu-puncts>
+        <x-menues.puncts :name="'Меню в подвале'"></x-menues.puncts>
     </nav>
     <hr>
     <a class="phone" href="tel:+7{{ phone_format(config('contacts.phone')) }}">{{ config('contacts.phone') }}</a>
