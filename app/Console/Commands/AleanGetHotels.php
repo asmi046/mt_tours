@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use App\Models\AleanSeaHotel;
 use App\Models\SeaResort;
+use App\Models\SeaWayPrice;
 use App\Services\AleanApiService;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
@@ -74,6 +75,7 @@ class AleanGetHotels extends Command
             try {
                 // $resort = SeaResort::where('alean_id', $hotel->resortId)->first();
                 $resort = SeaResort::where('alean_areas_id', 'LIKE', "%{$hotel->resortId}%")->first();
+                $wayPrice = SeaWayPrice::where('city', $resort->title)->first();
 
                 if (! $resort) {
                     $this->warn("Пропуск отеля с hotelId: {$hotel->hotelId} (не найден курорт с alean_id: {$hotel->resortId})");
@@ -98,7 +100,7 @@ class AleanGetHotels extends Command
                     [
                         'CID' => $alean_data['CID'],
                     ],
-                    $aleanService->getHotelStructuresDescription($alean_data, $resort->id, $resort->sea_destination_id, $resort->bus_schedule, $minPrice)
+                    $aleanService->getHotelStructuresDescription($alean_data, $resort->id, $resort->sea_destination_id, $resort->bus_schedule, ($minPrice + $resort->alean_price_up + $wayPrice->two_way))
                 );
 
                 $this->info("Добавлен отель: {$hotel->hotelCID}  {$alean_data['HotelName']}");
