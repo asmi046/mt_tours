@@ -44,7 +44,7 @@ class SeaHotelSeeder extends Seeder
             ],
             'lermontovo' => [
                 'database/seeders/hotels/lermontovo/avtorskii-otel-esenin/rez.php',
-                'database/seeders/hotels/lermontovo/baza-otdyxa-u-moria-lermontovo/rez.php',
+                // 'database/seeders/hotels/lermontovo/baza-otdyxa-u-moria-lermontovo/rez.php',
                 'database/seeders/hotels/lermontovo/gostinica-biriuza/rez.php',
                 'database/seeders/hotels/lermontovo/otel-granat/rez.php',
             ],
@@ -86,9 +86,9 @@ class SeaHotelSeeder extends Seeder
                 'database/seeders/hotels/sudak/gostevoi-dom-otdyx/rez.php',
                 'database/seeders/hotels/sudak/otel-diva/rez.php',
             ],
-            'morskoe' => [
-                'database/seeders/hotels/morskoe/mini-otel-morskoi/rez.php',
-            ],
+            // 'morskoe' => [
+            //     'database/seeders/hotels/morskoe/mini-otel-morskoi/rez.php',
+            // ],
         ];
 
         // Загружаем данные из каждого файла

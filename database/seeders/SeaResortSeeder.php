@@ -266,23 +266,23 @@ class SeaResortSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ];
-            $resorts[] = [
-                'sea_destination_id' => $crimeaId,
-                'title' => 'Морское',
-                'page_title' => 'Автобусные туры в Морское',
-                'page_subtitle' => 'Лучшие предложения на отдых в Морском, автобусные туры прямо из Курска',
-                'subtitle' => null,
-                'slug' => 'morskoe',
-                'alean_id' => 639,
-                'alean_areas_id' => '639',
-                'alean_cid' => 'morskoe',
-                'alean_price_up' => 3000,
-                'sort_order' => 7,
-                'description' => null,
-                'bus_schedule' => 'Курск - Крым',
-                'created_at' => now(),
-                'updated_at' => now(),
-            ];
+            // $resorts[] = [
+            //     'sea_destination_id' => $crimeaId,
+            //     'title' => 'Морское',
+            //     'page_title' => 'Автобусные туры в Морское',
+            //     'page_subtitle' => 'Лучшие предложения на отдых в Морском, автобусные туры прямо из Курска',
+            //     'subtitle' => null,
+            //     'slug' => 'morskoe',
+            //     'alean_id' => 639,
+            //     'alean_areas_id' => '639',
+            //     'alean_cid' => 'morskoe',
+            //     'alean_price_up' => 3000,
+            //     'sort_order' => 7,
+            //     'description' => null,
+            //     'bus_schedule' => 'Курск - Крым',
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ];
         }
 
         DB::table('sea_resorts')->insert($resorts);
