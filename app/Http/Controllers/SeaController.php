@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\SeaBusSchedule;
+use App\Models\SeaResort;
 use App\Models\SeaWayPrice;
 use App\Services\AleanApiService;
 use App\Services\SeaDataService;
@@ -85,5 +87,24 @@ class SeaController extends Controller
         $sea_way_prices = app(SeaDataService::class)->getAllSeaWayPrices();
 
         return view('sea.way', compact('sea_way_prices'));
+    }
+
+    public function grafik_zaezdov()
+    {
+        $schedulesGrouped = SeaBusSchedule::all()
+            ->groupBy('direction')
+            ->map(fn ($items) => $items->sortBy('sort_order')->values());
+
+        $resortsGrouped = SeaResort::all()
+            ->groupBy('bus_schedule')
+            ->map(fn ($items) => $items->sortBy('sort_order')->values());
+        // dd($schedulesGrouped, $resortsGrouped);
+
+        return view('sea.grafik-zaezdov', compact('schedulesGrouped', 'resortsGrouped'));
+    }
+
+    public function nashi_avtobusi()
+    {
+        return view('sea.nashi-avtobusi');
     }
 }
