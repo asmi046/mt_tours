@@ -14,5 +14,8 @@
     {{-- <div class="reqvizites">
         <span>ООО «Туристический центр «Мир туризма»</span> <span>ИНН/КПП 4632181253/463201001</span> <span>ОГРН 1134632011360</span>
     </div> --}}
-
+    <div class="licens">
+        <a href="{{ asset('img/license_buss_train.jpg') }}" data-fslightbox="license-galery">Лицензия на автобусные
+            перевозки</a>
+    </div>
 </footer>

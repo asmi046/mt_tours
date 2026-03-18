@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\BusCatalog;
 use App\Models\SeaBusSchedule;
 use App\Models\SeaResort;
 use App\Models\SeaWayPrice;
@@ -105,6 +106,8 @@ class SeaController extends Controller
 
     public function nashi_avtobusi()
     {
-        return view('sea.nashi-avtobusi');
+        $busees = BusCatalog::all()->sortBy('order');
+
+        return view('sea.nashi-avtobusi', compact('busees'));
     }
 }

@@ -29,32 +29,45 @@
     </section>
 
     <section class="sea_grafik_zaezdov_section">
-        <div class="container ">
+        <div class="container grafik_zaezdov">
             @foreach ($schedulesGrouped as $key => $item)
-                <h2>{{ $key }}</h2>
+                <div class="grafic_derection">
+                    <h2>{{ $key }}</h2>
 
-                <h3>Пункты следования</h3>
-                <div class="puncts">
-                    <div class="punct">
-                        Курск
+                    <div class="grafic_punkts">
+
+
+
+
+                        <div class="left">
+                            <h3>График заездов</h3>
+                            <div class="schedule_table">
+                                @foreach ($item as $shadule)
+                                    <div class="schedule_row">
+                                        Выезд из Курска <strong>{{ $shadule->start_date }}</strong> - возвращение
+                                        <strong>{{ $shadule->end_date }}</strong>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <h3>Пункты следования</h3>
+                            <div class="puncts">
+                                <div class="punct">
+                                    Курск
+                                </div>
+                                @foreach ($resortsGrouped[$key] as $punkt)
+                                    {{-- <span class="arrow">↔</span> --}}
+                                    <div class="punct">
+                                        {{ $punkt->title }}
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+
                     </div>
-                    @foreach ($resortsGrouped[$key] as $punkt)
-                        <span class="arrow">↔</span>
-                        <div class="punct">
-                            {{ $punkt->title }}
-                        </div>
-                    @endforeach
-                </div>
 
-
-                <h3>График заездов</h3>
-                <div class="schedule_table">
-                    @foreach ($item as $shadule)
-                        <div class="schedule_row">
-                            Выезд из Курска <strong>{{ $shadule->start_date }}</strong> - возвращение
-                            <strong>{{ $shadule->end_date }}</strong>
-                        </div>
-                    @endforeach
                 </div>
             @endforeach
         </div>

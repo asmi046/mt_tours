@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\MoonShine\Layouts;
 
+use App\MoonShine\Resources\BusCatalogResource;
 use App\MoonShine\Resources\CalendarResource;
 use App\MoonShine\Resources\MenuResource;
 use App\MoonShine\Resources\ReviewResource;
@@ -14,6 +15,7 @@ use App\MoonShine\Resources\TourResource;
 use MoonShine\ColorManager\ColorManager;
 use MoonShine\Contracts\ColorManager\ColorManagerContract;
 use MoonShine\Laravel\Layouts\AppLayout;
+use MoonShine\MenuManager\MenuGroup;
 use MoonShine\MenuManager\MenuItem;
 use MoonShine\UI\Components\Layout\Layout;
 
@@ -55,6 +57,10 @@ final class MoonShineLayout extends AppLayout
             MenuItem::make('Отзывы', ReviewResource::class)->icon('chat-bubble-oval-left'),
 
             MenuItem::make('Календарь', CalendarResource::class)->icon('calendar-days'),
+
+            MenuGroup::make('Туры на море', [
+                MenuItem::make('Наши автобусы', BusCatalogResource::class),
+            ]),
 
             ...parent::menu(),
 

@@ -144,6 +144,7 @@
             border-radius: $border_rad;
             background-color: $main_color;
             border: 1px solid $blue_color;
+            margin-right: auto;
         }
 
         .arrow {
@@ -158,6 +159,24 @@
                 line-height: 27px;
                 font-size: 16px;
             }
+        }
+    }
+}
+
+.grafik_zaezdov {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    .grafic_punkts {
+        display: flex;
+        gap: 20px;
+
+        .puncts {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
         }
     }
 }
@@ -210,5 +229,9 @@
         .hotel_prices {
             font-size: 12px;
         }
+    }
+
+    .grafik_zaezdov {
+        grid-template-columns: 1fr;
     }
 }
