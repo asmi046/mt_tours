@@ -72,6 +72,9 @@
                     </div>
                 @endforeach
             </div>
+
+            <a href="{{ asset('img/license_buss_train.jpg') }}" data-fslightbox="license-galery">Лицензия на автобусные
+                перевозки</a>
         </div>
 
 
