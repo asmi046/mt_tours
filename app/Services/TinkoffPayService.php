@@ -21,6 +21,8 @@ class TinkoffPayService
 
     public function gey_payment_link(int $summ, string $order_id, string $email, string $name)
     {
+        $name = mb_substr($name, 0, 127);
+
         $terminal = config('pay.t_terminal');
         $pass = config('pay.t_pass');
         $lnk = config('pay.t_lnk');
