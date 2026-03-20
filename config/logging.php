@@ -52,6 +52,13 @@ return [
     */
 
     'channels' => [
+        'pay' => [
+            'driver' => 'single',
+            'path' => storage_path('logs/pay.log'),
+            'level' => env('LOG_LEVEL_PAY', 'debug'),
+            'replace_placeholders' => true,
+        ],
+
         'stack' => [
             'driver' => 'stack',
             'channels' => ['single'],

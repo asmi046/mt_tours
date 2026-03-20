@@ -71,6 +71,7 @@ class PayOrderController extends Controller
 
         $clientServices->sync_pay_order_clients($pay, $data['clients']);
         $tp = $tpc->gey_payment_link($pay->price, $pay->uuid, $data['email'], $pay->name);
+        Log::channel('pay')->info('Tinkoff payment link response', ['tp' => $tp]);
 
         // dd($tp);
 
