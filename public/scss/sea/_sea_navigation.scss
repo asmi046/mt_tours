@@ -28,6 +28,13 @@
     }
 }
 
+.sea_part_navigation_section {
+    padding-bottom: 0;
+    .sea_part_navigation {
+        margin-bottom: 0;
+    }
+}
+
 @media screen and (max-width: 780px) {
     .sea_part_navigation {
         flex-direction: column;

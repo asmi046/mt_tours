@@ -32,6 +32,7 @@
 
     <section class="sea_grafik_zaezdov_section">
         <div class="container text_styles">
+            <x-sea.part-navigation></x-sea.part-navigation>
             <p>Туристический центр «Мир Туризма» предлагает к Вашим услугам парк современных туристических автобусов,
                 которые
                 сделают любое путешествие комфортным!</p>

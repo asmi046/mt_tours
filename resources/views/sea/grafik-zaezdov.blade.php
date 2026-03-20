@@ -27,9 +27,15 @@
             <x-breadcrumbs.main title="График заездов (Крым, Краснодарский край)"></x-breadcrumbs.main>
         </div>
     </section>
+    <section class="sea_part_navigation_section">
+        <div class="container">
+            <x-sea.part-navigation></x-sea.part-navigation>
+        </div>
+    </section>
 
     <section class="sea_grafik_zaezdov_section">
         <div class="container grafik_zaezdov">
+
             @foreach ($schedulesGrouped as $key => $item)
                 <div class="grafic_derection">
                     <h2>{{ $key }}</h2>

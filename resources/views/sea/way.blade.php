@@ -29,6 +29,7 @@
 
     <section class="sea_way_pay_section">
         <div class="container">
+            <x-sea.part-navigation></x-sea.part-navigation>
             <div class="cols">
                 <div class="col">
                     <table>

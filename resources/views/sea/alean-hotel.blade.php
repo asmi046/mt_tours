@@ -27,6 +27,7 @@
     <x-sea.icon></x-sea.icon>
     <section class="sea_hotel_page_section">
         <div class="container">
+            <x-sea.part-navigation></x-sea.part-navigation>
             <div class="cols">
                 <div class="col left_col">
                     <swiper-container class="sea-hotel-gallery" init="false">
