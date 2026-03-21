@@ -27,7 +27,7 @@
                 class="ticket_icon"></i><span>Купить
                 проезд</span></a>
         <a class="button button_icon" href="{{ route('grafik_zaezdov') }}"><i class="calendar_icon"></i><span>График
-                заказов</span></a>
+                заездов</span></a>
         <a class="button button_icon" href="{{ route('nashi_avtobusi') }}"><i class="bus_icon"></i><span>Наши
                 автобусы</span></a>
     </div>
