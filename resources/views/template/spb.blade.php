@@ -17,23 +17,25 @@
 
         <div class="container left_text tour_page_title">
             <div class="bnr_text">
-                <h1>{!! $tour_info->title_input?htmlspecialchars_decode($tour_info->title_input):$tour_info->title !!}</h1>
+                <h1>{!! $tour_info->title_input ? htmlspecialchars_decode($tour_info->title_input) : $tour_info->title !!}</h1>
                 @isset($tour_info->prices[0])
                     <p class="label label_gold">от {{ $tour_info->prices[0]['price'] }} ₽</p>
                 @endisset
 
-                <p class="label label_white">{{ $tour_info->deycount }}  {{ echo_days($tour_info->deycount) }}</p>
+                <p class="label label_white">{{ $tour_info->deycount }} {{ echo_days($tour_info->deycount) }}</p>
 
                 @if ($tour_info['multi_data'])
                     <p class="label label_white">
                         @foreach ($tour_info['multi_data'] as $subitem)
-                            {{ date ("d.m.Y", strtotime($subitem['start_data'])) }}@if ($loop->index != count($tour_info['multi_data'])-1),@endif
+                            {{ date('d.m.Y', strtotime($subitem['start_data'])) }}@if ($loop->index != count($tour_info['multi_data']) - 1)
+                                ,
+                            @endif
                         @endforeach
                     </p>
                 @else
-                    <p class="label label_white">{{ date ("d.m.Y", strtotime($tour_info['start_data'])) }}</p>
+                    <p class="label label_white">{{ date('d.m.Y', strtotime($tour_info['start_data'])) }}</p>
                 @endif
-{{--
+                {{--
                 @if ($tour_info->tour_program)
                     <div class=toyr_program>
 
@@ -62,8 +64,8 @@
         </div>
     </section>
 
-    <section id="tours_content" class="tours_content {{ $tour_info->page_bg }}" >
-{{--
+    <section id="tours_content" class="tours_content {{ $tour_info->page_bg }}">
+        {{--
         <img class="obl obl_1" src="{{ asset('img/obl/obl_1.svg') }}" alt="">
         <img class="obl obl_2" src="{{ asset('img/obl/obl_2.svg') }}" alt="">
         <img class="obl obl_3" src="{{ asset('img/obl/obl_3.svg') }}" alt=""> --}}
@@ -78,16 +80,20 @@
                     @isset($tour_info->prices[0])
                         <div class="pay_wrapper">
                             @if ($tour_info->soldout)
-                            <div class="tour_price">
-                                <img class="soldout" src="{{ asset('img/soldout.webp') }}" alt="Тур продан, мест нет!">
-                                <a class="button button_icon" href="#showModal"><i class="babl_icon"></i><span>Задать вопрос</span></a>
-                            </div>
-
+                                <div class="tour_price">
+                                    <img class="soldout" src="{{ asset('img/soldout.webp') }}" alt="Тур продан, мест нет!">
+                                    <a class="button button_icon" href="#showModal"><i class="babl_icon"></i><span>Задать
+                                            вопрос</span></a>
+                                </div>
                             @else
                                 @if (isset($tour_info->prices[0]['data']))
-                                    <tour-price-select title="{{$tour_info->title}}" img="{{config('app.url').Storage::url($tour_info->img)}}"  :prices="{{json_encode($tour_info->prices)}}"></tour-price-select>
+                                    <tour-price-select title="{{ $tour_info->title }}"
+                                        img="{{ config('app.url') . Storage::url($tour_info->img) }}"
+                                        :prices="{{ json_encode($tour_info->prices) }}"></tour-price-select>
                                 @else
-                                    <tour-price title="{{$tour_info->title}}" img="{{config('app.url').Storage::url($tour_info->img)}}"  :prices="{{json_encode($tour_info->prices)}}"></tour-price>
+                                    <tour-price title="{{ $tour_info->title }}"
+                                        img="{{ config('app.url') . Storage::url($tour_info->img) }}"
+                                        :prices="{{ json_encode($tour_info->prices) }}"></tour-price>
                                 @endif
                             @endif
 
@@ -96,20 +102,25 @@
                         </div>
                     @endisset
 
-                                    </div>
+                </div>
 
                 <div id="spb" class="tour_presentation">
                     <div class="step step_1">
                         <div class="header_img_wrapper">
-                            <img class="title_img" src="{{ asset('img/templates/spb/spb_h.webp') }}" alt="{{ $tour_info->title }}">
+                            <img class="title_img" src="{{ asset('img/templates/spb/spb_h.webp') }}"
+                                alt="{{ $tour_info->title }}">
                             <p class="font_caveat">Незабываемый тур в Северную Столицу!</p>
                         </div>
 
                         <div class="tp_wrapper">
                             <div class="description">
                                 <div class="text_styles">
-                                    <p>Откройте для себя великолепие Петербурга: обзорная экскурсия по историческому центру, роскошь Петергофа с его фонтанами, тайны Эрмитажа и вечерний круиз по Неве. Вас ждут прогулки по Невскому проспекту, посещение Исаакиевского собора и свободное время для погружения в атмосферу города.</p>
-                                    <p>Включено: проживание, завтраки, экскурсии и трансферы. Отправляйтесь в путешествие, где каждый день – новая страница истории!</p>
+                                    <p>Откройте для себя великолепие Петербурга: обзорная экскурсия по историческому центру,
+                                        роскошь Петергофа с его фонтанами, тайны Эрмитажа и вечерний круиз по Неве. Вас ждут
+                                        прогулки по Невскому проспекту, посещение Исаакиевского собора и свободное время для
+                                        погружения в атмосферу города.</p>
+                                    <p>Включено: проживание, питание, экскурсии и трансферы. Отправляйтесь в путешествие,
+                                        где каждый день – новая страница истории!</p>
                                     <p><strong>Забронируйте тур уже сегодня!</strong></p>
                                 </div>
                             </div>
@@ -124,14 +135,19 @@
 
                     <div class="step step_2">
                         <div class="header_img_wrapper">
-                            <img class="title_img" src="{{ asset('img/templates/spb/is_h.webp') }}" alt="{{ $tour_info->title }}">
+                            <img class="title_img" src="{{ asset('img/templates/spb/is_h.webp') }}"
+                                alt="{{ $tour_info->title }}">
                             <p class="font_caveat">Величественный символ Санкт-Петербурга</p>
                         </div>
                         <div class="tp_wrapper">
                             <div class="description">
                                 <div class="text_styles">
-                                    <p>Грандиозный собор с золотым куполом – визитная карточка города. 40 лет строительства и мастерство Огюста Монферрана подарили миру этот шедевр, где классицизм сочетается с византийскими мотивами.</p>
-                                    <p>Внутри – роскошь цветного мрамора, малахитовые колонны и уникальный витраж «Воскресший Христос». Сегодня это и храм, и музей. Поднимитесь на колоннаду – перед вами откроется лучшая панорама Петербурга с Невой и историческим центром.</p>
+                                    <p>Грандиозный собор с золотым куполом – визитная карточка города. 40 лет строительства
+                                        и мастерство Огюста Монферрана подарили миру этот шедевр, где классицизм сочетается
+                                        с византийскими мотивами.</p>
+                                    <p>Внутри – роскошь цветного мрамора, малахитовые колонны и уникальный витраж
+                                        «Воскресший Христос». Сегодня это и храм, и музей. Поднимитесь на колоннаду – перед
+                                        вами откроется лучшая панорама Петербурга с Невой и историческим центром.</p>
                                 </div>
                             </div>
 
@@ -146,15 +162,22 @@
 
                     <div class="step step_3">
                         <div class="header_img_wrapper">
-                            <img class="title_img" src="{{ asset('img/templates/spb/ks_h.webp') }}" alt="{{ $tour_info->title }}">
+                            <img class="title_img" src="{{ asset('img/templates/spb/ks_h.webp') }}"
+                                alt="{{ $tour_info->title }}">
                             <p class="font_caveat">Морская крепость России</p>
                         </div>
                         <div class="tp_wrapper">
                             <div class="description">
                                 <div class="text_styles">
-                                    <p>Легендарный город-порт на острове Котлин – живая история российского флота. Его мощные форты, неприступные стены и строгие линии гаваней веками защищали морские подступы к Петербургу.</p>
-                                    <p>Главная жемчужина – Морской Никольский собор с сияющим золотом куполом. Внутри – мемориальные доски с именами погибших моряков и уникальные витражи. Обязательно прогуляйтесь по Петровскому доку, где ремонтировали первые корабли Балтийского флота, и набережной с видом на Финский залив.</p>
-                                    <p>Сегодня Кронштадт – это музей под открытым небом, где каждый камень помнит славные морские победы.</p>
+                                    <p>Легендарный город-порт на острове Котлин – живая история российского флота. Его
+                                        мощные форты, неприступные стены и строгие линии гаваней веками защищали морские
+                                        подступы к Петербургу.</p>
+                                    <p>Главная жемчужина – Морской Никольский собор с сияющим золотом куполом. Внутри –
+                                        мемориальные доски с именами погибших моряков и уникальные витражи. Обязательно
+                                        прогуляйтесь по Петровскому доку, где ремонтировали первые корабли Балтийского
+                                        флота, и набережной с видом на Финский залив.</p>
+                                    <p>Сегодня Кронштадт – это музей под открытым небом, где каждый камень помнит славные
+                                        морские победы.</p>
                                 </div>
                             </div>
 
@@ -167,14 +190,19 @@
 
                     <div class="step step_4">
                         <div class="header_img_wrapper">
-                            <img class="title_img" src="{{ asset('img/templates/spb/petergof_h.webp') }}" alt="{{ $tour_info->title }}">
+                            <img class="title_img" src="{{ asset('img/templates/spb/petergof_h.webp') }}"
+                                alt="{{ $tour_info->title }}">
                             <p class="font_caveat">Танцующие фонтаны и парковые шедевры</p>
                         </div>
                         <div class="tp_wrapper">
                             <div class="description">
                                 <div class="text_styles">
-                                    <p>Всемирно известная жемчужина паркового искусства, где вода становится произведением искусства. Главная гордость – фонтаны-исполины, создающие волшебную симфонию струй: от триумфального Самсона до игривых шутих.</p>
-                                    <p>Архитектурный ансамбль восхищает: золото куполов дворцов перекликается с бирюзой Финского залива. Особое очарование – Марлинский ансамбль и каскад "Золотая гора", где вода струится по позолоченным ступеням.</p>
+                                    <p>Всемирно известная жемчужина паркового искусства, где вода становится произведением
+                                        искусства. Главная гордость – фонтаны-исполины, создающие волшебную симфонию струй:
+                                        от триумфального Самсона до игривых шутих.</p>
+                                    <p>Архитектурный ансамбль восхищает: золото куполов дворцов перекликается с бирюзой
+                                        Финского залива. Особое очарование – Марлинский ансамбль и каскад "Золотая гора",
+                                        где вода струится по позолоченным ступеням.</p>
                                     <p><strong>Петергоф – это праздник для глаз и души в любое время года.</strong></p>
                                 </div>
                             </div>
@@ -200,7 +228,6 @@
                             </div>
                         </div>
                     @endif
-
                 @else
                     <div class="program">
                         <h2 class="big">Программа тура</h2>
@@ -271,4 +298,3 @@
     <x-contacts-section></x-contacts-section>
 
 @endsection
-
