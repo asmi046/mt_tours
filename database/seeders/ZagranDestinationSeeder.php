@@ -15,6 +15,8 @@ class ZagranDestinationSeeder extends Seeder
     {
         $publicFlagDir = public_path('zag_info/flag');
         $flagPathByFile = [];
+        $publicDestinationDir = public_path('zag_info/distantion');
+        $destinationPathByFile = [];
 
         if (is_dir($publicFlagDir)) {
             foreach (glob($publicFlagDir.'/*') as $sourcePath) {
@@ -27,6 +29,20 @@ class ZagranDestinationSeeder extends Seeder
 
                 Storage::disk('public')->put($targetPath, file_get_contents($sourcePath), 'public');
                 $flagPathByFile[$fileName] = $targetPath;
+            }
+        }
+
+        if (is_dir($publicDestinationDir)) {
+            foreach (glob($publicDestinationDir.'/*') as $sourcePath) {
+                if (! is_file($sourcePath)) {
+                    continue;
+                }
+
+                $fileName = basename($sourcePath);
+                $targetPath = 'zag_info/distantion/'.$fileName;
+
+                Storage::disk('public')->put($targetPath, file_get_contents($sourcePath), 'public');
+                $destinationPathByFile[$fileName] = $targetPath;
             }
         }
 
@@ -52,6 +68,28 @@ class ZagranDestinationSeeder extends Seeder
             'abkhazia' => 'flag-abkhazia.jpg',
         ];
 
+        $destinationFileBySlug = [
+            'turkey' => 'turcia.webp',
+            'maldives-tours' => 'maldivi.webp',
+            'uae' => 'oae.webp',
+            'maldives-vacation' => 'maldivi.webp',
+            'egypt' => 'egipet.webp',
+            'venezuela' => 'venisuella.webp',
+            'sri-lanka' => 'sheri-lanka.webp',
+            'cuba' => 'kuba.webp',
+            'cyprus' => 'kipr.webp',
+            'tanzania' => 'tanzania.webp',
+            'thailand' => 'tailand.webp',
+            'goa' => 'goa.webp',
+            'china' => 'kitay.webp',
+            'dominican-republic' => 'domenikana.webp',
+            'mexico' => 'meksika.webp',
+            'vietnam' => 'vetnam.webp',
+            'tunisia' => 'tunis.webp',
+            'greece' => 'gretsia.webp',
+            'abkhazia' => 'abhazia.webp',
+        ];
+
         DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         DB::table('zagran_destinations')->truncate();
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
@@ -60,7 +98,7 @@ class ZagranDestinationSeeder extends Seeder
             [
                 'title' => 'Отдых в Турции',
                 'name' => 'Турция',
-                'img' => null,
+                'img' => $destinationPathByFile[$destinationFileBySlug['turkey']] ?? null,
                 'flag' => $flagPathByFile[$flagFileBySlug['turkey']] ?? null,
                 'order' => 1,
                 'slug' => 'turkey',
@@ -77,7 +115,7 @@ class ZagranDestinationSeeder extends Seeder
             [
                 'title' => 'Туры на Мальдивы',
                 'name' => 'Мальдивы',
-                'img' => null,
+                'img' => $destinationPathByFile[$destinationFileBySlug['maldives-tours']] ?? null,
                 'flag' => $flagPathByFile[$flagFileBySlug['maldives-tours']] ?? null,
                 'order' => 2,
                 'slug' => 'maldives-tours',
@@ -94,7 +132,7 @@ class ZagranDestinationSeeder extends Seeder
             [
                 'title' => 'Отдых в ОАЭ',
                 'name' => 'ОАЭ',
-                'img' => null,
+                'img' => $destinationPathByFile[$destinationFileBySlug['uae']] ?? null,
                 'flag' => $flagPathByFile[$flagFileBySlug['uae']] ?? null,
                 'order' => 3,
                 'slug' => 'uae',
@@ -111,7 +149,7 @@ class ZagranDestinationSeeder extends Seeder
             [
                 'title' => 'Отдых на Мальдивах',
                 'name' => 'Мальдивы',
-                'img' => null,
+                'img' => $destinationPathByFile[$destinationFileBySlug['maldives-vacation']] ?? null,
                 'flag' => $flagPathByFile[$flagFileBySlug['maldives-vacation']] ?? null,
                 'order' => 4,
                 'slug' => 'maldives-vacation',
@@ -128,7 +166,7 @@ class ZagranDestinationSeeder extends Seeder
             [
                 'title' => 'Отдых в Египте',
                 'name' => 'Египет',
-                'img' => null,
+                'img' => $destinationPathByFile[$destinationFileBySlug['egypt']] ?? null,
                 'flag' => $flagPathByFile[$flagFileBySlug['egypt']] ?? null,
                 'order' => 5,
                 'slug' => 'egypt',
@@ -145,7 +183,7 @@ class ZagranDestinationSeeder extends Seeder
             [
                 'title' => 'Отдых в Венесуэле',
                 'name' => 'Венесуэла',
-                'img' => null,
+                'img' => $destinationPathByFile[$destinationFileBySlug['venezuela']] ?? null,
                 'flag' => $flagPathByFile[$flagFileBySlug['venezuela']] ?? null,
                 'order' => 6,
                 'slug' => 'venezuela',
@@ -162,7 +200,7 @@ class ZagranDestinationSeeder extends Seeder
             [
                 'title' => 'Отдых в Шри-Ланке',
                 'name' => 'Шри-Ланка',
-                'img' => null,
+                'img' => $destinationPathByFile[$destinationFileBySlug['sri-lanka']] ?? null,
                 'flag' => $flagPathByFile[$flagFileBySlug['sri-lanka']] ?? null,
                 'order' => 7,
                 'slug' => 'sri-lanka',
@@ -179,7 +217,7 @@ class ZagranDestinationSeeder extends Seeder
             [
                 'title' => 'Отдых на Кубе',
                 'name' => 'Куба',
-                'img' => null,
+                'img' => $destinationPathByFile[$destinationFileBySlug['cuba']] ?? null,
                 'flag' => $flagPathByFile[$flagFileBySlug['cuba']] ?? null,
                 'order' => 8,
                 'slug' => 'cuba',
@@ -196,7 +234,7 @@ class ZagranDestinationSeeder extends Seeder
             [
                 'title' => 'Отдых на Кипре',
                 'name' => 'Кипр',
-                'img' => null,
+                'img' => $destinationPathByFile[$destinationFileBySlug['cyprus']] ?? null,
                 'flag' => $flagPathByFile[$flagFileBySlug['cyprus']] ?? null,
                 'order' => 9,
                 'slug' => 'cyprus',
@@ -213,7 +251,7 @@ class ZagranDestinationSeeder extends Seeder
             [
                 'title' => 'Отдых в Танзании',
                 'name' => 'Танзания',
-                'img' => null,
+                'img' => $destinationPathByFile[$destinationFileBySlug['tanzania']] ?? null,
                 'flag' => $flagPathByFile[$flagFileBySlug['tanzania']] ?? null,
                 'order' => 10,
                 'slug' => 'tanzania',
@@ -230,7 +268,7 @@ class ZagranDestinationSeeder extends Seeder
             [
                 'title' => 'Туры в Таиланд',
                 'name' => 'Таиланд',
-                'img' => null,
+                'img' => $destinationPathByFile[$destinationFileBySlug['thailand']] ?? null,
                 'flag' => $flagPathByFile[$flagFileBySlug['thailand']] ?? null,
                 'order' => 11,
                 'slug' => 'thailand',
@@ -247,7 +285,7 @@ class ZagranDestinationSeeder extends Seeder
             [
                 'title' => 'Туры на Гоа',
                 'name' => 'Гоа',
-                'img' => null,
+                'img' => $destinationPathByFile[$destinationFileBySlug['goa']] ?? null,
                 'flag' => $flagPathByFile[$flagFileBySlug['goa']] ?? null,
                 'order' => 12,
                 'slug' => 'goa',
@@ -264,7 +302,7 @@ class ZagranDestinationSeeder extends Seeder
             [
                 'title' => 'Туры в Китай',
                 'name' => 'Китай',
-                'img' => null,
+                'img' => $destinationPathByFile[$destinationFileBySlug['china']] ?? null,
                 'flag' => $flagPathByFile[$flagFileBySlug['china']] ?? null,
                 'order' => 13,
                 'slug' => 'china',
@@ -281,7 +319,7 @@ class ZagranDestinationSeeder extends Seeder
             [
                 'title' => 'Туры в Доминикану',
                 'name' => 'Доминиканская Республика',
-                'img' => null,
+                'img' => $destinationPathByFile[$destinationFileBySlug['dominican-republic']] ?? null,
                 'flag' => $flagPathByFile[$flagFileBySlug['dominican-republic']] ?? null,
                 'order' => 14,
                 'slug' => 'dominican-republic',
@@ -298,7 +336,7 @@ class ZagranDestinationSeeder extends Seeder
             [
                 'title' => 'Отдых в Мексике',
                 'name' => 'Мексика',
-                'img' => null,
+                'img' => $destinationPathByFile[$destinationFileBySlug['mexico']] ?? null,
                 'flag' => $flagPathByFile[$flagFileBySlug['mexico']] ?? null,
                 'order' => 15,
                 'slug' => 'mexico',
@@ -315,7 +353,7 @@ class ZagranDestinationSeeder extends Seeder
             [
                 'title' => 'Туры во Вьетнам',
                 'name' => 'Вьетнам',
-                'img' => null,
+                'img' => $destinationPathByFile[$destinationFileBySlug['vietnam']] ?? null,
                 'flag' => $flagPathByFile[$flagFileBySlug['vietnam']] ?? null,
                 'order' => 16,
                 'slug' => 'vietnam',
@@ -332,7 +370,7 @@ class ZagranDestinationSeeder extends Seeder
             [
                 'title' => 'Отдых в Тунисе',
                 'name' => 'Тунис',
-                'img' => null,
+                'img' => $destinationPathByFile[$destinationFileBySlug['tunisia']] ?? null,
                 'flag' => $flagPathByFile[$flagFileBySlug['tunisia']] ?? null,
                 'order' => 17,
                 'slug' => 'tunisia',
@@ -349,7 +387,7 @@ class ZagranDestinationSeeder extends Seeder
             [
                 'title' => 'Туры в Грецию',
                 'name' => 'Греция',
-                'img' => null,
+                'img' => $destinationPathByFile[$destinationFileBySlug['greece']] ?? null,
                 'flag' => $flagPathByFile[$flagFileBySlug['greece']] ?? null,
                 'order' => 18,
                 'slug' => 'greece',
@@ -366,7 +404,7 @@ class ZagranDestinationSeeder extends Seeder
             [
                 'title' => 'Отдых в Абхазии',
                 'name' => 'Абхазия',
-                'img' => null,
+                'img' => $destinationPathByFile[$destinationFileBySlug['abkhazia']] ?? null,
                 'flag' => $flagPathByFile[$flagFileBySlug['abkhazia']] ?? null,
                 'order' => 19,
                 'slug' => 'abkhazia',

@@ -50,6 +50,9 @@ class RouteServiceProvider extends ServiceProvider
 
             Route::middleware('web')
                 ->group(base_path('routes/sea.php'));
+
+            Route::middleware('web')
+                ->group(base_path('routes/zagran.php'));
         });
     }
 }

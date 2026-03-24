@@ -73,6 +73,24 @@
 
     <x-big-obl></x-big-obl>
 
+    <section id="zagran_tours" class="zagran_tours">
+        <div class="container">
+            <h2 class="h2_in_page">Поиск туров за границу <br><strong class="gold">On-line</strong></h2>
+            <p class="subtitle">Найдите идеальный тур за границу, не выходя из дома. <br>Наши специалисты помогут вам
+                выбрать
+                лучший вариант.</p>
+
+
+            <a href="{{ route('zagran.index') }}" class="button">Все туры On-Line</a>
+            <br>
+            <br>
+            <br>
+            <x-zagran.state-list></x-zagran.state-list>
+        </div>
+    </section>
+
+
+
     <x-rew></x-rew>
 
     <x-contacts-section></x-contacts-section>
