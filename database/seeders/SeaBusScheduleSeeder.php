@@ -19,14 +19,14 @@ class SeaBusScheduleSeeder extends Seeder
         $busSchedules = [];
 
         // Курск - Крым
-        $busSchedules[] = [
-            'direction' => 'Курск - Крым',
-            'start_date' => '14 июня',
-            'end_date' => '25 июня',
-            'sort_order' => 1,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ];
+        // $busSchedules[] = [
+        //     'direction' => 'Курск - Крым',
+        //     'start_date' => '14 июня',
+        //     'end_date' => '25 июня',
+        //     'sort_order' => 1,
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        // ];
         $busSchedules[] = [
             'direction' => 'Курск - Крым',
             'start_date' => '23 июня',
@@ -109,22 +109,22 @@ class SeaBusScheduleSeeder extends Seeder
         ];
 
         // Курск - Анапа
-        $busSchedules[] = [
-            'direction' => 'Курск - Анапа',
-            'start_date' => '08 июня',
-            'end_date' => '19 июня',
-            'sort_order' => 1,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ];
-        $busSchedules[] = [
-            'direction' => 'Курск - Анапа',
-            'start_date' => '17 июня',
-            'end_date' => '28 июня',
-            'sort_order' => 2,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ];
+        // $busSchedules[] = [
+        //     'direction' => 'Курск - Анапа',
+        //     'start_date' => '08 июня',
+        //     'end_date' => '19 июня',
+        //     'sort_order' => 1,
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        // ];
+        // $busSchedules[] = [
+        //     'direction' => 'Курск - Анапа',
+        //     'start_date' => '17 июня',
+        //     'end_date' => '28 июня',
+        //     'sort_order' => 2,
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        // ];
         $busSchedules[] = [
             'direction' => 'Курск - Анапа',
             'start_date' => '26 июня',
@@ -207,14 +207,14 @@ class SeaBusScheduleSeeder extends Seeder
         ];
 
         // Курск - Лазаревское
-        $busSchedules[] = [
-            'direction' => 'Курск - Лазаревское',
-            'start_date' => '11 июня',
-            'end_date' => '22 июня',
-            'sort_order' => 1,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ];
+        // $busSchedules[] = [
+        //     'direction' => 'Курск - Лазаревское',
+        //     'start_date' => '11 июня',
+        //     'end_date' => '22 июня',
+        //     'sort_order' => 1,
+        //     'created_at' => now(),
+        //     'updated_at' => now(),
+        // ];
         $busSchedules[] = [
             'direction' => 'Курск - Лазаревское',
             'start_date' => '20 июня',
