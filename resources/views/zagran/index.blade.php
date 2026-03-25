@@ -28,10 +28,9 @@
 
     <section class="zagran_way_section">
         <div class="container">
-            <div class="tv-search-form" tv-type="2" tv-showoperator:="1" tv-theme="theme2" tv-resultinwindow="0"
-                tv-resultwidth="auto" tv-departure="1"></div>
-            <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
 
+            <div class="tv-search-form tv-moduleid-9976426"></div>
+            <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
             <x-zagran.state-list></x-zagran.state-list>
 
         </div>

@@ -54,7 +54,7 @@ class MenuResource extends ModelResource
                     'parentItem',
                     formatted: static fn (Menu $model): string => $model->title.' ('.$model->menu_name.')',
                     resource: MenuResource::class,
-                ),
+                )->nullable(),
                 Number::make('Порядок', 'order'),
                 Text::make('Ссылка', 'lnk'),
             ]),
