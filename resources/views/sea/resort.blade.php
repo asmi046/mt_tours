@@ -26,6 +26,12 @@
         </div>
     </section>
 
+    <section class="sea_part_navigation_section">
+        <div class="container">
+            <x-sea.part-navigation></x-sea.part-navigation>
+        </div>
+    </section>
+
     <x-sea.kurorts-select :resorts="$resorts->toArray()"></x-sea.kurorts-select>
 
     <section>

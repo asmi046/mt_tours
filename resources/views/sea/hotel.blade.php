@@ -29,7 +29,7 @@
     <section class="sea_hotel_page_section">
         <div class="container">
 
-            <x-sea.part-navigation></x-sea.part-navigation>
+            <x-sea.part-navigation :showpay="false"></x-sea.part-navigation>
 
             <div class="cols">
                 <div class="col left_col">

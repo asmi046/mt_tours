@@ -23,9 +23,12 @@
 
     </div>
     <div class="buttons">
-        <a class="button button_icon button_buss" href="{{ route('kupit_proezd') }}"><i
-                class="ticket_icon"></i><span>Купить
-                проезд</span></a>
+
+        @if ($showpay)
+            <a class="button button_icon button_buss" href="{{ route('kupit_proezd') }}"><i
+                    class="ticket_icon"></i><span>Купить
+                    проезд</span></a>
+        @endif
         <a class="button button_icon" href="{{ route('grafik_zaezdov') }}"><i class="calendar_icon"></i><span>График
                 заездов</span></a>
         <a class="button button_icon" href="{{ route('nashi_avtobusi') }}"><i class="bus_icon"></i><span>Наши

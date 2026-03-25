@@ -13,11 +13,14 @@ class PartNavigation extends Component
 
     public $resorts_krim;
 
+    public $showpay;
+
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct($showpay = true)
     {
+        $this->showpay = $showpay;
         $all_distinations = SeaDestination::select('*')->with('resorts')->get();
         $this->resorts_krasnodar = $all_distinations->where('id', 1)->first()->resorts;
         $this->resorts_krim = $all_distinations->where('id', 2)->first()->resorts;
