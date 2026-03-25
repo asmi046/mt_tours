@@ -20,7 +20,10 @@ class Puncts extends Component
         $this->puncts = Cache::rememberForever('menu_'.$name, function () use ($name) {
             return Menu::query()
                 ->where('menu_name', $name)
-                ->where('parent', 0)
+                ->where(function ($query) {
+                    $query->whereNull('parent')
+                        ->orWhere('parent', 0);
+                })
                 ->with('children')
                 ->orderBy('order', 'ASC')
                 ->get();
