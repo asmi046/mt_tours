@@ -17,20 +17,20 @@ class SeaWayPriceSeeder extends Seeder
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
 
         $items = [
-            [
-                'city' => 'Темрюк',
-                'order' => 2,
-                'bus_schedule' => 'Курск - Крым',
-                'one_way' => 5000,
-                'two_way' => 7500,
-            ],
-            [
-                'city' => 'Голубицкая',
-                'order' => 3,
-                'bus_schedule' => 'Курск - Крым',
-                'one_way' => 5000,
-                'two_way' => 7500,
-            ],
+            // [
+            //     'city' => 'Темрюк',
+            //     'order' => 2,
+            //     'bus_schedule' => 'Курск - Крым',
+            //     'one_way' => 5000,
+            //     'two_way' => 7500,
+            // ],
+            // [
+            //     'city' => 'Голубицкая',
+            //     'order' => 3,
+            //     'bus_schedule' => 'Курск - Крым',
+            //     'one_way' => 5000,
+            //     'two_way' => 7500,
+            // ],
             [
                 'city' => 'Витязево',
                 'order' => 4,
