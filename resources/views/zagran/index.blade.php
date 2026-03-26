@@ -31,6 +31,9 @@
 
             <div class="tv-search-form tv-moduleid-9976426"></div>
             <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
+
+            <div class="tv-search-form tv-moduleid-9976435"></div>
+            <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
             <x-zagran.state-list></x-zagran.state-list>
 
         </div>
