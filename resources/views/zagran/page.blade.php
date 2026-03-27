@@ -34,6 +34,6 @@
         </div>
     </section>
 
-    <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
+    {{-- <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script> --}}
     <style>
     @endsection
