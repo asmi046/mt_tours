@@ -12,8 +12,8 @@
 
         <div class="container left_text">
             <div class="bnr_text">
-                <h1>Туры за границу в Курске</h1>
-                <p class="subtext">Самые актуальные туры и выгодные предложения для вашего отдыха за границей.</p>
+                <h1>{{ $page->title }}</h1>
+                <p class="subtext">{{ $page->sub_title }}</p>
                 <br>
                 <x-cat-banner-btn-page></x-cat-banner-btn-page>
             </div>
@@ -22,13 +22,18 @@
 
     <section class="breadcrumbs_section">
         <div class="container">
-            <x-breadcrumbs.main title="Туры заграницу"></x-breadcrumbs.main>
+            <x-breadcrumbs.main title="{{ $page->title }}"></x-breadcrumbs.main>
         </div>
     </section>
 
     <section class="zagran_way_section">
         <div class="container">
-
+            {!! $page->search_script !!}
+            <br>
+            {!! $page->hot_tours_script !!}
         </div>
     </section>
-@endsection
+
+    <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
+    <style>
+    @endsection
