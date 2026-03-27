@@ -3,9 +3,7 @@
 @section('main')
     <section class="banner_video">
         <x-tours-arrow link="tours_content" caption="О туре"></x-tours-arrow>
-        <video autoplay muted loop playsinline preload="metadata"
-        poster="{{ asset('img/poster.webp') }}"
-        class="_video">
+        <video autoplay muted loop playsinline preload="metadata" poster="{{ asset('img/poster.webp') }}" class="_video">
             @if ($tour_info->header_bg)
                 <source src="{{ Storage::url($tour_info->header_bg) }}" type="video/mp4" fetchpriority="high">
             @else
@@ -20,12 +18,13 @@
 
         <div class="container left_text tour_page_title">
             <div class="bnr_text">
-                <h1>{!! $tour_info->title_input?htmlspecialchars_decode($tour_info->title_input):$tour_info->title !!}</h1>
+                <h1>{!! $tour_info->title_input ? htmlspecialchars_decode($tour_info->title_input) : $tour_info->title !!}</h1>
                 @isset($tour_info->prices[0])
                     <p class="label label_gold">
 
                         @if (config('sales.show_sale'))
-                            от <span class="old_price">{{ $tour_info->prices[0]['price'] }}</span> {{ $tour_info->prices[0]['price'] - config('sales.default_sale') }} ₽
+                            от <span class="old_price">{{ $tour_info->prices[0]['price'] }}</span>
+                            {{ $tour_info->prices[0]['price'] - config('sales.default_sale') }} ₽
                         @else
                             от {{ $tour_info->prices[0]['price'] }} ₽
                         @endif
@@ -34,18 +33,25 @@
                     </p>
                 @endisset
 
-                <p class="label label_white">{{ $tour_info->deycount }}  {{ echo_days($tour_info->deycount) }}</p>
+                @if (!empty($tour_info->deycount_text))
+                    <p class="label label_white">{{ $tour_info->deycount_text }}</p>
+                @else
+                    <p class="label label_white">{{ $tour_info->deycount }} {{ echo_days($tour_info->deycount) }}</p>
+                @endif
+
 
                 @if ($tour_info['multi_data'])
                     <p class="label label_white">
                         @foreach ($tour_info['multi_data'] as $subitem)
-                            {{ date ("d.m.Y", strtotime($subitem['start_data'])) }}@if ($loop->index != count($tour_info['multi_data'])-1),@endif
+                            {{ date('d.m.Y', strtotime($subitem['start_data'])) }}@if ($loop->index != count($tour_info['multi_data']) - 1)
+                                ,
+                            @endif
                         @endforeach
                     </p>
                 @else
-                    <p class="label label_white">{{ date ("d.m.Y", strtotime($tour_info['start_data'])) }}</p>
+                    <p class="label label_white">{{ date('d.m.Y', strtotime($tour_info['start_data'])) }}</p>
                 @endif
-{{--
+                {{--
                 @if ($tour_info->tour_program)
                     <div class=toyr_program>
 
@@ -74,7 +80,7 @@
         </div>
     </section>
 
-    <section id="tours_content" class="tours_content {{ $tour_info->page_bg }}" >
+    <section id="tours_content" class="tours_content {{ $tour_info->page_bg }}">
 
         <img class="obl obl_1" src="{{ asset('img/obl/obl_1.svg') }}" alt="">
         <img class="obl obl_2" src="{{ asset('img/obl/obl_2.svg') }}" alt="">
@@ -90,16 +96,20 @@
                     @isset($tour_info->prices[0])
                         <div class="pay_wrapper">
                             @if ($tour_info->soldout)
-                            <div class="tour_price">
-                                <img class="soldout" src="{{ asset('img/soldout.webp') }}" alt="Тур продан, мест нет!">
-                                <a class="button button_icon" href="#showModal"><i class="babl_icon"></i><span>Задать вопрос</span></a>
-                            </div>
-
+                                <div class="tour_price">
+                                    <img class="soldout" src="{{ asset('img/soldout.webp') }}" alt="Тур продан, мест нет!">
+                                    <a class="button button_icon" href="#showModal"><i class="babl_icon"></i><span>Задать
+                                            вопрос</span></a>
+                                </div>
                             @else
                                 @if (isset($tour_info->prices[0]['data']))
-                                    <tour-price-select title="{{$tour_info->title}}" img="{{config('app.url').Storage::url($tour_info->img)}}"  :prices="{{json_encode($tour_info->prices)}}"></tour-price-select>
+                                    <tour-price-select title="{{ $tour_info->title }}"
+                                        img="{{ config('app.url') . Storage::url($tour_info->img) }}"
+                                        :prices="{{ json_encode($tour_info->prices) }}"></tour-price-select>
                                 @else
-                                    <tour-price title="{{$tour_info->title}}" img="{{config('app.url').Storage::url($tour_info->img)}}"  :prices="{{json_encode($tour_info->prices)}}"></tour-price>
+                                    <tour-price title="{{ $tour_info->title }}"
+                                        img="{{ config('app.url') . Storage::url($tour_info->img) }}"
+                                        :prices="{{ json_encode($tour_info->prices) }}"></tour-price>
                                 @endif
                             @endif
 
@@ -108,7 +118,7 @@
                         </div>
                     @endisset
 
-                                    </div>
+                </div>
 
                 <div class="galery">
                     <h2 class="big">Яркие моменты тура</h2>
@@ -132,7 +142,6 @@
                             </div>
                         </div>
                     @endif
-
                 @else
                     <div class="program">
                         <h2 class="big">Программа тура</h2>
@@ -203,4 +212,3 @@
     <x-contacts-section></x-contacts-section>
 
 @endsection
-

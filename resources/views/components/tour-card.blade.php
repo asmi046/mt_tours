@@ -24,7 +24,13 @@
     </div>
     <div class="text">
         <h3>{!! $item['title_card'] ?? $item['title'] !!}</h3>
-        <p class="label top_label">{{ $item['deycount'] }} {{ echo_days($item['deycount']) }}</p>
+        @if (!empty($item['deycount_text']))
+            <p class="label top_label">{{ $item['deycount_text'] }}</p>
+        @else
+            <p class="label top_label">{{ $item['deycount'] }} {{ echo_days($item['deycount']) }}</p>
+        @endif
+
+
         <div class="m_data">
             @if ($item['multi_data'])
                 @foreach ($item['multi_data'] as $subitem)

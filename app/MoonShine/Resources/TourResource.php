@@ -5,34 +5,28 @@ declare(strict_types=1);
 namespace App\MoonShine\Resources;
 
 use App\Models\Tour;
-use MoonShine\UI\Fields\ID;
-
-use MoonShine\UI\Fields\Url;
-use MoonShine\UI\Fields\Date;
-use MoonShine\UI\Fields\File;
-use MoonShine\UI\Fields\Json;
-use MoonShine\UI\Fields\Text;
-use MoonShine\UI\Fields\Field;
-use MoonShine\UI\Fields\Image;
-use MoonShine\UI\Fields\Number;
-use MoonShine\UI\Fields\Select;
-use MoonShine\UI\Components\Tabs;
-use MoonShine\UI\Components\When;
-use MoonShine\UI\Fields\Position;
-use MoonShine\UI\Fields\Switcher;
-use MoonShine\Handlers\ExportHandler;
-use MoonShine\Handlers\ImportHandler;
-use MoonShine\TinyMce\Fields\TinyMce;
-use MoonShine\UI\Components\Tabs\Tab;
-use Illuminate\Database\Eloquent\Model;
-use MoonShine\UI\Components\Layout\Flex;
-use MoonShine\UI\Components\ActionButton;
-use App\MoonShine\Resources\SeoDataResource;
 use MoonShine\Components\MoonShineComponent;
-use MoonShine\Laravel\Resources\ModelResource;
-use App\MoonShine\Resources\TourCategoryResource;
-use MoonShine\Laravel\Fields\Relationships\MorphOne;
 use MoonShine\Laravel\Fields\Relationships\BelongsToMany;
+use MoonShine\Laravel\Fields\Relationships\MorphOne;
+use MoonShine\Laravel\Resources\ModelResource;
+use MoonShine\TinyMce\Fields\TinyMce;
+use MoonShine\UI\Components\ActionButton;
+use MoonShine\UI\Components\Layout\Flex;
+use MoonShine\UI\Components\Tabs;
+use MoonShine\UI\Components\Tabs\Tab;
+use MoonShine\UI\Components\When;
+use MoonShine\UI\Fields\Date;
+use MoonShine\UI\Fields\Field;
+use MoonShine\UI\Fields\File;
+use MoonShine\UI\Fields\ID;
+use MoonShine\UI\Fields\Image;
+use MoonShine\UI\Fields\Json;
+use MoonShine\UI\Fields\Number;
+use MoonShine\UI\Fields\Position;
+use MoonShine\UI\Fields\Select;
+use MoonShine\UI\Fields\Switcher;
+use MoonShine\UI\Fields\Text;
+use MoonShine\UI\Fields\Url;
 
 /**
  * @extends ModelResource<Tour>
@@ -92,32 +86,30 @@ class TourResource extends ModelResource
                     TinyMce::make('Название на баннере', 'title_input'),
                     Text::make('URL', 'slug'),
                     Number::make('Количество дней', 'deycount')->required(),
+                    Text::make('Текст для количества дней', 'deycount_text'),
                     Date::make('Основная дата тура', 'start_data')->format('d.m.Y')->required(),
                     Json::make('Указать несколько дат тура', 'multi_data')
-                    ->removable()
-                    ->fields([
-                        Position::make(),
-                        Date::make('Дата тура', 'start_data')->format('d.m.Y'),
-                        Switcher::make('Нет мест', 'soldout')->default(false),
-                    ]),
-
-
+                        ->removable()
+                        ->fields([
+                            Position::make(),
+                            Date::make('Дата тура', 'start_data')->format('d.m.Y'),
+                            Switcher::make('Нет мест', 'soldout')->default(false),
+                        ]),
 
                     Json::make('Варианты цены', 'prices')
-                    ->removable()
-                            ->fields([
-                                Position::make(),
-                                Text::make('Продано', 'soldout'),
-                                Text::make('Цена', 'price'),
-                                Text::make('Дата', 'data'),
-                                Text::make('Комментарий', 'comment')
-                    ]),
-
+                        ->removable()
+                        ->fields([
+                            Position::make(),
+                            Text::make('Продано', 'soldout'),
+                            Text::make('Цена', 'price'),
+                            Text::make('Дата', 'data'),
+                            Text::make('Комментарий', 'comment'),
+                        ]),
 
                 ]),
 
                 Tab::make('Категории', [
-                    BelongsToMany::make("Категории", 'categories', resource: TourCategoryResource::class)
+                    BelongsToMany::make('Категории', 'categories', resource: TourCategoryResource::class),
                 ]),
 
                 Tab::make('Описательная часть', [
@@ -131,28 +123,28 @@ class TourResource extends ModelResource
                     TinyMce::make('Программа тура', 'program'),
 
                     Json::make('Программа тура в шапке', 'head_tour_program')
-                    ->removable()
-                    ->fields([
-                        Position::make(),
-                        Text::make('Заголовок', 'title'),
-                    ]),
+                        ->removable()
+                        ->fields([
+                            Position::make(),
+                            Text::make('Заголовок', 'title'),
+                        ]),
 
                     Json::make('Программа тура', 'tour_program')
-                    ->removable()
-                            ->fields([
-                                Position::make(),
-                                Switcher::make('Не отображать', 'no_show'),
-                                Text::make('Тип программы', 'type'),
-                                Number::make('№ дня', 'number'),
-                                Text::make('Дата дня', 'date'),
-                                TinyMce::make('Описание', 'description'),
-                            ]),
+                        ->removable()
+                        ->fields([
+                            Position::make(),
+                            Switcher::make('Не отображать', 'no_show'),
+                            Text::make('Тип программы', 'type'),
+                            Number::make('№ дня', 'number'),
+                            Text::make('Дата дня', 'date'),
+                            TinyMce::make('Описание', 'description'),
+                        ]),
                 ]),
 
                 Tab::make('Оформление страницы', [
                     Image::make('Изображение', 'img')->dir('tours'),
-                    File::make("Фон шапки тура", 'header_bg')->dir('tours')->removable(),
-                    Select::make("Нижний фон", "page_bg")->options([
+                    File::make('Фон шапки тура', 'header_bg')->dir('tours')->removable(),
+                    Select::make('Нижний фон', 'page_bg')->options([
                         'kazan_bg' => 'Казань',
                         'kudikina_bg' => 'Кудыкина гора',
                         'moskow_bg' => 'Москва',
@@ -164,19 +156,19 @@ class TourResource extends ModelResource
 
                 Tab::make('Галерея', [
                     Json::make('Галерея', 'galery')
-                    ->removable()
-                            ->fields([
-                                Position::make(),
-                                Image::make('Изображение', 'img')->dir('tours'),
-                                Text::make('Заголовок', 'title'),
-                                Switcher::make('В шапке', 'in_top')
-                            ]),
+                        ->removable()
+                        ->fields([
+                            Position::make(),
+                            Image::make('Изображение', 'img')->dir('tours'),
+                            Text::make('Заголовок', 'title'),
+                            Switcher::make('В шапке', 'in_top'),
+                        ]),
                 ]),
 
                 MorphOne::make(
-                        'SEO',
-                        'seoData',
-                        resource: SeoDataResource::class
+                    'SEO',
+                    'seoData',
+                    resource: SeoDataResource::class
                 ),
                 // ->fields([
                 //     Phone::make('Phone'),
@@ -185,19 +177,16 @@ class TourResource extends ModelResource
             ]),
 
             When::make(
-                    static fn() => request()->routeIs('moonshine.resource.edit'),
-                    static fn() => [
-                        ActionButton::make(
-                            label: 'Перейти к странице',
-                            url: route('tour_page', $this->getItem()['slug']),
-                        )
+                static fn () => request()->routeIs('moonshine.resource.edit'),
+                static fn () => [
+                    ActionButton::make(
+                        label: 'Перейти к странице',
+                        url: route('tour_page', $this->getItem()['slug']),
+                    )
                         ->success()
-                        ->blank()
-                    ],
-            )
-
-
-
+                        ->blank(),
+                ],
+            ),
 
         ];
     }
@@ -223,38 +212,38 @@ class TourResource extends ModelResource
             TinyMce::make('За отдельную плату', 'out_price'),
 
             Json::make('Указать несколько дат тура', 'multi_data')
-            ->fields([
-                Position::make(),
-                Text::make('Заголовок', 'title'),
-            ]),
+                ->fields([
+                    Position::make(),
+                    Text::make('Заголовок', 'title'),
+                ]),
 
             Json::make('Программа тура', 'tour_program')
-                    ->fields([
-                        Position::make(),
-                        Text::make('Заголовок', 'title'),
-                    ]),
+                ->fields([
+                    Position::make(),
+                    Text::make('Заголовок', 'title'),
+                ]),
 
             Json::make('Варианты цены', 'prices')
-                    ->fields([
-                        Position::make(),
-                        Text::make('Цена', 'price'),
-                        Text::make('Комментарий', 'comment')
-                    ]),
+                ->fields([
+                    Position::make(),
+                    Text::make('Цена', 'price'),
+                    Text::make('Комментарий', 'comment'),
+                ]),
 
             Json::make('Галерея', 'galery')
-                    ->fields([
-                        Position::make(),
-                        Image::make('Изображение', 'img')->dir('tours'),
-                        Text::make('Заголовок', 'title'),
-                        Switcher::make('В шапке', 'in_top')
-                    ])
+                ->fields([
+                    Position::make(),
+                    Image::make('Изображение', 'img')->dir('tours'),
+                    Text::make('Заголовок', 'title'),
+                    Switcher::make('В шапке', 'in_top'),
+                ]),
         ];
     }
 
     /**
-     * @param Tour $item
-     *
+     * @param  Tour  $item
      * @return array<string, string[]|string>
+     *
      * @see https://laravel.com/docs/validation#available-validation-rules
      */
     protected function rules($item): array
