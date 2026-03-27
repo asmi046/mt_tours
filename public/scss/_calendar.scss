@@ -1,11 +1,11 @@
-@use 'vars' as *;
+@use "vars" as *;
 
 .calendat_lnk_wrapper {
     position: fixed;
     z-index: 1000;
     right: 10px;
     bottom: 80px;
-    display:  flex;
+    display: flex;
     gap: 10px;
 
     .comment {
@@ -19,12 +19,12 @@
 
         .arrow {
             position: absolute;
-            right:-4px;
-            top:8px;
+            right: -4px;
+            top: 8px;
             width: 9px;
             height: 9px;
             background-color: white;
-            transform:  rotate(45deg);
+            transform: rotate(45deg);
         }
     }
 }
@@ -40,12 +40,15 @@
     flex-wrap: nowrap;
     overflow-x: auto;
 
-    &::-webkit-scrollbar { width: 0; height: 0; }
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
 
     .month_selector {
         padding: 10px 20px;
         border-radius: $border_rad;
-                flex: 0 0 auto;
+        flex: 0 0 auto;
         &.active {
             background-color: $main_color;
         }
@@ -54,14 +57,12 @@
             background-color: $main_color_opc;
         }
     }
-
 }
 
 // Разметка календаря
 
-
 .calendar-item {
-    width:100%;
+    width: 100%;
 }
 
 .elem_data {
@@ -73,13 +74,13 @@
     text-decoration: none;
 }
 
-.calendar-head:hover{
-    color: #00B4F1;
+.calendar-head:hover {
+    color: #00b4f1;
 }
 
 .calendar-head.active {
     font-weight: bold;
-    background-color: #00B4F1;
+    background-color: #00b4f1;
     color: white;
 
     border-radius: 10px;
@@ -94,7 +95,7 @@
 }
 
 .calendar-item table {
-    width:100%;
+    width: 100%;
     border-color: lightgray;
 }
 
@@ -104,13 +105,12 @@
 
 .calendar-item table td.vihodnoi,
 .calendar-item table th.vihodnoi {
-    color:#A52A2A;
+    color: #a52a2a;
     background-color: #ffe4e1;
 }
 
-
 .calendar-item table th {
-    color:#333
+    color: #333;
 }
 
 .calendar-item table th {
@@ -118,25 +118,19 @@
 }
 
 .calendar-item table th,
-.calendar-item table td
-{
-
+.calendar-item table td {
     border-color: lightgray;
 }
 
-
-
-.calendar-item table td
-{
-    width:14.28%;
+.calendar-item table td {
+    width: 14.28%;
 }
 
-.calendar-item table td.no_event
-{
-    width:10%;
+.calendar-item table td.no_event {
+    width: 10%;
 }
 
-.calendar-day{
+.calendar-day {
     vertical-align: top;
 }
 
@@ -144,7 +138,6 @@
     min-height: 50px;
     display: flex;
     flex-direction: column;
-
 }
 
 .today {
@@ -154,7 +147,7 @@
 .dey_card .data {
     margin-top: 0;
     margin-bottom: auto;
-    width:100%;
+    width: 100%;
 }
 
 .mobile_dey {
@@ -173,7 +166,7 @@
 }
 
 .calendar-tur-elem .img_wraper {
-    width:100%;
+    width: 100%;
     height: 100px;
     position: relative;
     .soldout {
@@ -183,11 +176,10 @@
         left: calc(50% - 75px);
         top: 5px;
     }
-
 }
 
 .calendar-tur-elem .img_wraper img {
-    width:100%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
@@ -198,12 +190,11 @@
     margin: 5px 0;
     color: black;
     font-size: 12px;
-    text-decoration: none!important;
+    text-decoration: none !important;
 }
 
 .calendar-tur-elem .all_info {
     line-height: 1;
-    text-transform: uppercase;
     height: 65px;
     margin: 3px 0;
     strong {
@@ -218,24 +209,23 @@
     height: 50px;
 }
 
-
-.calendar-tur-elem:hover{
-    text-decoration: none!important;
+.calendar-tur-elem:hover {
+    text-decoration: none !important;
 }
 
 .calendar-tur-elem .deys {
     margin: 0;
 }
 
-.calendar-tur-mobile img{
+.calendar-tur-mobile img {
     width: auto;
     height: 100%;
 }
 
-.calendar-tur-mobile{
+.calendar-tur-mobile {
     display: none;
-    width:40px;
-    height:40px;
+    width: 40px;
+    height: 40px;
     border-radius: 30px;
     overflow: hidden;
     margin-bottom: 5px;
@@ -253,7 +243,7 @@
     }
 }
 
-.calendar-tur-mobile.active{
+.calendar-tur-mobile.active {
     border-color: red;
 }
 
@@ -271,26 +261,25 @@
     color: black;
 }
 
-.calendar_tur_info h2{
+.calendar_tur_info h2 {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.calendar_tur_info .img_wraper{
+.calendar_tur_info .img_wraper {
     width: 100%;
 }
 
-.calendar_tur_info .img_wraper img{
+.calendar_tur_info .img_wraper img {
     width: 100%;
 }
 
 .empty_card {
-	opacity: 0;
+    opacity: 0;
 }
 
-@media screen and (max-width:512px) {
-
-    .dey_card{
+@media screen and (max-width: 512px) {
+    .dey_card {
         min-height: 50px;
     }
     .calendar-tur-elem {
@@ -310,8 +299,7 @@
     }
 
     .calendar-item table th,
-    .calendar-item table td
-    {
+    .calendar-item table td {
         padding: 3px;
     }
 
@@ -321,10 +309,13 @@
         margin: 10px 0;
     }
 
-    .elem_data::-webkit-scrollbar { width: 0; height: 0; }
+    .elem_data::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
 
     .elem_data .calendar-head {
-        width:unset;
+        width: unset;
         font-size: 14px;
         margin-right: 0;
         padding: 5px 15px;

@@ -12,7 +12,7 @@
         @endif
 
         @if ($item['min_price'])
-            <div class="label price_label">
+            <div class="label price_label price_label_sea_tours">
                 от {{ $item['min_price'] }} ₽
             </div>
         @endif
