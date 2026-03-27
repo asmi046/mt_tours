@@ -1,4 +1,5 @@
 @use "../vars" as *;
+@use "sass:color";
 .sea_part_navigation {
     display: flex;
     gap: 20px;
@@ -22,7 +23,7 @@
             color: white;
 
             &:hover {
-                background-color: lighten($hover_color, 4%);
+                background-color: color.adjust($hover_color, $lightness: 4%);
             }
         }
     }
