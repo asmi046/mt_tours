@@ -28,9 +28,9 @@
 
     <section class="zagran_way_section">
         <div class="container">
-            {!! $page->search_script !!}
+            {{-- {!! $page->search_script !!}
             <br>
-            {!! $page->hot_tours_script !!}
+            {!! $page->hot_tours_script !!} --}}
         </div>
     </section>
 
