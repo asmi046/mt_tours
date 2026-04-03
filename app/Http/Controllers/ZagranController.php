@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\ZagranDestination;
+use App\Models\ZagranResort;
 
 class ZagranController extends Controller
 {
@@ -16,5 +17,12 @@ class ZagranController extends Controller
         $page = ZagranDestination::where('slug', $slug)->firstOrFail();
 
         return view('zagran.page', compact('page'));
+    }
+
+    public function resort(string $state, string $resort)
+    {
+        $page = ZagranResort::where('slug', $resort)->with('destination')->firstOrFail();
+
+        return view('zagran.resort', compact('page', 'resort'));
     }
 }

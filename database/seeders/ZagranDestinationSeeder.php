@@ -94,7 +94,7 @@ class ZagranDestinationSeeder extends Seeder
         DB::table('zagran_destinations')->truncate();
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
 
-        DB::table('zagran_destinations')->insert([
+        $distantion = [
             [
                 'title' => 'Туры в Таиланд',
                 'sub_title' => 'Лучшие туры в Таиланд от ведущих туроператоров по выгодным ценам',
@@ -428,6 +428,18 @@ class ZagranDestinationSeeder extends Seeder
             //     'updated_at' => now(),
             // ],
 
-        ]);
+        ];
+
+        DB::table('zagran_destinations')->insert($distantion);
+        foreach ($distantion as $item) {
+            DB::table('seo_data')->updateOrInsert(
+                ['url' => 'poisk-turov-on-line-v-kurske/'.$item['slug']],
+                [
+                    'url' => 'poisk-turov-on-line-v-kurske/'.$item['slug'],
+                    'seo_title' => $item['title'],
+                    'seo_description' => $item['sub_title'],
+                ]
+            );
+        }
     }
 }

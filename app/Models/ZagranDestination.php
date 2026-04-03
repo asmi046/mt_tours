@@ -31,6 +31,8 @@ class ZagranDestination extends Model
         'min_price' => 'decimal:2',
     ];
 
+    protected $with = ['resorts'];
+
     public function resorts(): HasMany
     {
         return $this->hasMany(ZagranResort::class, 'zagran_destination_id', 'id');

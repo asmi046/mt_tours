@@ -22,16 +22,13 @@
 
     <section class="breadcrumbs_section">
         <div class="container">
-            <x-breadcrumbs.main title="{{ $page->title }}"></x-breadcrumbs.main>
+            <x-breadcrumbs.main :title="$page->title" :resort="$page->destination"></x-breadcrumbs.main>
         </div>
     </section>
 
     <section class="zagran_way_section">
         <div class="container">
-            <x-zagran.resort-list :resorts="$page->resorts"></x-zagran.resort-list>
-            {!! $page->search_script !!}
-            <x-zagran.vidget></x-zagran.vidget>
-            {!! $page->hot_tours_script !!}
+
         </div>
     </section>
 

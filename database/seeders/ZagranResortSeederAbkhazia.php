@@ -5,29 +5,24 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class ZagranResortSeeder extends Seeder
+class ZagranResortSeederAbkhazia extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        DB::statement('SET FOREIGN_KEY_CHECKS=0;');
-        DB::table('zagran_resorts')->truncate();
-        DB::statement('SET FOREIGN_KEY_CHECKS=1;');
-
-        $turkeyId = DB::table('zagran_destinations')->where('slug', 'turkey')->value('id');
-        $egyptId = DB::table('zagran_destinations')->where('slug', 'egypt')->value('id');
+        $abkhaziaId = DB::table('zagran_destinations')->where('slug', 'abkhazia')->value('id');
 
         $resorts = [];
 
-        if ($turkeyId) {
+        if ($abkhaziaId) {
             $resorts[] = [
-                'zagran_destination_id' => $turkeyId,
-                'title' => 'Анталья',
+                'zagran_destination_id' => $abkhaziaId,
+                'title' => 'Гагра',
                 'img' => null,
                 'order' => 1,
-                'slug' => 'antalya',
+                'slug' => 'gagra',
                 'hot_tours_script' => null,
                 'description' => null,
                 'created_at' => now(),
@@ -35,25 +30,11 @@ class ZagranResortSeeder extends Seeder
             ];
 
             $resorts[] = [
-                'zagran_destination_id' => $turkeyId,
-                'title' => 'Кемер',
+                'zagran_destination_id' => $abkhaziaId,
+                'title' => 'Гудаута',
                 'img' => null,
                 'order' => 2,
-                'slug' => 'kemer',
-                'hot_tours_script' => null,
-                'description' => null,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ];
-        }
-
-        if ($egyptId) {
-            $resorts[] = [
-                'zagran_destination_id' => $egyptId,
-                'title' => 'Хургада',
-                'img' => null,
-                'order' => 1,
-                'slug' => 'hurghada',
+                'slug' => 'gudauta',
                 'hot_tours_script' => null,
                 'description' => null,
                 'created_at' => now(),
@@ -61,11 +42,35 @@ class ZagranResortSeeder extends Seeder
             ];
 
             $resorts[] = [
-                'zagran_destination_id' => $egyptId,
-                'title' => 'Шарм-эль-Шейх',
+                'zagran_destination_id' => $abkhaziaId,
+                'title' => 'Новый Афон',
                 'img' => null,
-                'order' => 2,
-                'slug' => 'sharm-el-sheikh',
+                'order' => 3,
+                'slug' => 'novy-afon',
+                'hot_tours_script' => null,
+                'description' => null,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ];
+
+            $resorts[] = [
+                'zagran_destination_id' => $abkhaziaId,
+                'title' => 'Пицунда',
+                'img' => null,
+                'order' => 4,
+                'slug' => 'pitsunda',
+                'hot_tours_script' => null,
+                'description' => null,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ];
+
+            $resorts[] = [
+                'zagran_destination_id' => $abkhaziaId,
+                'title' => 'Сухум',
+                'img' => null,
+                'order' => 5,
+                'slug' => 'sukhum',
                 'hot_tours_script' => null,
                 'description' => null,
                 'created_at' => now(),
