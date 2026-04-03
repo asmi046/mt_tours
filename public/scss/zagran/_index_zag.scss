@@ -14,12 +14,13 @@
         gap: 10px;
     }
 
-    .text_about_resort {
-        margin-top: 20px;
-    }
-
     .button {
         border-radius: $border_rad_big;
+        &.active {
+            background-color: $hover_color;
+            border-color: $hover_color;
+            color: #fff;
+        }
     }
 
     @media (max-width: 520px) {
@@ -27,4 +28,8 @@
             padding: 5px 20px;
         }
     }
+}
+
+.text_about_resort {
+    margin-top: 20px;
 }

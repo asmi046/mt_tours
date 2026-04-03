@@ -158,9 +158,9 @@ class ZagranResortSeederChina extends Seeder
 
             foreach ($resorts as $item) {
                 DB::table('seo_data')->updateOrInsert(
-                    ['url' => 'poisk-turov-on-line-v-kurske/'.$item['slug']],
+                    ['url' => 'poisk-turov-on-line-v-kurske/china/'.$item['slug']],
                     [
-                        'url' => 'poisk-turov-on-line-v-kurske/'.$item['slug'],
+                        'url' => 'poisk-turov-on-line-v-kurske/china/'.$item['slug'],
                         'seo_title' => $item['seo_title'] ?? $item['title'],
                         'seo_description' => $item['seo_description'] ?? $item['sub_title'],
                     ]

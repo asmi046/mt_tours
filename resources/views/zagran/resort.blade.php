@@ -26,6 +26,13 @@
         </div>
     </section>
 
+    <section class="resort_navigation_section">
+        <div class="container">
+            <h2>Популярные курорты</h2>
+            <x-zagran.resort-list :resorts="$page->destination->resorts"></x-zagran.resort-list>
+        </div>
+    </section>
+
     <section class="zagran_way_section">
         <div class="container">
             {!! $page->hot_tours_script !!}
