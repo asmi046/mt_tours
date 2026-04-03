@@ -13,6 +13,8 @@ class ZagranResort extends Model
     protected $fillable = [
         'zagran_destination_id',
         'title',
+        'resort_name',
+        'sub_title',
         'img',
         'order',
         'slug',

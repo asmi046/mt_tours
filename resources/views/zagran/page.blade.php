@@ -26,14 +26,31 @@
         </div>
     </section>
 
-    <section class="zagran_way_section">
+    <section class="resort_navigation_section">
         <div class="container">
+            <h2>Популярные курорты</h2>
             <x-zagran.resort-list :resorts="$page->resorts"></x-zagran.resort-list>
-            {!! $page->search_script !!}
-            <x-zagran.vidget></x-zagran.vidget>
-            {!! $page->hot_tours_script !!}
         </div>
     </section>
 
+    <section class="zagran_way_section_top">
+        <div class="container">
+            {!! $page->search_script !!}
+        </div>
+    </section>
+
+    <x-zagran.vidget></x-zagran.vidget>
+
+
+    <section class="zagran_way_section_top">
+        <div class="container">
+
+            {!! $page->hot_tours_script !!}
+
+            <div class="text_about_resort text_styles">
+                {!! $page->description !!}
+            </div>
+        </div>
+    </section>
     <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
 @endsection

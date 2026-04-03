@@ -1,3 +1,26 @@
 @use "../vars" as *;
 @use "list";
 @use "vidget";
+
+.resort_navigation_section {
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .zagran-resort-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .button {
+        border-radius: $border_rad_big;
+    }
+
+    @media (max-width: 520px) {
+        .button {
+            padding: 5px 20px;
+        }
+    }
+}

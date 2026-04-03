@@ -20,163 +20,232 @@ class ZagranResortSeederSriLanka extends Seeder
         if ($sriLankaId) {
             $resorts[] = [
                 'zagran_destination_id' => $sriLankaId,
-                'title' => 'Аругам Бей',
+                'title' => 'Купить туры Аругам Бей в Курске',
+                'resort_name' => 'Аругам Бей',
+                'sub_title' => 'Серфинг и пляжный отдых на востоке острова',
                 'img' => null,
                 'order' => 1,
                 'slug' => 'arugam-bay',
-                'hot_tours_script' => null,
+                'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="28" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
+                'seo_title' => 'Купить туры Аругам Бей в Курске - цены 2026',
+                'seo_description' => 'Туры в Аругам Бей из Курска: серфинг, пляжный отдых и лучшие цены на поездку в Шри-Ланку.',
                 'created_at' => now(),
                 'updated_at' => now(),
             ];
 
             $resorts[] = [
                 'zagran_destination_id' => $sriLankaId,
-                'title' => 'Бентота',
+                'title' => 'Купить туры Бентота в Курске',
+                'resort_name' => 'Бентота',
+                'sub_title' => 'Песчаные пляжи и спокойный отдых у океана',
                 'img' => null,
                 'order' => 2,
                 'slug' => 'bentota',
-                'hot_tours_script' => null,
+                'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="28" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
+                'seo_title' => 'Купить туры Бентота в Курске - отдых у океана',
+                'seo_description' => 'Подберите туры в Бентоту из Курска: уютные отели, теплый океан и выгодные цены на отдых.',
                 'created_at' => now(),
                 'updated_at' => now(),
             ];
 
             $resorts[] = [
                 'zagran_destination_id' => $sriLankaId,
-                'title' => 'Галле',
+                'title' => 'Купить туры Галле в Курске',
+                'resort_name' => 'Галле',
+                'sub_title' => 'Исторический город и отдых на побережье',
                 'img' => null,
                 'order' => 3,
                 'slug' => 'galle',
-                'hot_tours_script' => null,
+                'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="28" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
+                'seo_title' => 'Купить туры Галле в Курске - экскурсии и пляжи',
+                'seo_description' => 'Туры в Галле из Курска: колониальная архитектура, океан и привлекательные предложения по цене.',
                 'created_at' => now(),
                 'updated_at' => now(),
             ];
 
             $resorts[] = [
                 'zagran_destination_id' => $sriLankaId,
-                'title' => 'Калутара',
+                'title' => 'Купить туры Калутара в Курске',
+                'resort_name' => 'Калутара',
+                'sub_title' => 'Тропический курорт с широкими пляжами',
                 'img' => null,
                 'order' => 4,
                 'slug' => 'kalutara',
-                'hot_tours_script' => null,
+                'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="28" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
+                'seo_title' => 'Купить туры Калутара в Курске - выгодные цены',
+                'seo_description' => 'Выберите туры в Калутара из Курска: пляжный формат отдыха, подбор отелей и актуальные цены.',
                 'created_at' => now(),
                 'updated_at' => now(),
             ];
 
             $resorts[] = [
                 'zagran_destination_id' => $sriLankaId,
-                'title' => 'Канди',
+                'title' => 'Купить туры Канди в Курске',
+                'resort_name' => 'Канди',
+                'sub_title' => 'Горный климат и культурные маршруты',
                 'img' => null,
                 'order' => 5,
                 'slug' => 'kandy',
-                'hot_tours_script' => null,
+                'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="28" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
+                'seo_title' => 'Купить туры Канди в Курске - экскурсионный отдых',
+                'seo_description' => 'Туры в Канди из Курска: древние храмы, прохладный климат и интересные экскурсионные программы.',
                 'created_at' => now(),
                 'updated_at' => now(),
             ];
 
             $resorts[] = [
                 'zagran_destination_id' => $sriLankaId,
-                'title' => 'Коггала',
+                'title' => 'Купить туры Коггала в Курске',
+                'resort_name' => 'Коггала',
+                'sub_title' => 'Тихий океанский курорт для релакса',
                 'img' => null,
                 'order' => 6,
                 'slug' => 'koggala',
-                'hot_tours_script' => null,
+                'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="28" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
+                'seo_title' => 'Купить туры Коггала в Курске - спокойный отдых',
+                'seo_description' => 'Подбор туров в Коггалу из Курска: уединенные пляжи, комфортные отели и разумные цены.',
                 'created_at' => now(),
                 'updated_at' => now(),
             ];
 
             $resorts[] = [
                 'zagran_destination_id' => $sriLankaId,
-                'title' => 'Коломбо',
+                'title' => 'Купить туры Коломбо в Курске',
+                'resort_name' => 'Коломбо',
+                'sub_title' => 'Городской ритм и отдых на океане',
                 'img' => null,
                 'order' => 7,
                 'slug' => 'colombo',
-                'hot_tours_script' => null,
+                'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="28" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
+                'seo_title' => 'Купить туры Коломбо в Курске - цены на 2026 год',
+                'seo_description' => 'Туры в Коломбо из Курска: городские экскурсии, океанский климат и выгодные условия бронирования.',
                 'created_at' => now(),
                 'updated_at' => now(),
             ];
 
             $resorts[] = [
                 'zagran_destination_id' => $sriLankaId,
-                'title' => 'Негомбо',
+                'title' => 'Купить туры Негомбо в Курске',
+                'resort_name' => 'Негомбо',
+                'sub_title' => 'Удобный курорт рядом с аэропортом',
                 'img' => null,
                 'order' => 8,
                 'slug' => 'negombo',
-                'hot_tours_script' => null,
+                'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="28" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
+                'seo_title' => 'Купить туры Негомбо в Курске - отдых на Шри-Ланке',
+                'seo_description' => 'Выберите туры в Негомбо из Курска: комфортный пляжный отдых и актуальные предложения по стоимости.',
                 'created_at' => now(),
                 'updated_at' => now(),
             ];
 
             $resorts[] = [
                 'zagran_destination_id' => $sriLankaId,
-                'title' => 'Сигирия',
+                'title' => 'Купить туры Сигирия в Курске',
+                'resort_name' => 'Сигирия',
+                'sub_title' => 'Природа и знаменитая Львиная скала',
                 'img' => null,
                 'order' => 9,
                 'slug' => 'sigiriya',
-                'hot_tours_script' => null,
+                'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="28" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
+                'seo_title' => 'Купить туры Сигирия в Курске - экскурсии и природа',
+                'seo_description' => 'Туры в Сигирию из Курска: культурные маршруты, уникальные ландшафты и хорошие цены на поездку.',
                 'created_at' => now(),
                 'updated_at' => now(),
             ];
 
             $resorts[] = [
                 'zagran_destination_id' => $sriLankaId,
-                'title' => 'Тангалле',
+                'title' => 'Купить туры Тангалле в Курске',
+                'resort_name' => 'Тангалле',
+                'sub_title' => 'Уединенные пляжи и комфортный релакс',
                 'img' => null,
                 'order' => 10,
                 'slug' => 'tangalle',
-                'hot_tours_script' => null,
+                'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="28" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
+                'seo_title' => 'Купить туры Тангалле в Курске - отдых у океана',
+                'seo_description' => 'Подберите туры в Тангалле из Курска: тишина, чистые пляжи и выгодные предложения на отдых.',
                 'created_at' => now(),
                 'updated_at' => now(),
             ];
 
             $resorts[] = [
                 'zagran_destination_id' => $sriLankaId,
-                'title' => 'Тринкомале',
+                'title' => 'Купить туры Тринкомале в Курске',
+                'resort_name' => 'Тринкомале',
+                'sub_title' => 'Восточное побережье и прозрачное море',
                 'img' => null,
                 'order' => 11,
                 'slug' => 'trincomalee',
-                'hot_tours_script' => null,
+                'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="28" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
+                'seo_title' => 'Купить туры Тринкомале в Курске - лучшие цены',
+                'seo_description' => 'Туры в Тринкомале из Курска: теплый океан, дайвинг и подбор выгодных цен на отдых.',
                 'created_at' => now(),
                 'updated_at' => now(),
             ];
 
             $resorts[] = [
                 'zagran_destination_id' => $sriLankaId,
-                'title' => 'Унаватуна',
+                'title' => 'Купить туры Унаватуна в Курске',
+                'resort_name' => 'Унаватуна',
+                'sub_title' => 'Популярная бухта для отдыха у океана',
                 'img' => null,
                 'order' => 12,
                 'slug' => 'unawatuna',
-                'hot_tours_script' => null,
+                'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="28" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
+                'seo_title' => 'Купить туры Унаватуна в Курске - цены на отдых',
+                'seo_description' => 'Выберите туры в Унаватуну из Курска: удобные отели, песчаные пляжи и актуальные предложения.',
                 'created_at' => now(),
                 'updated_at' => now(),
             ];
 
             $resorts[] = [
                 'zagran_destination_id' => $sriLankaId,
-                'title' => 'Хиккадува',
+                'title' => 'Купить туры Хиккадува в Курске',
+                'resort_name' => 'Хиккадува',
+                'sub_title' => 'Коралловые рифы и активный пляжный отдых',
                 'img' => null,
                 'order' => 13,
                 'slug' => 'hikkaduwa',
-                'hot_tours_script' => null,
+                'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="28" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
+                'seo_title' => 'Купить туры Хиккадува в Курске - отдых на Шри-Ланке',
+                'seo_description' => 'Туры в Хиккадуву из Курска: серфинг, теплое море и выгодные цены на отдых в 2026 году.',
                 'created_at' => now(),
                 'updated_at' => now(),
             ];
         }
 
         if (! empty($resorts)) {
-            DB::table('zagran_resorts')->insert($resorts);
+            $resortRows = array_map(static function (array $item): array {
+                unset($item['seo_title'], $item['seo_description']);
+
+                return $item;
+            }, $resorts);
+
+            DB::table('zagran_resorts')->insert($resortRows);
+
+            foreach ($resorts as $item) {
+                DB::table('seo_data')->updateOrInsert(
+                    ['url' => 'poisk-turov-on-line-v-kurske/'.$item['slug']],
+                    [
+                        'url' => 'poisk-turov-on-line-v-kurske/'.$item['slug'],
+                        'seo_title' => $item['seo_title'] ?? $item['title'],
+                        'seo_description' => $item['seo_description'] ?? $item['sub_title'],
+                    ]
+                );
+            }
         }
     }
 }
