@@ -1,0 +1,74 @@
+@use "../vars" as *;
+
+.zagran-vidget {
+    position: relative;
+    min-height: 320px;
+    overflow: hidden;
+    border-radius: $border_rad_big;
+    margin: 20px 0;
+}
+
+.zagran-vidget__image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 85% 50%;
+    z-index: 1;
+}
+
+.zagran-vidget__text {
+    position: absolute;
+    top: 50%;
+    left: $box_padding;
+    transform: translateY(-50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 560px;
+
+    .button {
+        margin: auto auto auto 0;
+    }
+
+    h3 {
+        font-size: 22px;
+        width: 70%;
+    }
+    p {
+        font-size: 13px;
+        width: 50%;
+    }
+}
+
+@media (min-width: 520px) {
+    .zagran-vidget {
+        min-height: 360px;
+    }
+
+    .zagran-vidget__text {
+        h3 {
+            font-size: 22px;
+        }
+    }
+}
+
+@media (min-width: 820px) {
+    .zagran-vidget {
+        min-height: 420px;
+    }
+
+    .zagran-vidget__text {
+        left: 36px;
+        h3 {
+            font-size: 42px;
+            width: 100%;
+        }
+        p {
+            font-size: 16px;
+            width: 100%;
+        }
+    }
+}

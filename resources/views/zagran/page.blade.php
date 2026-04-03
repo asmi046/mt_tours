@@ -29,7 +29,7 @@
     <section class="zagran_way_section">
         <div class="container">
             {!! $page->search_script !!}
-            <br>
+            <x-zagran.vidget></x-zagran.vidget>
             {!! $page->hot_tours_script !!}
         </div>
     </section>
