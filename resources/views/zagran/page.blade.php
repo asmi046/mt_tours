@@ -53,4 +53,8 @@
         </div>
     </section>
     <script type="text/javascript" src="//tourvisor.ru/module/init.js"></script>
+
+    <x-rew></x-rew>
+
+    <x-contacts-section></x-contacts-section>
 @endsection

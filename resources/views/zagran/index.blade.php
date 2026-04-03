@@ -36,4 +36,10 @@
 
         </div>
     </section>
+
+    <x-zagran.vidget></x-zagran.vidget>
+
+    <x-rew></x-rew>
+
+    <x-contacts-section></x-contacts-section>
 @endsection
