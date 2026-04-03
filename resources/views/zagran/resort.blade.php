@@ -28,7 +28,11 @@
 
     <section class="zagran_way_section">
         <div class="container">
+            {!! $page->hot_tours_script !!}
 
+            <div class="text_about_resort text_styles">
+                {!! $page->description !!}
+            </div>
         </div>
     </section>
 
