@@ -2,7 +2,8 @@
     <div class="selectors">
 
         <div class="field">
-            <label for="resorts_krasnodar">Курорты Краснодарского края</label>
+            <label for="resorts_krasnodar">Курорты
+                Краснодарского края</label>
             <select id="resorts_krasnodar" onchange="if (this.value) window.location.href = this.value;">
                 <option value="">Выбрать курорт Краснодара</option>
                 @foreach ($resorts_krasnodar as $resort)

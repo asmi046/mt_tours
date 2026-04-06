@@ -1,7 +1,10 @@
 <section>
     <div class="container kurort_select">
         @foreach ($resorts as $direction => $resorts)
-            <h3>{{ $direction }}</h3>
+            <a
+                href="{{ route('sea_direction', ['direction' => $direction == 'Краснодарский край' ? 'krasnodarskiy-kray' : 'crimea']) }}">
+                <h3>{{ $direction }}</h3>
+            </a>
             <div class="kurort_select__line">
                 @foreach ($resorts as $resort)
                     <a href="{{ route('sea_resort', $resort['slug']) }}" @class([

@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use App\Models\AleanSeaHotel;
+use App\Models\SeaDestination;
 use App\Models\SeaHotel;
 use App\Models\SeaPrice;
 use App\Models\SeaResort;
@@ -35,7 +36,7 @@ class SeaDataService
         return $result;
     }
 
-    public function getAllHotels($resortId = null, $perPage = 30)
+    public function getAllHotels($resortId = null, $perPage = 30, $directionId = null)
     {
         $page = request()->get('page', 1);
 
@@ -43,6 +44,9 @@ class SeaDataService
         if ($resortId) {
             $seaHotels = SeaHotel::where('sea_resort_id', $resortId)->get();
             $aleanHotels = AleanSeaHotel::where('sea_resort_id', $resortId)->get();
+        } elseif ($directionId) {
+            $seaHotels = SeaHotel::where('sea_destination_id', $directionId)->get();
+            $aleanHotels = AleanSeaHotel::where('sea_destination_id', $directionId)->get();
         } else {
             $seaHotels = SeaHotel::all();
             $aleanHotels = AleanSeaHotel::all();
@@ -76,6 +80,11 @@ class SeaDataService
     public function getResortBySlug(string $slug)
     {
         return SeaResort::where('slug', $slug)->firstOrFail();
+    }
+
+    public function getDirectionBySlug(string $slug)
+    {
+        return SeaDestination::where('slug', $slug)->firstOrFail();
     }
 
     public function getHotelUpsale(string $bus_direction, string $exclude_slug, int $limit = 3)

@@ -31,6 +31,16 @@ class SeaController extends Controller
         return view('sea.resort', compact('resort', 'resorts', 'hotels'));
     }
 
+    public function direction(string $direction)
+    {
+        $direction = app(SeaDataService::class)->getDirectionBySlug($direction);
+        $resorts = app(SeaDataService::class)->getAllResorts();
+        $hotels = app(SeaDataService::class)->getAllHotels(null, 30, $direction->id);
+        // dd($hotels, $direction);
+
+        return view('sea.direction', compact('direction', 'resorts', 'hotels'));
+    }
+
     public function hotel(string $resort, string $hotel)
     {
 
