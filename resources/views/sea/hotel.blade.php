@@ -64,7 +64,7 @@
                                     <use xlink:href="#hotel_price"></use>
                                 </svg>
                             </div>
-                            <div class="text">
+                            <div class="text text_styles">
                                 <h3>В цену входит:</h3>
                                 {!! $hotel->in_price !!}
                             </div>
