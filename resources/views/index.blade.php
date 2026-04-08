@@ -61,9 +61,10 @@
                     <a class="button" href="#showModal">Получить консультацию</a>
                 </div>
                 <div class="el">
-                    <img class="turists" src="{{ asset('img/turists.svg') }}"
+                    <img class="turists" src="{{ asset('img/turists.svg') }}" loading="lazy"
                         alt="Каталог экскурсионных туров из Курска 2025">
-                    <img class="buss" src="{{ asset('img/buss.svg') }}" alt="Каталог экскурсионных туров из Курска 2025">
+                    <img class="buss" src="{{ asset('img/buss.svg') }}" loading="lazy"
+                        alt="Каталог экскурсионных туров из Курска 2025">
                 </div>
             </div>
 
