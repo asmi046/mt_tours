@@ -38,7 +38,7 @@
 <div class="dop_param__preview">
     @foreach ($tours as $item)
         <a href="{{ $item->out_lnk ?? route('tour_page', $item->slug) }}" class="item">
-            <img src="{{ Storage::url($item->img) }}" alt="{{ $item->title }}">
+            <img loading="lazy" src="{{ Storage::url($item->img) }}" alt="{{ $item->title }}">
             <div class="overlay"></div>
             <div class="text">
                 {{-- {{ $item->title_card }} --}}
