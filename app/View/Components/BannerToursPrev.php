@@ -18,10 +18,10 @@ class BannerToursPrev extends Component
     {
 
         $this->tours = collect([
-            Tour::where('id', 2)->first(),
-            Tour::where('id', 33)->first(),
-            Tour::where('id', 12)->first(),
-            Tour::where('id', 37)->first(),
+            Tour::where('id', 9)->first(),
+            Tour::where('id', 8)->first(),
+            Tour::where('id', 10)->first(),
+            Tour::where('id', 31)->first(),
         ])->filter();
 
         // $this->tours = Tour::whereIn('id', [10, 9, 11])->get();
