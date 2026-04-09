@@ -32,7 +32,7 @@ class IndexController extends Controller
             ->image(config('app.url').'/img/og_img_may.webp')
             ->render();
 
-        return view('index', compact('org'));
+        return view('index', compact('org', 'website'));
     }
 
     public function news()
