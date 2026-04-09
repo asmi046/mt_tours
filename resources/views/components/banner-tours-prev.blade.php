@@ -36,12 +36,13 @@
 </a> --}}
 
 <div class="dop_param__preview">
-    @foreach ($tours as $item)
+    @foreach ($tours as $title => $item)
+        @continue(!$item)
         <a href="{{ $item->out_lnk ?? route('tour_page', $item->slug) }}" class="item">
             <img loading="lazy" src="{{ Storage::url($item->img) }}" alt="{{ $item->title }}">
             <div class="overlay"></div>
             <div class="text">
-                {{-- {{ $item->title_card }} --}}
+                {!! $title !!}
             </div>
             <div class="label price_label">
                 от {{ $item->prices[0]['price'] }} ₽

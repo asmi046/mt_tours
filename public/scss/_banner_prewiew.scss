@@ -1,4 +1,4 @@
-@use 'vars' as *;
+@use "vars" as *;
 
 .banner_video {
     .dop_param {
@@ -8,94 +8,98 @@
             flex-wrap: wrap;
             justify-content: end;
             .meny_tours {
-                display:none;
+                display: none;
             }
         }
 
         .item {
-                width:230px;
-                height:150px;
-                border-radius: $border_rad;
-                overflow: hidden;
-                box-shadow: $box_shadow;
-                position: relative;
-                img {
-                    z-index: 1;
-                }
+            width: 230px;
+            height: 150px;
+            border-radius: $border_rad;
+            overflow: hidden;
+            box-shadow: $box_shadow;
+            position: relative;
+            img {
+                z-index: 1;
+            }
 
-                .overlay {
-                    width: 100%;
-                    height: 100%;
-                    z-index: 2;
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    background: linear-gradient(
-                        to top,
-                        rgba(0, 0, 0, .7) 0%,
-                        rgba(0, 0, 0, 0) 70%
-                    );
-
-                    &:hover {
-                        background: linear-gradient(
-                            to top,
-                            rgba(0, 0, 0, .5) 0%,
-                            rgba(0, 0, 0, 0) 70%
-                        );
-                    }
-                }
-
-                .text{
-                    z-index: 3;
-                    position: absolute;
-                    left: 0;
-                    bottom: 0;
-                    width: 100%;
-                    padding: 5px 5%;
-                    color:white;
-                    font-size: 14px;
-                    font-family: 'Play', sans-serif;
-                }
-
-                .price_label {
-                    z-index: 3;
-                    position: absolute;
-                    right: 10px;
-                    top: 10px;
-                    font-size: 12px;
-                }
+            .overlay {
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 70%);
 
                 &:hover {
-                    .overlay {
-                        background: linear-gradient(
-                            to top,
-                            rgba(0, 0, 0, .5) 0%,
-                            rgba(0, 0, 0, 0) 70%
-                        );
-                    }
+                    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 70%);
                 }
             }
 
-            .buss_item {
-                margin-left: auto;
-                width: 480px;
+            .text {
+                z-index: 3;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                padding: 5px 5% 5px 32px;
+                color: white;
+                font-size: 16px;
+                font-weight: bold;
+                font-family: "Play", sans-serif;
+                line-height: 1.1;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 7px;
+                    top: calc(50% - 10px);
+                    width: 20px;
+                    height: 20px;
+                    background-image: url(../img/icon/geo_map_yello.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    z-index: -1;
+                }
             }
 
-            .new_year_item {
-                width: 480px;
-                margin-left: auto;
-                .text {
-                    font-size: 28px;
-                    line-height: 1.2;
-                    font-weight: 700;
-                    text-align: center;
-                }
+            .price_label {
+                z-index: 3;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                font-size: 12px;
+            }
 
-                .smoll {
-                    font-size: 16px;
-                    font-weight: normal;
+            &:hover {
+                .overlay {
+                    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 70%);
                 }
             }
+        }
+
+        .buss_item {
+            margin-left: auto;
+            width: 480px;
+        }
+
+        .new_year_item {
+            width: 480px;
+            margin-left: auto;
+            .text {
+                font-size: 28px;
+                line-height: 1.2;
+                font-weight: 700;
+                text-align: center;
+            }
+
+            .smoll {
+                font-size: 16px;
+                font-weight: normal;
+            }
+        }
     }
 
     & .dop_param__preview__mobile {
@@ -112,7 +116,7 @@
 
             .text {
                 font-size: 12px;
-                font-family: 'Play', sans-serif;
+                font-family: "Play", sans-serif;
                 font-weight: 600;
             }
             .price_label {
@@ -138,11 +142,10 @@
                 transform: rotate(-2deg);
             }
         }
-
     }
 }
 
-@media (max-width:1380px) {
+@media (max-width: 1380px) {
     .banner_video .left_text .dop_param .arrow_widget {
         left: -5%;
     }
@@ -157,22 +160,21 @@
     }
 }
 
-
-@media (max-width:1380px) {
+@media (max-width: 1380px) {
     // .banner_video .left_text .dop_param .arrow_widget {
     //     left: -23%;
     //     top: 0%;
     // }
 }
 
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
     .banner_video .left_text .dop_param .arrow_widget {
         left: -23%;
         top: 0%;
     }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
     .banner_video .left_text .dop_param .arrow_widget {
         left: 20%;
         top: -5%;
@@ -192,13 +194,16 @@
     }
 }
 
-@media (max-width:480px) {
-
+@media (max-width: 480px) {
     .banner_video .dop_param__preview {
         .item {
             width: 45%;
             height: 130px;
         }
+    }
+
+    .banner_video .dop_param .item .text {
+        font-size: 14px;
     }
 
     .banner_video {
@@ -208,8 +213,8 @@
 
         & .dop_param__preview {
             .meny_tours {
-                display:flex;
-                width:100%;
+                display: flex;
+                width: 100%;
             }
         }
 

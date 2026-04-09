@@ -17,17 +17,20 @@ class BannerToursPrev extends Component
     public function __construct()
     {
 
-        $this->tours = collect([
-            Tour::where('id', 9)->first(),
-            Tour::where('id', 8)->first(),
-            Tour::where('id', 10)->first(),
-            Tour::where('id', 31)->first(),
-        ])->filter();
+        $this->tours = [
+            'В Питер на майские' => Tour::where('id', 9)->first(),
+            'Казань на майские' => Tour::where('id', 8)->first(),
+            'Сказочная Адыгея' => Tour::where('id', 10)->first(),
+            'Поехали в Севастополь' => Tour::where('id', 31)->first(),
+        ];
 
-        // $this->tours = Tour::whereIn('id', [10, 9, 11])->get();
-        // $orderedItems = $items->sortBy(function ($item) use ($ids) {
-        //     return array_search($item->id, $ids);
-        // })->values();
+        // collect([
+        //     Tour::where('id', 9)->first(),
+        //     Tour::where('id', 8)->first(),
+        //     Tour::where('id', 10)->first(),
+        //     Tour::where('id', 31)->first(),
+        // ])->filter();
+
     }
 
     /**
