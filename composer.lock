@@ -4,8 +4,77 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4c870d80c7a2f773ffaf733fa1c72b46",
+    "content-hash": "f72ffb25b6dc462859cc5dfbe5e9daaa",
     "packages": [
+        {
+            "name": "asmi046/laravel-jsonld",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asmi046/json_ld.git",
+                "reference": "a9af5dfd5a1e2d136916340b32dd0d98f717c7b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asmi046/json_ld/zipball/a9af5dfd5a1e2d136916340b32dd0d98f717c7b4",
+                "reference": "a9af5dfd5a1e2d136916340b32dd0d98f717c7b4",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^10.0 || ^11.0 || ^12.0",
+                "illuminate/view": "^10.0 || ^11.0 || ^12.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.13",
+                "orchestra/testbench": "^8.0 || ^9.0 || ^10.0",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10.0 || ^11.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "JsonLd": "Asmi\\JsonLd\\Facades\\JsonLd"
+                    },
+                    "providers": [
+                        "Asmi\\JsonLd\\JsonLdServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Support/helpers.php"
+                ],
+                "psr-4": {
+                    "Asmi\\JsonLd\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Asmi",
+                    "email": "asmi046@gmail.com"
+                }
+            ],
+            "description": "Laravel package for rendering JSON-LD schema entities (Person, Organization, Article, Product, WebSite) with a fluent facade API",
+            "homepage": "https://github.com/asmi046/json_ld",
+            "keywords": [
+                "JSON-LD",
+                "laravel",
+                "schema-org",
+                "seo",
+                "structured-data"
+            ],
+            "support": {
+                "issues": "https://github.com/asmi046/json_ld/issues",
+                "source": "https://github.com/asmi046/json_ld"
+            },
+            "time": "2026-04-09T20:27:56+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.14.1",
@@ -9644,5 +9713,5 @@
         "php": "^8.2"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
