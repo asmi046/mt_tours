@@ -21,3 +21,4 @@
 </IfModule>
 
 Redirect 301 /tours/mai /tours/may
+Redirect 301 /turi-na-more /tury-na-more
