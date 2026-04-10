@@ -31,7 +31,20 @@ class IndexController extends Controller
             ->image(config('app.url').'/img/og_img_may.webp')
             ->render();
 
-        return view('index', compact('org', 'website'));
+        $travelAgency = JsonLd::travelAgency()
+            ->name('МирТуризма46')
+            ->url(config('app.url'))
+            ->telephone('+7 (4712) 306-000')
+            ->email('mirturizma-kursk2@yandex.ru')
+            ->openingHours('Mo-Su 09:00-20:00')
+            ->areaServed(['Россия', 'Азия'])
+            ->priceRange('$$')
+            ->geo(['@type' => 'GeoCoordinates', 'latitude' => 51.73368007225548, 'longitude' => 36.192512])
+            ->address('305000, г. Курск, ул. Ленина, 12')
+            ->serviceType('Туристические туры, Туры за границу, Экскурсии')
+            ->render();
+
+        return view('index', compact('org', 'website', 'travelAgency'));
     }
 
     public function news()
