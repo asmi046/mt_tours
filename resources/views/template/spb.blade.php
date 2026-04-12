@@ -52,7 +52,8 @@
 
 
                 <a class="button yakor" href="#tours_content">Подробнее о туре</a><br>
-                <a class="button" style="background-color: #ec782b" href="https://spb.mirturizma46.ru/">Субсидированный тур
+                <a class="button" style="background-color: #ec782b; color:white; border-color:#ec782b;"
+                    href="https://spb.mirturizma46.ru/">Субсидированный тур
                     для школьников</a>
             </div>
 
