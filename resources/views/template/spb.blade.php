@@ -52,6 +52,7 @@
 
 
                 <a class="button yakor" href="#tours_content">Подробнее о туре</a>
+                <a class="button" href="https://spb.mirturizma46.ru/">Субсидированный тур для школьников</a>
             </div>
 
             <div class="dop_param page_top_galery">
