@@ -11,11 +11,14 @@ echo '<?xml version="1.0" encoding="UTF-8"@endphp';
             <currency id="RUR" rate="1" />
         </currencies>
 
-        <categories>
-            @foreach ($categorys as $item)
-                <category id="{{ $item['id'] }}">{{ $item['title'] }}</category>
-            @endforeach
-        </categories>
+        @if ($categorys)
+            <categories>
+
+                @foreach ($categorys as $item)
+                    <category id="{{ $item['id'] }}">{{ $item['title'] }}</category>
+                @endforeach
+            </categories>
+        @endif
 
         <set id="s1">
             <name>Экскурсионные туры по России </name>
@@ -23,34 +26,36 @@ echo '<?xml version="1.0" encoding="UTF-8"@endphp';
         </set>
 
         <offers>
-            @foreach ($cat_product as $item)
-                <offer id="{{ $item->id }}">
-                    <name>{{ $item->title }}</name>
-                    <url>{{ route('tour_page', $item->slug) }}</url>
+            @if ($cat_product)
+                @foreach ($cat_product as $item)
+                    <offer id="{{ $item->id }}">
+                        <name>{{ $item->title }}</name>
+                        <url>{{ route('tour_page', $item->slug) }}</url>
 
-                    <picture>{{ route('home') . $item->img }}</picture>
+                        <picture>{{ route('home') . $item->img }}</picture>
 
-                    <price>{{ $item->prices[0]['price'] }}</price>
-                    <oldprice>{{ $item->prices[0]['price'] + 1500 }}</oldprice>
+                        <price>{{ $item->prices[0]['price'] }}</price>
+                        <oldprice>{{ $item->prices[0]['price'] + 1500 }}</oldprice>
 
-                    <currencyId>RUR</currencyId>
-                    <categoryId>{{ $curent_category }}</categoryId>
+                        <currencyId>RUR</currencyId>
+                        <categoryId>{{ $curent_category }}</categoryId>
 
-                    <set-ids>s1</set-ids>
+                        <set-ids>s1</set-ids>
 
-                    <sales_notes>Необходима предоплата</sales_notes>
+                        <sales_notes>Необходима предоплата</sales_notes>
 
-                    <param name="Количество дней">{{ $item->deycount }}</param>
-                    <param name="Дата выезда">{{ $item->start_data }}</param>
+                        <param name="Количество дней">{{ $item->deycount }}</param>
+                        <param name="Дата выезда">{{ $item->start_data }}</param>
 
-                    <description>{{ $item->title }}</description>
+                        <description>{{ $item->title }}</description>
 
 
-                    {{--
+                        {{--
                 <store>true</store>
                 <pickup>true</pickup> --}}
-                </offer>
-            @endforeach
+                    </offer>
+                @endforeach
+            @endif
         </offers>
         <gifts>
             <!-- подарки не из прайс‑листа -->
