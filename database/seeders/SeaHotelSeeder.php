@@ -40,7 +40,7 @@ class SeaHotelSeeder extends Seeder
                 'database/seeders/hotels/gelendzik/gostinica-ckazka-na-more/rez.php',
                 'database/seeders/hotels/gelendzik/gostinica-iz-sruba-sosnovyi-bor/rez.php',
                 'database/seeders/hotels/gelendzik/mini-otel-roza/rez.php',
-                'database/seeders/hotels/gelendzik/pansionat-kuban/rez.php',
+                // 'database/seeders/hotels/gelendzik/pansionat-kuban/rez.php',
             ],
             'lermontovo' => [
                 'database/seeders/hotels/lermontovo/avtorskii-otel-esenin/rez.php',

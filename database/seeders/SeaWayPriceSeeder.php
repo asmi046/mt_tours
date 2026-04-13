@@ -98,8 +98,8 @@ class SeaWayPriceSeeder extends Seeder
                 'city' => 'Лазаревское',
                 'order' => 13,
                 'bus_schedule' => 'Курск - Лазаревское',
-                'one_way' => 6000,
-                'two_way' => 9000,
+                'one_way' => 6500,
+                'two_way' => 9500,
             ],
             [
                 'city' => 'Керчь',
@@ -133,8 +133,8 @@ class SeaWayPriceSeeder extends Seeder
                 'city' => 'Судак',
                 'order' => 18,
                 'bus_schedule' => 'Курск - Крым',
-                'one_way' => 6000,
-                'two_way' => 9000,
+                'one_way' => 6500,
+                'two_way' => 9500,
             ],
             [
                 'city' => 'Симферополь',
