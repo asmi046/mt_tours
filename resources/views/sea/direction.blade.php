@@ -12,8 +12,9 @@
 
         <div class="container left_text">
             <div class="bnr_text">
-                <h1>{!! $direction->title !!}</h1>
-                <p class="subtext">Туры в {!! $direction->title !!} из Курска по выгодной цене.</p>
+                <h1>Автобусные туры в {!! $direction->title !!} из Курска</h1>
+                <p class="subtext">Туры в {!! $direction->title !!} из Курска по выгодной цене. Отдыхайте без забот с
+                    МирТуризма46.</p>
                 <br>
                 <x-cat-banner-btn-page></x-cat-banner-btn-page>
             </div>
