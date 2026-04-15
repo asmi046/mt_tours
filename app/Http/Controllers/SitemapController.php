@@ -125,7 +125,7 @@ class SitemapController extends Controller
                 'lastmod' => ($hotel->updated_at) ? $hotel->updated_at->format('Y-m-d\TH:i:s\Z') : Carbon::yesterday()->format('Y-m-d\TH:i:s\Z'),
                 'changefreq' => 'monthly',
                 'priority' => '0.6',
-                'image' => $hotel->img ? url('/storage/'.$hotel->img) : null,
+                'image' => $hotel->img ? url($hotel->img) : null,
             ]);
         });
 
