@@ -6,4 +6,6 @@ return [
     'default_page_title' => env('DEFAULT_PAGE_TITLE', 'Страница'),
     'concat_title_postfix' => env('CONCAT_TITLE_POSTFIX', true),
     'title_postfix' => env('TITLE_POSTFIX', 'МирТуризма46'),
+    'seo_title_404' => env('SEO_TITLE_404', 'Страница не найдена 404'),
+    'seo_description_404' => env('SEO_DESCRIPTION_404', 'Страница не найдена, возможно, она была удалена или перемещена. Пожалуйста, проверьте URL-адрес и попробуйте снова.'),
 ];
