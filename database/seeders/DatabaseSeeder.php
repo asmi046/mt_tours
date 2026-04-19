@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
             [
                 SeoDataSeeder::class,
                 UserSeeder::class,
+                FaqSeeder::class,
                 TourSeeder::class,
                 TourSeederNewYear::class,
                 TourCategorySeeder::class,

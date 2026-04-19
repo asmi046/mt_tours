@@ -150,6 +150,7 @@ let toursData = ref(null);
 let loading = ref(false);
 let childrenAges = ref("");
 let childrenCount = ref(0);
+let sezon_up_pric = ref(parseFloat(props.schedule?.[0]?.up_price ?? 0) || 0);
 
 const assetUrl = window.Laravel?.assetUrl || "/";
 
@@ -164,8 +165,17 @@ const formatDate = (date) => {
     return new Date(date).toLocaleString("ru-RU");
 };
 
+const setSezonUpPric = () => {
+    const selectedSchedule = props.schedule.find(
+        (item) => item.start_date === datefromto.value,
+    );
+
+    sezon_up_pric.value = parseFloat(selectedSchedule?.up_price ?? 0) || 0;
+};
+
 const onParamsChange = async () => {
     try {
+        setSezonUpPric();
         loading.value = true;
         toursData.value = null;
         const { data } = await axios.get("/get_tour_list", {
@@ -191,7 +201,10 @@ const priceCalculation = (aleanPrice) => {
     return (
         parseFloat(aleanPrice) +
         parseFloat(props.priceup) * (adoult_count.value + childrenCount.value) +
-        parseFloat(props.way_price) * (adoult_count.value + childrenCount.value)
+        parseFloat(props.way_price) *
+            (adoult_count.value + childrenCount.value) +
+        parseFloat(sezon_up_pric.value) *
+            (adoult_count.value + childrenCount.value)
     );
     // return parseFloat(aleanPrice) + parseFloat(props.priceup);
 };

@@ -14,11 +14,13 @@ class SeaBusSchedule extends Model
     protected $fillable = [
         'direction',
         'start_date',
+        'up_price',
         'end_date',
         'sort_order',
     ];
 
     protected $casts = [
         'sort_order' => 'integer',
+        'up_price' => 'float',
     ];
 }
