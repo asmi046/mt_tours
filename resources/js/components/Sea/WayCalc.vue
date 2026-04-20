@@ -40,7 +40,10 @@
         <br />
 
         <p class="way_price_result" v-if="canShowPrice">
-            {{ selectedPrice }} руб.
+            {{ selectedPrice + (dopPrice || 0) }} руб.
+        </p>
+        <p class="way_price_result_dop" v-if="dopPrice">
+            + {{ dopPrice }} руб. в период высокого сезона
         </p>
 
         <button
@@ -70,6 +73,14 @@ let schedule = ref([]);
 let selectedScheduleId = ref("");
 
 const assetUrl = window.Laravel?.assetUrl || "/";
+
+const dopPrice = computed(() => {
+    if (!schedule.value) return null;
+    return (
+        schedule.value.find((p) => p.id === selectedScheduleId.value)
+            ?.up_price ?? null
+    );
+});
 
 const selectedCityPrice = computed(() => {
     return props.prices.find((p) => p.city === city.value) ?? null;
@@ -118,6 +129,7 @@ const normalizeSchedule = (raw) => {
 
 const citySelect = async () => {
     schedule.value = normalizeSchedule(selectedCityPrice.value?.bus_schedules);
+    console.log(schedule.value);
     selectedScheduleId.value = "";
 
     if (oneWayDisabled.value && wayType.value === "one_way") {
