@@ -30,6 +30,7 @@
                     :value="item.id"
                 >
                     {{ item.start_date }} - {{ item.end_date }}
+                    {{ item.up_price ? "(высокий сезон)" : "" }}
                 </option>
             </select>
         </div>
@@ -43,7 +44,7 @@
             {{ selectedPrice + (dopPrice || 0) }} руб.
         </p>
         <p class="way_price_result_dop" v-if="dopPrice">
-            + {{ dopPrice }} руб. в период высокого сезона
+            <sup>*</sup> Cтоимость с учётом высокого сезона
         </p>
 
         <button
