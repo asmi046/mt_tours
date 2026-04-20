@@ -30,7 +30,7 @@
                     :value="item.id"
                 >
                     {{ item.start_date }} - {{ item.end_date }}
-                    {{ item.up_price ? "(высокий сезон)" : "" }}
+                    {{ item.up_price ? "<sup>*</sup>" : "" }}
                 </option>
             </select>
         </div>
