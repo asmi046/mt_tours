@@ -132,13 +132,15 @@ class SitemapController extends Controller
 
         // Alean отели
         AleanSeaHotel::all()->each(function ($hotel) use ($urls) {
-            $urls->push([
-                'loc' => url("/tury-na-more/{$hotel->resort->slug}/{$hotel->slug}"),
-                'lastmod' => ($hotel->updated_at) ? $hotel->updated_at->format('Y-m-d\TH:i:s\Z') : Carbon::yesterday()->format('Y-m-d\TH:i:s\Z'),
-                'changefreq' => 'monthly',
-                'priority' => '0.6',
-                'image' => $hotel->img ? url($hotel->img) : null,
-            ]);
+            if ($hotel->resort) {
+                $urls->push([
+                    'loc' => url("/tury-na-more/{$hotel->resort->slug}/{$hotel->slug}"),
+                    'lastmod' => ($hotel->updated_at) ? $hotel->updated_at->format('Y-m-d\TH:i:s\Z') : Carbon::yesterday()->format('Y-m-d\TH:i:s\Z'),
+                    'changefreq' => 'monthly',
+                    'priority' => '0.6',
+                    'image' => $hotel->img ? url($hotel->img) : null,
+                ]);
+            }
         });
 
         return response()->view('sitemap', compact('urls'))
