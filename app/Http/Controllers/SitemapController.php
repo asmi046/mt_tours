@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AleanSeaHotel;
 use App\Models\SeaHotel;
 use App\Models\SeaResort;
 use App\Models\Tour;
@@ -120,6 +121,17 @@ class SitemapController extends Controller
 
         // Наши отели
         SeaHotel::all()->each(function ($hotel) use ($urls) {
+            $urls->push([
+                'loc' => url("/tury-na-more/{$hotel->resort->slug}/{$hotel->slug}"),
+                'lastmod' => ($hotel->updated_at) ? $hotel->updated_at->format('Y-m-d\TH:i:s\Z') : Carbon::yesterday()->format('Y-m-d\TH:i:s\Z'),
+                'changefreq' => 'monthly',
+                'priority' => '0.6',
+                'image' => $hotel->img ? url($hotel->img) : null,
+            ]);
+        });
+
+        // Alean отели
+        AleanSeaHotel::all()->each(function ($hotel) use ($urls) {
             $urls->push([
                 'loc' => url("/tury-na-more/{$hotel->resort->slug}/{$hotel->slug}"),
                 'lastmod' => ($hotel->updated_at) ? $hotel->updated_at->format('Y-m-d\TH:i:s\Z') : Carbon::yesterday()->format('Y-m-d\TH:i:s\Z'),
