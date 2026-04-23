@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\BusCatalog;
+use App\Models\Page\Page;
 use App\Models\SeaBusSchedule;
 use App\Models\SeaResort;
 use App\Models\SeaWayPrice;
@@ -97,7 +98,9 @@ class SeaController extends Controller
     {
         $sea_way_prices = app(SeaDataService::class)->getAllSeaWayPrices();
 
-        return view('sea.way', compact('sea_way_prices'));
+        $text = Page::where('slug', 'kupit-bilet-na-more-iz-kurska')->first() ?? null;
+
+        return view('sea.way', compact('sea_way_prices', 'text'));
     }
 
     public function grafik_zaezdov()

@@ -61,4 +61,17 @@
             </div>
         </div>
     </section>
+
+    <section class="sea_way_pay_section">
+        <div class="container text_styles lnk_correct">
+            <p>{!! $text->description !!}</p>
+        </div>
+    </section>
+
+    <section class="sea_way_faq_section">
+        <div class="container text_styles lnk_correct">
+            <h2>Часто задаваемые вопросы</h2>
+            <x-faq section="Купить проезд на море"></x-faq>
+        </div>
+    </section>
 @endsection

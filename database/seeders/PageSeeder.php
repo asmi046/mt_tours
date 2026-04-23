@@ -36,7 +36,7 @@ class PageSeeder extends Seeder
 
             [
                 'title' => 'Купить билет на море из Курска',
-                'slug' => Str::slug('Купить билет на море из Курска'),
+                'slug' => 'kupit-bilet-na-more-iz-kurska',
                 'description' => file_get_contents(public_path('page_text/bilet.html')),
             ],
         ];

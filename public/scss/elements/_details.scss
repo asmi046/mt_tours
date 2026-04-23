@@ -1,35 +1,49 @@
-@use '../vars' as *;
+@use "../vars" as *;
 
 details {
     display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    cursor: pointer;
 
-    summary{
+    summary {
         list-style: none;
         border: 1px solid $gray_border_color;
-        padding: 20px  50px 20px 30px;
-        background-color: $main_color;
+        padding: 10px 50px 10px 30px;
         border-radius: $border_rad;
         position: relative;
+        font-size: 18px;
 
-        &::before{
+        &::before {
             content: "";
+            background-image: url(../img/icon/circl_arrow.svg);
+            background-position: center center;
+            background-size: 50% 50%;
+            background-repeat: no-repeat;
             background-color: white;
             position: absolute;
-            border-radius: 10px;
-            width:30px;
-            height:30px;
+            border-radius: 50px;
+            width: 30px;
+            height: 30px;
             right: 10px;
             top: calc(50% - 15px);
         }
     }
 
-    &[open] summary{
-        background-color: $hover_color;
+    &[open] summary {
+        background-color: $main_color;
     }
 
-    &[open] summary:before{
+    &[open] summary:before {
         content: "";
         transform: rotate(180deg);
+        background-position: center 60%;
     }
 
+    .response {
+        margin-top: 10px;
+        padding: 5px 20px;
+        border-radius: 10px;
+        background-color: $gray_bg_color;
+    }
 }
