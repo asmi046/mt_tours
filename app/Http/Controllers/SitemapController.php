@@ -143,6 +143,15 @@ class SitemapController extends Controller
             }
         });
 
+        // Заграница
+
+        $urls->push([
+            'loc' => url('/poisk-turov-on-line-v-kurske'),
+            'lastmod' => Carbon::now()->utc()->subDays(random_int(1, 30))->format('Y-m-d\TH:i:s\Z'),
+            'changefreq' => 'weekly',
+            'priority' => '0.9',
+        ]);
+
         return response()->view('sitemap', compact('urls'))
             ->header('Content-Type', 'text/xml');
     }
