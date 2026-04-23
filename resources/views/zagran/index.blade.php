@@ -22,7 +22,7 @@
 
     <section class="breadcrumbs_section">
         <div class="container">
-            <x-breadcrumbs.main title="Туры заграницу"></x-breadcrumbs.main>
+            <x-breadcrumbs.main title="Поиск туров On-Line в Курске "></x-breadcrumbs.main>
         </div>
     </section>
 

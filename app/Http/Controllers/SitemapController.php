@@ -7,6 +7,8 @@ use App\Models\SeaHotel;
 use App\Models\SeaResort;
 use App\Models\Tour;
 use App\Models\TourCategory;
+use App\Models\ZagranDestination;
+use App\Models\ZagranResort;
 use Carbon\Carbon;
 
 class SitemapController extends Controller
@@ -151,6 +153,30 @@ class SitemapController extends Controller
             'changefreq' => 'weekly',
             'priority' => '0.9',
         ]);
+
+        // Заграница - направления
+
+        ZagranDestination::all()->each(function ($destination) use ($urls) {
+            $urls->push([
+                'loc' => url("/poisk-turov-on-line-v-kurske/{$destination->slug}"),
+                'lastmod' => ($destination->updated_at) ? $destination->updated_at->format('Y-m-d\TH:i:s\Z') : Carbon::yesterday()->format('Y-m-d\TH:i:s\Z'),
+                'changefreq' => 'monthly',
+                'priority' => '0.6',
+                'image' => $destination->img ? url($destination->img) : null,
+            ]);
+        });
+
+        // Заграница - курорты
+
+        ZagranResort::all()->each(function ($resort) use ($urls) {
+            $urls->push([
+                'loc' => url("/poisk-turov-on-line-v-kurske/{$resort->destination->slug}/{$resort->slug}"),
+                'lastmod' => ($resort->updated_at) ? $resort->updated_at->format('Y-m-d\TH:i:s\Z') : Carbon::yesterday()->format('Y-m-d\TH:i:s\Z'),
+                'changefreq' => 'monthly',
+                'priority' => '0.6',
+                'image' => $resort->img ? url($resort->img) : null,
+            ]);
+        });
 
         return response()->view('sitemap', compact('urls'))
             ->header('Content-Type', 'text/xml');
