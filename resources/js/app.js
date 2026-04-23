@@ -19,6 +19,7 @@ import Pay from "./components/Pay/Pay.vue"
 import AleanCalc from "./components/Sea/AleanCalc.vue"
 import MainCalc from "./components/Sea/MainCalc.vue"
 import WayCalc from "./components/Sea/WayCalc.vue"
+import CookiesWarning from "./components/CookiesWarning.vue"
 
 import fslightbox from 'fslightbox'
 
@@ -40,6 +41,7 @@ if (document.getElementById("global_app")) {
         components: {
             ModalWindow,
             EmptyModal,
+            CookiesWarning,
         },
         setup() { }
     })

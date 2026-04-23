@@ -16,3 +16,15 @@
     </div> --}}
 
 </footer>
+<section class="sub_footer">
+    <div class="container">
+        <div class="part">
+            <a href="/page/politika-v-oblasti-obrabotki-personalnykh-dannykh">Политика в области обработки персональных
+                данных</a>
+            <br>
+            <a href="/page/soglasie-na-obrabotku-personalnykh-dannykh">Согласие на обработку персональных
+                данных</a>
+        </div>
+
+    </div>
+</section>

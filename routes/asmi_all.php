@@ -3,12 +3,15 @@
 use App\Http\Controllers\CalendarController;
 use App\Http\Controllers\FeedController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\Page\PageController;
 use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\ScholTourController;
 use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\TourCategoryController;
 use App\Http\Controllers\TourController;
 use Illuminate\Support\Facades\Route;
+
+Route::get('/page/{slug}', [PageController::class, 'index'])->name('page');
 
 Route::get('/', [IndexController::class, 'index'])->name('home');
 
