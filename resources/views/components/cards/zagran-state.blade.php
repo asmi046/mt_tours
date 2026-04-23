@@ -1,4 +1,4 @@
-<a href="{{ route('zagran.destination', $item->slug) }}" class="zagran_state_item">
+<a href="{{ route('zagran.destination', $item->slug) }}" title="{{ $item->title }}" class="zagran_state_item">
     <img loading="lazy" src="{{ Storage::url($item->img) }}" alt="{{ $item->title }}">
     <div class="label">от {{ (int) $item->min_price }} ₽</div>
     <div class="zagran_state_item_text">
