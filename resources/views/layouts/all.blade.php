@@ -107,9 +107,9 @@
 
     </main>
     <div class="modal_win" id="global_app">
-        <cookies-warning privacy-policy-link="{{ route('page', 'politika-v-oblasti-obrabotki-personalnykh-dannykh') }}"
+        <cookies-warning privacy-policy-link="{{ route('page', 'politika-v-oblasti-obrabotki-personalnyx-dannyx') }}"
             cookies-info-link="{{ route('page', 'o-failax-cookie') }}"
-            privacy-policy-accept-link="{{ route('page', 'soglasie-na-obrabotku-personalnykh-dannykh') }}" />
+            privacy-policy-accept-link="{{ route('page', 'soglasie-na-obrabotku-personalnyx-dannyx') }}" />
         <modal-window rout="/send_consult" redirect="/thencs" hesh="showModal" title="Помощь специалиста"
             subtitle="Мы свяжемся с Вами в ближайшее время"></modal-window>
         <empty-modal hesh="howpay" title="Как купить тур" subtitle="Инструкция по покупке тура">
