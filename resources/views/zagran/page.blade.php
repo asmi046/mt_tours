@@ -44,7 +44,7 @@
 
     <section class="zagran_way_section_top">
         <div class="container">
-
+            <h2>Самые выгодные предложения на туры в {{ $page->resort_name }}</h2>
             {!! $page->hot_tours_script !!}
 
             <div class="text_about_resort text_styles">
