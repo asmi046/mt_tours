@@ -68,6 +68,13 @@
         </div>
     </section>
 
+    <section class="sea_way_pay_buses_widget_section">
+        <div class="container">
+            <h2>Наш автобусный парк</h2>
+            <x-sea.bus-vidget></x-sea.bus-vidget>
+        </div>
+    </section>
+
     <section class="sea_way_faq_section">
         <div class="container text_styles lnk_correct">
             <h2>Часто задаваемые вопросы</h2>

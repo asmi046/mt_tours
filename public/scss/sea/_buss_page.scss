@@ -44,6 +44,42 @@
     }
 }
 
+.sea_bus_vidget {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+
+    .button {
+        margin: 0 auto 0 0;
+    }
+    .sea_bus_vidget__wrapper {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .bus_item {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 46%;
+            .img_wrapper {
+                height: 150px;
+                border-radius: 12px;
+                overflow: hidden;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 520px) {
     .buss_list {
         .galery {
@@ -56,6 +92,14 @@
     .buss_list {
         .galery {
             grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+    }
+
+    .sea_bus_vidget .sea_bus_vidget__wrapper .bus_item {
+        width: unset;
+        flex: 1;
+        .img_wrapper {
+            height: 220px;
         }
     }
 }
