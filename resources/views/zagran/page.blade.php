@@ -26,12 +26,29 @@
         </div>
     </section>
 
+
     <section class="resort_navigation_section">
         <div class="container">
-            <h2>Популярные курорты</h2>
-            <x-zagran.resort-list :resorts="$page->resorts"></x-zagran.resort-list>
+            @if ($page->resorts)
+                <h2>Популярные курорты</h2>
+                <x-zagran.resort-list :resorts="$page->resorts"></x-zagran.resort-list>
+                <br>
+            @endif
+
+            <h2>Поиск горящих туров</h2>
+            <div class="text_about_resort text_styles">
+                Если вам нужен тур в {{ $page->name_vp }} на самое ближайшее время с хорошей скидкой посетите наш раздел с
+                горящими турами, и выберите самое актуальное для Вас предложение:
+                <br>
+                <br>
+                <a href="{{ route('zagran.hot', ['slug' => $page->slug]) }}" class="button">Горящие туры в
+                    {{ $page->name_vp }}</a>
+                <br>
+                <br>
+            </div>
         </div>
     </section>
+
 
     <section class="zagran_way_section_top">
         <div class="container">
