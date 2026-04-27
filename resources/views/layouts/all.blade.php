@@ -20,9 +20,6 @@
         content="{{ config('sales.default_sale') + (request()->is('tour/novogodniaia-adygeia') ? 500 : 0) }}">
     <meta name="show_sale" content="{{ config('sales.show_sale') }}">
 
-    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-
-    {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"> --}}
 
     @vite(['resources/css/app.css', 'resources/js/app.js', 'public/scss/main.scss'])
 
@@ -142,6 +139,10 @@
     </div>
 
 </body>
+
+<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
 
 <script src="{{ asset('js/ScrollSmoother.min.js') }}"></script>
 
