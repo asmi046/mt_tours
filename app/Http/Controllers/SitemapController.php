@@ -164,6 +164,14 @@ class SitemapController extends Controller
                 'priority' => '0.6',
                 'image' => $destination->img ? url($destination->img) : null,
             ]);
+
+            $urls->push([
+                'loc' => url("/poisk-turov-on-line-v-kurske/{$destination->slug}/hot-tours"),
+                'lastmod' => ($destination->updated_at) ? $destination->updated_at->format('Y-m-d\TH:i:s\Z') : Carbon::yesterday()->format('Y-m-d\TH:i:s\Z'),
+                'changefreq' => 'monthly',
+                'priority' => '0.6',
+                'image' => $destination->img ? url($destination->img) : null,
+            ]);
         });
 
         // Заграница - курорты
