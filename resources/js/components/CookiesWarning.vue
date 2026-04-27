@@ -43,8 +43,6 @@ const props = defineProps({
     },
 });
 
-console.log("CookiesWarning props:", props);
-
 const showBanner = ref(false);
 
 const checkCookieConsent = () => {
