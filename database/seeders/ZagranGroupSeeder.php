@@ -18,6 +18,7 @@ class ZagranGroupSeeder extends Seeder
 
         $this->call([
             ZagranDestinationSeeder::class,
+            ZagranHotToursSeoSeeder::class,
             ZagranResortSeederTurkey::class,
             ZagranResortSeederSriLanka::class,
             ZagranResortSeederEgypt::class,

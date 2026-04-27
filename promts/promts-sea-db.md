@@ -357,3 +357,36 @@ medical 1 - есть услуги лечения, 0 - нет услуг лече
 | public/bus_base/b7/4.jpg |          |
 
 Реализуй работу сидера на уровне DB
+
+Сделай сидер который будеть добавлять в таблицу seo_data данные для страниц горящих туров.
+
+Заведи в сидере именованный массив в ключем которого будет имя (slag) страны из списка а в значениях SEO заголовок и описание.
+
+Cписок слагов стран:
+
+- abkhazia
+- china
+- egypt
+- goa
+- maldives-tours
+- mexico
+- sri-lanka
+- thailand
+- turkey
+- uae
+- vietnam
+
+Добавление организуй по следующему шаблону:
+
+DB::table('seo_data')->updateOrInsert(
+['url' => 'poisk-turov-on-line-v-kurske/<слаг страны>/hot-tours'],
+[
+'url' => 'poisk-turov-on-line-v-kurske/<слаг страны>/hot-tours',
+'seo_title' => ...,
+'seo_description' => ...,
+]
+);
+
+SEO заголовок и описание придумай, они не должны заполняться по шаблону, должны быть константы.
+
+Добавь этот сидер в обединяющий database/seeders/ZagranGroupSeeder.php

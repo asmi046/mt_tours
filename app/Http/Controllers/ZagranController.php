@@ -19,6 +19,13 @@ class ZagranController extends Controller
         return view('zagran.page', compact('page'));
     }
 
+    public function hot(string $slug)
+    {
+        $page = ZagranDestination::where('slug', $slug)->firstOrFail();
+
+        return view('zagran.hot', compact('page'));
+    }
+
     public function resort(string $state, string $resort)
     {
         $page = ZagranResort::where('slug', $resort)->with('destination')->firstOrFail();

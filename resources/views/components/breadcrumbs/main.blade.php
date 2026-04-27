@@ -150,6 +150,33 @@
                         <meta itemprop="position" content="2">
                     </span>
                 </span>
+            @elseif (Request::route()->named('zagran.hot'))
+                <span class="sep"> / </span>
+                <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a title="Поиск туров On-Line в Курске" itemprop="item" href="{{ route('zagran.index') }}">
+                        <span itemprop="name">Поиск туров On-Line в Курске</span>
+                        <meta itemprop="position" content="1">
+                    </a>
+                </span>
+
+                <span class="sep"> / </span>
+
+                <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a title="{{ $page->title }}" itemprop="item"
+                        href="{{ route('zagran.destination', ['slug' => $page->slug]) }}">
+                        <span itemprop="name">{{ $page->title }}</span>
+                        <meta itemprop="position" content="1">
+                    </a>
+                </span>
+
+                <span class="sep"> / </span>
+
+                <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="finish">
+                    <span title="{{ $title }}" itemprop="item">
+                        <span itemprop="name">{{ $title }}</span>
+                        <meta itemprop="position" content="2">
+                    </span>
+                </span>
             @elseif (isset($title))
                 <span class="sep"> / </span>
                 <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="finish">
