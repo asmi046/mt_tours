@@ -124,7 +124,7 @@
 
     .side_menue {
         background-color: white;
-        width: 60%;
+        width: 75%;
         padding: 20px;
         text-align: right;
         max-width: 420px;
@@ -138,6 +138,8 @@
             0 8px 10px -5px rgba(0, 0, 0, 0.2),
             0 16px 24px 2px rgba(0, 0, 0, 0.14),
             0 6px 30px 5px rgba(0, 0, 0, 0.12);
+
+        overflow-y: auto;
 
         li {
             margin-bottom: 10px;
@@ -185,6 +187,7 @@
 .side_menue {
     .social_net {
         justify-content: right;
+        margin-bottom: 50px;
         .social_lnk {
             width: 30px;
             height: 30px;
@@ -207,6 +210,11 @@
     background-position: center;
     display: block;
     z-index: 4100;
+
+    &.active {
+        background-image: url(../img/icon/menu_burger_close.svg);
+        background-size: 70% 70%;
+    }
 }
 
 // @media (max-width:768px) {

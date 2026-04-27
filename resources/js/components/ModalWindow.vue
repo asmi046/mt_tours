@@ -235,11 +235,12 @@ a {
 
 @media (max-width: 480px) {
     .popup {
-        padding: 30px;
+        padding: 20px;
+        min-width: 310px;
     }
 
     .modal_h2 {
-        font-size: 42px;
+        font-size: 32px;
     }
 }
 
@@ -250,7 +251,7 @@ a {
     }
 
     .modal_h2 {
-        font-size: 38px;
+        font-size: 28px;
     }
 
     .modal_h2 {

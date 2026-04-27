@@ -9,6 +9,7 @@ export default class SideMenu {
 
         for (let i = 0; i < this.menue_activate_buttons.length; i++) {
             this.menue_activate_buttons[i].addEventListener('click', () => {
+                this.menue_activate_buttons[i].classList.toggle('active');
                 this.menue_toggle();
             })
         }
