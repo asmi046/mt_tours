@@ -42,6 +42,7 @@
                 <br>
                 <a href="#showModal" class="button">Подобрать тур в {{ $page->name_vp }}</a>
                 <br>
+                <br>
             </div>
 
             {!! $page->hot_tours_script !!}
