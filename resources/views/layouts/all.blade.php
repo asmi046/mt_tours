@@ -72,7 +72,7 @@
 
 <body class="body @yield('dop_class')">
 
-    {{-- <x-preloader></x-preloader> --}}
+    <x-preloader></x-preloader>
 
     <x-menues.side-menu></x-menues.side-menu>
 
