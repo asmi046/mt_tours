@@ -144,6 +144,6 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
 
-{{-- <script src="{{ asset('js/ScrollSmoother.min.js') }}"></script> --}}
+<script src="{{ asset('js/ScrollSmoother.min.js') }}"></script>
 
 </html>
