@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\AleanSeaHotel;
 use App\Models\SeaHotel;
 use App\Models\SeaResort;
+use App\Models\SeaWayPrice;
 use App\Models\Tour;
 use App\Models\TourCategory;
 use App\Models\ZagranDestination;
@@ -96,6 +97,16 @@ class SitemapController extends Controller
             'changefreq' => 'weekly',
             'priority' => '0.5',
         ]);
+
+        // Купить проезд в ....
+        SeaWayPrice::all()->each(function ($price) use ($urls) {
+            $urls->push([
+                'loc' => url("/tury-na-more/kupit-proezd/{$price->slug}"),
+                'lastmod' => ($price->updated_at) ? $price->updated_at->format('Y-m-d\TH:i:s\Z') : Carbon::yesterday()->format('Y-m-d\TH:i:s\Z'),
+                'changefreq' => 'monthly',
+                'priority' => '0.6',
+            ]);
+        });
 
         $urls->push([
             'loc' => url('/tury-na-more/grafik-zaezdov'),

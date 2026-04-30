@@ -110,6 +110,11 @@ class SeaDataService
         return SeaWayPrice::with('busSchedules')->orderBy('order')->get();
     }
 
+    public function getResortSeaWayPrices(string $resort)
+    {
+        return SeaWayPrice::with('busSchedules')->where('slug', $resort)->first();
+    }
+
     public function getTourPrice($hotelId, $numberType, $startData, $endData, $adult = 0, $before5 = 0, $before12 = 0)
     {
         $hotel = SeaHotel::where('id', $hotelId)->firstOrFail();

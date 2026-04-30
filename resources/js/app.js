@@ -19,6 +19,7 @@ import Pay from "./components/Pay/Pay.vue"
 import AleanCalc from "./components/Sea/AleanCalc.vue"
 import MainCalc from "./components/Sea/MainCalc.vue"
 import WayCalc from "./components/Sea/WayCalc.vue"
+import WayCalcResort from "./components/Sea/WayCalcResort.vue"
 import CookiesWarning from "./components/CookiesWarning.vue"
 
 import fslightbox from 'fslightbox'
@@ -122,7 +123,8 @@ if (document.getElementById("main_calc")) {
 if (document.getElementById("way_calc")) {
     const way_calc = createApp({
         components: {
-            WayCalc
+            WayCalc,
+            WayCalcResort
         },
         setup() { }
     })

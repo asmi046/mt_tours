@@ -27,7 +27,7 @@
         </div>
     </section>
 
-    <section class="sea_way_pay_section">
+    <section class="sea_way_pay_section lnk_correct">
         <div class="container">
             <x-sea.part-navigation></x-sea.part-navigation>
             <div class="cols">
@@ -43,7 +43,12 @@
                         <tbody>
                             @foreach ($sea_way_prices as $price)
                                 <tr>
-                                    <td>{{ $price->city }}</td>
+                                    <td>
+                                        <a title="Купить проезд в {{ $price->city }}"
+                                            href="{{ route('kupit_proezd_resort', ['slug' => $price->slug]) }}">
+                                            {{ $price->city }}
+                                        </a>
+                                    </td>
                                     <td>{{ $price->two_way }} руб.</td>
                                     <td>
                                         @if ($price->one_way)

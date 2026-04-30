@@ -103,6 +103,15 @@ class SeaController extends Controller
         return view('sea.way', compact('sea_way_prices', 'text'));
     }
 
+    public function kupit_proezd_resort(string $slug)
+    {
+        $sea_way_resort = app(SeaDataService::class)->getResortSeaWayPrices($slug);
+
+        // dd($sea_way_resort);
+
+        return view('sea.way-resort', compact('sea_way_resort'));
+    }
+
     public function grafik_zaezdov()
     {
         $schedulesGrouped = SeaBusSchedule::all()
