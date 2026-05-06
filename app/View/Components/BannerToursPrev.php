@@ -21,7 +21,7 @@ class BannerToursPrev extends Component
             'Санкт-Петербург' => Tour::where('id', 9)->first(),
             'Казань' => Tour::where('id', 8)->first(),
             'Адыгея' => Tour::where('id', 10)->first(),
-            'Севастополь' => Tour::where('id', 31)->first(),
+            'Севастополь' => Tour::where('id', 38)->first(),
         ];
 
         // collect([
