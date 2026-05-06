@@ -159,7 +159,7 @@ const goToPayNew = async () => {
                 img: assetUrl + "img/buss_pay.webp",
                 client_count: 1,
                 start_data: null,
-                price: selectedPrice.value,
+                price: selectedPrice.value + (dopPrice.value || 0),
                 name:
                     "Проезд на автобусе до города " +
                     city.value +
