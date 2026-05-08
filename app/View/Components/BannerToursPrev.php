@@ -19,7 +19,7 @@ class BannerToursPrev extends Component
 
         $this->tours = [
             'Липецк' => Tour::where('id', 12)->first(),
-            'Воронеж' => Tour::where('id', 10)->first(),
+            'Воронеж ' => Tour::where('id', 2)->first(),
             'Тула' => Tour::where('id', 13)->first(),
             'Воронеж' => Tour::where('id', 38)->first(),
         ];
