@@ -18,10 +18,10 @@ class BannerToursPrev extends Component
     {
 
         $this->tours = [
-            'Санкт-Петербург' => Tour::where('id', 9)->first(),
-            'Казань' => Tour::where('id', 8)->first(),
-            'Адыгея' => Tour::where('id', 10)->first(),
-            'Севастополь' => Tour::where('id', 38)->first(),
+            'Липецк' => Tour::where('id', 12)->first(),
+            'Воронеж' => Tour::where('id', 2)->first(),
+            'Тула' => Tour::where('id', 13)->first(),
+            'Воронеж' => Tour::where('id', 38)->first(),
         ];
 
         // collect([
