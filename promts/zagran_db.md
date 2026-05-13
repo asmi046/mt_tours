@@ -109,3 +109,30 @@ foreach ($distantion as $item) {
 - slug - срока 500 символов обязательное поле
 - title - срока 500 символов обязательное поле
 - description - текстовое поле nullable
+
+Реализуй модель Slider к ней создай миграцию и сидер. Поля таблицы:
+
+- Заголовок - строковое обязательное
+- Ссылка строковое - Строковое, Обязательное, 700 символов
+- Изображение - Строковое, Обязательное, 700 символов
+- Порядок - целочисленное по умолчанию 100
+
+В сидер добавь 4 слайда:
+
+Тур в Санкт-Петербург
+public/banner_info/spb.webp
+/tour/sankt-peterburg
+
+Весенняя адыгея
+public/banner_info/adigeya.jpg
+/tour/adygea
+
+Альпаки + Хаски + Океанариум
+public/banner_info/alpaki.jpg
+/tour/alpaka-park
+
+Осетровая ферма
+public/banner_info/asetri.webp
+/tour/voronezh-osetrovaya-ferma
+
+Изображения загрузи в хранилище в папку main_bn

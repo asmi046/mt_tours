@@ -3,6 +3,7 @@ import './sliders';
 import './modal';
 
 import './sliders/sea-hotel-galery.js';
+import './sliders/banner-main-slider';
 
 
 import { createApp } from 'vue/dist/vue.esm-bundler';

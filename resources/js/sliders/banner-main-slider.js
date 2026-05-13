@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const swiperEl = document.querySelector('.sea-hotel-gallery');
+    const swiperEl = document.querySelector('.banner-main-slider');
     if (!swiperEl) {
         return;
     }
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         spaceBetween: 0,
         loop: true,
         autoplay: {
-            delay: 5000,
+            delay: 3000,
             disableOnInteraction: false,
         },
         pagination: {

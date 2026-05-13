@@ -35,7 +35,7 @@
     </div>
 </a> --}}
 
-<div class="dop_param__preview">
+{{-- <div class="dop_param__preview">
     @foreach ($tours as $title => $item)
         @continue(!$item)
         <a href="{{ $item->out_lnk ?? route('tour_page', $item->slug) }}" class="item">
@@ -52,4 +52,6 @@
 
     <a class="button button_icon yakor meny_tours" href="#tours_cat"> <i class="search_icon"></i><span>Больше
             туров</span></a>
-</div>
+</div> --}}
+
+<x-slider-main />

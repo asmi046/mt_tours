@@ -10,6 +10,7 @@ use App\MoonShine\Resources\MenuResource;
 use App\MoonShine\Resources\ReviewResource;
 use App\MoonShine\Resources\ScholTourResource;
 use App\MoonShine\Resources\SeoDataResource;
+use App\MoonShine\Resources\SliderResource;
 use App\MoonShine\Resources\TourCategoryResource;
 use App\MoonShine\Resources\TourResource;
 use MoonShine\ColorManager\ColorManager;
@@ -32,6 +33,7 @@ final class MoonShineLayout extends AppLayout
     {
         return [
             MenuItem::make('Меню', MenuResource::class)->icon('bars-3'),
+            MenuItem::make('Слайдер', SliderResource::class)->icon('camera'),
             MenuItem::make(
                 static fn () => __('Туры'),
                 TourResource::class,
@@ -60,6 +62,7 @@ final class MoonShineLayout extends AppLayout
 
             MenuGroup::make('Туры на море', [
                 MenuItem::make('Наши автобусы', BusCatalogResource::class),
+                MenuItem::make('Слайдер', SliderResource::class),
             ]),
 
             ...parent::menu(),
