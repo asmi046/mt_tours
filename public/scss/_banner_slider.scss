@@ -4,7 +4,7 @@
     position: relative;
     width: 100%;
     margin-left: 100px;
-    width: 440px;
+    width: 480px;
     height: 250px;
     border-radius: $border_rad;
     overflow: hidden;
@@ -79,6 +79,12 @@
     @media (max-width: 520px) {
         font-size: 15px;
         // left: 12px;
+    }
+}
+
+@media (max-width: 1380px) {
+    .slider_main {
+        width: 440px;
     }
 }
 
