@@ -143,12 +143,15 @@
                         </div>
                     @endif
                 @else
-                    <div class="program">
-                        <h2 class="big">Программа тура</h2>
-                        <div class="text_styles">
-                            {!! $tour_info->program !!}
+                    @if ($tour_info->program)
+                        <div class="program">
+
+                            <h2 class="big">Программа тура</h2>
+                            <div class="text_styles">
+                                {!! $tour_info->program !!}
+                            </div>
                         </div>
-                    </div>
+                    @endif
                 @endif
 
 
