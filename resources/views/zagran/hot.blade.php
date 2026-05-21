@@ -2,9 +2,15 @@
 
 @section('main')
     <section id="banner_video_main_page" class="banner_video mini">
-        <video autoplay muted loop playsinline poster="{{ asset('video/sea_black.webp') }}" class="_video">
-            <source src="{{ asset('video/sea_black.mp4') }}" type="video/mp4">
-        </video>
+        @if ($page->video)
+            <video autoplay muted loop playsinline poster="{{ asset('video/sea_black.webp') }}" class="_video">
+                <source src="{{ Storage::url($page->video) }}" type="video/mp4">
+            </video>
+        @else
+            <video autoplay muted loop playsinline poster="{{ asset('video/zagran_all.webp') }}" class="_video">
+                <source src="{{ asset('video/zagran_all.mp4') }}" type="video/mp4">
+            </video>
+        @endif
         <div class="shadow"></div>
 
         <x-header></x-header>
