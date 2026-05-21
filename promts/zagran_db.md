@@ -136,3 +136,22 @@ public/banner_info/asetri.webp
 /tour/voronezh-osetrovaya-ferma
 
 Изображения загрузи в хранилище в папку main_bn
+
+## Доработка сидов
+
+Добавь в сидеры:
+
+- database/seeders/ZagranDestinationSeeder.php
+- database/seeders/ZagranResortSeederTurkey.php
+- database/seeders/ZagranResortSeederThailand.php
+- database/seeders/ZagranResortSeederEgypt.php
+
+Загружку видео файлов:
+
+- public/video/egypt.mp4
+- public/video/thai.mp4
+- public/video/turky.mp4
+
+Файлы должны подгружаться в Storage и проставляться в соответствующее поле.
+
+В сидере database/seeders/ZagranDestinationSeeder.php Страны для которых нет видео должны иметь значение соответствующего поля null

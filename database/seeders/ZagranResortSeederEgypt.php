@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 class ZagranResortSeederEgypt extends Seeder
 {
@@ -14,6 +15,13 @@ class ZagranResortSeederEgypt extends Seeder
     {
 
         $egyptId = DB::table('zagran_destinations')->where('slug', 'egypt')->value('id');
+        $videoPath = null;
+        $sourceVideoPath = public_path('video/egypt.mp4');
+
+        if (is_file($sourceVideoPath)) {
+            $videoPath = 'video/egypt.mp4';
+            Storage::disk('public')->put($videoPath, file_get_contents($sourceVideoPath), 'public');
+        }
 
         $resorts = [];
 
@@ -26,6 +34,7 @@ class ZagranResortSeederEgypt extends Seeder
                 'img' => null,
                 'order' => 1,
                 'slug' => 'dahab',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="1" tv-resorts="10" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры Дахаб в Курске - цены 2026',
@@ -42,6 +51,7 @@ class ZagranResortSeederEgypt extends Seeder
                 'img' => null,
                 'order' => 2,
                 'slug' => 'safaga',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="1" tv-resorts="13" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры Сафага в Курске - выгодные цены',
@@ -58,6 +68,7 @@ class ZagranResortSeederEgypt extends Seeder
                 'img' => null,
                 'order' => 3,
                 'slug' => 'hurghada',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="1" tv-resorts="5" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры Хургада в Курске - отдых в Египте',
@@ -74,6 +85,7 @@ class ZagranResortSeederEgypt extends Seeder
                 'img' => null,
                 'order' => 4,
                 'slug' => 'sharm-el-sheikh',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="1" tv-resorts="6" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры Шарм-эль-Шейх в Курске - цены 2026',

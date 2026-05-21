@@ -17,6 +17,8 @@ class ZagranDestinationSeeder extends Seeder
         $flagPathByFile = [];
         $publicDestinationDir = public_path('zag_info/distantion');
         $destinationPathByFile = [];
+        $publicVideoDir = public_path('video');
+        $videoPathByFile = [];
 
         if (is_dir($publicFlagDir)) {
             foreach (glob($publicFlagDir.'/*') as $sourcePath) {
@@ -43,6 +45,20 @@ class ZagranDestinationSeeder extends Seeder
 
                 Storage::disk('public')->put($targetPath, file_get_contents($sourcePath), 'public');
                 $destinationPathByFile[$fileName] = $targetPath;
+            }
+        }
+
+        if (is_dir($publicVideoDir)) {
+            foreach (glob($publicVideoDir.'/*') as $sourcePath) {
+                if (! is_file($sourcePath)) {
+                    continue;
+                }
+
+                $fileName = basename($sourcePath);
+                $targetPath = 'video/'.$fileName;
+
+                Storage::disk('public')->put($targetPath, file_get_contents($sourcePath), 'public');
+                $videoPathByFile[$fileName] = $targetPath;
             }
         }
 
@@ -88,6 +104,12 @@ class ZagranDestinationSeeder extends Seeder
             'tunisia' => 'tunis.webp',
             'greece' => 'gretsia.webp',
             'abkhazia' => 'abhazia.webp',
+        ];
+
+        $videoFileBySlug = [
+            'egypt' => 'egypt.mp4',
+            'thailand' => 'thai.mp4',
+            'turkey' => 'turky.mp4',
         ];
 
         DB::statement('SET FOREIGN_KEY_CHECKS=0;');
@@ -473,6 +495,12 @@ class ZagranDestinationSeeder extends Seeder
             // ],
 
         ];
+
+        foreach ($distantion as &$item) {
+            $videoFile = $videoFileBySlug[$item['slug']] ?? null;
+            $item['video'] = $videoFile ? ($videoPathByFile[$videoFile] ?? null) : null;
+        }
+        unset($item);
 
         $destinationRows = array_map(static function (array $item): array {
             unset($item['seo_title'], $item['seo_description']);

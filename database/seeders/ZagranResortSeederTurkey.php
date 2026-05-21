@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 class ZagranResortSeederTurkey extends Seeder
 {
@@ -14,6 +15,13 @@ class ZagranResortSeederTurkey extends Seeder
     {
 
         $turkeyId = DB::table('zagran_destinations')->where('slug', 'turkey')->value('id');
+        $videoPath = null;
+        $sourceVideoPath = public_path('video/turky.mp4');
+
+        if (is_file($sourceVideoPath)) {
+            $videoPath = 'video/turky.mp4';
+            Storage::disk('public')->put($videoPath, file_get_contents($sourceVideoPath), 'public');
+        }
 
         $resorts = [];
 
@@ -26,6 +34,7 @@ class ZagranResortSeederTurkey extends Seeder
                 'img' => null,
                 'order' => 1,
                 'slug' => 'alanya',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="19" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры Алания в Курске - цены 2026',
@@ -42,6 +51,7 @@ class ZagranResortSeederTurkey extends Seeder
                 'img' => null,
                 'order' => 2,
                 'slug' => 'antalya',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="20" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры Анталия в Курске - лучшие цены',
@@ -58,6 +68,7 @@ class ZagranResortSeederTurkey extends Seeder
                 'img' => null,
                 'order' => 3,
                 'slug' => 'belek',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="21" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры Белек в Курске - отдых в Турции 2026',
@@ -74,6 +85,7 @@ class ZagranResortSeederTurkey extends Seeder
                 'img' => null,
                 'order' => 4,
                 'slug' => 'bodrum',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="24" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры Бодрум в Курске - цены и отели',
@@ -90,6 +102,7 @@ class ZagranResortSeederTurkey extends Seeder
                 'img' => null,
                 'order' => 5,
                 'slug' => 'didim',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="155" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры Дидим в Курске - выгодные предложения',
@@ -106,6 +119,7 @@ class ZagranResortSeederTurkey extends Seeder
                 'img' => null,
                 'order' => 6,
                 'slug' => 'izmir',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="306" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры Измир в Курске - туры в Турцию',
@@ -122,6 +136,7 @@ class ZagranResortSeederTurkey extends Seeder
                 'img' => null,
                 'order' => 7,
                 'slug' => 'kemer',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="22" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры Кемер в Курске - отдых у моря',
@@ -138,6 +153,7 @@ class ZagranResortSeederTurkey extends Seeder
                 'img' => null,
                 'order' => 8,
                 'slug' => 'kusadasi',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="154" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры Кушадасы в Курске - цены 2026',
@@ -154,6 +170,7 @@ class ZagranResortSeederTurkey extends Seeder
                 'img' => null,
                 'order' => 9,
                 'slug' => 'marmaris',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="26" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры Мармарис в Курске - лучшие предложения',
@@ -170,6 +187,7 @@ class ZagranResortSeederTurkey extends Seeder
                 'img' => null,
                 'order' => 10,
                 'slug' => 'side',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="23" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры Сиде в Курске - отдых в Турции',
@@ -186,6 +204,7 @@ class ZagranResortSeederTurkey extends Seeder
                 'img' => null,
                 'order' => 11,
                 'slug' => 'istanbul',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="277" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры Стамбул в Курске - экскурсионный отдых',
@@ -202,6 +221,7 @@ class ZagranResortSeederTurkey extends Seeder
                 'img' => null,
                 'order' => 12,
                 'slug' => 'uludag',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="268" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры Улудаг в Курске - зимний отдых 2026',
@@ -218,6 +238,7 @@ class ZagranResortSeederTurkey extends Seeder
                 'img' => null,
                 'order' => 13,
                 'slug' => 'fethiye',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="27" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры Фетхие в Курске - цены на отдых',
@@ -234,6 +255,7 @@ class ZagranResortSeederTurkey extends Seeder
                 'img' => null,
                 'order' => 14,
                 'slug' => 'cesme',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="156" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры Чешме в Курске - отдых у моря',
@@ -250,6 +272,7 @@ class ZagranResortSeederTurkey extends Seeder
                 'img' => null,
                 'order' => 15,
                 'slug' => 'erzurum',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="4" tv-resorts="278" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры Эрзурум в Курске - зимние туры 2026',

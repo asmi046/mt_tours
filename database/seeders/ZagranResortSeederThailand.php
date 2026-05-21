@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 class ZagranResortSeederThailand extends Seeder
 {
@@ -14,6 +15,13 @@ class ZagranResortSeederThailand extends Seeder
     {
 
         $thailandId = DB::table('zagran_destinations')->where('slug', 'thailand')->value('id');
+        $videoPath = null;
+        $sourceVideoPath = public_path('video/thai.mp4');
+
+        if (is_file($sourceVideoPath)) {
+            $videoPath = 'video/thai.mp4';
+            Storage::disk('public')->put($videoPath, file_get_contents($sourceVideoPath), 'public');
+        }
 
         $resorts = [];
 
@@ -26,6 +34,7 @@ class ZagranResortSeederThailand extends Seeder
                 'img' => null,
                 'order' => 1,
                 'slug' => 'bangkok',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="2" tv-resorts="62" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры в Бангкок из Курска - цены 2026',
@@ -42,6 +51,7 @@ class ZagranResortSeederThailand extends Seeder
                 'img' => null,
                 'order' => 2,
                 'slug' => 'khao-lak',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="2" tv-resorts="90" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры в Као Лак из Курска - отдых у моря',
@@ -58,6 +68,7 @@ class ZagranResortSeederThailand extends Seeder
                 'img' => null,
                 'order' => 3,
                 'slug' => 'koh-chang',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="2" tv-resorts="61" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры на Ко Чанг из Курска - лучшие цены',
@@ -74,6 +85,7 @@ class ZagranResortSeederThailand extends Seeder
                 'img' => null,
                 'order' => 4,
                 'slug' => 'krabi',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="2" tv-resorts="60" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры в Краби из Курска - цены и отели',
@@ -90,6 +102,7 @@ class ZagranResortSeederThailand extends Seeder
                 'img' => null,
                 'order' => 5,
                 'slug' => 'pattaya',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="2" tv-resorts="7" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры в Паттайю из Курска - выгодные предложения',
@@ -106,6 +119,7 @@ class ZagranResortSeederThailand extends Seeder
                 'img' => null,
                 'order' => 6,
                 'slug' => 'phuket',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="2" tv-resorts="8" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры на Пхукет из Курска - отдых в Таиланде 2026',
@@ -122,6 +136,7 @@ class ZagranResortSeederThailand extends Seeder
                 'img' => null,
                 'order' => 7,
                 'slug' => 'rayong',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="2" tv-resorts="89" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры в Районг из Курска - цены на отдых',
@@ -138,6 +153,7 @@ class ZagranResortSeederThailand extends Seeder
                 'img' => null,
                 'order' => 8,
                 'slug' => 'samui',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="2" tv-resorts="9" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры на Самуи из Курска - отдых у моря',
@@ -154,6 +170,7 @@ class ZagranResortSeederThailand extends Seeder
                 'img' => null,
                 'order' => 9,
                 'slug' => 'hua-hin',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="2" tv-resorts="63" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры в Хуа Хин из Курска - подбор лучших цен',
@@ -170,6 +187,7 @@ class ZagranResortSeederThailand extends Seeder
                 'img' => null,
                 'order' => 10,
                 'slug' => 'chiang-mai',
+                'video' => $videoPath,
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="1" tv-rows="10" tv-width="auto" tv-imgpos="1" tv-showfilters="" tv-borderwidth="false" tv-countries="2" tv-resorts="519" tv-departure="32" tv-departure2="1" tv-departure3="26"></div>',
                 'description' => null,
                 'seo_title' => 'Купить туры в Чианг Май из Курска - экскурсионный отдых',
