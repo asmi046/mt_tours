@@ -7,7 +7,12 @@
 
     <meta name="yandex-verification" content="b4ee04063d8fdee2" />
 
-    @header_seo
+    @if (isset($og_img))
+        @header_seo_with_img($og_img)
+    @else
+        @header_seo
+    @endif
+
 
     <link rel="canonical" href="{{ url()->current() }}" />
 

@@ -16,9 +16,9 @@ if (! function_exists('echo_days')) {
 }
 
 if (! function_exists('seo_data')) {
-    function seo_data(): SeoServices
+    function seo_data(?string $ogImg = null): SeoServices
     {
-        return app(SeoServices::class);
+        return app()->makeWith(SeoServices::class, ['ogImg' => $ogImg]);
     }
 }
 
@@ -104,7 +104,7 @@ if (! function_exists('ru_date_to_current_year')) {
         $year = (int) date('Y');
 
         if ($addDay) {
-            $dateObj = new \DateTime(sprintf('%d-%02d-%02d', $year, $month, $day));
+            $dateObj = new DateTime(sprintf('%d-%02d-%02d', $year, $month, $day));
             $dateObj->modify('+1 day');
             $day = (int) $dateObj->format('d');
             $month = (int) $dateObj->format('m');

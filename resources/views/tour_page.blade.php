@@ -1,4 +1,4 @@
-@extends('layouts.all')
+@extends('layouts.all', ['og_img' => Storage::url($tour_info->img)])
 
 @section('main')
     <section class="banner_video">

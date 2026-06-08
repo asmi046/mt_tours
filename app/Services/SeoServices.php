@@ -14,11 +14,11 @@ class SeoServices
 
     public $is_404;
 
-    public function __construct()
+    public function __construct(?string $ogImg = null)
     {
         $this->is_404 = (bool) request()->attributes->get('is_404', false);
         $this->seo_data = $this->get_data_by_url();
-        $this->og_img = asset('img/og_img_may.webp');
+        $this->og_img = $ogImg ?: asset('img/og_img_may.webp');
     }
 
     public function __toString()
