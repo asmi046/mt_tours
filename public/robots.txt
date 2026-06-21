@@ -4,6 +4,8 @@ Disallow: /pay/success
 Disallow: /pay/
 Disallow: /ticket/
 Disallow: /admin/*
+Disallow: /grafik
+Disallow: /page/grafik
 
 # UTM-метки и основные трекеры
 Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content&yclid&ymclid&gclid&fbclid&dclid&mc_cid&mc_eid

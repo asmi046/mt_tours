@@ -9,6 +9,7 @@ use App\MoonShine\Resources\CalendarResource;
 use App\MoonShine\Resources\MenuResource;
 use App\MoonShine\Resources\MoonShineUserResource;
 use App\MoonShine\Resources\MoonShineUserRoleResource;
+use App\MoonShine\Resources\PageResource;
 use App\MoonShine\Resources\ReviewResource;
 use App\MoonShine\Resources\ScholTourResource;
 use App\MoonShine\Resources\SeoDataResource;
@@ -42,6 +43,7 @@ class MoonShineServiceProvider extends ServiceProvider
                 CalendarResource::class,
                 ScholTourResource::class,
                 MenuResource::class,
+                PageResource::class,
                 BusCatalogResource::class,
                 SliderResource::class,
             ])

@@ -7,6 +7,7 @@ namespace App\MoonShine\Layouts;
 use App\MoonShine\Resources\BusCatalogResource;
 use App\MoonShine\Resources\CalendarResource;
 use App\MoonShine\Resources\MenuResource;
+use App\MoonShine\Resources\PageResource;
 use App\MoonShine\Resources\ReviewResource;
 use App\MoonShine\Resources\ScholTourResource;
 use App\MoonShine\Resources\SeoDataResource;
@@ -53,6 +54,8 @@ final class MoonShineLayout extends AppLayout
                 static fn () => __('Сброс кеша'),
                 fn () => route('cache_clear'),
             )->icon('arrow-path-rounded-square'),
+
+            MenuItem::make('Страницы', PageResource::class)->icon('document-text'),
 
             MenuItem::make('Школьные туры', ScholTourResource::class)->icon('paper-clip'),
 

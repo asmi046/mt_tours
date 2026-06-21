@@ -2,15 +2,14 @@
 
 namespace App\Models\Page;
 
+use App\Models\SeoData;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-
 use Illuminate\Support\Str;
 
 class Page extends Model
 {
     use HasFactory;
-
 
     protected $fillable = [
         'title',
@@ -20,15 +19,13 @@ class Page extends Model
         'img',
         'description',
         'images',
-        'files'
+        'files',
     ];
-
 
     protected $casts = [
         'images' => 'array',
         'files' => 'array',
     ];
-
 
     public function parent_page()
     {
@@ -42,10 +39,10 @@ class Page extends Model
 
     public function setSlugAttribute($value)
     {
-        if (empty($value))
-            $this->attributes['slug'] =  Str::slug($this->title);
-        else
-            $this->attributes['slug'] =  $value;
+        if (empty($value)) {
+            $this->attributes['slug'] = Str::slug($this->title);
+        } else {
+            $this->attributes['slug'] = $value;
+        }
     }
-
 }
