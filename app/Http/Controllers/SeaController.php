@@ -132,4 +132,11 @@ class SeaController extends Controller
 
         return view('sea.nashi-avtobusi', compact('busees'));
     }
+
+    public function grafik()
+    {
+        $grafik = Page::where('slug', 'grafik')->firstOrFail();
+
+        return view('sea.grafik', compact('grafik'));
+    }
 }
