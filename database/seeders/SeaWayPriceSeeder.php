@@ -73,7 +73,7 @@ class SeaWayPriceSeeder extends Seeder
                 'order' => 7,
                 'bus_schedule' => 'Курск - Анапа',
                 'one_way' => 5500,
-                'two_way' => 8500,
+                'two_way' => 9000,
             ],
             [
                 'city' => 'Геленджик',
@@ -84,7 +84,7 @@ class SeaWayPriceSeeder extends Seeder
                 'order' => 8,
                 'bus_schedule' => 'Курск - Анапа',
                 'one_way' => 5500,
-                'two_way' => 8500,
+                'two_way' => 9000,
             ],
             [
                 'city' => 'Джубга',
@@ -150,7 +150,7 @@ class SeaWayPriceSeeder extends Seeder
                 'order' => 14,
                 'bus_schedule' => 'Курск - Крым',
                 'one_way' => 5500,
-                'two_way' => 8000,
+                'two_way' => 7500,
             ],
             [
                 'city' => 'Приморский',
@@ -161,7 +161,7 @@ class SeaWayPriceSeeder extends Seeder
                 'order' => 15,
                 'bus_schedule' => 'Курск - Крым',
                 'one_way' => 5500,
-                'two_way' => 8500,
+                'two_way' => 8000,
             ],
             [
                 'city' => 'Феодосия',
@@ -172,7 +172,7 @@ class SeaWayPriceSeeder extends Seeder
                 'order' => 16,
                 'bus_schedule' => 'Курск - Крым',
                 'one_way' => 5500,
-                'two_way' => 8500,
+                'two_way' => 8000,
             ],
             [
                 'city' => 'Коктебель',
@@ -183,7 +183,7 @@ class SeaWayPriceSeeder extends Seeder
                 'order' => 17,
                 'bus_schedule' => 'Курск - Крым',
                 'one_way' => 5500,
-                'two_way' => 8500,
+                'two_way' => 8000,
             ],
             [
                 'city' => 'Судак',
@@ -194,7 +194,7 @@ class SeaWayPriceSeeder extends Seeder
                 'order' => 18,
                 'bus_schedule' => 'Курск - Крым',
                 'one_way' => 6500,
-                'two_way' => 9500,
+                'two_way' => 9000,
             ],
             [
                 'city' => 'Симферополь',
@@ -205,7 +205,7 @@ class SeaWayPriceSeeder extends Seeder
                 'order' => 19,
                 'bus_schedule' => 'Курск - Крым',
                 'one_way' => null,
-                'two_way' => 12500,
+                'two_way' => 12000,
             ],
             [
                 'city' => 'Алушта',
@@ -216,7 +216,7 @@ class SeaWayPriceSeeder extends Seeder
                 'order' => 20,
                 'bus_schedule' => 'Курск - Крым',
                 'one_way' => null,
-                'two_way' => 13500,
+                'two_way' => 13000,
             ],
             [
                 'city' => 'Гурзуф',
@@ -227,7 +227,7 @@ class SeaWayPriceSeeder extends Seeder
                 'order' => 21,
                 'bus_schedule' => 'Курск - Крым',
                 'one_way' => null,
-                'two_way' => 13500,
+                'two_way' => 13000,
             ],
             [
                 'city' => 'Ялта',
@@ -238,7 +238,7 @@ class SeaWayPriceSeeder extends Seeder
                 'order' => 22,
                 'bus_schedule' => 'Курск - Крым',
                 'one_way' => null,
-                'two_way' => 13500,
+                'two_way' => 13000,
             ],
         ];
 
