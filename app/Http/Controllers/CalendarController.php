@@ -58,7 +58,7 @@ class CalendarController extends Controller
 
     public function index($month = null)
     {
-        $curent_month = $month ? $month : date('d.m.Y', strtotime('01.06.2026'));
+        $curent_month = $month ? $month : date('d.m.Y', strtotime('01.07.2026'));
 
         $src_event = Calendar::all();
         $events = [];
@@ -109,6 +109,10 @@ class CalendarController extends Controller
             [
                 'text' => CalendarServices::get_month_year('01.08.2026'),
                 'param' => '01.08.2026',
+            ],
+            [
+                'text' => CalendarServices::get_month_year('01.09.2026'),
+                'param' => '01.09.2026',
             ],
         ];
 
