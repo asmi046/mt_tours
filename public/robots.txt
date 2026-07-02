@@ -17,6 +17,6 @@ Clean-param: yprqee&ypppil&ysclid&etext&ybaip&erid
 Clean-param: sort&order&filter&page&PAGEN_1
 
 # Остальные referer/click-трекинги
-Clean-param: ref&from&action&print&utm_referrer&utm_click_id&utm_original_referrer
+Clean-param: clckid&ref&from&action&print&utm_referrer&utm_click_id&utm_original_referrer
 
 Sitemap: https://www.mirturizma46.ru/sitemap.xml
