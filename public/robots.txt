@@ -14,7 +14,7 @@ Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content&yclid&ymcli
 Clean-param: yprqee&ypppil&ysclid&etext&ybaip&erid
 
 # Сортировка, пагинация и т.д.
-Clean-param: sort&order&filter&page&PAGEN_1
+Clean-param: sort&order&filter&PAGEN_1
 
 # Остальные referer/click-трекинги
 Clean-param: clckid&ref&from&action&print&utm_referrer&utm_click_id&utm_original_referrer
