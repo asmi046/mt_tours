@@ -29,7 +29,10 @@
 
     <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
-    <link rel="stylesheet" href="{{ asset('/css/bulma.min.css') }}">
+    @if (Request::route()->named('calendar'))
+        <link rel="stylesheet" href="{{ asset('/css/bulma.min.css') }}">
+    @endif
+
 
     @vite(['resources/css/app.css', 'resources/js/app.js', 'public/scss/main.scss'])
 
