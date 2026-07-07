@@ -42,12 +42,17 @@
                         </thead>
                         <tbody>
                             @foreach ($sea_way_prices as $price)
-                                <tr>
-                                    <td>
+                                <tr @class(['selected_table_row' => $price->city == 'Голубицкая'])>
+                                    <td @class(['golden-cell' => $price->city == 'Голубицкая'])>
                                         <a title="Купить проезд в {{ $price->city }}"
                                             href="{{ route('kupit_proezd_resort', ['slug' => $price->slug]) }}">
                                             {{ $price->city }}
                                         </a>
+                                        @if ($price->city == 'Голубицкая')
+                                            &nbsp🎉
+                                            <br>
+                                            <span class="highlight">(Азовское море)</span>
+                                        @endif
                                     </td>
                                     <td>{{ $price->two_way }} руб.</td>
                                     <td>

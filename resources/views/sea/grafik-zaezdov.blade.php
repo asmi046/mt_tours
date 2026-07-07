@@ -38,11 +38,14 @@
 
             @foreach ($schedulesGrouped as $key => $item)
                 <div class="grafic_derection">
-                    <h2>{{ $key }}</h2>
+                    <h2>{{ $key }}
+
+                        @if ($key == 'Курск - Крым')
+                            + Голубицкая <br>(Азовское море)👈👍
+                        @endif
+                    </h2>
 
                     <div class="grafic_punkts">
-
-
 
 
                         <div class="left">
