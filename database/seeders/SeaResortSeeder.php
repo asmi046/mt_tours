@@ -166,6 +166,24 @@ class SeaResortSeeder extends Seeder
         if ($crimeaId) {
             $resorts[] = [
                 'sea_destination_id' => $crimeaId,
+                'title' => 'Голубицкая',
+                'page_title' => 'Автобусные туры в станицу Голубицкую',
+                'page_subtitle' => 'Лучшие предложения на отдых в станице Голубицкой, автобусные туры прямо из Курска',
+                'subtitle' => null,
+                'slug' => 'golubitskaya',
+                'alean_id' => 1145,
+                'alean_areas_id' => '1145',
+                'alean_cid' => 'golubickaya',
+                'alean_price_up' => 3500,
+                'sort_order' => 0,
+                'description' => null,
+                'bus_schedule' => 'Курск - Крым',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ];
+
+            $resorts[] = [
+                'sea_destination_id' => $crimeaId,
                 'title' => 'Приморский',
                 'page_title' => 'Автобусные туры в Приморский',
                 'page_subtitle' => 'Лучшие предложения на отдых в Приморском, автобусные туры прямо из Курска',

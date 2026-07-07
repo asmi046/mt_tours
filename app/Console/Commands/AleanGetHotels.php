@@ -73,6 +73,10 @@ class AleanGetHotels extends Command
 
         foreach ($hotels as $hotel) {
             try {
+                // if ($hotel->resortId != 1145) {
+                //     continue;
+                // }
+
                 // $resort = SeaResort::where('alean_id', $hotel->resortId)->first();
                 $resort = SeaResort::where('alean_areas_id', 'LIKE', "%{$hotel->resortId}%")->first();
                 $wayPrice = SeaWayPrice::where('city', $resort->title)->first();

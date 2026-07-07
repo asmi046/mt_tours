@@ -102,7 +102,7 @@ export default {
                     phone: this.phone,
                 })
                 .then((response) => {
-                    ym(100353854, "reachGoal", "send");
+                    ym(29416892, "reachGoal", "send");
                     this.showLoader = false;
                     this.showAccept = true;
                 })

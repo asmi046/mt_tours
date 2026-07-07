@@ -64,9 +64,14 @@ class AleanGetTours extends Command
                     if (isset($data['data']) && is_array($data['data'])) {
                         // Добавляем туры в таблицу
                         foreach ($data['data'] as $tour) {
-                            $this->info(json_encode($tour, JSON_UNESCAPED_UNICODE));
 
-                            AleanTour::create($tour);
+                            try {
+                                $this->info(json_encode($tour, JSON_UNESCAPED_UNICODE));
+                                AleanTour::create($tour);
+                            } catch (\Exception $e) {
+                                $this->error('Ошибка при выводе данных тура: '.$e->getMessage());
+                            }
+
                         }
                         $this->info('Добавлено '.count($data['data'])." туров для курорта: {$resort->title}");
                     } else {

@@ -175,7 +175,7 @@ const goToPayNew = async () => {
             },
         })
         .then((response) => {
-            ym(100353854, "reachGoal", "to_pay_page");
+            ym(29416892, "reachGoal", "to_pay_page");
             document.location.href = response.data.pay_url;
         })
         .catch((error) => {
