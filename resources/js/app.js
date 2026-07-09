@@ -162,10 +162,10 @@ for (let anchor of anchors) {
     })
 }
 
-window.addEventListener('DOMContentLoaded', function () {
-    var preloader = document.getElementById('preloader');
-    preloader.classList.add('hide');
-});
+// window.addEventListener('DOMContentLoaded', function () {
+//     var preloader = document.getElementById('preloader');
+//     preloader.classList.add('hide');
+// });
 
 // Резервный таймер на случай долгой загрузки
 setTimeout(function () {
