@@ -193,7 +193,7 @@ class SeaBusScheduleSeeder extends Seeder
             'direction' => 'Курск - Анапа',
             'start_date' => '19 августа',
             'end_date' => '30 августа',
-            'up_price' => 0,
+            'up_price' => 500,
             'sort_order' => 9,
             'created_at' => now(),
             'updated_at' => now(),
