@@ -28,6 +28,7 @@ class SeaController extends Controller
         $resort = app(SeaDataService::class)->getResortBySlug($resort);
         $resorts = app(SeaDataService::class)->getAllResorts();
         $hotels = app(SeaDataService::class)->getAllHotels($resort->id);
+        dd($resort, $resorts, $hotels);
 
         return view('sea.resort', compact('resort', 'resorts', 'hotels'));
     }
