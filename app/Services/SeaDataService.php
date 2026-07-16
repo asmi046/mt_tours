@@ -44,7 +44,7 @@ class SeaDataService
         if ($resortId) {
             $seaHotels = SeaHotel::where('sea_resort_id', $resortId)->get();
             $aleanHotels = AleanSeaHotel::where('sea_resort_id', $resortId)->get();
-            dd($resortId, $seaHotels, $aleanHotels);
+            // dd($resortId, $seaHotels, $aleanHotels);
         } elseif ($directionId) {
             $seaHotels = SeaHotel::where('sea_destination_id', $directionId)->get();
             $aleanHotels = AleanSeaHotel::where('sea_destination_id', $directionId)->get();
