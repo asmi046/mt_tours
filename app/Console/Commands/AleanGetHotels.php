@@ -38,6 +38,7 @@ class AleanGetHotels extends Command
      */
     public function handle()
     {
+        DB::table('alean_sea_hotels')->truncate();
         // Увеличиваем лимит памяти для обработки изображений
         ini_set('memory_limit', '512M');
 
