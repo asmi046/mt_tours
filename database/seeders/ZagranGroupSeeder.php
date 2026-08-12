@@ -22,6 +22,7 @@ class ZagranGroupSeeder extends Seeder
             ZagranResortSeederTurkey::class,
             ZagranResortSeederSriLanka::class,
             ZagranResortSeederEgypt::class,
+            ZagranResortSeederTunisia::class,
             ZagranResortSeederVietnam::class,
             ZagranResortSeederChina::class,
             ZagranResortSeederThailand::class,
