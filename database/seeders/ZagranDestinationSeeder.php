@@ -390,7 +390,7 @@ class ZagranDestinationSeeder extends Seeder
                 'search_script' => '<div class="tv-search-form" tv-type="2" tv-theme="theme2" tv-departure="1" tv-resultinwindow="0" tv-pricetype="0" tv-country="5"></div>',
                 'hot_tours_script' => '<div class="tv-hot-tours" tv-view="2" tv-rows="8" tv-width="auto" tv-imgpos="1" tv-theme="theme1" tv-showfilter="1" tv-departure1="32" tv-departure="1" tv-departure2="26" tv-countries="5"></div>',
 
-                'description' => null,
+                'description' => file_get_contents(public_path('zag_info/distantion/tunis.html')),
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
