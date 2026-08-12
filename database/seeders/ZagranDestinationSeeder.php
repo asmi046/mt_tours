@@ -371,6 +371,30 @@ class ZagranDestinationSeeder extends Seeder
                 'updated_at' => now(),
             ],
 
+            [
+                'title' => 'Отдых в Тунисе',
+                'sub_title' => 'Лучшие туры в Тунис от ведущих туроператоров по выгодным ценам в Курске',
+                'seo_title' => 'Отдых в Тунисе купить в Курске - туры в Махдию и Джербу',
+                'seo_description' => 'Туры в Тунис с удобными датами выезда: Махдия, Джерба и другие курорты. Самые выгодные предложения в Курске на отдых в Тунисе.',
+                'name' => 'Тунис',
+                'name_rp' => 'Туниса',
+                'name_vp' => 'Тунис',
+                'img' => $destinationPathByFile[$destinationFileBySlug['tunisia']] ?? null,
+                'flag' => $flagPathByFile[$flagFileBySlug['tunisia']] ?? null,
+                'order' => 17,
+                'slug' => 'tunisia',
+                'departure_cities' => 'из Москвы',
+                'resorts_list' => 'Махдия, Джерба',
+                'min_days' => 'от 5 дней',
+                'min_price' => 16000,
+                'search_script' => '<div class="tv-search-form" tv-type="2" tv-theme="theme2" tv-departure="1" tv-resultinwindow="0" tv-pricetype="0" tv-country="5"></div>',
+                'hot_tours_script' => '<div class="tv-hot-tours" tv-view="2" tv-rows="8" tv-width="auto" tv-imgpos="1" tv-theme="theme1" tv-showfilter="1" tv-departure1="32" tv-departure="1" tv-departure2="26" tv-countries="5"></div>',
+
+                'description' => null,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
             // [
             //     'title' => 'Отдых в Венесуэле',
             //     'name' => 'Венесуэла',
@@ -458,24 +482,6 @@ class ZagranDestinationSeeder extends Seeder
             //     'created_at' => now(),
             //     'updated_at' => now(),
             // ],
-
-            [
-                'title' => 'Отдых в Тунисе',
-                'name' => 'Тунис',
-                'img' => $destinationPathByFile[$destinationFileBySlug['tunisia']] ?? null,
-                'flag' => $flagPathByFile[$flagFileBySlug['tunisia']] ?? null,
-                'order' => 17,
-                'slug' => 'tunisia',
-                'departure_cities' => 'из Москвы',
-                'resorts_list' => 'Махдия, Джерба',
-                'min_days' => 'от 5 дней',
-                'min_price' => 16000,
-                'search_script' => null,
-                'hot_tours_script' => null,
-                'description' => null,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
 
             // [
             //     'title' => 'Туры в Грецию',
