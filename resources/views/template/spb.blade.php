@@ -163,7 +163,7 @@
                     </div>
 
 
-                    <div class="step step_3">
+                    {{-- <div class="step step_3">
                         <div class="header_img_wrapper">
                             <img class="title_img" src="{{ asset('img/templates/spb/ks_h.webp') }}"
                                 alt="{{ $tour_info->title }}">
@@ -189,7 +189,7 @@
                                 <x-palaroid :item="$tour_info->galery[13]"></x-palaroid>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
                     <div class="step step_4">
                         <div class="header_img_wrapper">
