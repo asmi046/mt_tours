@@ -95,13 +95,18 @@
                         <div class="marquee">
                             <div class="marquee__content">
                                 @for ($i = 0; $i < 10; $i++)
-                                    <p><a target="_blank" href="https://www.mirturizma46.ru/tour/gastro-tur">ГастроТур
-                                            «Кофе/Сыр. Хлеб и Вино» 🍷</a></p>
+                                    {{-- <p><a target="_blank" href="https://www.mirturizma46.ru/tour/gastro-tur">ГастроТур
+                                            «Кофе/Сыр. Хлеб и Вино» 🍷</a></p> --}}
                                     {{-- <img src="{{ asset('img/icon/flovers.svg') }}" alt="Снежинка"> --}}
-                                    <p><a target="_blank" href="https://www.mirturizma46.ru/tour/matrona"> Матрона
-                                            Московская 🙏</a></p>
+                                    {{-- <p><a target="_blank" href="https://www.mirturizma46.ru/tour/matrona"> Матрона
+                                            Московская 🙏</a></p> --}}
                                     {{-- <img src="{{ asset('img/icon/flovers.svg') }}" alt="Снежинка"> --}}
-                                    <p><a target="_blank" href="https://www.mirturizma46.ru/tour/adygea">Адыгея лето
+                                    <p><a target="_blank" href="https://www.mirturizma46.ru/tour/sankt-peterburg">СПБ,
+                                            праздник
+                                            закрытия Фонтанов
+                                            сентябрь - 2026 ⛲</a></p>
+                                    <p><a target="_blank" href="https://www.mirturizma46.ru/tour/adygea">Адыгея сентябрь
+                                            -
                                             2026 ⛰️</a></p>
                                     {{-- <img src="{{ asset('img/icon/flovers.svg') }}" alt="Снежинка"> --}}
                                 @endfor
