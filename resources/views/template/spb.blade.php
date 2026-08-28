@@ -1,8 +1,8 @@
 @extends('layouts.all')
 
-<x-presentation-widget video="{{ asset('video/zakr_font_presentation.mp4') }}"
-    text="Едем на закрытие фонтанов Петергофа!"></x-presentation-widget>
+
 @section('main')
+
 
     <section class="banner_video">
         <video autoplay muted loop playsinline class="_video">

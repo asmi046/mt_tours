@@ -88,6 +88,8 @@
 
     @include('allicon')
     <main id="main" class="main @yield('dop_class')">
+        <x-presentation-widget video="{{ asset('video/zakr_font_presentation.mp4') }}"
+            text="Едем на закрытие фонтанов Петергофа!"></x-presentation-widget>
         <div id="smooth-wrapper">
             <div id="smooth-content">
                 @if (config('sales.show_marquee'))
@@ -113,7 +115,7 @@
                             </div>
                         </div>
                     </section>
-                @endif
+                @endif run
 
                 @yield('main')
                 <x-footer></x-footer>
