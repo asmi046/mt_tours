@@ -115,7 +115,7 @@
                             </div>
                         </div>
                     </section>
-                @endif run
+                @endif
 
                 @yield('main')
                 <x-footer></x-footer>
