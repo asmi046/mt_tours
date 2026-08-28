@@ -1,4 +1,4 @@
-@props(['video' => '', 'text' => ''])
+@props(['video' => '', 'text' => '', 'link' => '#'])
 
 <div class="presentation_widget" data-presentation-widget hidden>
     <button class="presentation_widget_close" type="button" aria-label="Закрыть" data-presentation-close>
@@ -9,15 +9,17 @@
         </svg>
     </button>
 
-    <div class="presentation_widget_video">
-        <video autoplay muted loop playsinline>
-            <source src="{{ $video }}" type="video/mp4">
-        </video>
-    </div>
+    <a class="presentation_widget_link" href="{{ $link }}">
+        <span class="presentation_widget_video">
+            <video autoplay muted loop playsinline>
+                <source src="{{ $video }}" type="video/mp4">
+            </video>
+        </span>
 
-    @if ($text)
-        <p class="presentation_widget_text font_caveat">{{ $text }}</p>
-    @endif
+        @if ($text)
+            <span class="presentation_widget_text font_caveat">{{ $text }}</span>
+        @endif
+    </a>
 </div>
 
 <script>
@@ -32,6 +34,8 @@
 
         widget.addEventListener('click', function(e) {
             if (e.target.closest('[data-presentation-close]')) {
+                e.preventDefault();
+                e.stopPropagation();
                 widget.classList.remove('is_visible');
                 setTimeout(() => {
                     const video = widget.querySelector('video');
