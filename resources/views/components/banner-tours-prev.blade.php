@@ -1,3 +1,16 @@
+<a href="{{ route('school_tours') }}" class="item buss_item">
+    <img src="{{ asset('img/school_main_bn.webp') }}" alt="Школьные туры по России">
+    <div class="overlay"></div>
+    <div class="text">
+        Школьные туры по России
+    </div>
+    <div class="label price_label">
+        от 3500 ₽
+    </div>
+</a>
+
+
+{{--
 <a href="{{ route('sea_home') }}" class="item buss_item">
     <img src="{{ asset('img/buss.webp') }}" alt="Автобусные туры на море">
     <div class="overlay"></div>
@@ -10,7 +23,7 @@
 </a>
 
 
-{{--
+
 <a href="{{ route("tour_category", 'tury-na-noiabrskie-prazdniki') }}" class="item buss_item">
     <img src="{{ asset('img/flags-russia.webp') }}" alt="Автобусные туры на день Народного Единства">
     <div class="overlay"></div>
