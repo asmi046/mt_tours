@@ -126,97 +126,7 @@ class CalendarServices
         $t_index = 0;
 
         for ($day = 1; $day <= $days_month; $day++) {
-
-            $vihodnoi = '';
-            if (($day_week == 5 || $day_week == 6) && ! in_array($day.'.'.$month.'.'.$year, $work_wih)) {
-                $vihodnoi = 'vihodnoi';
-            }
-            if (in_array($day.'.'.$month.'.'.$year, $prazdniki)) {
-                $vihodnoi = 'vihodnoi';
-            }
-            if (date('j.n.Y') == $day.'.'.$month.'.'.$year) {
-                $class = 'today';
-            } elseif (time() > strtotime($day.'.'.$month.'.'.$year)) {
-                $class = 'last';
-            } else {
-                $class = '';
-            }
-
-            $event_show = false;
-            $event_text = [];
-
-            if (! empty($events)) {
-                foreach ($events as $date => $text) {
-
-                    $day_name = self::get_dey($date);
-
-                    $date = explode('.', $date);
-                    if (count($date) == 3) {
-                        $y = explode(' ', $date[2]);
-                        if (count($y) == 2) {
-                            $date[2] = $y[0];
-                        }
-
-                        if ($day == intval($date[0]) && $month == intval($date[1]) && $year == $date[2]) {
-                            $event_show = true;
-                            $event_text[] = $text;
-                        }
-                    } elseif (count($date) == 2) {
-                        if ($day == intval($date[0]) && $month == intval($date[1])) {
-                            $event_show = true;
-                            $event_text[] = $text;
-                        }
-                    } elseif ($day == intval($date[0])) {
-                        $event_show = true;
-                        $event_text[] = $text;
-                    }
-                }
-            }
-
-            if ($event_show) {
-                $out .= '<td class="calendar-day '.$class.' '.$vihodnoi.' event">';
-                $out .= '<div class="dey_card">';
-                $out .= '<div class="data">';
-                $out .= $day." <span class='mobile_dey'>".($day_name ?? '').'</span>';
-                $out .= '</div>';
-
-                foreach ($event_text[0] as $event_elem) {
-                    $empty_class = $event_elem['empty'] ? 'empty_card' : '';
-
-                    $out .= '<a id="tcard_'.$t_index.'"  href="'.$event_elem['post_lnk'].'" class="calendar-tur-elem '.$empty_class.'">';
-                    $out .= '<div class="img_wraper">';
-                    $out .= '<img src="'.(isset($event_elem['post_thumbinal']) ? Storage::url($event_elem['post_thumbinal']) : '').'">';
-                    if (isset($event_elem['soldout']) && ($event_elem['soldout'] == true)) {
-                        $out .= '<img class="soldout" src="'.asset('img/soldout.webp').'">';
-                    }
-                    $out .= '</div>';
-
-                    $out .= '<div class="all_info">'.($event_elem['all_info'] ? html_entity_decode($event_elem['all_info']) : '').'</div>';
-                    // $out.= '<p class="deys">'. $event_elem['dey_count'] .'</p>';
-                    // $out.= ($event_elem['price'])?'<p class="price">'. $event_elem['price'].' руб.</p>': '<p class="price">&nbsp;</p>';
-                    $out .= '</a>';
-
-                    $out .= '<div data-target="modal-js-example" data-cardid="'.$t_index.'" class="calendar-tur-mobile js-modal-trigger '.$empty_class.'">';
-                    $out .= '<img src="'.(isset($event_elem['post_thumbinal']) ? Storage::url($event_elem['post_thumbinal']) : '').'">';
-                    if (isset($event_elem['soldout']) && ($event_elem['soldout'] == true)) {
-                        $out .= '<img class="soldout" src="'.asset('img/soldout.webp').'">';
-                    }
-                    $out .= '</div>';
-
-                    $t_index++;
-                }
-
-                $out .= '</div>';
-                $out .= '</td>';
-            } else {
-                $out .= '<td class="calendar-day '.$class.' '.$vihodnoi.' no_event">';
-                $out .= '<div class="dey_card">';
-                $out .= '<div class="data">';
-                $out .= $day." <span class='mobile_dey'>".($day_name ?? '').'</span>';
-                $out .= '</div>';
-                $out .= '</div>';
-                $out .= '</td>';
-            }
+            $out .= self::renderDayCell($day, $month, $year, $events, $prazdniki, $work_wih, $t_index);
 
             if ($day_week == 6) {
                 $out .= '</tr>';
@@ -230,7 +140,119 @@ class CalendarServices
             $days_counter++;
         }
 
+        if ($day_week != 0) {
+            $next_month = $month + 1;
+            $next_year = $year;
+            if ($next_month == 13) {
+                $next_month = 1;
+                $next_year++;
+            }
+            for ($extra_day = 1; $extra_day <= (7 - $day_week); $extra_day++) {
+                $out .= self::renderDayCell($extra_day, $next_month, $next_year, $events, $prazdniki, $work_wih, $t_index);
+            }
+        }
+
         $out .= '</tr></table></div>';
+
+        return $out;
+    }
+
+    /**
+     * Рендер одной ячейки календаря.
+     */
+    private static function renderDayCell($day, $month, $year, $events, $prazdniki, $work_wih, &$t_index)
+    {
+        $date_str = $day.'.'.$month.'.'.$year;
+
+        $weekday = (int) date('N', mktime(0, 0, 0, $month, $day, $year)) - 1;
+
+        $vihodnoi = '';
+        if (($weekday == 5 || $weekday == 6) && ! in_array($date_str, $work_wih)) {
+            $vihodnoi = 'vihodnoi';
+        }
+        if (in_array($date_str, $prazdniki)) {
+            $vihodnoi = 'vihodnoi';
+        }
+
+        if (date('j.n.Y') == $date_str) {
+            $class = 'today';
+        } elseif (time() > strtotime($date_str)) {
+            $class = 'last';
+        } else {
+            $class = '';
+        }
+
+        $event_show = false;
+        $event_text = [];
+
+        if (! empty($events)) {
+            foreach ($events as $date => $text) {
+                $parts = explode('.', $date);
+                if (count($parts) == 3) {
+                    $y = explode(' ', $parts[2]);
+                    if (count($y) == 2) {
+                        $parts[2] = $y[0];
+                    }
+                    if ($day == intval($parts[0]) && $month == intval($parts[1]) && $year == $parts[2]) {
+                        $event_show = true;
+                        $event_text[] = $text;
+                    }
+                } elseif (count($parts) == 2) {
+                    if ($day == intval($parts[0]) && $month == intval($parts[1])) {
+                        $event_show = true;
+                        $event_text[] = $text;
+                    }
+                } elseif ($day == intval($parts[0])) {
+                    $event_show = true;
+                    $event_text[] = $text;
+                }
+            }
+        }
+
+        $day_name = self::get_dey($date_str);
+
+        if ($event_show) {
+            $out = '<td class="calendar-day '.$class.' '.$vihodnoi.' event">';
+            $out .= '<div class="dey_card">';
+            $out .= '<div class="data">';
+            $out .= $day." <span class='mobile_dey'>".$day_name.'</span>';
+            $out .= '</div>';
+
+            foreach ($event_text[0] as $event_elem) {
+                $empty_class = ! empty($event_elem['empty']) ? 'empty_card' : '';
+
+                $out .= '<a id="tcard_'.$t_index.'"  href="'.$event_elem['post_lnk'].'" class="calendar-tur-elem '.$empty_class.'">';
+                $out .= '<div class="img_wraper">';
+                $out .= '<img src="'.(isset($event_elem['post_thumbinal']) ? Storage::url($event_elem['post_thumbinal']) : '').'">';
+                if (isset($event_elem['soldout']) && ($event_elem['soldout'] == true)) {
+                    $out .= '<img class="soldout" src="'.asset('img/soldout.webp').'">';
+                }
+                $out .= '</div>';
+
+                $out .= '<div class="all_info">'.($event_elem['all_info'] ? html_entity_decode($event_elem['all_info']) : '').'</div>';
+                $out .= '</a>';
+
+                $out .= '<div data-target="modal-js-example" data-cardid="'.$t_index.'" class="calendar-tur-mobile js-modal-trigger '.$empty_class.'">';
+                $out .= '<img src="'.(isset($event_elem['post_thumbinal']) ? Storage::url($event_elem['post_thumbinal']) : '').'">';
+                if (isset($event_elem['soldout']) && ($event_elem['soldout'] == true)) {
+                    $out .= '<img class="soldout" src="'.asset('img/soldout.webp').'">';
+                }
+                $out .= '</div>';
+
+                $t_index++;
+            }
+
+            $out .= '</div>';
+            $out .= '</td>';
+        } else {
+            $out = '<td class="calendar-day '.$class.' '.$vihodnoi.' no_event">';
+            $out .= '<div class="dey_card">';
+            $out .= '<div class="data">';
+            $out .= $day." <span class='mobile_dey'>".$day_name.'</span>';
+            $out .= '</div>';
+            $out .= '</div>';
+            $out .= '</td>';
+        }
 
         return $out;
     }
