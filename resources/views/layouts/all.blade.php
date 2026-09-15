@@ -104,10 +104,8 @@
                                     {{-- <p><a target="_blank" href="https://www.mirturizma46.ru/tour/matrona"> Матрона
                                             Московская 🙏</a></p> --}}
                                     {{-- <img src="{{ asset('img/icon/flovers.svg') }}" alt="Снежинка"> --}}
-                                    <p><a target="_blank" href="https://www.mirturizma46.ru/tour/sankt-peterburg">СПБ,
-                                            праздник
-                                            закрытия Фонтанов
-                                            сентябрь - 2026 ⛲</a></p>
+                                    <p><a target="_blank" href="https://www.mirturizma46.ru/tour/sankt-peterburg">Питер
+                                            + Корелия + Петергоф, сентябрь - 2026 ⛲</a></p>
                                     <p><a target="_blank" href="https://www.mirturizma46.ru/tour/adygea">Адыгея сентябрь
                                             -
                                             2026 ⛰️</a></p>
