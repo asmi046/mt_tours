@@ -29,7 +29,7 @@
             <div class="dop_param">
                 <div class="arrow_widget">
                     <div class="arrow"></div>
-                    <span>Последние<br>Места!</span>
+                    <span>Выгодные<br>Цены!</span>
                 </div>
                 <x-banner-tours-prev></x-banner-tours-prev>
             </div>
