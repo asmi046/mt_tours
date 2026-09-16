@@ -1,3 +1,4 @@
+@php $slides = $slides->where('is_show', true); @endphp
 @if ($slides->isNotEmpty())
     <div class="slider_main">
         <swiper-container class="banner-main-slider" init="false">

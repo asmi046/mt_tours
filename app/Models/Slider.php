@@ -14,5 +14,10 @@ class Slider extends Model
         'link',
         'image',
         'order',
+        'is_show',
+    ];
+
+    protected $casts = [
+        'is_show' => 'boolean',
     ];
 }

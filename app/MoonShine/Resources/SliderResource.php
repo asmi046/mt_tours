@@ -12,6 +12,7 @@ use MoonShine\UI\Components\Layout\Box;
 use MoonShine\UI\Fields\ID;
 use MoonShine\UI\Fields\Image;
 use MoonShine\UI\Fields\Number;
+use MoonShine\UI\Fields\Switcher;
 use MoonShine\UI\Fields\Text;
 
 /**
@@ -34,6 +35,7 @@ class SliderResource extends ModelResource
             Image::make('Изображение', 'image'),
             Text::make('Заголовок', 'title'),
             Number::make('Порядок вывода', 'order'),
+            Switcher::make('Показывать', 'is_show'),
         ];
     }
 
@@ -49,6 +51,7 @@ class SliderResource extends ModelResource
                 Text::make('Ссылка', 'link'),
                 Image::make('Изображение', 'image')->dir('main_bn')->removable(),
                 Number::make('Порядок вывода', 'order'),
+                Switcher::make('Показывать', 'is_show'),
             ]),
         ];
     }
@@ -64,6 +67,7 @@ class SliderResource extends ModelResource
             Text::make('Ссылка', 'link'),
             Image::make('Изображение', 'image')->dir('main_bn')->removable(),
             Number::make('Порядок вывода', 'order'),
+            Switcher::make('Показывать', 'is_show'),
         ];
     }
 

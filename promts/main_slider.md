@@ -27,3 +27,11 @@
 Все стили размести в public/scss/\_banner_slider.scss
 
 Настройки слайдера вынеси в js файл о примеру resources/js/sliders/sea-hotel-galery.js
+
+---
+
+Создай миграцию котораядобавит в таблицу модели @app/Models/Slider.php поле is_show (boolean) значение по умолчанию true. Так же добавь поле в модель.
+
+После этого добавь в компонент resources/views/components/slider-main.blade.php логику вывода по ключу is_show, чтобы отображались только те слайды, у которых is_show = true.
+
+Затем для ресурса app/MoonShine/Resources/SliderResource.php добавь поле is_show в форму редактирования, чтобы можно было управлять видимостью слайдов через админку.
