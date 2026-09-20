@@ -35,7 +35,7 @@ class MenuResource extends ModelResource
             Text::make('Название меню', 'menu_name'),
             Text::make('Имя пункта', 'title'),
             Number::make('Родитель', 'parent'),
-            Number::make('Порядок', 'order'),
+            Number::make('Порядок', 'order')->sortable(),
         ];
     }
 
@@ -55,7 +55,7 @@ class MenuResource extends ModelResource
                     formatted: static fn (Menu $model): string => $model->title.' ('.$model->menu_name.')',
                     resource: MenuResource::class,
                 )->nullable(),
-                Number::make('Порядок', 'order')->sortable(),
+                Number::make('Порядок', 'order'),
                 Text::make('Ссылка', 'lnk'),
             ]),
         ];
