@@ -55,7 +55,7 @@ class MenuResource extends ModelResource
                     formatted: static fn (Menu $model): string => $model->title.' ('.$model->menu_name.')',
                     resource: MenuResource::class,
                 )->nullable(),
-                Number::make('Порядок', 'order'),
+                Number::make('Порядок', 'order')->sortable(),
                 Text::make('Ссылка', 'lnk'),
             ]),
         ];
