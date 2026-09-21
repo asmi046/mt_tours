@@ -27,6 +27,18 @@
     padding: 40px;
     color: black;
 
+    &--sm { max-width: 400px; }
+    &--md { max-width: 600px; }
+    &--lg { max-width: 900px; }
+    &--xl { max-width: 1200px; }
+
+    &__footer {
+        margin-top: 24px;
+        display: flex;
+        gap: 12px;
+        justify-content: flex-end;
+    }
+
     &__close {
         position: absolute;
         top: 18px;

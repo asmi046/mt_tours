@@ -1,6 +1,7 @@
 import './bootstrap';
 import './sliders';
 import './modal';
+import './modal-form';
 
 import './sliders/sea-hotel-galery.js';
 import './sliders/banner-main-slider';
@@ -52,6 +53,18 @@ if (document.getElementById("global_app")) {
     global_app.use(VueAxios, axios)
     global_app.directive('mask', VMaskDirective)
     global_app.mount("#global_app");
+}
+
+if (document.getElementById("page_modals_app")) {
+    const page_modals_app = createApp({
+        components: {
+            EmptyModal,
+        },
+        setup() { }
+    });
+
+    page_modals_app.directive('mask', VMaskDirective)
+    page_modals_app.mount("#page_modals_app");
 }
 
 if (document.getElementById("price_app")) {

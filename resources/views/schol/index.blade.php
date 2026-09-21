@@ -65,4 +65,54 @@
 
 <x-contacts-section></x-contacts-section>
 
+@push('page_modals')
+    <x-modal id="scholAuto" open-hash="scholAuto">
+        <img class="schol_modal__img"
+             src="{{ asset('img/school/m_img.webp') }}"
+             alt="Школьные туры">
+        <div class="schol_modal__cta">
+            <h2 class="modal_h2">Подберём тур для вашего класса</h2>
+            <p class="sub_h">Оставьте заявку — мы свяжемся и предложим лучшие варианты</p>
+        </div>
+        <form class="sending_form schol_modal__form"
+              data-modal-form
+              data-action="/send_consult"
+              method="POST">
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            <input type="text"
+                   name="phone"
+                   placeholder="Телефон*"
+                   inputmode="tel"
+                   autocomplete="tel"
+                   required>
+            <div class="error_list_wrap"></div>
+            <p class="policy_descr">
+                Заполняя данную форму и отправляя заявку вы соглашаетесь с
+                <a target="_blank"
+                   href="{{ route('page', 'politika-v-oblasti-obrabotki-personalnyx-dannyx') }}">
+                    политикой конфиденциальности
+                </a>
+            </p>
+            <div class="control_wrap">
+                <button class="btn" type="submit">Отправить</button>
+                <div class="loader" hidden></div>
+            </div>
+        </form>
+        <div class="accept_message" style="display: none;">
+            <p class="emoji">📢🤝✅</p>
+            <h2>Ваше сообщение отправлено</h2>
+        </div>
+    </x-modal>
+@endpush
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        if (sessionStorage.getItem('scholModalShown')) return;
+        setTimeout(() => {
+            sessionStorage.setItem('scholModalShown', '1');
+            if (location.hash !== '#scholAuto') location.hash = 'scholAuto';
+        }, 30000);
+    });
+</script>
+
 @endsection

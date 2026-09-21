@@ -154,7 +154,11 @@
         <cookies-warning privacy-policy-link="{{ route('page', 'politika-v-oblasti-obrabotki-personalnyx-dannyx') }}"
             cookies-info-link="{{ route('page', 'o-failax-cookie') }}"
             privacy-policy-accept-link="{{ route('page', 'soglasie-na-obrabotku-personalnyx-dannyx') }}" />
+
+        @stack('modals')
     </div>
+
+    <div id="page_modals_app">@stack('page_modals')</div>
 
 </body>
 
