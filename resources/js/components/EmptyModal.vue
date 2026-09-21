@@ -55,7 +55,6 @@ const emit = defineEmits(['open', 'close']);
 
 const uid = props.id ?? `modal-${useId()}`;
 const showModal = ref(false);
-let prevHash = '';
 let prevOverflow = '';
 
 const lockScroll = () => {
@@ -67,11 +66,16 @@ const unlockScroll = () => {
     document.body.style.overflow = prevOverflow;
 };
 
+const clearOwnHash = () => {
+    const target = props.openHash || props.hesh;
+    if (target && location.hash === '#' + target) {
+        history.pushState('', document.title, window.location.pathname + window.location.search);
+    }
+};
+
 const open = () => {
     if (showModal.value) return;
     showModal.value = true;
-    prevHash = location.hash;
-    history.pushState('', document.title, window.location.pathname + window.location.search + (props.openHash ? '#' + props.openHash : ''));
     lockScroll();
     emit('open');
 };
@@ -80,11 +84,7 @@ const close = () => {
     if (!showModal.value) return;
     showModal.value = false;
     unlockScroll();
-    if (prevHash) {
-        history.pushState('', document.title, window.location.pathname + window.location.search + prevHash);
-    } else if (location.hash) {
-        history.pushState('', document.title, window.location.pathname + window.location.search);
-    }
+    clearOwnHash();
     emit('close');
 };
 
@@ -98,7 +98,7 @@ const onHashChange = () => {
     const target = props.openHash || props.hesh;
     if (!target) return;
     if (location.hash === '#' + target) open();
-    else if (showModal.value && prevHash !== '#' + target) close();
+    else if (showModal.value) close();
 };
 
 const onKeydown = (e) => {

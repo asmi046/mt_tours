@@ -48,6 +48,7 @@
 
 @media (max-width: 480px) {
     .schol_modal__img {
+        width: calc(100% + 40px);
         margin: -20px -20px 16px;
     }
 }

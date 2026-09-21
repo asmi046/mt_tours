@@ -141,7 +141,8 @@
 @media (max-width: 480px) {
     .popup {
         width: 94%;
-        height: 94vh;
+        max-height: 90vh;
+        overflow-y: auto;
         padding: 20px;
     }
 
