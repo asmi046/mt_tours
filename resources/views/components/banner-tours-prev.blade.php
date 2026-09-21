@@ -1,16 +1,3 @@
-<a href="https://www.mirturizma46.ru/tour/spiridon" class="item buss_item">
-    <img src="{{ asset('img/spiridon_main_bg.webp') }}" alt="Спиридон Тримифунтский">
-    <div class="overlay"></div>
-    <div class="text">
-        Спиридон Тримифунтский
-    </div>
-    <div class="label price_label">
-        6000 ₽
-    </div>
-</a>
-
-
-{{--
 <a href="{{ route('school_tours') }}" class="item buss_item">
     <img src="{{ asset('img/school_main_bn.webp') }}" alt="Школьные туры по России">
     <div class="overlay"></div>
@@ -22,7 +9,20 @@
     </div>
 </a>
 
+{{--
 
+
+
+<a href="https://www.mirturizma46.ru/tour/spiridon" class="item buss_item">
+    <img src="{{ asset('img/spiridon_main_bg.webp') }}" alt="Спиридон Тримифунтский">
+    <div class="overlay"></div>
+    <div class="text">
+        Спиридон Тримифунтский
+    </div>
+    <div class="label price_label">
+        6000 ₽
+    </div>
+</a>
 
 <a href="{{ route('sea_home') }}" class="item buss_item">
     <img src="{{ asset('img/buss.webp') }}" alt="Автобусные туры на море">
