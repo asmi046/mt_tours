@@ -108,7 +108,7 @@
                                             Альпаки+Хаски+Океанариум 27 сентября! Последние места 🐕</a></p>
                                     <p><a target="_blank" href="https://www.mirturizma46.ru/tour/alpaka-park"> 🦙
                                             Альпаки+Хаски+Океанариум
-                                            27 сентября! Последние места 🐕</a></p>
+                                            27 сентября! Последние места 🐕 |</a></p>
                                     {{-- <img src="{{ asset('img/icon/flovers.svg') }}" alt="Снежинка"> --}}
                                 @endfor
                             </div>
