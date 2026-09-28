@@ -104,11 +104,10 @@
                                     {{-- <p><a target="_blank" href="https://www.mirturizma46.ru/tour/matrona"> Матрона
                                             Московская 🙏</a></p> --}}
                                     {{-- <img src="{{ asset('img/icon/flovers.svg') }}" alt="Снежинка"> --}}
-                                    <p><a target="_blank" href="https://www.mirturizma46.ru/tour/alpaka-park">🦙
-                                            Альпаки+Хаски+Океанариум 27 сентября! Последние места 🐕</a></p>
-                                    <p><a target="_blank" href="https://www.mirturizma46.ru/tour/alpaka-park"> 🦙
-                                            Альпаки+Хаски+Океанариум
-                                            27 сентября! Последние места 🐕 |</a></p>
+                                    <p><a target="_blank" href="https://www.mirturizma46.ru/tour/alpaka-park"> Осенняя
+                                            Адыгея 29.10 - 1.11 ⛰️</a></p>
+                                    <p><a target="_blank" href="https://www.mirturizma46.ru/tour/alpaka-park"> Осенняя
+                                            Адыгея 29.10 - 1.11 ⛰️</a></p>
                                     {{-- <img src="{{ asset('img/icon/flovers.svg') }}" alt="Снежинка"> --}}
                                 @endfor
                             </div>
