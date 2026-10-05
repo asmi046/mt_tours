@@ -115,7 +115,7 @@
                     <div class="video_wrap video_2">
                         <div class="video-presentation-item">
                             <div class="video-container">
-                                <video controls preload="metadata" loading="lazy" playsinline
+                                <video autoplay muted controls preload="metadata" loading="lazy" playsinline
                                     poster="{{ asset('video/elka-xxs.webp') }}">>
                                     <source src="{{ asset('video/elka_hhs.mp4') }}" type="video/mp4">
                                     Ваш браузер не поддерживает видео.
