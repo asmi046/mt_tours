@@ -15,7 +15,7 @@
 
 <div class="param_blk param_blk_2 cr_1">
     <div class="cerecter">
-        20
+        22
     </div>
     <p>Лет на рынке туристических услуг Курской области</p>
 </div>
