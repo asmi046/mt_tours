@@ -7,10 +7,8 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Address;
 use Illuminate\Mail\Mailables\Content;
-use Illuminate\Queue\SerializesModels;
-
 use Illuminate\Mail\Mailables\Envelope;
-use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Queue\SerializesModels;
 
 class ClienPaySuccessMail extends Mailable
 {
@@ -21,7 +19,6 @@ class ClienPaySuccessMail extends Mailable
      *
      * @return void
      */
-
     public $pay;
 
     public function __construct(PayOrder $pay)
@@ -32,22 +29,21 @@ class ClienPaySuccessMail extends Mailable
     /**
      * Get the message envelope.
      *
-     * @return \Illuminate\Mail\Mailables\Envelope
+     * @return Envelope
      */
     public function envelope()
     {
         return new Envelope(
-            from: new Address("mirturizma046@yandex.ru", "МирТуризма"),
+            from: new Address('mirturizma046@yandex.ru', 'МирТуризма'),
             subject: 'Покупка на сайте МирТуризма46',
         );
-
 
     }
 
     /**
      * Get the message content definition.
      *
-     * @return \Illuminate\Mail\Mailables\Content
+     * @return Content
      */
     public function content()
     {

@@ -37,7 +37,10 @@ class ManagerPaySuccessMail extends Mailable
     public function envelope()
     {
         return new Envelope(
-            from: new Address("mirturizma046@yandex.ru", "МирТуризма"),
+            from: new Address(
+                config('mail.from.address'),
+                config('mail.from.name'),
+            ),
             subject: 'Покупка на сайте МирТуризма46',
         );
 

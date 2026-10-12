@@ -37,7 +37,10 @@ class PayRegisterMail extends Mailable
     public function envelope()
     {
         return new Envelope(
-            from: new Address("mirturizma046@yandex.ru", "МирТуризма"),
+            from: new Address(
+                config('mail.from.address'),
+                config('mail.from.name'),
+            ),
             subject: 'Зарегистрирован заказ на сайте МирТуризма46',
         );
 
