@@ -10,7 +10,7 @@
                         <div class="banner-main-slider__overlay"></div>
                         <div class="banner-main-slider__title">
                             <h2>{{ $slide->title }}</h2>
-                            <a href="#" class="button">
+                            <a href="{{ $slide->link }}" class="button">
                                 Подробнее</a>
                         </div>
                     </a>
