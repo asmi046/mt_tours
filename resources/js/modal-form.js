@@ -16,6 +16,7 @@ document.addEventListener('submit', async (e) => {
 
     const phoneInput = form.querySelector('input[name="phone"]');
     const phone = phoneInput ? phoneInput.value.trim() : '';
+    const message = form.querySelector('input[name="message"]')?.value;
     if (!phone) {
         if (errorWrap) errorWrap.insertAdjacentHTML('beforeend',
             '<div class="error">Поле «Телефон» не заполнено</div>');
@@ -28,6 +29,7 @@ document.addEventListener('submit', async (e) => {
         await axios.post(form.dataset.action || '/send_consult', {
             _token: form.querySelector('input[name="_token"]')?.value || getCsrf(),
             phone,
+            message,
         });
 
         if (typeof ym === 'function') ym(29416892, 'reachGoal', 'send');

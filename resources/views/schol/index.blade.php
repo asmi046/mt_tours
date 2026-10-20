@@ -80,6 +80,7 @@
             </div>
             <form class="sending_form schol_modal__form" data-modal-form data-action="/send_consult" method="POST">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                <input type="hidden" name="message" value="Школьные туры">
                 <input type="text" name="phone" placeholder="Телефон*" inputmode="tel" autocomplete="tel" required>
                 <div class="error_list_wrap"></div>
                 <p class="policy_descr">

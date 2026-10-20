@@ -16,9 +16,10 @@ class SenderConsultController extends Controller
 {
     public function send_consultation(ConsultFormRequest $request, TelegramSendAction $tgsender) {
         $data = $request->validated();
+        $data['message'] = $data['message'] ?? 'Неизвестная форма';
 
-
-        $tmp = $tgsender->handle("<b>Консультация (Экскурсионные туры)</b>\n\rТелефон: ".$data['phone']);
+        $formMessage = e($data['message']);
+        $tgsender->handle("<b>Форма: {$formMessage}</b>\nТелефон: ".$data['phone']);
 
 
         Mail::to(explode(",",config('consultation.mailadresat')))->send(new ConsultMail($data));

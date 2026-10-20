@@ -36,6 +36,7 @@ class ConsultFormRequest extends FormRequest
     {
         return [
             "phone" => ['required','string'],
+            "message" => ['nullable', 'string', 'max:255'],
             // "policy_check" => ['required']
         ];
     }
