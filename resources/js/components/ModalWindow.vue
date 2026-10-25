@@ -67,7 +67,17 @@ export default {
         };
     },
 
-    props: ["rout", "redirect", "hesh", "title", "subtitle"],
+    props: {
+        rout: String,
+        redirect: String,
+        hesh: String,
+        title: String,
+        subtitle: String,
+        message: {
+            type: String,
+            default: "Стандартная форма",
+        },
+    },
 
     methods: {
         closeWin() {
@@ -100,6 +110,7 @@ export default {
                 .post(this.rout, {
                     _token: this._token,
                     phone: this.phone,
+                    message: this.message,
                 })
                 .then((response) => {
                     ym(29416892, "reachGoal", "send");

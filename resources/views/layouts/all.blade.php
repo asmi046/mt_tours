@@ -124,7 +124,9 @@
     <div class="modal_win" id="global_app">
 
         <modal-window rout="/send_consult" redirect="/thencs" hesh="showModal" title="Помощь специалиста"
-            subtitle="Мы свяжемся с Вами в ближайшее время"></modal-window>
+            subtitle="Мы свяжемся с Вами в ближайшее время"
+            message="{{ seo_data()->seo_data->seo_title ?? 'Стандартная форма' }}"></modal-window>
+
         <empty-modal hesh="howpay" title="Как купить тур" subtitle="Инструкция по покупке тура">
             <div class="instruction_steps smooth-scroll " data-scrollsmoother="ignore">
                 <div class="instruction_steps_wrap">
