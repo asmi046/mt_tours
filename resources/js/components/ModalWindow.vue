@@ -225,6 +225,7 @@ a {
     background-repeat: no-repeat;
     background-color: var(--main-color);
     border-radius: 40px;
+    background-color: #002045;
 }
 
 .error_list_wrap {
