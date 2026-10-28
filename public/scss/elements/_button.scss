@@ -21,6 +21,50 @@ button,
     }
 }
 
+.button-effect {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    -webkit-isolation: isolate;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -25%;
+        bottom: -25%;
+        left: 0;
+        width: 40%;
+        z-index: -1;
+        pointer-events: none;
+        will-change: transform;
+        background: linear-gradient(
+            100deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.55) 50%,
+            rgba(255, 255, 255, 0) 100%
+        );
+        transform: translateX(-250%) skewX(-18deg);
+        animation: button-effect-shine 2.6s ease-in-out infinite;
+    }
+}
+
+@keyframes button-effect-shine {
+    0% {
+        transform: translateX(-250%) skewX(-18deg);
+    }
+    55%,
+    100% {
+        transform: translateX(250%) skewX(-18deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .button-effect::before {
+        animation: none;
+        transform: translateX(250%) skewX(-18deg);
+    }
+}
+
 .button_icon {
     display: inline-flex;
 
