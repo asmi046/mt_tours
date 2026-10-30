@@ -105,9 +105,9 @@
                                             Московская 🙏</a></p> --}}
                                     {{-- <img src="{{ asset('img/icon/flovers.svg') }}" alt="Снежинка"> --}}
                                     <p><a target="_blank" href="https://www.mirturizma46.ru/tour/gastro-tur">1.11
-                                            ГастроТур Сыр/Кофе, Хлеб и Вино 🧀</a></p>
+                                            ГастроТур Сыр Хлеб Вино 🧀</a></p>
                                     <p><a target="_blank" href="https://www.mirturizma46.ru/tour/gastro-tur">1.11
-                                            ГастроТур Сыр/Кофе, Хлеб и Вино 🧀</a></p>
+                                            ГастроТур Сыр Хлеб Вино 🧀</a></p>
                                     {{-- <img src="{{ asset('img/icon/flovers.svg') }}" alt="Снежинка"> --}}
                                 @endfor
                             </div>
