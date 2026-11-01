@@ -6,7 +6,7 @@
 
     <div class="overlay"></div>
     <div class="text">
-        Новогодний Санкт-Петербург
+        Новогодний Санкт-Петербург + Карелия
     </div>
     <div class="label price_label">
         от 37 000 ₽
