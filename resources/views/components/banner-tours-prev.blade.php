@@ -1,3 +1,21 @@
+<a href="https://www.mirturizma46.ru/tour/sankt-peterburg-zima" class="item buss_item">
+
+    <video autoplay muted loop playsinline poster="{{ asset('video/spb_new_year.webp') }}" class="_video">
+        <source src="{{ asset('video/spb_new_year.mp4') }}" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+    <div class="text">
+        Новогодний Санкт-Петербург
+    </div>
+    <div class="label price_label">
+        от 37 000 ₽
+    </div>
+</a>
+
+
+{{--
+
 <a href="{{ route('school_tours') }}" class="item buss_item">
     <img src="{{ asset('img/school_main_bn.webp') }}" alt="Школьные туры по России">
     <div class="overlay"></div>
@@ -9,7 +27,7 @@
     </div>
 </a>
 
-{{--
+
 
 
 
