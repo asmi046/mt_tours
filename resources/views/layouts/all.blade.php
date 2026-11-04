@@ -80,7 +80,7 @@
 
 </head>
 
-<body class="body @yield('dop_class')" data-snow>
+<body class="body @yield('dop_class')" data-snow="{{ config('snow.enabled') ? 'false' : 'false' }}">
 
     {{-- <x-preloader></x-preloader> --}}
 
