@@ -27,10 +27,6 @@
     </div>
 </a>
 
-
-
-
-
 <a href="https://www.mirturizma46.ru/tour/spiridon" class="item buss_item">
     <img src="{{ asset('img/spiridon_main_bg.webp') }}" alt="Спиридон Тримифунтский">
     <div class="overlay"></div>
