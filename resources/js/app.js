@@ -2,6 +2,7 @@ import './bootstrap';
 import './sliders';
 import './modal';
 import './modal-form';
+import './snow';
 
 import './sliders/sea-hotel-galery.js';
 import './sliders/banner-main-slider';

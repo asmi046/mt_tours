@@ -80,7 +80,7 @@
 
 </head>
 
-<body class="body @yield('dop_class')">
+<body class="body @yield('dop_class')" data-snow>
 
     {{-- <x-preloader></x-preloader> --}}
 
