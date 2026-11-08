@@ -93,6 +93,7 @@ export default {
             console.log(this.hesh);
             if (location.hash === "#" + this.hesh) {
                 this.showModal = true;
+                ym(29416892, "reachGoal", "consuly_form_open");
             }
         },
 
@@ -113,7 +114,7 @@ export default {
                     message: this.message,
                 })
                 .then((response) => {
-                    ym(29416892, "reachGoal", "send");
+                    ym(29416892, "reachGoal", "consuly_form_send");
                     this.showLoader = false;
                     this.showAccept = true;
                 })
