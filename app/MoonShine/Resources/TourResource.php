@@ -165,6 +165,12 @@ class TourResource extends ModelResource
                         ]),
                 ]),
 
+                Tab::make('Другая версия тура', [
+                    Url::make('Ссылка на другую версию тура', 'other_version_lnk'),
+                    Image::make('Баннер другой версии тура', 'other_version_banner')->dir('tours'),
+                    TinyMce::make('Текст для другой версии тура', 'other_version_text'),
+                ]),
+
                 MorphOne::make(
                     'SEO',
                     'seoData',
