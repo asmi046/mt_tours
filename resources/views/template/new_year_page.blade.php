@@ -173,5 +173,7 @@
 
     <x-contacts-section :dop_class="'new_year'"></x-contacts-section>
 
+    <x-other-version-modal :tour="$tour_info" />
+
 @endsection
 
