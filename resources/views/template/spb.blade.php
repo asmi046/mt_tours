@@ -304,5 +304,5 @@
     </section>
 
     <x-contacts-section></x-contacts-section>
-
+    <x-other-version-modal :tour="$tour_info" />
 @endsection
