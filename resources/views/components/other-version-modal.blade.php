@@ -15,10 +15,10 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            var time = 15000;
+            var time = 5000;
 
             if (sessionStorage.getItem('otherVersionModalShown')) {
-                time = 25000;
+                time = 10000;
             }
 
             setTimeout(() => {
