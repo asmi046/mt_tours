@@ -10,6 +10,7 @@ use App\MoonShine\Resources\MenuResource;
 use App\MoonShine\Resources\MoonShineUserResource;
 use App\MoonShine\Resources\MoonShineUserRoleResource;
 use App\MoonShine\Resources\PageResource;
+use App\MoonShine\Resources\RedirectResource;
 use App\MoonShine\Resources\ReviewResource;
 use App\MoonShine\Resources\ScholTourResource;
 use App\MoonShine\Resources\SeoDataResource;
@@ -46,6 +47,7 @@ class MoonShineServiceProvider extends ServiceProvider
                 PageResource::class,
                 BusCatalogResource::class,
                 SliderResource::class,
+                RedirectResource::class,
             ])
             ->pages([
                 ...$config->getPages(),

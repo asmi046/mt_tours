@@ -8,6 +8,7 @@ use App\MoonShine\Resources\BusCatalogResource;
 use App\MoonShine\Resources\CalendarResource;
 use App\MoonShine\Resources\MenuResource;
 use App\MoonShine\Resources\PageResource;
+use App\MoonShine\Resources\RedirectResource;
 use App\MoonShine\Resources\ReviewResource;
 use App\MoonShine\Resources\ScholTourResource;
 use App\MoonShine\Resources\SeoDataResource;
@@ -49,6 +50,8 @@ final class MoonShineLayout extends AppLayout
                 static fn () => __('SEO'),
                 SeoDataResource::class,
             )->icon('chart-bar-square'),
+
+            MenuItem::make('Редиректы', RedirectResource::class)->icon('arrow-uturn-right'),
 
             MenuItem::make(
                 static fn () => __('Сброс кеша'),
