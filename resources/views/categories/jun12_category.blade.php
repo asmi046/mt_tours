@@ -39,7 +39,7 @@
                 <div class="el">
                     <img class="turists" src="{{ asset('img/turists.svg') }}"
                         alt="Каталог экскурсионных туров из Курска 2025">
-                    <img class="buss" src="{{ asset('img/buss.svg') }}" alt="Каталог туров из Курска 2025">
+                    <img class="buss" src="{{ asset('img/buss.svg') }}" alt="Каталог туров из Курска {{ date('Y') }}">
                 </div>
             </div>
 

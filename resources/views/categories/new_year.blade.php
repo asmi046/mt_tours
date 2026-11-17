@@ -12,18 +12,18 @@
         <x-header></x-header>
 
 
-            <div class="container left_text">
-                <div class="bnr_text">
-                    <h1>{!! $cat_info->html_name !!}</h1>
-                    <p class="subtext">{!! seo_data()->seo_data->page_sub_title ?? '' !!}</p>
-                    <br>
-                    <br>
-                    <x-cat-banner-btn></x-cat-banner-btn>
-                </div>
-                <div class="dop_param">
-                    <x-adv></x-adv>
-                </div>
+        <div class="container left_text">
+            <div class="bnr_text">
+                <h1>{!! $cat_info->html_name !!}</h1>
+                <p class="subtext">{!! seo_data()->seo_data->page_sub_title ?? '' !!}</p>
+                <br>
+                <br>
+                <x-cat-banner-btn></x-cat-banner-btn>
             </div>
+            <div class="dop_param">
+                <x-adv></x-adv>
+            </div>
+        </div>
     </section>
 
     <section id="tours_cat" class="turs_in_main_section new_year_section">
@@ -36,8 +36,10 @@
                     <a class="button" href="#showModal">Получить консультацию</a>
                 </div>
                 <div class="el">
-                    <img class="turists elka" src="{{ asset('img/new_year/main_el.svg') }}" alt="Каталог туров из Курска 2025">
-                    <img class="buss igruhi" src="{{ asset('img/new_year/igruhi.svg') }}" alt="Каталог туров из Курска 2025">
+                    <img class="turists elka" src="{{ asset('img/new_year/main_el.svg') }}"
+                        alt="Каталог новогодних туров из Курска {{ date('Y') }}-{{ date('Y') + 1 }}">
+                    <img class="buss igruhi" src="{{ asset('img/new_year/igruhi.svg') }}"
+                        alt="Каталог новогодних туров из Курска {{ date('Y') }}-{{ date('Y') + 1 }}">
                 </div>
             </div>
 
@@ -59,4 +61,3 @@
     <x-contacts-section :dop_class="'new_year'"></x-contacts-section>
 
 @endsection
-
