@@ -104,10 +104,10 @@
                                     {{-- <p><a target="_blank" href="https://www.mirturizma46.ru/tour/matrona"> Матрона
                                             Московская 🙏</a></p> --}}
                                     {{-- <img src="{{ asset('img/icon/flovers.svg') }}" alt="Снежинка"> --}}
-                                    <p><a target="_blank" href="https://www.mirturizma46.ru/tour/gastro-tur">21.11
-                                            ГастроТур Кофе Хлеб Вино ☕</a></p>
-                                    <p><a target="_blank" href="https://www.mirturizma46.ru/tour/gastro-tur">21.11
-                                            ГастроТур Кофе Хлеб Вино ☕</a></p>
+                                    <p><a target="_blank" href="/tours/new-year">🎄 Лучшие
+                                            Новогодние туры из Курска! 🎁</a></p>
+                                    <p><a target="_blank" href="/tours/new-year">🎄 Лучшие
+                                            Новогодние туры из Курска! 🎁</a></p>
                                     {{-- <img src="{{ asset('img/icon/flovers.svg') }}" alt="Снежинка"> --}}
                                 @endfor
                             </div>
