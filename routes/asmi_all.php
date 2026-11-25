@@ -31,5 +31,6 @@ Route::get('/calendar/{month?}', [CalendarController::class, 'index'])->name('ca
 Route::get('/yml-feed/{category?}', [FeedController::class, 'yml_get_feed'])->name('yml_get_feed');
 
 Route::get('/news', [IndexController::class, 'news'])->name('news');
+Route::get('/black_friday', [IndexController::class, 'black_fr'])->name('black_fr');
 
 Route::get('/sitemap.xml', [SitemapController::class, 'index']);

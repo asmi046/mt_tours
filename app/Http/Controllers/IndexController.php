@@ -93,4 +93,10 @@ class IndexController extends Controller
 
         return view('news', compact('news'));
     }
+
+    public function black_fr()
+    {
+        return view('black_fr');
+    }
+
 }

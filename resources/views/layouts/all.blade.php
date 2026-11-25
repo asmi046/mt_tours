@@ -24,7 +24,7 @@
 
     <meta name="_token" content="{{ csrf_token() }}">
     <meta name="default_sale"
-        content="{{ config('sales.default_sale') + (request()->is('tour/novogodniaia-adygeia') ? 500 : 0) }}">
+        content="{{ config('sales.default_sale') + extra_sale() }}">
     <meta name="show_sale" content="{{ config('sales.show_sale') }}">
 
     <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>

@@ -1,20 +1,23 @@
-<a href="https://www.mirturizma46.ru/tour/sankt-peterburg-zima" class="item buss_item">
+<a href="/black_friday" class="item buss_item">
 
     <video autoplay muted loop playsinline poster="{{ asset('video/spb_new_year.webp') }}" class="_video">
-        <source src="{{ asset('video/spb_new_year.mp4') }}" type="video/mp4">
+        <source src="{{ asset('video/black_fr_main.mp4') }}" type="video/mp4">
     </video>
 
     <div class="overlay"></div>
     <div class="text">
-        Новогодний Санкт-Петербург + Карелия
+        Черная пятница в МирТуризма46
     </div>
     <div class="label price_label">
-        от 37 000 ₽
+        скидки до 20%
     </div>
 </a>
 
 
 {{--
+
+
+
 
 <a href="{{ route('school_tours') }}" class="item buss_item">
     <img src="{{ asset('img/school_main_bn.webp') }}" alt="Школьные туры по России">

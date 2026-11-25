@@ -15,6 +15,20 @@ if (! function_exists('echo_days')) {
     }
 }
 
+// Дополнительная скидка для текущей страницы (см. config/sales.php -> extra_sale)
+if (! function_exists('extra_sale')) {
+    function extra_sale(): int
+    {
+        foreach (config('sales.extra_sale', []) as $path => $sum) {
+            if (request()->is($path)) {
+                return (int) $sum;
+            }
+        }
+
+        return 0;
+    }
+}
+
 if (! function_exists('seo_data')) {
     function seo_data(?string $ogImg = null): SeoServices
     {
