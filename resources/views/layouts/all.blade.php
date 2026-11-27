@@ -23,13 +23,12 @@
     <link rel="icon" type="image/png" href="{{ asset('/img/favicons/icon16.png') }}" sizes="16x16">
 
     <meta name="_token" content="{{ csrf_token() }}">
-    <meta name="default_sale"
-        content="{{ config('sales.default_sale') + extra_sale() }}">
+    <meta name="default_sale" content="{{ config('sales.default_sale') + extra_sale() }}">
     <meta name="show_sale" content="{{ config('sales.show_sale') }}">
 
     <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
-    @if (Request::route()->named('calendar'))
+    @if (Request::route()?->named('calendar'))
         <link rel="stylesheet" href="{{ asset('/css/bulma.min.css') }}">
     @endif
 

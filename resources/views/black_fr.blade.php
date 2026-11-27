@@ -52,7 +52,7 @@
             </ul>
 
             <br>
-            <br>ß
+            <br>
         </div>
     </section>
 
