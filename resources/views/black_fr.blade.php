@@ -23,7 +23,7 @@
         </div>
     </section>
 
-    <section class="news_section">
+    <section class="news_section new_year_section">
         <div class="container text_styles lnk_correct">
             <h2>Предложения по акции продлятся ТОЛЬКО 3 дня с 27 ноября по 29 ноября</h2>
 
@@ -51,7 +51,8 @@
                 <li>и многое другое!</li>
             </ul>
 
-
+            <br>
+            <br>ß
         </div>
     </section>
 

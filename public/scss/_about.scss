@@ -1,9 +1,8 @@
-
-@use 'vars' as *;
+@use "vars" as *;
 
 .tours_content,
 .turs_in_main_section {
-    background-color: #ECF8F6;
+    background-color: #ecf8f6;
     // background-image: url(../img/main_bg_1.svg);
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -15,7 +14,7 @@
         z-index: 1;
         width: 30%;
         height: auto;
-        filter: drop-shadow(0 0 1.0rem #0000002A);
+        filter: drop-shadow(0 0 1rem #0000002a);
         position: absolute;
     }
 
@@ -61,28 +60,29 @@
     &.adg_bg {
         background-image: url(../img/adg_bg.svg);
     }
-
 }
 
 .new_year_section {
     background-color: #002045;
     .subtitle,
     strong {
-        color:white;
+        color: white;
     }
     & > * {
-        color:white;
+        color: white;
     }
 
-
+    a {
+        color: white;
+    }
 
     .tour_card {
         .text {
             background-color: #053168;
-            color:white;
+            color: white;
             .label_blue {
-                background-color:white;
-                color:black;
+                background-color: white;
+                color: black;
             }
         }
     }
@@ -90,72 +90,68 @@
 
 .contacts_section.new_year,
 .review_section.new_year,
-    .big_obl_section.new_year {
-        background-color: #002045;
+.big_obl_section.new_year {
+    background-color: #002045;
 
-        h2 {
-            color:white;
-        }
+    h2 {
+        color: white;
     }
+}
 
 .big_obl_section {
     margin-top: -50px;
-    padding-top:0;
-    height:120px;
+    padding-top: 0;
+    height: 120px;
     position: relative;
     display: flex;
     overflow: hidden;
 
-    .button{
+    .button {
         margin: auto;
-
     }
 
     .big_obl {
-        max-width:40%;
-        width:auto;
-        max-height:120px;
+        max-width: 40%;
+        width: auto;
+        max-height: 120px;
         object-fit: unset;
         height: auto;
         position: absolute;
-
     }
 
-    .big_obl_left{
+    .big_obl_left {
         left: -5%;
         opacity: 0;
     }
 
-    .big_obl_right{
-        right:-5%;
+    .big_obl_right {
+        right: -5%;
     }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
     .big_obl_section {
         margin-top: -40px;
     }
 }
 
-
-@media (max-width:480px) {
+@media (max-width: 480px) {
     .big_obl_section {
         .big_obl {
             max-height: unset;
-            max-width:100%;
+            max-width: 100%;
         }
 
-        .big_obl_left{
+        .big_obl_left {
             left: -77%;
             opacity: 0;
         }
 
-        .big_obl_right{
-            right:-77%;
+        .big_obl_right {
+            right: -77%;
         }
     }
 }
-
 
 .about {
     background-color: $gray_bg_color;
@@ -169,7 +165,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     .text,
-    .photo{
+    .photo {
         width: 46%;
     }
 
@@ -183,9 +179,9 @@
             gap: 20px;
 
             .photo_wrap {
-                width:160px;
+                width: 160px;
                 border-radius: 20px;
-                overflow: hidden
+                overflow: hidden;
             }
 
             .photo_big {
@@ -194,15 +190,13 @@
 
             .photo_smile {
                 border-radius: 50px;
-                height:170px;
+                height: 170px;
             }
 
             &_one {
                 margin: auto 0;
             }
-
         }
-
     }
 
     .text {
@@ -214,40 +208,38 @@
     }
 }
 
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
     .about .photo .col .photo_wrap {
         width: 140px;
     }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
     .about {
         flex-direction: column-reverse;
 
         .text {
-            width:100%;
+            width: 100%;
         }
 
         .photo {
-            width:100%;
+            width: 100%;
             justify-content: space-between;
             .col {
                 width: 30%;
                 .photo_wrap {
-                    width:100%;
+                    width: 100%;
                 }
             }
         }
     }
 
     .turs_in_main_section {
-
-
         .obl {
             z-index: 1;
             width: 80%;
             height: auto;
-            filter: drop-shadow(0 0 1.0rem #0000002A);
+            filter: drop-shadow(0 0 1rem #0000002a);
             position: absolute;
         }
 
@@ -268,8 +260,7 @@
     }
 }
 
-
-@media (max-width:480px) {
+@media (max-width: 480px) {
     .about {
         padding: 10px 20px;
         .photo {
@@ -287,6 +278,5 @@
                 display: none;
             }
         }
-
     }
 }
